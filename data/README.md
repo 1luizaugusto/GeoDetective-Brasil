@@ -1,0 +1,1 @@
+Dados brutos não são versionados neste repositório. As etapas futuras incluirão scripts reprodutíveis para obtenção de cenas Sentinel-2 e referências geoespaciais. Não publicar imagens/rasters sem verificar licença, atribuição e eventuais limites de distribuição.
