@@ -1,0 +1,1 @@
+A implementar, nesta ordem: seleção das áreas; exportação Sentinel-2; máscara de nuvens/alinhamento; amostras rotuladas; divisão geográfica de treino/teste; Random Forest; avaliação; exportação de desafios.
