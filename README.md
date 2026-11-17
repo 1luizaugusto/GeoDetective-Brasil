@@ -1,6 +1,10 @@
 # GeoDetective Brasil
 
-Feito por **Luiz Augusto de Almeida**, no âmbito do **Future Tech Leaders Brasil 2026**, Space Tech Bootcamp.
+Desenvolvido por **Luiz Augusto de Almeida**, no âmbito do **Future Tech Leaders Brasil 2026 – Space Tech Bootcamp**.
+
+O projeto integra as atividades desenvolvidas durante o programa, que conta com a parceria do **Programa das Nações Unidas para o Desenvolvimento (PNUD/UNDP)**, do **SDG AI Lab**, da **Agência Espacial Brasileira (AEB)** e do **PNUD Brasil**.
+
+**As instituições mencionadas são parceiras do Future Tech Leaders Brasil 2026, não constituindo parcerias diretas ou endosso institucional a este projeto.**
 
 ### ▶ [Jogar agora](https://1luizaugusto.github.io/GeoDetective-Brasil/)
 
