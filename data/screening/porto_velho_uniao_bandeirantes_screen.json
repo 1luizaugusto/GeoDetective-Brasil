@@ -1,0 +1,132 @@
+{
+ "name": "porto_velho_uniao_bandeirantes",
+ "pair": [
+  {
+   "earth_search_id": "S2B_T20LLQ_20200727T143729_L2A",
+   "datetime_utc": "2020-07-27T14:45:27.130000+00:00",
+   "platform": "sentinel-2b",
+   "mgrs_tile": "20LLQ",
+   "relative_orbit": null,
+   "processing_baseline": "05.00",
+   "esa_product_uri": "S2B_MSIL2A_20200727T143729_N0500_R096_T20LLQ_20230325T001133.SAFE",
+   "tile_cloud_cover_pct": 19.077908,
+   "sun_elevation_deg": 52.5480141156723,
+   "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T20LLQ_20200727T143729_L2A"
+  },
+  {
+   "earth_search_id": "S2B_T20LLQ_20240726T144346_L2A",
+   "datetime_utc": "2024-07-26T14:45:27.329000+00:00",
+   "platform": "sentinel-2b",
+   "mgrs_tile": "20LLQ",
+   "relative_orbit": null,
+   "processing_baseline": "05.11",
+   "esa_product_uri": "S2B_MSIL2A_20240726T143749_N0511_R096_T20LLQ_20240726T185603.SAFE",
+   "tile_cloud_cover_pct": 0.013497,
+   "sun_elevation_deg": 52.3823947294673,
+   "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T20LLQ_20240726T144346_L2A"
+  }
+ ],
+ "valid": [
+  0.9999027777777778,
+  0.9999131944444445
+ ],
+ "metric": "forest",
+ "ndvi_t": 0.6,
+ "ndmi_t": 0.3,
+ "loss": [
+  {
+   "x": 800,
+   "y": 650,
+   "lon": -64.47106,
+   "lat": -9.79139,
+   "veg_a": 40.4,
+   "veg_b": 17.3,
+   "delta_pp": -23.1,
+   "valid": 1.0
+  },
+  {
+   "x": 800,
+   "y": 700,
+   "lon": -64.4711,
+   "lat": -9.80043,
+   "veg_a": 53.8,
+   "veg_b": 31.7,
+   "delta_pp": -22.1,
+   "valid": 1.0
+  },
+  {
+   "x": 800,
+   "y": 750,
+   "lon": -64.47114,
+   "lat": -9.80947,
+   "veg_a": 68.7,
+   "veg_b": 47.2,
+   "delta_pp": -21.5,
+   "valid": 1.0
+  }
+ ],
+ "gain": [
+  {
+   "x": 900,
+   "y": 950,
+   "lon": -64.45306,
+   "lat": -9.84572,
+   "veg_a": 90.7,
+   "veg_b": 91.2,
+   "delta_pp": 0.5,
+   "valid": 1.0
+  },
+  {
+   "x": 850,
+   "y": 900,
+   "lon": -64.46214,
+   "lat": -9.83664,
+   "veg_a": 83.7,
+   "veg_b": 84.0,
+   "delta_pp": 0.3,
+   "valid": 1.0
+  },
+  {
+   "x": 950,
+   "y": 950,
+   "lon": -64.44395,
+   "lat": -9.84576,
+   "veg_a": 90.8,
+   "veg_b": 91.1,
+   "delta_pp": 0.3,
+   "valid": 1.0
+  }
+ ],
+ "stable": [
+  {
+   "x": 950,
+   "y": 900,
+   "lon": -64.44391,
+   "lat": -9.83671,
+   "veg_a": 90.6,
+   "veg_b": 90.5,
+   "delta_pp": -0.0,
+   "valid": 1.0
+  },
+  {
+   "x": 850,
+   "y": 950,
+   "lon": -64.46218,
+   "lat": -9.84568,
+   "veg_a": 85.3,
+   "veg_b": 85.3,
+   "delta_pp": -0.0,
+   "valid": 1.0
+  },
+  {
+   "x": 500,
+   "y": 950,
+   "lon": -64.526,
+   "lat": -9.84539,
+   "veg_a": 67.5,
+   "veg_b": 67.4,
+   "delta_pp": -0.1,
+   "valid": 1.0
+  }
+ ]
+}

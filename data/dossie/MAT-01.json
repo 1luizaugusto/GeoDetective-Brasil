@@ -1,0 +1,103 @@
+{
+ "id": "MAT-01",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 0.6 pp e ganho 1.9 pp (líquido +1,3 pp); MapBiomas 30 m: perda 0.4 pp e ganho 2.5 pp (líquido +2,1 pp). NDVI mediano das imagens: 0.67→0.75. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-06-20 — S2B_MSIL2A_20200620T131249_N0500_R138_T23KMQ_20230329T222406",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-23.23637&lng=-45.30752&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-06-20T00%3A00%3A00.000Z&toTime=2020-06-20T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-06-19 — S2B_MSIL2A_20240619T131249_N0510_R138_T23KMQ_20240619T152201",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-23.23637&lng=-45.30752&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-06-19T00%3A00%3A00.000Z&toTime=2024-06-19T23%3A59%3A59.999Z"
+    }
+   ],
+   "revisao": "Revisão manual: ganho comprovado só em 0,3% dos pixels pelos dois mapas e sem regeneração visível → tipo estável, texto reescrito"
+  },
+  {
+   "afirmacao": "Origem da vegetação nativa ganha.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Mosaico de Usos 89%; Pastagem 7%; Rio/Lago/Oceano 4%. Mapa 30 m: Mosaico de Usos 73%; Pastagem 27%; Silvicultura 1%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 5→5%; no mapa 30 m: 2→2%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 0%; 2023: 0%; 2024: 0% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em São Luiz do Paraitinga/SP, bioma Mata Atlântica.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 3550001) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 3550001",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/3550001"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'regeneração em pastagens'.",
+   "veredito": "corrigido",
+   "porque": "Os mapas mostram só um ganho pequeno; o caso é praticamente estável. O nome foi ajustado.",
+   "fontes": []
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "areas_protegidas": []
+}

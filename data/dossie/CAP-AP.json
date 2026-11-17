@@ -1,0 +1,102 @@
+{
+ "id": "CAP-AP",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "Houve perda de vegetação nativa entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 5.4 pp e ganho 1.9 pp (líquido -3,5 pp); MapBiomas 30 m: perda 6.1 pp e ganho 0.0 pp (líquido -6,1 pp). NDVI mediano das imagens: 0.59→0.57. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.48 (vegetação a menos).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-09-05 — S2A_MSIL2A_20200905T135121_N0500_R024_T22NDF_20230519T021038",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=0.05157&lng=-51.10047&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-09-05T00%3A00%3A00.000Z&toTime=2020-09-05T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-08-30 — S2B_MSIL2A_20240830T134709_N0511_R024_T22NDF_20240830T193857",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=0.05157&lng=-51.10047&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-08-30T00%3A00%3A00.000Z&toTime=2024-08-30T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Destino da vegetação nativa perdida.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Área Urbanizada 93%; Outras não Vegetadas 6%; Rio/Lago/Oceano 1%. Mapa 30 m: Área Urbanizada 73%; Outras não Vegetadas 25%; Mosaico de Usos 2%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 0%; 2023: 2%; 2024: 1% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Macapá/AP, bioma Amazônia.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 1600303) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 1600303",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/1600303"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Versão anterior: 'obras viárias e loteamentos sobre áreas de ressaca'.",
+   "veredito": "corrigido",
+   "porque": "Não conferimos 'obras viárias' nem 'loteamentos'. O que os mapas mostram é que 93% da vegetação perdida virou área urbanizada.",
+   "fontes": []
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.1,
+  "2020": 0.2,
+  "2023": 1.6,
+  "2024": 1.2
+ },
+ "areas_protegidas": []
+}

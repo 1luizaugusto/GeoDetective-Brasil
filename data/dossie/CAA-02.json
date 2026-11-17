@@ -1,0 +1,160 @@
+{
+ "id": "CAA-02",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 1.9 pp e ganho 1.6 pp (líquido -0,3 pp); MapBiomas 30 m: perda 0.6 pp e ganho 2.8 pp (líquido +2,2 pp). NDVI mediano das imagens: 0.26→0.26. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-09-18 — S2B_MSIL2A_20200918T131249_N0500_R138_T23LQL_20230315T113059",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-8.85294&lng=-42.55033&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-09-18T00%3A00%3A00.000Z&toTime=2020-09-18T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-09-17 — S2B_MSIL2A_20240917T131239_N0511_R138_T23LQL_20240917T165011",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-8.85294&lng=-42.55033&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-09-17T00%3A00%3A00.000Z&toTime=2024-09-17T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 18/09/2020 e 17/09/2024 (1 dia de diferença no calendário). Época 2: 26/02/2020 e 16/03/2024 (19 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,26 → 0,25; época 2 0,70 → 0,70.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-09-18 — S2B_MSIL2A_20200918T131249_N0500_R138_T23LQL_20230315T113059",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-8.85294&lng=-42.55033&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-09-18T00%3A00%3A00.000Z&toTime=2020-09-18T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-09-17 — S2B_MSIL2A_20240917T131239_N0511_R138_T23LQL_20240917T165011",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-8.85294&lng=-42.55033&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-09-17T00%3A00%3A00.000Z&toTime=2024-09-17T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-02-26 — S2A_MSIL2A_20200226T131241_N0500_R138_T23LQL_20230424T013228",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-8.85294&lng=-42.55033&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-02-26T00%3A00%3A00.000Z&toTime=2020-02-26T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-03-16 — S2A_MSIL2A_20240316T131241_N0510_R138_T23LQL_20240316T155551",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-8.85294&lng=-42.55033&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-03-16T00%3A00%3A00.000Z&toTime=2024-03-16T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: +4,3 pp; MapBiomas 10 m: -0,3 pp; diferença 4.6 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Origem da vegetação nativa ganha.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Pastagem 94%; Mosaico de Usos 6%. Mapa 30 m: Pastagem 60%; Mosaico de Usos 40%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 0%; 2023: 0%; 2024: 0% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Parque Nacional Da Serra Da Capivara (Parque, criada em 1979).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela fica a menos de 1 km do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/64"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Coronel José Dias/PI, bioma Caatinga.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 2202851) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 2202851",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/2202851"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'Parque Nacional da Serra da Capivara'.",
+   "veredito": "corrigido",
+   "porque": "Pela base WDPA, o parque fica a menos de 1 km, mas fora do recorte (0% de área em comum). O nome agora diz 'entorno'.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA — PARNA Serra da Capivara",
+     "url": "https://www.protectedplanet.net/64"
+    }
+   ]
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "areas_protegidas": [
+  {
+   "nome": "Parque Nacional Da Serra Da Capivara",
+   "tipo": "Parque",
+   "ano": 1979,
+   "site_id": 64,
+   "frac": 0.0
+  }
+ ]
+}

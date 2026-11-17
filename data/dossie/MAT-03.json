@@ -1,0 +1,148 @@
+{
+ "id": "MAT-03",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 0.3 pp e ganho 0.5 pp (líquido +0,2 pp); MapBiomas 30 m: perda 0.8 pp e ganho 0.5 pp (líquido -0,3 pp). NDVI mediano das imagens: 0.84→0.85. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-07-19 — S2B_MSIL2A_20200719T134209_N0500_R124_T21JZN_20230424T225844",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-25.14469&lng=-53.83720&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-19T00%3A00%3A00.000Z&toTime=2020-07-19T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-07-18 — S2B_MSIL2A_20240718T133839_N0510_R124_T21JZN_20240718T172400",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-25.14469&lng=-53.83720&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-07-18T00%3A00%3A00.000Z&toTime=2024-07-18T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 19/07/2020 e 18/07/2024 (1 dia de diferença no calendário). Época 2: 06/01/2020 e 30/01/2024 (24 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,67 → 0,66; época 2 0,71 → 0,69.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-07-19 — S2B_MSIL2A_20200719T134209_N0500_R124_T21JZN_20230424T225844",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-25.14469&lng=-53.83720&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-19T00%3A00%3A00.000Z&toTime=2020-07-19T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-07-18 — S2B_MSIL2A_20240718T133839_N0510_R124_T21JZN_20240718T172400",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-25.14469&lng=-53.83720&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-07-18T00%3A00%3A00.000Z&toTime=2024-07-18T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-01-06 — S2A_MSIL2A_20200106T134211_N0500_R124_T21JZN_20230701T064501",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-25.14469&lng=-53.83720&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-01-06T00%3A00%3A00.000Z&toTime=2020-01-06T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-01-30 — S2B_T22JBT_20240130T133830_L2A",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-25.14469&lng=-53.83720&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-01-30T00%3A00%3A00.000Z&toTime=2024-01-30T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: -2,4 pp; MapBiomas 10 m: +0,2 pp; diferença 2.6 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 0%; 2023: 0%; 2024: 0% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Parque Nacional Do Iguaçu (Parque, criada em 1939).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 45% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/60"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Parc national d'Iguaçu (World Heritage Site (natural or mixed), criada em 1986).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 43% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/12203"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Céu Azul/PR, bioma Mata Atlântica.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 4105300) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 4105300",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/4105300"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "areas_protegidas": [
+  {
+   "nome": "Parque Nacional Do Iguaçu",
+   "tipo": "Parque",
+   "ano": 1939,
+   "site_id": 60,
+   "frac": 0.44913757764120654
+  },
+  {
+   "nome": "Parc national d'Iguaçu",
+   "tipo": "World Heritage Site (natural or mixed)",
+   "ano": 1986,
+   "site_id": 12203,
+   "frac": 0.43168957871386615
+  }
+ ]
+}

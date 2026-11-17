@@ -1,0 +1,105 @@
+[
+  {
+    "id": "CAP-AL",
+    "name": "Maceió – bairros desocupados pelo afundamento do solo, Maceió/AL",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -35.745,
+    "lat": -9.625,
+    "mode": "gain",
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho (revegetação após demolições)",
+    "notes": "Nuvens no litoral; hipótese a verificar. | busca relaxada (ano inteiro, min_valid 0,5, 30 cenas) por excesso de nuvem",
+    "min_valid": 0.5,
+    "max_eval": 30
+  },
+  {
+    "id": "CAP-BA",
+    "name": "Salvador – Parque de Pituaçu / Av. Paralela, Salvador/BA",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -38.42,
+    "lat": -12.96,
+    "mode": "stable_edge",
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável com perda na borda",
+    "notes": "Nuvens no litoral. | busca relaxada (ano inteiro, min_valid 0,5, 30 cenas) por excesso de nuvem",
+    "min_valid": 0.5,
+    "max_eval": 30
+  },
+  {
+    "id": "CAP-GO",
+    "name": "Goiânia – expansão sudoeste, Goiânia/GO",
+    "group": "capital",
+    "biome": "Cerrado",
+    "lon": -49.37,
+    "lat": -16.69,
+    "mode": "loss",
+    "season": [
+      "05-01",
+      "07-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Lavouras e pastos secam no inverno. | coordenada original caía em Aparecida de Goiânia; nova conferida no IBGE (5208707 Goiânia)"
+  },
+  {
+    "id": "CAP-PE",
+    "name": "Recife – Mata de Dois Irmãos, Recife/PE",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -34.95,
+    "lat": -8.01,
+    "mode": "stable_edge",
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Nuvens no litoral. | janela ampliada para 07-01/12-31 (sem cena limpa na janela original) | busca relaxada (ano inteiro, min_valid 0,5, 30 cenas) por excesso de nuvem",
+    "min_valid": 0.5,
+    "max_eval": 30
+  },
+  {
+    "id": "CAP-RN",
+    "name": "Natal – Parque das Dunas, Natal/RN",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -35.19,
+    "lat": -5.82,
+    "mode": "stable_edge",
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Bioma costeiro a confirmar. | janela ampliada para 07-01/12-31 (sem cena limpa na janela original) | busca relaxada (ano inteiro, min_valid 0,5, 30 cenas) por excesso de nuvem",
+    "min_valid": 0.5,
+    "max_eval": 30
+  }
+]

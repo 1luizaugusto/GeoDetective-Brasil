@@ -1,0 +1,568 @@
+{
+  "_doc": "Decisões do QA visual (folhas data/qa/*.png). status: aprovado | rejeitado | refazer | reserva (aprovado no QA, fora do jogo). explanation aparece no jogo após o palpite; vazio = texto padrão do tipo de desafio. note = registro técnico (não vai ao jogo); player_note = observação opcional mostrada ao jogador. kind_override = tipo de mudança comprovado na auditoria (audit_challenges.py); audit_override = motivo para aceitar um caso que a auditoria automática sinalizou, após revisão.",
+  "AMZ-01": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Novo Progresso (PA): a floresta contínua de 2020 foi aberta em clareiras até 2024. Os dois mapas MapBiomas mostram que quase toda a floresta perdida virou pastagem.",
+    "name_override": "Novo Progresso – floresta e pasto"
+  },
+  "AMZ-02": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "A borda do Parque Indígena do Xingu funciona como uma linha: de um lado lavoura, do outro floresta — e ela ficou no mesmo lugar."
+  },
+  "AMZ-03": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Armadilha da seca: em 2024 o pasto aparece mais amarelado (2023–24 teve seca severa na Amazônia, segundo o Cemaden), mas a floresta nativa não mudou de tamanho."
+  },
+  "CAA-01": {
+    "status": "aprovado",
+    "note": "Perda pequena",
+    "explanation": "Perímetro irrigado sobre a Caatinga: novos lotes agrícolas avançaram sobre uma faixa pequena de vegetação nativa. As lavouras verdes não são vegetação nativa."
+  },
+  "CAA-02": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "",
+    "name_override": "Entorno do Parque Nacional da Serra da Capivara"
+  },
+  "CAA-03": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Na estação seca a Caatinga perde as folhas e fica cinza-amarronzada, mas continua sendo vegetação nativa. A mudança aqui é pequena."
+  },
+  "CAP-AC": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Rio Branco: a cidade avançou sobre a vegetação nativa da periferia. Os dois mapas MapBiomas mostram a perda, quase toda para área urbana e pasto — é pequena, poucos pontos percentuais.",
+    "audit_override": "perda confirmada nos dois mapas (10 m −3,1, 30 m −2,6 pp líquidos), para área urbana/pasto; NDVI −0,07 nos pixels perdidos. MapBiomas Fogo: só 1% queimado em 2020 (frase sobre queimada removida)"
+  },
+  "CAP-AP": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Macapá: a cidade avançou sobre vegetação nativa da periferia. Os dois mapas MapBiomas mostram a perda, quase toda para área urbanizada.",
+    "name_override": "Macapá – expansão urbana"
+  },
+  "CAP-CE": {
+    "status": "aprovado",
+    "note": "Flag de névoa automática; inspeção visual sem fumaça aparente.",
+    "explanation": "O Parque Estadual do Cocó protege um manguezal no meio de Fortaleza; o limite com a cidade se manteve."
+  },
+  "CAP-DF": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "A borda do Parque Nacional de Brasília é quase uma régua: cerrado protegido de um lado, cidade do outro."
+  },
+  "CAP-ES": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Manguezal da Ilha do Lameirão, em Vitória: a cor da água muda entre as datas, mas o mangue ficou estável."
+  },
+  "CAP-MG": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "",
+    "name_override": "Nova Lima – franja urbana"
+  },
+  "CAP-MS": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "O Parque dos Poderes preserva uma mancha de cerrado dentro de Campo Grande.",
+    "audit_override": "parque visivelmente igual na sobreposição (evidencia_revisao1.png); os 3,6% \"urbanizados\" do 10 m são ruído de borda; 30 m líquido +0,3 pp"
+  },
+  "CAP-MT": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Cuiabá: a franja da cidade avançou sobre o cerrado — os dois mapas mostram a perda, para pasto, mosaico de usos e solo exposto."
+  },
+  "CAP-PA": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Parque Estadual do Utinga, em Belém: a cor dos lagos muda entre as datas, mas a floresta ao redor se manteve."
+  },
+  "CAP-PI": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Teresina: a cidade avançou sobre a vegetação nativa; os mapas mostram a perda virando área urbanizada e solo exposto."
+  },
+  "CAP-PR": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": ""
+  },
+  "CAP-RJ": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Encostas do Maciço da Tijuca: floresta e ocupação urbana convivem lado a lado, com pouca mudança no período."
+  },
+  "CAP-RO": {
+    "status": "aprovado",
+    "note": "Mesmo recorte do PILOTO-01",
+    "explanation": "Dentro da Terra Indígena Karipuna, grandes áreas de floresta amazônica viraram pastagem entre 2020 e 2024: os dois mapas MapBiomas concordam em cerca de 45 pontos percentuais de perda.",
+    "name_override": "Porto Velho – Terra Indígena Karipuna"
+  },
+  "CAP-SC": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "",
+    "name_override": "Florianópolis – Refúgio Meiembipe / Rio Vermelho"
+  },
+  "CAP-SP": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Parelheiros, extremo sul de São Paulo, dentro da APA Bororé-Colônia: trechos de mata viraram mosaico de usos e solo exposto."
+  },
+  "CAP-TO": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Palmas: uma área de cerrado ao lado de uma mata ciliar foi aberta e virou solo exposto entre 2020 e 2024.",
+    "name_override": "Palmas – periferia sul"
+  },
+  "CER-01": {
+    "status": "aprovado",
+    "note": "Mesmo recorte do PILOTO-02",
+    "explanation": "Armadilha: o pasto virou plantação de eucalipto — muito mais verde e muito mais árvores, mas nenhuma vegetação nativa a mais."
+  },
+  "CER-02": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "MATOPIBA, oeste da Bahia: o cerrado nativo foi aberto para uso agropecuário. O mapa de 30 m já reconhece soja e outras lavouras em parte da área."
+  },
+  "CMP-03": {
+    "status": "aprovado",
+    "note": "Controle",
+    "explanation": "Lençóis Maranhenses: as dunas e lagoas mudam o tempo todo, mas isso não é mudança de vegetação nativa."
+  },
+  "CMP-04": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Mariana (Bento Rodrigues): área atingida pelo rompimento da barragem de Fundão em 2015. A revegetação é lenta e pequena neste período.",
+    "audit_override": "regeneração pequena confirmada: ganho líquido nos dois mapas (10 m +3,0, 30 m +2,4 pp), NDVI +0,12 nos pixels de ganho, manchas verdes novas visíveis na sobreposição"
+  },
+  "CMP-05": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Ilha do Bananal: a mancha clara de 2024 é área queimada (MapBiomas Fogo). Fogo e seca mudam a cor, mas a vegetação continua nativa."
+  },
+  "MAT-01": {
+    "status": "reserva",
+    "note": "Ganho pequeno | 2026-11-13: para a reserva — troca por casos de desmatamento claro (o acervo tinha só 7 de 50 com |Δ| ≥ 10 pp).",
+    "explanation": "São Luiz do Paraitinga: matas e pastagens de morro quase não mudaram entre 2020 e 2024. Os mapas indicam só um pequeno ganho de vegetação nativa.",
+    "audit_override": "ganho comprovado só em 0,3% dos pixels pelos dois mapas e sem regeneração visível → tipo estável, texto reescrito",
+    "kind_override": "stable_edge",
+    "name_override": "São Luiz do Paraitinga – matas e pastos de morro"
+  },
+  "MAT-02": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Mineração de ferro no Quadrilátero Ferrífero: a cava e as pilhas de rejeito cresceram sobre a vegetação nativa."
+  },
+  "MAT-03": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "A borda norte do Parque Nacional do Iguaçu: floresta protegida encostada na cidade, sem mudança."
+  },
+  "PAM-01": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Campo nativo do Pampa: a vegetação é baixa e muda de cor com a chuva, mas é nativa e se manteve."
+  },
+  "PAM-02": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "As manchas que mudam de cor são lavouras e pastagens em rotação; a vegetação nativa (matas e campos) ficou praticamente igual.",
+    "audit_override": "não é armadilha (silvicultura só +1 a +2 pp); nativa estável nos dois mapas → tipo estável",
+    "kind_override": "stable_edge",
+    "name_override": "Encruzilhada do Sul – lavouras, pastos e matas"
+  },
+  "PAN-01": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Armadilha do fogo: em 2020 grandes incêndios queimaram o Pantanal (a imagem escura). Vegetação queimada continua sendo nativa e se recupera — a mudança líquida é quase zero.",
+    "audit_override": "queimada confirmada: MapBiomas Fogo 88% do recorte queimado em 2020; nativa sem mudança nos dois mapas → armadilha do fogo",
+    "kind_override": "trap",
+    "name_override": "Poconé – Pantanal depois do fogo de 2020"
+  },
+  "PAN-02": {
+    "status": "rejeitado",
+    "note": "AUDITORIA 2026-11-13: mapas contraditórios (10 m −3,9 pp, 30 m +3,6 pp) por cheia/seca; não dá para afirmar o que mudou",
+    "explanation": "Nhecolândia: as lagoas salinas encolheram com a seca, mudando a paisagem, mas a vegetação nativa ao redor quase não mudou."
+  },
+  "GAN-01": {
+    "status": "rejeitado",
+    "note": "Ganho do MapBiomas reflete secagem de área alagada (dinâmica de cheia), não regeneração.",
+    "explanation": ""
+  },
+  "GAN-02": {
+    "status": "rejeitado",
+    "note": "Água em 2020 → vegetação em 2024: dinâmica de cheia do Pantanal, não regeneração.",
+    "explanation": ""
+  },
+  "GAN-03": {
+    "status": "rejeitado",
+    "note": "Mesma região e dinâmica de GAN-01/02.",
+    "explanation": ""
+  },
+  "GAN-04": {
+    "status": "rejeitado",
+    "note": "+26 pp no MapBiomas sem diferença visível entre as datas (provável reclassificação pasto→campo nativo).",
+    "explanation": ""
+  },
+  "CAP-AL": {
+    "status": "rejeitado",
+    "note": "Ganho pequeno | AUDITORIA 2026-11-13: regeneração não comprovada: ganho vem de \"mosaico de usos\" e o NDVI não sobe nesses pixels (−0,03)",
+    "explanation": "Maceió: bairros inteiros foram desocupados pelo afundamento do solo causado pela mineração de sal-gema. A revegetação ainda é pequena neste recorte."
+  },
+  "CAP-AM": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Borda da Reserva Florestal Adolpho Ducke, em Manaus: clareiras e areais na margem da floresta, que ficou praticamente igual."
+  },
+  "CAP-GO": {
+    "status": "aprovado",
+    "note": "Coordenada corrigida (estava em Aparecida de Goiânia)",
+    "explanation": "Goiânia: matas e cerrado entre bairros novos. A mudança é pequena neste recorte.",
+    "audit_override": "perda confirmada nos dois mapas (10 m −3,5, 30 m −1,4 pp líquidos) para pasto/mosaico/urbano; NDVI −0,20 nos pixels perdidos"
+  },
+  "CAP-MA": {
+    "status": "aprovado",
+    "note": "refeito: penalidade de divergência 10 m×30 m; cenas limpas escolhidas via preview_dates (2025 nublado → 2024)",
+    "explanation": "Perto do Porto do Itaqui, em São Luís: a ocupação já estava lá em 2020. A mata em volta perdeu só pequenos trechos até 2024 — quase tudo o que você vê ficou igual.",
+    "name_override": "São Luís – arredores do Porto do Itaqui"
+  },
+  "CAP-PE": {
+    "status": "aprovado",
+    "note": "Flag de névoa automática; inspeção visual sem fumaça aparente.",
+    "explanation": "Mata de Dois Irmãos, em Recife: floresta urbana de Mata Atlântica cercada pela cidade, sem mudança."
+  },
+  "CAP-RS": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Delta do Jacuí, em Porto Alegre: a cor do rio muda entre as datas, mas as matas e banhados ficaram estáveis."
+  },
+  "CAP-SE": {
+    "status": "rejeitado",
+    "note": "Perda pequena | AUDITORIA 2026-11-13: sem desmatamento comprovado: 10 m quase sem mudança; 30 m −5,8 pp quase todo para \"água\" (maré/mangue); NDVI subiu 0,55→0,65",
+    "explanation": ""
+  },
+  "CMP-01": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Brumadinho, perto da mina Córrego do Feijão, onde barragens da Vale se romperam em 2019. A lama desceu para o outro lado (oeste); neste recorte a vegetação nativa quase não mudou entre 2020 e 2024.",
+    "name_override": "Brumadinho – entorno da mina Córrego do Feijão"
+  },
+  "CMP-02": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Terra Indígena Trincheira/Bacajá (São Félix do Xingu/PA): uma clareira nova foi aberta na floresta e virou pasto.",
+    "name_override": "Terra Indígena Trincheira/Bacajá"
+  },
+  "PAM-03": {
+    "status": "aprovado",
+    "note": "",
+    "explanation": "Dom Pedrito: campos nativos do Pampa foram convertidos em lavoura. Campo nativo também é vegetação nativa, mesmo sem árvores."
+  },
+  "PAN-03": {
+    "status": "aprovado",
+    "note": "Recorte reposicionado (antes ~75% rio)",
+    "explanation": "Serra do Amolar: as cores mudaram entre as duas datas, mas os dois mapas MapBiomas mostram a mesma vegetação nativa em 2020 e 2024. Mudança de cor não é desmatamento.",
+    "audit_override": "estável nos dois mapas; MapBiomas Fogo: 0% queimado em 2024 → explicação antiga (queimada) era FALSA e foi reescrita",
+    "kind_override": "stable_edge",
+    "name_override": "Serra do Amolar – RPPN Acurizal"
+  },
+  "GAN-05": {
+    "status": "aprovado",
+    "note": "Mapas 10 m e 30 m divergem 13 pp",
+    "explanation": "Aqui o cerrado voltou a ocupar parte de antigas pastagens: as manchas de arbustos ficaram mais densas e contínuas.",
+    "name_override": "Vila Boa – cerrado em regeneração"
+  },
+  "GAN-06": {
+    "status": "rejeitado",
+    "note": "Mapas divergem 43 pp; mudança visível é de pasto/lavoura (estação), não de nativa.",
+    "explanation": ""
+  },
+  "GAN-07": {
+    "status": "rejeitado",
+    "note": "Mapas divergem 13 pp; padrão de plantio, ganho nativo não evidente.",
+    "explanation": ""
+  },
+  "GAN-08": {
+    "status": "rejeitado",
+    "note": "Nuvens na data 'antes'; Δ 10 m ≈ 0.",
+    "explanation": ""
+  },
+  "GAN-09": {
+    "status": "rejeitado",
+    "note": "Δ 10 m negativo (−2,5) contra +16,5 no 30 m.",
+    "explanation": ""
+  },
+  "GAN-10": {
+    "status": "reserva",
+    "note": "Ganho pequeno | 2026-11-13: para a reserva — troca por casos de desmatamento claro (o acervo tinha só 7 de 50 com |Δ| ≥ 10 pp).",
+    "explanation": "Vale do Paraíba: mata e pastos de morro ficaram praticamente nos mesmos lugares. Os mapas indicam um ganho de poucos pontos, pequeno demais para enxergar a 10 m por pixel.",
+    "audit_override": "ganho comprovado só em 0,6% dos pixels pelos dois mapas e sem regeneração visível → tipo estável, texto reescrito",
+    "kind_override": "stable_edge",
+    "name_override": "Mangaratiba – matas e pastos de morro"
+  },
+  "GAN-11": {
+    "status": "rejeitado",
+    "note": "Sem mudança relevante (Δ ≈ +1 pp); redundante com GAN-10.",
+    "explanation": ""
+  },
+  "GAN-12": {
+    "status": "rejeitado",
+    "note": "Mudança dominada por lagoas de extração de areia, não vegetação.",
+    "explanation": ""
+  },
+  "CAP-BA": {
+    "status": "aprovado",
+    "note": "flag NEVOA/FUMACA? não se confirma na imagem (QA visual 2026-11-12)",
+    "explanation": "O Parque de Pituaçu segue como uma mancha contínua de Mata Atlântica cercada pela cidade: a borda com os bairros e a avenida quase não mudou entre 2020 e 2025."
+  },
+  "CAP-RN": {
+    "status": "aprovado",
+    "note": "haze_max 0,4: dunas brancas disparam o filtro de névoa; sem fumaça no QA visual",
+    "explanation": "O Parque das Dunas é uma faixa de mata e dunas fixas colada à cidade de Natal. A linha entre o verde e os bairros ficou no mesmo lugar de 2020 a 2025."
+  },
+  "CAP-RR": {
+    "status": "aprovado",
+    "note": "janela jan–mar (estação seca de RR)",
+    "explanation": "Perto do aeroporto de Boa Vista, áreas de lavrado foram abertas — o lavrado é a savana nativa de Roraima, que parece capim e não floresta. Nem toda vegetação nativa é mata!",
+    "audit_override": "perda confirmada nos dois mapas (10 m −7,1, 30 m −2,8 pp) para área urbana; NDVI −0,21 nos pixels perdidos"
+  },
+  "CAP-PB": {
+    "status": "aprovado",
+    "note": "cenas fixadas após várias rodadas de cúmulos (SCL não marca)",
+    "explanation": "Mata do Buraquinho, floresta protegida no meio de João Pessoa. Entre 2020 e 2025 a borda com os bairros praticamente não se moveu."
+  },
+  "CER-03": {
+    "status": "aprovado",
+    "note": "recentrado na borda do parque via MapBiomas 30 m",
+    "explanation": "Na borda do Parque Nacional das Emas, o cerrado nativo encontra lavouras com marcas de pivô e plantio. A linha entre os dois ficou estável de 2020 a 2025; o que muda de cor nas lavouras é a safra, não a vegetação nativa."
+  },
+  "XTR-E05": {
+    "status": "aprovado",
+    "note": "acervo extra; modelo final fora do treino, gap 7,6 pp; mancha escura em 2020 = provável açude (persiste menor em 2025)",
+    "explanation": "Na Caatinga de Boa Viagem (CE), a mata seca, mais escura, divide o terreno com roças e pastos claros. Entre 2020 e 2025 essa fronteira ficou no mesmo lugar: a cor muda com a seca, não com a vegetação nativa."
+  },
+  "XTR-T04": {
+    "status": "aprovado",
+    "note": "acervo extra (armadilha); modelo final fora do treino, gap -10,6 pp; verificação do plantio: MapBiomas 30 m silvicultura 0→99,3%, MapBiomas 10 m Col.4 pastagem 99,4% (2020) → silvicultura 98,4% (2025), NDVI mediano 0,50→0,90 no fim de maio (seca)",
+    "explanation": "ARMADILHA! O pasto de 2020 virou um plantio fechado de árvores (silvicultura) em 2025. Ficou muito mais verde, mas árvore plantada não é vegetação nativa: a mudança de nativa aqui é praticamente zero."
+  },
+  "XTR-T02": {
+    "status": "rejeitado",
+    "note": "mapas discordam: 30 m diz 100% silvicultura em 2025, 10 m Col.4 diz 22,6% silvicultura + 77,4% mosaico de usos (classe 21); armadilha exige os dois mapas concordando",
+    "explanation": ""
+  },
+  "XTR-F02": {
+    "status": "aprovado",
+    "note": "acervo extra v2; auditoria OK (perda nos dois mapas em 100% dos pixels); modelo fora do treino −87,9 pp vs MapBiomas −100 (gap 12,1); QA visual limpo",
+    "explanation": "Altamira (PA): a floresta contínua de 2020 foi derrubada até 2025. Os dois mapas MapBiomas marcam o recorte inteiro como perda; na imagem sobram só manchas de vegetação entre as áreas abertas."
+  },
+  "XTR-B05": {
+    "status": "reserva",
+    "note": "acervo extra v2; auditoria OK (0% de mudança nos dois mapas); gap 1,2 pp; QA visual limpo | 2026-11-13: para a reserva — troca por casos de desmatamento claro (o acervo tinha só 7 de 50 com |Δ| ≥ 10 pp).",
+    "explanation": "Barra do Garças (MT): a mata e as áreas de lavoura ficaram nos mesmos lugares de 2020 a 2025. A cor das áreas abertas muda, mas a borda da vegetação nativa não se moveu."
+  },
+  "XTR-B04": {
+    "status": "reserva",
+    "note": "acervo extra v2; auditoria OK (0,1% perda / 0,2% ganho nos dois mapas); gap 2,1 pp; QA visual limpo | 2026-11-13: para a reserva — troca por casos de desmatamento claro (o acervo tinha só 7 de 50 com |Δ| ≥ 10 pp).",
+    "explanation": "Vera Cruz (RS): matas de Mata Atlântica entre lavouras em faixas. Entre 2020 e 2025 a mata ficou praticamente igual."
+  },
+  "XTR-F04": {
+    "status": "aprovado",
+    "note": "QA visual 2026-11-13: 2020 escura mas legível (vegetação densa); 2025 solo aberto. Entra no lugar de estável (equilíbrio do jogo).",
+    "explanation": "Passagem Franca (MA): a vegetação nativa de 2020 foi toda derrubada até 2025. Os dois mapas MapBiomas marcam o recorte inteiro como perda, para mosaico de usos, pastagem e lavoura."
+  },
+  "XTR-B01": {
+    "status": "reserva",
+    "note": "auditoria OK; não necessário para fechar 50",
+    "explanation": ""
+  },
+  "XTR-B02": {
+    "status": "reserva",
+    "note": "auditoria OK; não necessário",
+    "explanation": ""
+  },
+  "XTR-B03": {
+    "status": "reserva",
+    "note": "auditoria OK; não necessário",
+    "explanation": ""
+  },
+  "XTR-D06": {
+    "status": "aprovado",
+    "note": "QA visual 2026-11-13: desmate em bloco evidente; modelo -81,6 × MapBiomas -83,1.",
+    "explanation": "Santa Carmem (MT): um grande bloco de floresta amazônica, cortado por uma estrada em 2020, foi derrubado e virou área agrícola até 2025. Sobram só as faixas de mata nas bordas."
+  },
+  "XTR-D07": {
+    "status": "aprovado",
+    "note": "QA visual 2026-11-13: listras = terraços em pastagem (mapas 98% pastagem, silvicultura 0).",
+    "explanation": "Bela Vista (MS): a mata da parte de cima do recorte virou pasto. As listras verdes de 2025 são curvas de nível no pasto, não árvores plantadas: os dois mapas marcam pastagem e 0% de silvicultura. Sobrou só a mata ao longo do córrego."
+  },
+  "XTR-D11": {
+    "status": "aprovado",
+    "note": "QA visual 2026-11-13: abertura em talhões evidente; modelo -37,8 × MapBiomas -47,6.",
+    "explanation": "Cascavel (CE): no centro do recorte, a vegetação nativa foi aberta em talhões entre 2020 e 2025. Os mapas mostram a área virando lavoura, pastagem e mosaico de usos; em volta, a vegetação ficou.",
+    "name_override": "Vegetação e roças"
+  },
+  "XTR-D01": {
+    "status": "aprovado",
+    "note": "QA visual 2026-11-16 (época 1 e ÉPOCA 2, 4 imagens): sem nuvem/fumaça; perda visível; auditoria OK; |modelo v2 − MapBiomas| ≤ 10 pp.",
+    "explanation": "Mirador (MA), Cerrado: cerca de dois terços da vegetação nativa do recorte foram desmatados entre 2020 e 2025. Nos mapas, a área virou pasto e mosaico de usos agropecuários."
+  },
+  "XTR-D03": {
+    "status": "aprovado",
+    "note": "QA visual 2026-11-16 (época 1 e ÉPOCA 2, 4 imagens): sem nuvem/fumaça; perda visível; auditoria OK; |modelo v2 − MapBiomas| ≤ 10 pp.",
+    "explanation": "Novo Aripuanã (AM): metade da floresta do recorte foi derrubada e virou pasto. Na ÉPOCA 2 de 2020 (outubro) já aparece uma mancha queimada na parte de cima."
+  },
+  "XTR-D21": {
+    "status": "aprovado",
+    "note": "QA visual 2026-11-16 (época 1 e ÉPOCA 2, 4 imagens): sem nuvem/fumaça; perda visível; auditoria OK; |modelo v2 − MapBiomas| ≤ 10 pp.",
+    "explanation": "Apuí (AM): cerca de 80% da floresta do recorte virou pasto entre 2020 e 2025."
+  },
+  "XTR-D25": {
+    "status": "aprovado",
+    "note": "QA visual 2026-11-16 (época 1 e ÉPOCA 2, 4 imagens): sem nuvem/fumaça; perda visível; auditoria OK; |modelo v2 − MapBiomas| ≤ 10 pp.",
+    "explanation": "Formoso do Araguaia (TO), Cerrado: quase metade da vegetação nativa do recorte virou pasto."
+  },
+  "XTR-L23": {
+    "status": "aprovado",
+    "note": "QA visual 2026-11-16 (época 1 e ÉPOCA 2, 4 imagens): sem nuvem/fumaça; perda visível; auditoria OK; |modelo v2 − MapBiomas| ≤ 10 pp.",
+    "explanation": "Sebastião Leal (PI), Cerrado: praticamente todo o cerrado do recorte foi convertido em uso agropecuário entre 2020 e 2025."
+  },
+  "XTR-L25": {
+    "status": "aprovado",
+    "note": "QA visual 2026-11-16 (época 1 e ÉPOCA 2, 4 imagens): sem nuvem/fumaça; perda visível; auditoria OK; |modelo v2 − MapBiomas| ≤ 10 pp.",
+    "explanation": "Pilão Arcado (BA), Caatinga: mais de 80% da caatinga do recorte foi desmatada; nos mapas, virou pasto e mosaico de usos."
+  },
+  "XTR-D22": {
+    "status": "reserva",
+    "note": "QA visual 2026-11-16: nuvem com sombra na ÉPOCA 2 (2020-10-07 e 2025-10-28). Recuperável trocando as datas e retreinando."
+  },
+  "XTR-F25": {
+    "status": "reserva",
+    "note": "QA visual 2026-11-16: nuvem com sombra na ÉPOCA 2 (2025-05-13)."
+  },
+  "XTR-L22": {
+    "status": "reserva",
+    "note": "QA visual 2026-11-16: nuvem com sombra na ÉPOCA 2 (2025-05-03)."
+  },
+  "XTR-D24": {
+    "status": "reserva",
+    "note": "QA visual 2026-11-16: névoa/fumaça na foto principal de 2020-09-03."
+  },
+  "XTR-D28": {
+    "status": "reserva",
+    "note": "Auditoria 2026-11-16: NDVI não caiu onde os mapas dizem perda."
+  },
+  "XTR-L26": {
+    "status": "reserva",
+    "note": "Auditoria 2026-11-16: NDVI não caiu onde os mapas dizem perda."
+  },
+  "GAN-21": {
+    "status": "rejeitado",
+    "note": "2026-11-16: teste de restauração documentada (REGUA/Projeto Guapiaçu, Cachoeiras de Macacu/RJ; 60 ha plantados até 2019 segundo a Agência Brasil, 223 ha até 2020 segundo novamata.org; sede via OSM). Melhor recorte de 2,4 km num raio de 6 km: MapBiomas +1,7 pp (10 m) / +1,9 pp (30 m); sem diferença visível 2020→2025. Plantios até 2019 já estavam verdes em 2020 e são pequenos perto de 576 ha."
+  },
+  "XTR-T03": {
+    "status": "aprovado",
+    "kind_override": "trap",
+    "name_override": "Chapadões rurais",
+    "note": "QA visual 2026-11-16 (4 imagens, sem nuvem): pasto em 2020, talhões geométricos de árvores plantadas em 2025.",
+    "audit_override": "Os dois mapas concordam que não havia nem há vegetação nativa (pastagem 100% em 2020 nos dois); divergem só no nome do plantio novo (30 m: silvicultura 99%; 10 m: mosaico de usos 64%, silvicultura 12%). NDVI subiu 0,5 nos pixels de plantio. Mudança de nativa ≈ 0 nos dois mapas.",
+    "explanation": "ARMADILHA! Em 2020 o recorte era pasto. Em 2025 está todo coberto de talhões de árvores plantadas, em fileiras retas (silvicultura, segundo o MapBiomas 30 m). Ficou muito mais verde, mas árvore plantada não é vegetação nativa: a mudança de nativa aqui é praticamente zero."
+  },
+  "XTR-T01": {
+    "status": "reserva",
+    "note": "2026-11-16: modelo v2 +29,7 pp × MapBiomas 0 pp — o modelo cai na armadilha; fora pela regra de justiça."
+  },
+  "XTR-R07": {
+    "status": "aprovado",
+    "note": "QA visual 2026-11-16 (época 1 e ÉPOCA 2, 4 imagens): sem nuvem/fumaça; auditoria OK (regeneração nos dois mapas, NDVI subiu); |modelo v2 − MapBiomas 10 m| ≤ 10 pp. Par 2018×2025: a coleção Sentinel-2 L2A c1 (Earth Search) não tem 2017. Origem do ganho: 10 m 'outras áreas não vegetadas' 100%, 30 m 'mineração' 100% → formação florestal. Centro dentro da Flona Saracá-Taquera (WDPA).",
+    "explanation": "Oriximiná (PA), dentro da Floresta Nacional Saracá-Taquera: cerca de 35% do recorte era área de mineração de bauxita em 2018 (solo exposto, em quadras) e virou floresta em 2025 nos dois mapas. A Mineração Rio do Norte informa reflorestar com espécies nativas as áreas já lavradas. A estrada nova é uma pequena perda (cerca de 3%)."
+  },
+  "XTR-R23": {
+    "status": "aprovado",
+    "note": "QA visual 2026-11-16 (época 1 e ÉPOCA 2, 4 imagens): sem nuvem/fumaça; auditoria OK (regeneração nos dois mapas, NDVI subiu); |modelo v2 − MapBiomas 10 m| ≤ 10 pp. Par 2018×2025: a coleção Sentinel-2 L2A c1 (Earth Search) não tem 2017. Origem do ganho (10 m): mosaico de usos 61%, pastagem 39% → formação florestal 100%.",
+    "explanation": "Juara (MT), Amazônia: cerca de 40% do recorte queimou em 2017 (MapBiomas Fogo). Em 2018, cerca de um terço estava como pasto e mosaico de usos; em 2025, virou floresta nos dois mapas. Repare na ÉPOCA 2: as manchas de solo de 2018 sumiram sob a mata."
+  },
+  "XTR-R49": {
+    "status": "aprovado",
+    "note": "QA visual 2026-11-16 (época 1 e ÉPOCA 2, 4 imagens): sem nuvem/fumaça; auditoria OK (regeneração nos dois mapas, NDVI subiu); |modelo v2 − MapBiomas 10 m| ≤ 10 pp. Par 2018×2025: a coleção Sentinel-2 L2A c1 (Earth Search) não tem 2017. Origem do ganho (10 m): pastagem 73%, mosaico de usos 27% → formação florestal 95%.",
+    "explanation": "Senador La Rocque (MA), Amazônia: cerca de 22% do recorte era pasto e mosaico de usos em 2018 e virou floresta em 2025 nos dois mapas. A mudança é sutil: as clareiras e trilhas claras de 2018 ficaram cobertas."
+  },
+  "XTR-R03": {
+    "status": "aprovado",
+    "note": "QA visual 2026-11-16 (época 1 e ÉPOCA 2, 4 imagens): sem nuvem/fumaça; auditoria OK (regeneração nos dois mapas, NDVI subiu); |modelo v2 − MapBiomas 10 m| ≤ 10 pp. Par 2018×2025: a coleção Sentinel-2 L2A c1 (Earth Search) não tem 2017. Ganho pequeno (10 m +6 pp, 30 m +8 pp): mosaico de usos → formação florestal nas bordas da mata.",
+    "explanation": "Gaúcha do Norte (MT): a faixa de mata ficou praticamente igual; os mapas registram só um pequeno ganho de floresta nas bordas (cerca de 6%). Em 2018, cerca de 40% do recorte tinha queimado (MapBiomas Fogo). O que ficou verde à esquerda é área de uso agropecuário, não vegetação nativa — verde não é sinônimo de mata."
+  },
+  "XTR-R17": {
+    "status": "reserva",
+    "note": "QA visual 2026-11-16: OK (regeneração clara, 35% pasto/mosaico → floresta). Fora do jogo pelo portão de justiça: modelo v2 +44,7 × MapBiomas 10 m +34,5 (diferença 10,2 > 10 pp)."
+  },
+  "XTR-R45": {
+    "status": "reserva",
+    "note": "QA visual 2026-11-16: ÉPOCA 2 trocada (nuvens em 2025-06-27 e 2018-06-09). Fora pelo portão de justiça: modelo v2 +27,5 × MapBiomas 10 m +47,9 (−20,4 pp)."
+  },
+  "XTR-R56": {
+    "status": "rejeitado",
+    "note": "2026-11-16: mapas dizem pasto → floresta (+31 pp), mas o NDVI não subiu (−0,01); só a textura muda. O jogador não teria como inferir a resposta."
+  },
+  "XTR-R04": {
+    "status": "reserva",
+    "note": "2026-11-16: candidato de regeneração 2018×2025 sem ÉPOCA 2 limpa (arquivo Sentinel-2 de 2018 tem poucas cenas limpas). Fora do jogo."
+  },
+  "XTR-R05": {
+    "status": "reserva",
+    "note": "2026-11-16: candidato de regeneração 2018×2025 sem ÉPOCA 2 limpa (arquivo Sentinel-2 de 2018 tem poucas cenas limpas). Fora do jogo."
+  },
+  "XTR-R10": {
+    "status": "reserva",
+    "note": "2026-11-16: candidato de regeneração 2018×2025 sem ÉPOCA 2 limpa (arquivo Sentinel-2 de 2018 tem poucas cenas limpas). Fora do jogo."
+  },
+  "XTR-R13": {
+    "status": "reserva",
+    "note": "2026-11-16: candidato de regeneração 2018×2025 sem ÉPOCA 2 limpa (arquivo Sentinel-2 de 2018 tem poucas cenas limpas). Fora do jogo."
+  },
+  "XTR-R20": {
+    "status": "reserva",
+    "note": "2026-11-16: candidato de regeneração 2018×2025 sem ÉPOCA 2 limpa (arquivo Sentinel-2 de 2018 tem poucas cenas limpas). Fora do jogo."
+  },
+  "XTR-R25": {
+    "status": "reserva",
+    "note": "2026-11-16: candidato de regeneração 2018×2025 sem ÉPOCA 2 limpa (arquivo Sentinel-2 de 2018 tem poucas cenas limpas). Fora do jogo."
+  },
+  "XTR-R32": {
+    "status": "reserva",
+    "note": "2026-11-16: candidato de regeneração 2018×2025 sem ÉPOCA 2 limpa (arquivo Sentinel-2 de 2018 tem poucas cenas limpas). Fora do jogo."
+  },
+  "XTR-R46": {
+    "status": "reserva",
+    "note": "2026-11-16: candidato de regeneração 2018×2025 sem ÉPOCA 2 limpa (arquivo Sentinel-2 de 2018 tem poucas cenas limpas). Fora do jogo."
+  },
+  "XTR-R47": {
+    "status": "reserva",
+    "note": "2026-11-16: candidato de regeneração 2018×2025 sem ÉPOCA 2 limpa (arquivo Sentinel-2 de 2018 tem poucas cenas limpas). Fora do jogo."
+  },
+  "XTR-R69": {
+    "status": "reserva",
+    "note": "2026-11-16: candidato de regeneração 2018×2025 sem ÉPOCA 2 limpa (arquivo Sentinel-2 de 2018 tem poucas cenas limpas). Fora do jogo."
+  },
+  "XTR-R71": {
+    "status": "reserva",
+    "note": "2026-11-16: candidato de regeneração 2018×2025 sem ÉPOCA 2 limpa (arquivo Sentinel-2 de 2018 tem poucas cenas limpas). Fora do jogo."
+  },
+  "XTR-R75": {
+    "status": "reserva",
+    "note": "2026-11-16: candidato de regeneração 2018×2025 sem ÉPOCA 2 limpa (arquivo Sentinel-2 de 2018 tem poucas cenas limpas). Fora do jogo."
+  },
+  "XTR-R78": {
+    "status": "reserva",
+    "note": "2026-11-16: candidato de regeneração 2018×2025 sem ÉPOCA 2 limpa (arquivo Sentinel-2 de 2018 tem poucas cenas limpas). Fora do jogo."
+  },
+  "XTR-R80": {
+    "status": "reserva",
+    "note": "2026-11-16: candidato de regeneração 2018×2025 sem ÉPOCA 2 limpa (arquivo Sentinel-2 de 2018 tem poucas cenas limpas). Fora do jogo."
+  }
+}

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "XTR-F01",
+    "name": "Floresta e áreas abertas, Uruará/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -53.73,
+    "lat": -3.1124,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-F02",
+    "name": "Floresta e áreas abertas, Altamira/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -53.5572,
+    "lat": -5.6828,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-F03",
+    "name": "Floresta e áreas abertas, Santana do Araguaia/PA",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -50.2308,
+    "lat": -9.4884,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-F04",
+    "name": "Floresta e áreas abertas, Passagem Franca/MA",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -43.5916,
+    "lat": -6.1404,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.08, silvicultura 0.00→0.00, aberta 0.05→0.00"
+  },
+  {
+    "id": "XTR-F05",
+    "name": "Floresta e áreas abertas, Cáceres/MT",
+    "group": "extra",
+    "biome": "Pantanal",
+    "lon": -57.6652,
+    "lat": -17.0996,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_loss): célula ~2,4 km MapBiomas 30 m — nativa 0.99→0.34, silvicultura 0.00→0.00, aberta 0.04→0.01"
+  },
+  {
+    "id": "XTR-F06",
+    "name": "Floresta e áreas abertas, Mundo Novo/MS",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -54.2092,
+    "lat": -23.998,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_loss): célula ~2,4 km MapBiomas 30 m — nativa 0.83→0.41, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-B01",
+    "name": "Floresta e áreas abertas, Coqueiro Baixo/RS",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -52.1532,
+    "lat": -29.1644,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (forest_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.50→0.50, silvicultura 0.29→0.30, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-B02",
+    "name": "Floresta e áreas abertas, Marcelândia/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -54.3388,
+    "lat": -10.8964,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (forest_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.50→0.51, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-B03",
+    "name": "Floresta e áreas abertas, Vila Rica/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -51.7644,
+    "lat": -10.0756,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (forest_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.50→0.49, silvicultura 0.03→0.03, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-B04",
+    "name": "Floresta e áreas abertas, Vera Cruz/RS",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -52.542,
+    "lat": -29.6828,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (forest_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.50→0.50, silvicultura 0.02→0.02, aberta 0.01→0.00"
+  },
+  {
+    "id": "XTR-B05",
+    "name": "Floresta e áreas abertas, Barra do Garças/MT",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -52.2828,
+    "lat": -15.674,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (forest_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.50→0.49, silvicultura 0.00→0.00, aberta 0.01→0.01"
+  },
+  {
+    "id": "XTR-B06",
+    "name": "Floresta e áreas abertas, Bataguassu/MS",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -52.974,
+    "lat": -21.8124,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (forest_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.50→0.50, silvicultura 0.00→0.00, aberta 0.02→0.02"
+  }
+]

@@ -1,0 +1,443 @@
+[
+  {
+    "id": "XTR-R03",
+    "name": "Floresta e áreas abertas, Gaúcha do Norte/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -53.946,
+    "lat": -13.2076,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.18→0.78, silvicultura 0.00→0.00, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R04",
+    "name": "Floresta e áreas abertas, Almeirim/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -52.8012,
+    "lat": -0.862,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.35→0.90, silvicultura 0.09→0.09, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R05",
+    "name": "Floresta e áreas abertas, Itaituba/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -55.9588,
+    "lat": -3.9332,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.46→0.98, silvicultura 0.00→0.00, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R07",
+    "name": "Floresta e áreas abertas, Oriximiná/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -56.4988,
+    "lat": -1.7476,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.24→0.68, silvicultura 0.00→0.00, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R10",
+    "name": "Floresta e áreas abertas, Rorainópolis/RR",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -60.4556,
+    "lat": 0.0452,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.58→0.99, silvicultura 0.00→0.00, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R13",
+    "name": "Floresta e áreas abertas, Comodoro/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -60.218,
+    "lat": -13.4236,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.10→0.48, silvicultura 0.00→0.00, aberta 0.03→0.03 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R17",
+    "name": "Floresta e áreas abertas, Itaituba/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -56.65,
+    "lat": -7.3716,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.47→0.83, silvicultura 0.00→0.00, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R20",
+    "name": "Floresta e áreas abertas, Itaúba/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -55.57,
+    "lat": -11.2204,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.40→0.75, silvicultura 0.00→0.00, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R23",
+    "name": "Floresta e áreas abertas, Juara/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -58.1444,
+    "lat": -10.5292,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.45→0.78, silvicultura 0.00→0.00, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R25",
+    "name": "Floresta e áreas abertas, Castilho/SP",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -51.4836,
+    "lat": -20.7324,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.03→0.32, silvicultura 0.00→0.00, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R32",
+    "name": "Floresta e áreas abertas, Bom Jardim/MA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -46.9436,
+    "lat": -4.1492,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.15→0.90, silvicultura 0.00→0.00, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R45",
+    "name": "Floresta e áreas abertas, Codó/MA",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -43.894,
+    "lat": -4.8404,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.39→0.79, silvicultura 0.00→0.00, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R46",
+    "name": "Floresta e áreas abertas, Careiro da Várzea/AM",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -59.8508,
+    "lat": -3.35,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.37→0.77, silvicultura 0.00→0.00, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R47",
+    "name": "Floresta e áreas abertas, Zé Doca/MA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -45.9676,
+    "lat": -3.2204,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.48→0.88, silvicultura 0.00→0.00, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R49",
+    "name": "Floresta e áreas abertas, Senador La Rocque/MA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -47.0084,
+    "lat": -5.3804,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.34→0.73, silvicultura 0.00→0.00, aberta 0.00→0.02 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R56",
+    "name": "Floresta e áreas abertas, São José do Xingu/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -52.3908,
+    "lat": -10.9612,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.30→0.64, silvicultura 0.00→0.00, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R69",
+    "name": "Floresta e áreas abertas, Jacinto/MG",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -40.3476,
+    "lat": -16.0412,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.38→0.62, silvicultura 0.00→0.00, aberta 0.04→0.03 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R71",
+    "name": "Floresta e áreas abertas, Cardeal da Silva/BA",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -37.946,
+    "lat": -12.0844,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.19→0.43, silvicultura 0.04→0.06, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R75",
+    "name": "Floresta e áreas abertas, Capela/AL",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -36.1532,
+    "lat": -9.2508,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.15→0.37, silvicultura 0.00→0.00, aberta 0.04→0.05 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R78",
+    "name": "Floresta e áreas abertas, Mata de São João/BA",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -38.274,
+    "lat": -12.5596,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.13→0.33, silvicultura 0.00→0.00, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  },
+  {
+    "id": "XTR-R80",
+    "name": "Floresta e áreas abertas, Conde/BA",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -37.5788,
+    "lat": -11.8252,
+    "mode": "gain",
+    "years": [
+      2018,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.32→0.52, silvicultura 0.02→0.02, aberta 0.01→0.01 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025"
+  }
+]

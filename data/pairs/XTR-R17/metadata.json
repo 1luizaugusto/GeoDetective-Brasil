@@ -1,0 +1,266 @@
+{
+  "challenge_id": "XTR-R17",
+  "name": "Floresta e áreas abertas, Itaituba/PA",
+  "group": "extra",
+  "biome": "Amazônia",
+  "mode": "gain",
+  "selection_hypothesis": "ganho",
+  "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.47→0.83, silvicultura 0.00→0.00, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025",
+  "years": [
+    2018,
+    2025
+  ],
+  "target_definition": "vegetação nativa (MapBiomas: Floresta + Vegetação Herbácea e Arbustiva); silvicultura, agricultura e pastagem = não-alvo",
+  "search_center_lonlat": [
+    -56.65,
+    -7.3716
+  ],
+  "center_lonlat": [
+    -56.65332,
+    -7.374828
+  ],
+  "aoi": {
+    "crs": "EPSG:32721",
+    "bounds_utm": [
+      537060.0,
+      9183600.0,
+      539460.0,
+      9186000.0
+    ],
+    "size_m": 2400,
+    "bbox_lonlat": [
+      -56.664202,
+      -7.385691,
+      -56.642438,
+      -7.363965
+    ],
+    "pixel_size_m": 10.0,
+    "shape": [
+      240,
+      240
+    ]
+  },
+  "crop_selection": {
+    "mode": "gain",
+    "search_size_m": 8000,
+    "offset_px": [
+      246,
+      318
+    ],
+    "based_on": "máscaras MapBiomas (nativa 10 m + 30 m; silvicultura 30 m)"
+  },
+  "display": {
+    "zoom_factor": 3,
+    "resampling": "Lanczos (sem super-resolução)",
+    "game_image_px": 720,
+    "tone": {
+      "bands": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "black": 0.0033999979496002197,
+      "white": 0.1267999902367592,
+      "gamma": 0.5966,
+      "saturation": 1.12,
+      "percentiles": [
+        0.5,
+        99.0
+      ],
+      "target_mid": 0.36,
+      "scope": "par (duas datas juntas)"
+    }
+  },
+  "images": [
+    {
+      "earth_search_id": "S2B_T21MWM_20180709T141044_L2A",
+      "datetime_utc": "2018-07-09T14:14:40.971000+00:00",
+      "platform": "sentinel-2b",
+      "mgrs_tile": "21MWM",
+      "relative_orbit": 110,
+      "processing_baseline": "05.00",
+      "esa_product_uri": "S2B_MSIL2A_20180709T141049_N0500_R110_T21MWM_20230712T201522.SAFE",
+      "tile_cloud_cover_pct": 1.211041,
+      "sun_elevation_deg": 51.7625887868203,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T21MWM_20180709T141044_L2A",
+      "search_valid_fraction_scl": 0.9999,
+      "search_haze_fraction": 0.0,
+      "crop_valid_fraction_scl": 1.0,
+      "crop_haze_fraction": 0.0,
+      "cdse_product_id": "S2B_MSIL2A_20180709T141049_N0500_R110_T21MWM_20230712T201522",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20180709T141049_N0500_R110_T21MWM_20230712T201522",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.37483&lng=-56.65332&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2018-07-09T00%3A00%3A00.000Z&toTime=2018-07-09T23%3A59%3A59.999Z"
+    },
+    {
+      "earth_search_id": "S2A_T21MWM_20250709T141104_L2A",
+      "datetime_utc": "2025-07-09T14:15:01.220000+00:00",
+      "platform": "sentinel-2a",
+      "mgrs_tile": "21MWM",
+      "relative_orbit": 110,
+      "processing_baseline": "05.11",
+      "esa_product_uri": "S2A_MSIL2A_20250709T141101_N0511_R110_T21MWM_20250709T203712.SAFE",
+      "tile_cloud_cover_pct": 0.00084,
+      "sun_elevation_deg": 51.829613022645,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2A_T21MWM_20250709T141104_L2A",
+      "search_valid_fraction_scl": 1.0,
+      "search_haze_fraction": 0.0,
+      "crop_valid_fraction_scl": 1.0,
+      "crop_haze_fraction": 0.0,
+      "cdse_product_id": "S2A_MSIL2A_20250709T141101_N0511_R110_T21MWM_20250709T203712",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20250709T141101_N0511_R110_T21MWM_20250709T203712",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.37483&lng=-56.65332&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-07-09T00%3A00%3A00.000Z&toTime=2025-07-09T23%3A59%3A59.999Z"
+    }
+  ],
+  "doy_difference_days": 0,
+  "same_mgrs_tile": true,
+  "same_relative_orbit": true,
+  "bands_10m_stack": [
+    "blue(B02)",
+    "green(B03)",
+    "red(B04)",
+    "rededge1(B05)",
+    "rededge2(B06)",
+    "rededge3(B07)",
+    "nir(B08)",
+    "nir08(B8A)",
+    "swir16(B11)",
+    "swir22(B12)"
+  ],
+  "reference_mapbiomas": {
+    "source": "MapBiomas Brasil — Col. 4 (10 m, Sentinel-2) e Col. 11 (30 m, Landsat), via Google Earth Engine",
+    "assets": {
+      "10m": "projects/mapbiomas-public/assets/brazil/lulc_10m/collection4/mapbiomas_10m_collection4_coverage_v1",
+      "30m": "projects/mapbiomas-public/assets/brazil/lulc/collection11/mapbiomas_brazil_collection11_coverage_v3"
+    },
+    "native_classes_col11": [
+      3,
+      6,
+      4,
+      7,
+      5,
+      49,
+      12,
+      77,
+      11,
+      84,
+      50,
+      32,
+      29
+    ],
+    "native_pct_10m_2018": 53.63,
+    "native_pct_10m_2025": 88.16,
+    "delta_pp_10m": 34.53,
+    "native_pct_30m_2018": 51.01,
+    "native_pct_30m_2025": 85.26,
+    "delta_pp_30m": 34.25,
+    "silviculture_pct_30m_2018": 0.0,
+    "silviculture_pct_30m_2025": 0.0,
+    "note": "Referência independente para validar o modelo; não é verdade absoluta (MapBiomas também tem erros)."
+  },
+  "model_estimate": {
+    "model": "rf_native_v2",
+    "method": "out-of-fold (GroupKFold espacial), duas estações por ano",
+    "fold": 1,
+    "native_pct_a": 50.05,
+    "native_pct_b": 94.78,
+    "delta_pp": 44.74,
+    "computed_utc": "2026-11-17T03:50:14.426819+00:00"
+  },
+  "qa": {
+    "auto_flags": [],
+    "visual": "pendente"
+  },
+  "license": "Copernicus Sentinel Data Legal Notice; MapBiomas CC-BY 4.0",
+  "attribution": "Contains modified Copernicus Sentinel data 2018, 2025; MapBiomas Brasil Col. 4 e 11",
+  "generated_utc": "2026-11-17T02:44:52.115112+00:00",
+  "season2": {
+    "status": "ok",
+    "images": [
+      {
+        "earth_search_id": "S2A_T21MWM_20180902T141232_L2A",
+        "datetime_utc": "2018-09-02T14:14:40.153000+00:00",
+        "platform": "sentinel-2a",
+        "mgrs_tile": "21MWM",
+        "relative_orbit": null,
+        "processing_baseline": "05.00",
+        "esa_product_uri": "S2A_MSIL2A_20180902T141041_N0500_R110_T21MWM_20230827T043945.SAFE",
+        "tile_cloud_cover_pct": 0.36463,
+        "sun_elevation_deg": 62.5199399219735,
+        "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2A_T21MWM_20180902T141232_L2A",
+        "crop_valid_fraction_scl": 1.0,
+        "cdse_product_id": "S2A_MSIL2A_20180902T141041_N0500_R110_T21MWM_20230827T043945",
+        "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.37483&lng=-56.65332&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2018-09-02T00%3A00%3A00.000Z&toTime=2018-09-02T23%3A59%3A59.999Z"
+      },
+      {
+        "earth_search_id": "S2C_T21MWM_20250826T141249_L2A",
+        "datetime_utc": "2025-08-26T14:15:01.674000+00:00",
+        "platform": "sentinel-2c",
+        "mgrs_tile": "21MWM",
+        "relative_orbit": null,
+        "processing_baseline": "05.11",
+        "esa_product_uri": "S2C_MSIL2A_20250826T141101_N0511_R110_T21MWM_20250826T173713.SAFE",
+        "tile_cloud_cover_pct": 2.65983,
+        "sun_elevation_deg": 60.7858637303449,
+        "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2C_T21MWM_20250826T141249_L2A",
+        "crop_valid_fraction_scl": 1.0,
+        "cdse_product_id": "S2C_MSIL2A_20250826T141101_N0511_R110_T21MWM_20250826T173713",
+        "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.37483&lng=-56.65332&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-08-26T00%3A00%3A00.000Z&toTime=2025-08-26T23%3A59%3A59.999Z"
+      }
+    ],
+    "doy_difference_days": 7,
+    "ndvi_gain_vs_primary": [
+      0.005,
+      -0.038
+    ],
+    "ndvi_crop": {
+      "season2": [
+        0.76,
+        0.838
+      ],
+      "primary": [
+        0.755,
+        0.876
+      ]
+    },
+    "rule": "par mais verde em comum: entre datas limpas (cobertura 100%, SCL válido ≥ 99,9%, névoa ≤ 0,006, s2cloudless ≤ 0,2%) do mesmo ano civil, a ≥ 45 dias da data principal e com ≤ 30 dias de diferença de dia do ano entre os anos, maximiza o menor NDVI médio do recorte",
+    "display_tone": {
+      "bands": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "black": 0.008699998259544373,
+      "white": 0.13069999665021897,
+      "gamma": 0.651,
+      "saturation": 1.12,
+      "percentiles": [
+        0.5,
+        99.0
+      ],
+      "target_mid": 0.36,
+      "scope": "par (duas datas juntas)"
+    }
+  },
+  "verification": {
+    "aligned_identical_grid": true,
+    "grid": [
+      "EPSG:32721",
+      [
+        10.0,
+        0.0,
+        537060.0,
+        0.0,
+        -10.0,
+        9186000.0
+      ],
+      240,
+      240
+    ],
+    "ibge_location_of_center": {
+      "ibge_municipio_codigo": "1503606",
+      "municipio": "Itaituba",
+      "uf": "PA"
+    },
+    "cdse_products_found": true
+  }
+}

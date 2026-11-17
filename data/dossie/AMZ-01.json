@@ -1,0 +1,102 @@
+{
+ "id": "AMZ-01",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "Houve perda de vegetação nativa entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 43.1 pp e ganho 0.1 pp (líquido -43,0 pp); MapBiomas 30 m: perda 44.4 pp e ganho 0.0 pp (líquido -44,4 pp). NDVI mediano das imagens: 0.89→0.70. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.22 (vegetação a menos).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-07-20 — S2A_MSIL2A_20200720T140101_N0500_R067_T21MXN_20230614T011838",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.12470&lng=-55.56582&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-20T00%3A00%3A00.000Z&toTime=2020-07-20T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-07-19 — S2A_MSIL2A_20240719T135701_N0510_R067_T21MXN_20240719T193907",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.12470&lng=-55.56582&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-07-19T00%3A00%3A00.000Z&toTime=2024-07-19T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Destino da vegetação nativa perdida.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Pastagem 96%; Mosaico de Usos 3%; Outras não Vegetadas 1%. Mapa 30 m: Pastagem 78%; Mosaico de Usos 22%; Rio/Lago/Oceano 0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Houve fogo registrado no recorte.",
+   "veredito": "comprovado",
+   "porque": "Área queimada (MapBiomas Fogo): 2023: 8% do recorte. Fogo muda a cor da imagem; vegetação nativa queimada continua nativa.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Novo Progresso/PA, bioma Amazônia.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 1505031) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 1505031",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/1505031"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Versão anterior: 'desmatamento ao longo da BR-163'.",
+   "veredito": "corrigido",
+   "porque": "O centro do recorte fica a cerca de 19 km a oeste da sede de Novo Progresso; não conferimos que o recorte esteja no eixo da rodovia, então o nome da estrada saiu. O que é certo: 96% da floresta perdida virou pastagem (mapa 10 m).",
+   "fontes": []
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.4,
+  "2023": 8.2,
+  "2024": 1.5
+ },
+ "areas_protegidas": []
+}

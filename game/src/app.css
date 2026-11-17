@@ -1,0 +1,133 @@
+@import "@fontsource/press-start-2p/400.css";
+@import "@fontsource/vt323/400.css";
+
+/* Paleta 16 cores, estética de console/PC dos anos 90 (original) */
+:root {
+  --night: #0a0d24;
+  --navy: #141a46;
+  --panel: #1d2766;
+  --panel-2: #26338a;
+  --ink: #f4efd6;
+  --dim: #a7a9d6;
+  --line-hi: #f4efd6;
+  --line-lo: #5b63b8;
+  --gold: #ffd23f;
+  --gold-dk: #b88a00;
+  --red: #ff5a4f;
+  --red-dk: #a3221b;
+  --green: #45e07c;
+  --green-dk: #128a3c;
+  --cyan: #5ce1e6;
+  --magenta: #e05cc4;
+  --shadow: #04050f;
+  --px: "Press Start 2P", monospace;
+  --txt: "VT323", monospace;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--night); color: var(--ink); }
+body {
+  font-family: var(--txt);
+  font-size: 22px;
+  line-height: 1.15;
+  min-height: 100vh;
+  /* grade de "fase" ao fundo */
+  background:
+    linear-gradient(rgb(92 225 230 / 0.05) 1px, transparent 1px) 0 0 / 32px 32px,
+    linear-gradient(90deg, rgb(92 225 230 / 0.05) 1px, transparent 1px) 0 0 / 32px 32px,
+    radial-gradient(ellipse at 50% 0%, #1b2370 0%, var(--night) 70%);
+  background-attachment: fixed;
+}
+/* scanlines de CRT por cima de tudo (não captura cliques) */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  background: repeating-linear-gradient(to bottom, rgb(0 0 0 / 0.18) 0 1px, transparent 1px 3px);
+  mix-blend-mode: multiply;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+a { color: var(--cyan); }
+button { font: inherit; color: inherit; cursor: pointer; }
+h1, h2, h3 { font-family: var(--px); font-weight: 400; line-height: 1.5; margin: 0 0 0.6em; letter-spacing: 0.02em; }
+h1 { font-size: 22px; }
+h2 { font-size: 14px; color: var(--gold); }
+h3 { font-size: 11px; color: var(--cyan); }
+p { margin: 0 0 0.6em; }
+
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+
+/* Janela de diálogo com borda dupla em pixel */
+.win {
+  position: relative;
+  background: linear-gradient(var(--panel), var(--navy));
+  padding: 18px 20px;
+  border: 4px solid var(--line-hi);
+  box-shadow:
+    inset 0 0 0 4px var(--line-lo),
+    inset 0 0 0 6px var(--shadow),
+    6px 6px 0 0 var(--shadow);
+  image-rendering: pixelated;
+}
+.win > .win-title {
+  position: absolute;
+  top: -14px;
+  left: 16px;
+  background: var(--line-hi);
+  color: var(--night);
+  font-family: var(--px);
+  font-size: 10px;
+  padding: 5px 8px 4px;
+}
+
+/* Botão "cartucho": sombra dura, afunda 3 px ao clicar */
+.pbtn {
+  font-family: var(--px);
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px 12px;
+  background: var(--panel-2);
+  color: var(--ink);
+  border: 3px solid var(--line-hi);
+  box-shadow: 4px 4px 0 var(--shadow);
+  transition: transform 60ms steps(1), box-shadow 60ms steps(1);
+}
+.pbtn::before { content: "▶"; color: transparent; font-size: 10px; }
+.pbtn:hover::before, .pbtn:focus-visible::before { color: var(--gold); animation: blink 0.6s steps(1) infinite; }
+.pbtn:active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--shadow); }
+.pbtn.gold { background: var(--gold); color: var(--night); border-color: var(--ink); }
+.pbtn.gold:hover::before, .pbtn.gold:focus-visible::before { color: var(--red-dk); }
+.pbtn.small { font-size: 9px; padding: 9px 12px 7px; }
+.pbtn:disabled { opacity: 0.4; cursor: not-allowed; }
+:focus-visible { outline: 3px dashed var(--gold); outline-offset: 3px; }
+
+.blink { animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+.lbl { font-family: var(--px); font-size: 9px; color: var(--dim); text-transform: uppercase; letter-spacing: 0.05em; }
+.dim { color: var(--dim); }
+.pos { color: var(--green); }
+.neg { color: var(--red); }
+.gold-t { color: var(--gold); }
+
+/* moldura de "monitor" para imagens de satélite (as imagens NÃO são pixeladas: são dados) */
+.screen {
+  position: relative;
+  border: 4px solid var(--shadow);
+  box-shadow: 0 0 0 3px var(--line-lo), 0 0 0 7px var(--shadow), 6px 6px 0 7px var(--shadow);
+  background: #000;
+}
+
+/* Opções: efeito TV desligado */
+html.no-crt body::after { display: none; }

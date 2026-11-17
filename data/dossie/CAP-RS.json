@@ -1,0 +1,154 @@
+{
+ "id": "CAP-RS",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 1.1 pp e ganho 0.1 pp (líquido -1,0 pp); MapBiomas 30 m: perda 0.7 pp e ganho 0.2 pp (líquido -0,5 pp). NDVI mediano das imagens: 0.80→0.72. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-11-23 — S2B_MSIL2A_20201123T133229_N0500_R081_T22JDM_20230411T040835",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-29.98814&lng=-51.26146&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-11-23T00%3A00%3A00.000Z&toTime=2020-11-23T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-11-14 — S2A_MSIL2A_20241114T132231_N0511_R038_T22JDM_20241114T165350",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-29.98814&lng=-51.26146&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-11-14T00%3A00%3A00.000Z&toTime=2024-11-14T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 23/11/2020 e 14/11/2024 (9 dias de diferença no calendário). Época 2: 07/04/2020 e 18/04/2024 (11 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,64 → 0,53; época 2 0,59 → 0,64.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-11-23 — S2B_MSIL2A_20201123T133229_N0500_R081_T22JDM_20230411T040835",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-29.98814&lng=-51.26146&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-11-23T00%3A00%3A00.000Z&toTime=2020-11-23T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-11-14 — S2A_MSIL2A_20241114T132231_N0511_R038_T22JDM_20241114T165350",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-29.98814&lng=-51.26146&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-11-14T00%3A00%3A00.000Z&toTime=2024-11-14T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-04-07 — S2B_MSIL2A_20200407T133219_N0500_R081_T22JDM_20230418T024138",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-29.98814&lng=-51.26146&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-04-07T00%3A00%3A00.000Z&toTime=2020-04-07T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-04-18 — S2A_MSIL2A_20240418T132241_N0510_R038_T22JDM_20240418T182952",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-29.98814&lng=-51.26146&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-04-18T00%3A00%3A00.000Z&toTime=2024-04-18T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: -3,2 pp; MapBiomas 10 m: -1,0 pp; diferença 2.2 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 0%; 2023: 0%; 2024: 0% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Área De Proteção Ambiental Estadual Delta Do Jacuí (Área de Proteção Ambiental, criada em 2005).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 100% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555682099"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Parque Estadual Do Delta Do Jacuí (Parque, criada em 1976).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 68% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555682226"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Porto Alegre/RS, bioma Pampa.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 4314902) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 4314902",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/4314902"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Versão anterior: 'o rio muda de cor com o sedimento'.",
+   "veredito": "corrigido",
+   "porque": "Não medimos sedimento. O texto agora diz só que a cor da água muda.",
+   "fontes": []
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "areas_protegidas": [
+  {
+   "nome": "Área De Proteção Ambiental Estadual Delta Do Jacuí",
+   "tipo": "Área de Proteção Ambiental",
+   "ano": 2005,
+   "site_id": 555682099,
+   "frac": 1.0
+  },
+  {
+   "nome": "Parque Estadual Do Delta Do Jacuí",
+   "tipo": "Parque",
+   "ano": 1976,
+   "site_id": 555682226,
+   "frac": 0.6828483195774667
+  }
+ ]
+}

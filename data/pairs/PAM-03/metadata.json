@@ -1,0 +1,275 @@
+{
+  "challenge_id": "PAM-03",
+  "name": "Dom Pedrito – conversão de campo em lavoura, Dom Pedrito/RS",
+  "group": "bioma",
+  "biome": "Pampa",
+  "mode": "loss",
+  "selection_hypothesis": "perda (campo nativo)",
+  "notes": "Ciclo da soja: datas precisam coincidir com a mesma fase. | QA visual: nuvem na data 'depois'",
+  "years": [
+    2020,
+    2024
+  ],
+  "target_definition": "vegetação nativa (MapBiomas: Floresta + Vegetação Herbácea e Arbustiva); silvicultura, agricultura e pastagem = não-alvo",
+  "search_center_lonlat": [
+    -54.65,
+    -31.0
+  ],
+  "center_lonlat": [
+    -54.648827,
+    -31.020068
+  ],
+  "aoi": {
+    "crs": "EPSG:32721",
+    "bounds_utm": [
+      723240.0,
+      6564600.0,
+      725640.0,
+      6567000.0
+    ],
+    "size_m": 2400,
+    "bbox_lonlat": [
+      -54.661653,
+      -31.031115,
+      -54.635997,
+      -31.00902
+    ],
+    "pixel_size_m": 10.0,
+    "shape": [
+      240,
+      240
+    ]
+  },
+  "crop_selection": {
+    "mode": "loss",
+    "search_size_m": 8000,
+    "offset_px": [
+      288,
+      504
+    ],
+    "based_on": "máscaras MapBiomas (nativa 10 m + 30 m; silvicultura 30 m)"
+  },
+  "display": {
+    "zoom_factor": 3,
+    "resampling": "Lanczos (sem super-resolução)",
+    "game_image_px": 720,
+    "tone": {
+      "bands": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "black": 0.018399998545646667,
+      "white": 0.22099998593330383,
+      "gamma": 0.9358,
+      "saturation": 1.12,
+      "percentiles": [
+        0.5,
+        99.0
+      ],
+      "target_mid": 0.36,
+      "scope": "par (duas datas juntas)"
+    }
+  },
+  "images": [
+    {
+      "earth_search_id": "S2B_T21JYF_20201106T134212_L2A",
+      "datetime_utc": "2020-11-06T13:51:07.929000+00:00",
+      "platform": "sentinel-2b",
+      "mgrs_tile": "21JYF",
+      "relative_orbit": 124,
+      "processing_baseline": "05.00",
+      "esa_product_uri": "S2B_MSIL2A_20201106T134209_N0500_R124_T21JYF_20230411T102127.SAFE",
+      "tile_cloud_cover_pct": 10.572656,
+      "sun_elevation_deg": 64.6608827993096,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T21JYF_20201106T134212_L2A",
+      "search_valid_fraction_scl": 0.9992,
+      "search_haze_fraction": 0.0109,
+      "crop_valid_fraction_scl": 1.0,
+      "crop_haze_fraction": 0.0003,
+      "cdse_product_id": "S2B_MSIL2A_20201106T134209_N0500_R124_T21JYF_20230411T102127",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20201106T134209_N0500_R124_T21JYF_20230411T102127",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-31.02007&lng=-54.64883&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-11-06T00%3A00%3A00.000Z&toTime=2020-11-06T23%3A59%3A59.999Z"
+    },
+    {
+      "earth_search_id": "S2C_T21JYF_20241110T135042_L2A",
+      "datetime_utc": "2024-11-10T13:51:31.408000+00:00",
+      "platform": "sentinel-2c",
+      "mgrs_tile": "21JYF",
+      "relative_orbit": 124,
+      "processing_baseline": "05.11",
+      "esa_product_uri": "S2C_MSIL2A_20241110T135041_N0511_R124_T21JYF_20260701T183806.SAFE",
+      "tile_cloud_cover_pct": 0.047758,
+      "sun_elevation_deg": 65.40632107791299,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2C_T21JYF_20241110T135042_L2A",
+      "search_valid_fraction_scl": 0.9991,
+      "search_haze_fraction": 0.0041,
+      "crop_valid_fraction_scl": 1.0,
+      "crop_haze_fraction": 0.0001,
+      "cdse_product_id": "S2A_MSIL2A_20241110T133831_N0511_R124_T21JYF_20241110T180450",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20241110T133831_N0511_R124_T21JYF_20241110T180450",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-31.02007&lng=-54.64883&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-11-10T00%3A00%3A00.000Z&toTime=2024-11-10T23%3A59%3A59.999Z"
+    }
+  ],
+  "doy_difference_days": 4,
+  "same_mgrs_tile": true,
+  "same_relative_orbit": true,
+  "bands_10m_stack": [
+    "blue(B02)",
+    "green(B03)",
+    "red(B04)",
+    "rededge1(B05)",
+    "rededge2(B06)",
+    "rededge3(B07)",
+    "nir(B08)",
+    "nir08(B8A)",
+    "swir16(B11)",
+    "swir22(B12)"
+  ],
+  "reference_mapbiomas": {
+    "source": "MapBiomas Brasil — Col. 4 (10 m, Sentinel-2) e Col. 11 (30 m, Landsat), via Google Earth Engine",
+    "assets": {
+      "10m": "projects/mapbiomas-public/assets/brazil/lulc_10m/collection4/mapbiomas_10m_collection4_coverage_v1",
+      "30m": "projects/mapbiomas-public/assets/brazil/lulc/collection11/mapbiomas_brazil_collection11_coverage_v3"
+    },
+    "native_classes_col11": [
+      3,
+      6,
+      4,
+      7,
+      5,
+      49,
+      12,
+      77,
+      11,
+      84,
+      50,
+      32,
+      29
+    ],
+    "native_pct_10m_2020": 28.9,
+    "native_pct_10m_2024": 20.5,
+    "delta_pp_10m": -8.4,
+    "native_pct_30m_2020": 32.13,
+    "native_pct_30m_2024": 19.82,
+    "delta_pp_30m": -12.31,
+    "silviculture_pct_30m_2020": 0.0,
+    "silviculture_pct_30m_2024": 0.0,
+    "note": "Referência independente para validar o modelo; não é verdade absoluta (MapBiomas também tem erros)."
+  },
+  "model_estimate": {
+    "model": "rf_native_v2",
+    "method": "out-of-fold (GroupKFold espacial), duas estações por ano",
+    "fold": 3,
+    "native_pct_a": 33.79,
+    "native_pct_b": 29.17,
+    "delta_pp": -4.62,
+    "computed_utc": "2026-11-17T03:50:14.426819+00:00"
+  },
+  "qa": {
+    "auto_flags": [],
+    "visual": "pendente"
+  },
+  "license": "Copernicus Sentinel Data Legal Notice; MapBiomas CC-BY 4.0",
+  "attribution": "Contains modified Copernicus Sentinel data 2020, 2024; MapBiomas Brasil Col. 4 e 11",
+  "generated_utc": "2026-11-12T22:32:45.526124+00:00",
+  "verification": {
+    "aligned_identical_grid": true,
+    "grid": [
+      "EPSG:32721",
+      [
+        10.0,
+        0.0,
+        723240.0,
+        0.0,
+        -10.0,
+        6567000.0
+      ],
+      240,
+      240
+    ],
+    "ibge_location_of_center": {
+      "ibge_municipio_codigo": "4306601",
+      "municipio": "Dom Pedrito",
+      "uf": "RS"
+    },
+    "cdse_products_found": true
+  },
+  "season2": {
+    "status": "ok",
+    "images": [
+      {
+        "earth_search_id": "S2A_T21JYF_20200225T134205_L2A",
+        "datetime_utc": "2020-02-25T13:51:00.914000+00:00",
+        "platform": "sentinel-2a",
+        "mgrs_tile": "21JYF",
+        "relative_orbit": null,
+        "processing_baseline": "05.00",
+        "esa_product_uri": "S2A_MSIL2A_20200225T134211_N0500_R124_T21JYF_20230614T044727.SAFE",
+        "tile_cloud_cover_pct": 27.186114,
+        "sun_elevation_deg": 54.5749530302611,
+        "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2A_T21JYF_20200225T134205_L2A",
+        "crop_valid_fraction_scl": 1.0,
+        "cdse_product_id": "S2A_MSIL2A_20200225T134211_N0500_R124_T21JYF_20230614T044727",
+        "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-31.02007&lng=-54.64883&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-02-25T00%3A00%3A00.000Z&toTime=2020-02-25T23%3A59%3A59.999Z"
+      },
+      {
+        "earth_search_id": "S2A_T21JYF_20240305T134605_L2A",
+        "datetime_utc": "2024-03-05T13:51:06.487000+00:00",
+        "platform": "sentinel-2a",
+        "mgrs_tile": "21JYF",
+        "relative_orbit": null,
+        "processing_baseline": "05.10",
+        "esa_product_uri": "S2A_MSIL2A_20240305T133831_N0510_R124_T21JYF_20240305T184752.SAFE",
+        "tile_cloud_cover_pct": 0.002346,
+        "sun_elevation_deg": 52.4976088597907,
+        "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2A_T21JYF_20240305T134605_L2A",
+        "crop_valid_fraction_scl": 1.0,
+        "cdse_product_id": "S2A_MSIL2A_20240305T133831_N0510_R124_T21JYF_20240305T184752",
+        "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-31.02007&lng=-54.64883&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-03-05T00%3A00%3A00.000Z&toTime=2024-03-05T23%3A59%3A59.999Z"
+      }
+    ],
+    "doy_difference_days": 9,
+    "ndvi_gain_vs_primary": [
+      0.251,
+      0.205
+    ],
+    "ndvi_crop": {
+      "season2": [
+        0.668,
+        0.666
+      ],
+      "primary": [
+        0.417,
+        0.461
+      ]
+    },
+    "rule": "par mais verde em comum: entre datas limpas (cobertura 100%, SCL válido ≥ 99,9%, névoa ≤ 0,006, s2cloudless ≤ 0,2%) do mesmo ano civil, a ≥ 45 dias da data principal e com ≤ 30 dias de diferença de dia do ano entre os anos, maximiza o menor NDVI médio do recorte",
+    "display_tone": {
+      "bands": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "black": 0.006149995326995852,
+      "white": 0.15614999532699586,
+      "gamma": 0.8812,
+      "saturation": 1.12,
+      "percentiles": [
+        0.5,
+        99.0
+      ],
+      "target_mid": 0.36,
+      "scope": "par (duas datas juntas)"
+    }
+  },
+  "model_estimate_v1": {
+    "model": "rf_native_v1",
+    "method": "out-of-fold (GroupKFold espacial)",
+    "fold": 1,
+    "native_pct_a": 25.95,
+    "native_pct_b": 31.4,
+    "delta_pp": 5.45,
+    "computed_utc": "2026-11-13T00:22:14.137754+00:00"
+  }
+}

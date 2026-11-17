@@ -1,0 +1,191 @@
+{
+ "id": "CAP-SC",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 0.7 pp e ganho 1.1 pp (líquido +0,4 pp); MapBiomas 30 m: perda 1.0 pp e ganho 1.5 pp (líquido +0,5 pp). NDVI mediano das imagens: 0.88→0.91. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-04-16 — S2A_MSIL2A_20200416T131241_N0500_R138_T22JGQ_20230406T182851",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-27.49447&lng=-48.42704&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-04-16T00%3A00%3A00.000Z&toTime=2020-04-16T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-04-18 — S2A_MSIL2A_20240418T132241_N0510_R038_T22JGQ_20240418T182952",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-27.49447&lng=-48.42704&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-04-18T00%3A00%3A00.000Z&toTime=2024-04-18T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 16/04/2020 e 18/04/2024 (2 dias de diferença no calendário). Época 2: 30/12/2020 e 29/12/2024 (1 dia), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,75 → 0,78; época 2 0,74 → 0,75.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-04-16 — S2A_MSIL2A_20200416T131241_N0500_R138_T22JGQ_20230406T182851",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-27.49447&lng=-48.42704&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-04-16T00%3A00%3A00.000Z&toTime=2020-04-16T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-04-18 — S2A_MSIL2A_20240418T132241_N0510_R038_T22JGQ_20240418T182952",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-27.49447&lng=-48.42704&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-04-18T00%3A00%3A00.000Z&toTime=2024-04-18T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-12-30 — S2B_MSIL2A_20201230T132229_N0500_R038_T22JGQ_20230305T113605",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-27.49447&lng=-48.42704&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-12-30T00%3A00%3A00.000Z&toTime=2020-12-30T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-12-29 — S2B_MSIL2A_20241229T132239_N0511_R038_T22JGQ_20241229T151651",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-27.49447&lng=-48.42704&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-12-29T00%3A00%3A00.000Z&toTime=2024-12-29T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: +7,3 pp; MapBiomas 10 m: +0,4 pp; diferença 6.9 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Origem da vegetação nativa ganha.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Mosaico de Usos 100%; Pastagem 0%. Mapa 30 m: Mosaico de Usos 87%; Pastagem 13%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 2→2%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 0%; 2023: 0%; 2024: 0% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Refugio De Vida Silvestre Municipal Meiembipe (Refúgio de Vida Silvestre, criada em 2021).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 40% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555759046"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Reserva Particular Do Patrimônio Natural Rio Vermelho (Reserva Particular do Patrimônio Natural, criada em 2016).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 9% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555682382"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Parque Estadual Do Rio Vermelho (Parque, criada em 2007).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela fica a menos de 1 km do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555576324"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Florianópolis/SC, bioma Mata Atlântica.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 4205407) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 4205407",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/4205407"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'Parque Estadual do Rio Vermelho'.",
+   "veredito": "corrigido",
+   "porque": "Pela base WDPA, quem cobre o recorte é o Refúgio de Vida Silvestre Municipal Meiembipe (40%). O Parque Estadual do Rio Vermelho fica a menos de 1 km, mas fora do recorte.",
+   "fontes": []
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "areas_protegidas": [
+  {
+   "nome": "Refugio De Vida Silvestre Municipal Meiembipe",
+   "tipo": "Refúgio de Vida Silvestre",
+   "ano": 2021,
+   "site_id": 555759046,
+   "frac": 0.40257572013172943
+  },
+  {
+   "nome": "Reserva Particular Do Patrimônio Natural Rio Vermelho",
+   "tipo": "Reserva Particular do Patrimônio Natural",
+   "ano": 2016,
+   "site_id": 555682382,
+   "frac": 0.08787541456034956
+  },
+  {
+   "nome": "Parque Estadual Do Rio Vermelho",
+   "tipo": "Parque",
+   "ano": 2007,
+   "site_id": 555576324,
+   "frac": 0.0
+  }
+ ]
+}

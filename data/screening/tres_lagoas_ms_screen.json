@@ -1,0 +1,132 @@
+{
+ "name": "tres_lagoas_ms",
+ "pair": [
+  {
+   "earth_search_id": "S2B_T22KCC_20200530T134212_L2A",
+   "datetime_utc": "2020-05-30T13:48:07.037000+00:00",
+   "platform": "sentinel-2b",
+   "mgrs_tile": "22KCC",
+   "relative_orbit": null,
+   "processing_baseline": "05.00",
+   "esa_product_uri": "S2B_MSIL2A_20200530T134209_N0500_R124_T22KCC_20230405T065924.SAFE",
+   "tile_cloud_cover_pct": 0.005584,
+   "sun_elevation_deg": 41.2894862467788,
+   "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T22KCC_20200530T134212_L2A"
+  },
+  {
+   "earth_search_id": "S2B_T22KCC_20240529T134749_L2A",
+   "datetime_utc": "2024-05-29T13:48:05.324000+00:00",
+   "platform": "sentinel-2b",
+   "mgrs_tile": "22KCC",
+   "relative_orbit": null,
+   "processing_baseline": "05.10",
+   "esa_product_uri": "S2B_MSIL2A_20240529T133839_N0510_R124_T22KCC_20240529T204948.SAFE",
+   "tile_cloud_cover_pct": 0.017591,
+   "sun_elevation_deg": 41.4244913080299,
+   "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T22KCC_20240529T134749_L2A"
+  }
+ ],
+ "valid": [
+  1.0,
+  1.0
+ ],
+ "metric": "woody",
+ "ndvi_t": 0.6,
+ "ndmi_t": 0.15,
+ "loss": [
+  {
+   "x": 400,
+   "y": 500,
+   "lon": -51.92656,
+   "lat": -20.59066,
+   "veg_a": 80.7,
+   "veg_b": 46.3,
+   "delta_pp": -34.4,
+   "valid": 1.0
+  },
+  {
+   "x": 350,
+   "y": 550,
+   "lon": -51.93621,
+   "lat": -20.59964,
+   "veg_a": 75.0,
+   "veg_b": 42.1,
+   "delta_pp": -32.9,
+   "valid": 1.0
+  },
+  {
+   "x": 400,
+   "y": 550,
+   "lon": -51.92662,
+   "lat": -20.59969,
+   "veg_a": 76.3,
+   "veg_b": 43.7,
+   "delta_pp": -32.6,
+   "valid": 1.0
+  }
+ ],
+ "gain": [
+  {
+   "x": 150,
+   "y": 300,
+   "lon": -51.97431,
+   "lat": -20.55425,
+   "veg_a": 5.3,
+   "veg_b": 65.8,
+   "delta_pp": 60.4,
+   "valid": 1.0
+  },
+  {
+   "x": 200,
+   "y": 350,
+   "lon": -51.96477,
+   "lat": -20.56334,
+   "veg_a": 9.3,
+   "veg_b": 69.4,
+   "delta_pp": 60.2,
+   "valid": 1.0
+  },
+  {
+   "x": 200,
+   "y": 300,
+   "lon": -51.96472,
+   "lat": -20.55431,
+   "veg_a": 10.2,
+   "veg_b": 69.1,
+   "delta_pp": 58.9,
+   "valid": 1.0
+  }
+ ],
+ "stable": [
+  {
+   "x": 250,
+   "y": 550,
+   "lon": -51.9554,
+   "lat": -20.59953,
+   "veg_a": 61.4,
+   "veg_b": 61.6,
+   "delta_pp": 0.2,
+   "valid": 1.0
+  },
+  {
+   "x": 550,
+   "y": 450,
+   "lon": -51.89773,
+   "lat": -20.58177,
+   "veg_a": 69.2,
+   "veg_b": 62.0,
+   "delta_pp": -7.2,
+   "valid": 1.0
+  },
+  {
+   "x": 300,
+   "y": 500,
+   "lon": -51.94575,
+   "lat": -20.59055,
+   "veg_a": 65.6,
+   "veg_b": 58.4,
+   "delta_pp": -7.3,
+   "valid": 1.0
+  }
+ ]
+}

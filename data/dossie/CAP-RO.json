@@ -1,0 +1,155 @@
+{
+ "id": "CAP-RO",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "Houve perda de vegetação nativa entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 45.0 pp e ganho 0.0 pp (líquido -45,0 pp); MapBiomas 30 m: perda 45.4 pp e ganho 0.0 pp (líquido -45,4 pp). NDVI mediano das imagens: 0.83→0.71. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.12 (vegetação a menos).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-07-27 — S2B_MSIL2A_20200727T143729_N0500_R096_T20LLQ_20230325T001133",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-9.80210&lng=-64.46035&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-27T00%3A00%3A00.000Z&toTime=2020-07-27T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-07-26 — S2B_MSIL2A_20240726T143749_N0511_R096_T20LLQ_20240726T185603",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-9.80210&lng=-64.46035&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-07-26T00%3A00%3A00.000Z&toTime=2024-07-26T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 27/07/2020 e 26/07/2024 (1 dia de diferença no calendário). Época 2: 28/05/2020 e 01/06/2024 (4 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,80 → 0,64; época 2 0,84 → 0,79.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-07-27 — S2B_MSIL2A_20200727T143729_N0500_R096_T20LLQ_20230325T001133",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-9.80210&lng=-64.46035&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-27T00%3A00%3A00.000Z&toTime=2020-07-27T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-07-26 — S2B_MSIL2A_20240726T143749_N0511_R096_T20LLQ_20240726T185603",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-9.80210&lng=-64.46035&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-07-26T00%3A00%3A00.000Z&toTime=2024-07-26T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-05-28 — S2B_MSIL2A_20200528T143729_N0500_R096_T20LLQ_20230509T130647",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-9.80210&lng=-64.46035&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-05-28T00%3A00%3A00.000Z&toTime=2020-05-28T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-06-01 — S2A_MSIL2A_20240601T143751_N0510_R096_T20LLQ_20240601T222054",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-9.80210&lng=-64.46035&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-06-01T00%3A00%3A00.000Z&toTime=2024-06-01T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: -49,3 pp; MapBiomas 10 m: -45,0 pp; diferença 4.3 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Destino da vegetação nativa perdida.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Pastagem 100%; Lavoura Temporária 0%; Mosaico de Usos 0%. Mapa 30 m: Mosaico de Usos 51%; Pastagem 49%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Houve fogo registrado no recorte.",
+   "veredito": "comprovado",
+   "porque": "Área queimada (MapBiomas Fogo): 2020: 38% do recorte; 2024: 41% do recorte. Fogo muda a cor da imagem; vegetação nativa queimada continua nativa.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Karipuna (Terra Indígena, criada em 1999).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 60% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/34033"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Porto Velho/RO, bioma Amazônia.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 1100205) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 1100205",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/1100205"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "A perda de floresta aconteceu dentro da Terra Indígena Karipuna.",
+   "veredito": "comprovado",
+   "porque": "Pela base WDPA, a TI Karipuna cobre 60% do recorte. Os dois mapas MapBiomas mostram perda de floresta para pastagem.",
+   "fontes": []
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 37.5,
+  "2023": 4.4,
+  "2024": 41.0
+ },
+ "areas_protegidas": [
+  {
+   "nome": "Karipuna",
+   "tipo": "Terra Indígena",
+   "ano": 1999,
+   "site_id": 34033,
+   "frac": 0.5985123430907331
+  }
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "id": "AMZ-03",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 0.1 pp e ganho 0.2 pp (líquido +0,1 pp); MapBiomas 30 m: perda 0.2 pp e ganho 0.2 pp (líquido +0,0 pp). NDVI mediano das imagens: 0.82→0.82. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-07-16 — S2A_MSIL2A_20200716T141741_N0500_R010_T20MRT_20230322T203006",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.16998&lng=-59.96708&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-16T00%3A00%3A00.000Z&toTime=2020-07-16T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-07-15 — S2A_MSIL2A_20240715T141711_N0510_R010_T20MRT_20240715T184846",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.16998&lng=-59.96708&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-07-15T00%3A00%3A00.000Z&toTime=2024-07-15T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 16/07/2020 e 15/07/2024 (1 dia de diferença no calendário). Época 2: 09/10/2020 e 08/10/2024 (1 dia), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,76 → 0,72; época 2 0,68 → 0,68.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-07-16 — S2A_MSIL2A_20200716T141741_N0500_R010_T20MRT_20230322T203006",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.16998&lng=-59.96708&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-16T00%3A00%3A00.000Z&toTime=2020-07-16T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-07-15 — S2A_MSIL2A_20240715T141711_N0510_R010_T20MRT_20240715T184846",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.16998&lng=-59.96708&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-07-15T00%3A00%3A00.000Z&toTime=2024-07-15T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-10-09 — S2B_T20MRT_20201009T141739_L2A",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.16998&lng=-59.96708&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-10-09T00%3A00%3A00.000Z&toTime=2020-10-09T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-10-08 — S2B_T20MRT_20241008T141709_L2A",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.16998&lng=-59.96708&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-10-08T00%3A00%3A00.000Z&toTime=2024-10-08T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: +0,5 pp; MapBiomas 10 m: +0,1 pp; diferença 0.4 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Houve fogo registrado no recorte.",
+   "veredito": "comprovado",
+   "porque": "Área queimada (MapBiomas Fogo): 2020: 10% do recorte. Fogo muda a cor da imagem; vegetação nativa queimada continua nativa.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Apuí/AM, bioma Amazônia.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 1300144) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 1300144",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/1300144"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "A Amazônia teve uma seca severa em 2023–24.",
+   "veredito": "comprovado",
+   "porque": "O Cemaden lista 2023–24 entre as secas mais severas da Amazônia e a seca mais extensa da série histórica no Brasil. A imagem 'depois' é de julho de 2024. A cor mais amarelada do pasto combina com isso, mas a imagem sozinha não prova a causa.",
+   "fontes": [
+    {
+     "nome": "Cemaden — Nota Técnica nº 679/2024: Análise das Secas no Brasil",
+     "url": "https://www.semadesc.ms.gov.br/wp-content/uploads/2024/12/NotaTcnicaHistricodeSecasnoBrasileProjecoes_2024_CEMADEN_202411.pdf"
+    }
+   ]
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 9.5,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "areas_protegidas": []
+}

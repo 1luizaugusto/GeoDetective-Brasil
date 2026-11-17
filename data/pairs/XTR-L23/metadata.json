@@ -1,0 +1,266 @@
+{
+  "challenge_id": "XTR-L23",
+  "name": "Vegetação e roças, Sebastião Leal/PI",
+  "group": "extra",
+  "biome": "Cerrado",
+  "mode": "loss",
+  "selection_hypothesis": "perda",
+  "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 1.00→0.00",
+  "years": [
+    2020,
+    2025
+  ],
+  "target_definition": "vegetação nativa (MapBiomas: Floresta + Vegetação Herbácea e Arbustiva); silvicultura, agricultura e pastagem = não-alvo",
+  "search_center_lonlat": [
+    -44.1532,
+    -7.9116
+  ],
+  "center_lonlat": [
+    -44.154292,
+    -7.909793
+  ],
+  "aoi": {
+    "crs": "EPSG:32723",
+    "bounds_utm": [
+      592020.0,
+      9124380.0,
+      594420.0,
+      9126780.0
+    ],
+    "size_m": 2400,
+    "bbox_lonlat": [
+      -44.165199,
+      -7.920668,
+      -44.143384,
+      -7.898917
+    ],
+    "pixel_size_m": 10.0,
+    "shape": [
+      240,
+      240
+    ]
+  },
+  "crop_selection": {
+    "mode": "loss",
+    "search_size_m": 8000,
+    "offset_px": [
+      270,
+      264
+    ],
+    "based_on": "máscaras MapBiomas (nativa 10 m + 30 m; silvicultura 30 m)"
+  },
+  "display": {
+    "zoom_factor": 3,
+    "resampling": "Lanczos (sem super-resolução)",
+    "game_image_px": 720,
+    "tone": {
+      "bands": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "black": 0.042299993336200714,
+      "white": 0.20019999146461487,
+      "gamma": 0.8374,
+      "saturation": 1.12,
+      "percentiles": [
+        0.5,
+        99.0
+      ],
+      "target_mid": 0.36,
+      "scope": "par (duas datas juntas)"
+    }
+  },
+  "images": [
+    {
+      "earth_search_id": "S2B_T23MNM_20200911T132235_L2A",
+      "datetime_utc": "2020-09-11T13:24:26.054000+00:00",
+      "platform": "sentinel-2b",
+      "mgrs_tile": "23MNM",
+      "relative_orbit": 38,
+      "processing_baseline": "05.00",
+      "esa_product_uri": "S2B_MSIL2A_20200911T132239_N0500_R038_T23MNM_20230311T201505.SAFE",
+      "tile_cloud_cover_pct": 0.000415,
+      "sun_elevation_deg": 64.5550937383059,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T23MNM_20200911T132235_L2A",
+      "search_valid_fraction_scl": 1.0,
+      "search_haze_fraction": 0.0,
+      "crop_valid_fraction_scl": 1.0,
+      "crop_haze_fraction": 0.0,
+      "cdse_product_id": "S2B_MSIL2A_20200911T132239_N0500_R038_T23MNM_20230311T201505",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20200911T132239_N0500_R038_T23MNM_20230311T201505",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.90979&lng=-44.15429&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-09-11T00%3A00%3A00.000Z&toTime=2020-09-11T23%3A59%3A59.999Z"
+    },
+    {
+      "earth_search_id": "S2A_T23MNM_20250912T132245_L2A",
+      "datetime_utc": "2025-09-12T13:24:36.164000+00:00",
+      "platform": "sentinel-2a",
+      "mgrs_tile": "23MNM",
+      "relative_orbit": 38,
+      "processing_baseline": "05.11",
+      "esa_product_uri": "S2A_MSIL2A_20250912T132251_N0511_R038_T23MNM_20250912T174212.SAFE",
+      "tile_cloud_cover_pct": 0.006254,
+      "sun_elevation_deg": 64.7912549491413,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2A_T23MNM_20250912T132245_L2A",
+      "search_valid_fraction_scl": 1.0,
+      "search_haze_fraction": 0.0,
+      "crop_valid_fraction_scl": 1.0,
+      "crop_haze_fraction": 0.0,
+      "cdse_product_id": "S2A_MSIL2A_20250912T132251_N0511_R038_T23MNM_20250912T174212",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20250912T132251_N0511_R038_T23MNM_20250912T174212",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.90979&lng=-44.15429&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-09-12T00%3A00%3A00.000Z&toTime=2025-09-12T23%3A59%3A59.999Z"
+    }
+  ],
+  "doy_difference_days": 0,
+  "same_mgrs_tile": true,
+  "same_relative_orbit": true,
+  "bands_10m_stack": [
+    "blue(B02)",
+    "green(B03)",
+    "red(B04)",
+    "rededge1(B05)",
+    "rededge2(B06)",
+    "rededge3(B07)",
+    "nir(B08)",
+    "nir08(B8A)",
+    "swir16(B11)",
+    "swir22(B12)"
+  ],
+  "reference_mapbiomas": {
+    "source": "MapBiomas Brasil — Col. 4 (10 m, Sentinel-2) e Col. 11 (30 m, Landsat), via Google Earth Engine",
+    "assets": {
+      "10m": "projects/mapbiomas-public/assets/brazil/lulc_10m/collection4/mapbiomas_10m_collection4_coverage_v1",
+      "30m": "projects/mapbiomas-public/assets/brazil/lulc/collection11/mapbiomas_brazil_collection11_coverage_v3"
+    },
+    "native_classes_col11": [
+      3,
+      6,
+      4,
+      7,
+      5,
+      49,
+      12,
+      77,
+      11,
+      84,
+      50,
+      32,
+      29
+    ],
+    "native_pct_10m_2020": 100.0,
+    "native_pct_10m_2025": 0.27,
+    "delta_pp_10m": -99.73,
+    "native_pct_30m_2020": 100.0,
+    "native_pct_30m_2025": 0.0,
+    "delta_pp_30m": -100.0,
+    "silviculture_pct_30m_2020": 0.0,
+    "silviculture_pct_30m_2025": 0.0,
+    "note": "Referência independente para validar o modelo; não é verdade absoluta (MapBiomas também tem erros)."
+  },
+  "model_estimate": {
+    "model": "rf_native_v2",
+    "method": "out-of-fold (GroupKFold espacial), duas estações por ano",
+    "fold": 2,
+    "native_pct_a": 97.02,
+    "native_pct_b": 2.78,
+    "delta_pp": -94.25,
+    "computed_utc": "2026-11-17T03:50:14.426819+00:00"
+  },
+  "qa": {
+    "auto_flags": [],
+    "visual": "pendente"
+  },
+  "license": "Copernicus Sentinel Data Legal Notice; MapBiomas CC-BY 4.0",
+  "attribution": "Contains modified Copernicus Sentinel data 2020, 2025; MapBiomas Brasil Col. 4 e 11",
+  "generated_utc": "2026-11-17T00:25:07.651775+00:00",
+  "season2": {
+    "status": "ok",
+    "images": [
+      {
+        "earth_search_id": "S2B_T23MNM_20200524T132233_L2A",
+        "datetime_utc": "2020-05-24T13:24:24.487000+00:00",
+        "platform": "sentinel-2b",
+        "mgrs_tile": "23MNM",
+        "relative_orbit": null,
+        "processing_baseline": "05.00",
+        "esa_product_uri": "S2B_MSIL2A_20200524T132239_N0500_R038_T23MNM_20230415T153723.SAFE",
+        "tile_cloud_cover_pct": 53.664339,
+        "sun_elevation_deg": 53.7385519954565,
+        "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T23MNM_20200524T132233_L2A",
+        "crop_valid_fraction_scl": 1.0,
+        "cdse_product_id": "S2B_MSIL2A_20200524T132239_N0500_R038_T23MNM_20230415T153723",
+        "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.90979&lng=-44.15429&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-05-24T00%3A00%3A00.000Z&toTime=2020-05-24T23%3A59%3A59.999Z"
+      },
+      {
+        "earth_search_id": "S2B_T23MNM_20250528T132233_L2A",
+        "datetime_utc": "2025-05-28T13:24:25.009000+00:00",
+        "platform": "sentinel-2b",
+        "mgrs_tile": "23MNM",
+        "relative_orbit": null,
+        "processing_baseline": "05.11",
+        "esa_product_uri": "S2B_MSIL2A_20250528T132239_N0511_R038_T23MNM_20250528T165600.SAFE",
+        "tile_cloud_cover_pct": 0.000342,
+        "sun_elevation_deg": 53.1859721889561,
+        "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T23MNM_20250528T132233_L2A",
+        "crop_valid_fraction_scl": 1.0,
+        "cdse_product_id": "S2B_MSIL2A_20250528T132239_N0511_R038_T23MNM_20250528T165600",
+        "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.90979&lng=-44.15429&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-05-28T00%3A00%3A00.000Z&toTime=2025-05-28T23%3A59%3A59.999Z"
+      }
+    ],
+    "doy_difference_days": 3,
+    "ndvi_gain_vs_primary": [
+      0.11,
+      0.084
+    ],
+    "ndvi_crop": {
+      "season2": [
+        0.574,
+        0.299
+      ],
+      "primary": [
+        0.465,
+        0.215
+      ]
+    },
+    "rule": "par mais verde em comum: entre datas limpas (cobertura 100%, SCL válido ≥ 99,9%, névoa ≤ 0,006, s2cloudless ≤ 0,2%) do mesmo ano civil, a ≥ 45 dias da data principal e com ≤ 30 dias de diferença de dia do ano entre os anos, maximiza o menor NDVI médio do recorte",
+    "display_tone": {
+      "bands": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "black": 0.032999999821186066,
+      "white": 0.20080000162124634,
+      "gamma": 0.6467,
+      "saturation": 1.12,
+      "percentiles": [
+        0.5,
+        99.0
+      ],
+      "target_mid": 0.36,
+      "scope": "par (duas datas juntas)"
+    }
+  },
+  "verification": {
+    "aligned_identical_grid": true,
+    "grid": [
+      "EPSG:32723",
+      [
+        10.0,
+        0.0,
+        592020.0,
+        0.0,
+        -10.0,
+        9126780.0
+      ],
+      240,
+      240
+    ],
+    "ibge_location_of_center": {
+      "ibge_municipio_codigo": "2210631",
+      "municipio": "Sebastião Leal",
+      "uf": "PI"
+    },
+    "cdse_products_found": true
+  }
+}

@@ -1,0 +1,158 @@
+{
+ "id": "CAP-PA",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 1.1 pp e ganho 1.1 pp (líquido +0,0 pp); MapBiomas 30 m: perda 1.4 pp e ganho 1.8 pp (líquido +0,4 pp). NDVI mediano das imagens: 0.81→0.79. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-07-14 — S2A_MSIL2A_20200714T134221_N0500_R124_T22MGD_20230411T044549",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-1.41357&lng=-48.43150&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-14T00%3A00%3A00.000Z&toTime=2020-07-14T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-07-13 — S2A_MSIL2A_20240713T133841_N0510_R124_T22MGD_20240713T182048",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-1.41357&lng=-48.43150&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-07-13T00%3A00%3A00.000Z&toTime=2024-07-13T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Destino da vegetação nativa perdida.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Mosaico de Usos 60%; Pastagem 12%; Outras não Vegetadas 9%. Mapa 30 m: Rio/Lago/Oceano 62%; Pastagem 11%; Área Urbanizada 10%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Origem da vegetação nativa ganha.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Mosaico de Usos 64%; Rio/Lago/Oceano 25%; Outras não Vegetadas 8%. Mapa 30 m: Mosaico de Usos 48%; Outras Lav. Temporárias 26%; Rio/Lago/Oceano 15%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 0%; 2023: 0%; 2024: 0% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Parque Estadual Do Utinga (Parque, criada em 1993).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 56% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/478590"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Área De Proteção Ambiental Da Região Metrolpolitana De Belém (Área de Proteção Ambiental, criada em 1993).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 31% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555600216"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Belém/PA, bioma Amazônia.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 1501402) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 1501402",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/1501402"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Versão anterior: 'os lagos mudam de cor com as algas'.",
+   "veredito": "removido",
+   "porque": "Não temos medida de algas, então a explicação saiu. O texto diz só que a cor da água muda.",
+   "fontes": []
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "areas_protegidas": [
+  {
+   "nome": "Parque Estadual Do Utinga",
+   "tipo": "Parque",
+   "ano": 1993,
+   "site_id": 478590,
+   "frac": 0.5619153858387237
+  },
+  {
+   "nome": "Área De Proteção Ambiental Da Região Metrolpolitana De Belém",
+   "tipo": "Área de Proteção Ambiental",
+   "ano": 1993,
+   "site_id": 555600216,
+   "frac": 0.3122049389929848
+  }
+ ]
+}

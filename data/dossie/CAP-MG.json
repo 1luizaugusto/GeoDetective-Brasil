@@ -1,0 +1,191 @@
+{
+ "id": "CAP-MG",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "Houve perda de vegetação nativa entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 7.9 pp e ganho 0.4 pp (líquido -7,5 pp); MapBiomas 30 m: perda 4.7 pp e ganho 0.1 pp (líquido -4,6 pp). NDVI mediano das imagens: 0.55→0.52. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.07 (vegetação a menos).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-06-12 — S2A_MSIL2A_20200612T130251_N0500_R095_T23KPT_20230327T055733",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-19.99511&lng=-43.95692&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-06-12T00%3A00%3A00.000Z&toTime=2020-06-12T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-06-11 — S2A_MSIL2A_20240611T130251_N0510_R095_T23KPT_20240611T175646",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-19.99511&lng=-43.95692&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-06-11T00%3A00%3A00.000Z&toTime=2024-06-11T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 12/06/2020 e 11/06/2024 (1 dia de diferença no calendário). Época 2: 30/07/2020 e 26/07/2024 (4 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,51 → 0,50; época 2 0,46 → 0,44.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-06-12 — S2A_MSIL2A_20200612T130251_N0500_R095_T23KPT_20230327T055733",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-19.99511&lng=-43.95692&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-06-12T00%3A00%3A00.000Z&toTime=2020-06-12T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-06-11 — S2A_MSIL2A_20240611T130251_N0510_R095_T23KPT_20240611T175646",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-19.99511&lng=-43.95692&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-06-11T00%3A00%3A00.000Z&toTime=2024-06-11T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-07-30 — S2B_MSIL2A_20200730T131249_N0500_R138_T23KPT_20230326T112127",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-19.99511&lng=-43.95692&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-30T00%3A00%3A00.000Z&toTime=2020-07-30T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-07-26 — S2B_MSIL2A_20240726T130249_N0511_R095_T23KPT_20240726T151709",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-19.99511&lng=-43.95692&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-07-26T00%3A00%3A00.000Z&toTime=2024-07-26T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: -5,9 pp; MapBiomas 10 m: -7,5 pp; diferença 1.6 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Destino da vegetação nativa perdida.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Área Urbanizada 95%; Mosaico de Usos 2%; Pastagem 2%. Mapa 30 m: Área Urbanizada 88%; Mineração 7%; Mosaico de Usos 4%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 2%; 2023: 0%; 2024: 1% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Área De Proteção Ambiental Sul-Rmbh (Área de Proteção Ambiental, criada em 1994).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 100% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555576219"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Estação Ecológica Do Cercadinho (Estação Ecológica, criada em 2006).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 10% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/478581"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Parque Estadual Serra Do Rola Moça (Parque, criada em 1994).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela fica a menos de 1 km do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/352053"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Nova Lima/MG, bioma Mata Atlântica.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 3144805) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 3144805",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/3144805"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'Serra do Curral'.",
+   "veredito": "corrigido",
+   "porque": "O centro do recorte fica em Nova Lima (IBGE). Não conferimos se ele está na própria Serra do Curral, então o nome agora traz só o município.",
+   "fontes": []
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 1.7,
+  "2023": 0.5,
+  "2024": 1.4
+ },
+ "areas_protegidas": [
+  {
+   "nome": "Área De Proteção Ambiental Sul-Rmbh",
+   "tipo": "Área de Proteção Ambiental",
+   "ano": 1994,
+   "site_id": 555576219,
+   "frac": 0.9956075527437309
+  },
+  {
+   "nome": "Estação Ecológica Do Cercadinho",
+   "tipo": "Estação Ecológica",
+   "ano": 2006,
+   "site_id": 478581,
+   "frac": 0.10076037855464386
+  },
+  {
+   "nome": "Parque Estadual Serra Do Rola Moça",
+   "tipo": "Parque",
+   "ano": 1994,
+   "site_id": 352053,
+   "frac": 0.0
+  }
+ ]
+}

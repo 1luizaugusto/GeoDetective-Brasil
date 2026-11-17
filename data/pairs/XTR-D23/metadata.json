@@ -1,0 +1,194 @@
+{
+  "challenge_id": "XTR-D23",
+  "name": "Floresta e áreas abertas, São Félix do Xingu/PA",
+  "group": "extra",
+  "biome": "Amazônia",
+  "mode": "loss",
+  "selection_hypothesis": "perda",
+  "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 0.99→0.54, silvicultura 0.00→0.00, aberta 0.00→0.00",
+  "years": [
+    2020,
+    2025
+  ],
+  "target_definition": "vegetação nativa (MapBiomas: Floresta + Vegetação Herbácea e Arbustiva); silvicultura, agricultura e pastagem = não-alvo",
+  "search_center_lonlat": [
+    -52.3476,
+    -7.0692
+  ],
+  "center_lonlat": [
+    -52.372992,
+    -7.069541
+  ],
+  "aoi": {
+    "crs": "EPSG:32722",
+    "bounds_utm": [
+      347160.0,
+      9217140.0,
+      349560.0,
+      9219540.0
+    ],
+    "size_m": 2400,
+    "bbox_lonlat": [
+      -52.383887,
+      -7.080425,
+      -52.362097,
+      -7.058657
+    ],
+    "pixel_size_m": 10.0,
+    "shape": [
+      240,
+      240
+    ]
+  },
+  "crop_selection": {
+    "mode": "loss",
+    "search_size_m": 8000,
+    "offset_px": [
+      0,
+      288
+    ],
+    "based_on": "máscaras MapBiomas (nativa 10 m + 30 m; silvicultura 30 m)"
+  },
+  "display": {
+    "zoom_factor": 3,
+    "resampling": "Lanczos (sem super-resolução)",
+    "game_image_px": 720,
+    "tone": {
+      "bands": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "black": 0.004799999296665192,
+      "white": 0.15219998806715013,
+      "gamma": 0.7252,
+      "saturation": 1.12,
+      "percentiles": [
+        0.5,
+        99.0
+      ],
+      "target_mid": 0.36,
+      "scope": "par (duas datas juntas)"
+    }
+  },
+  "images": [
+    {
+      "earth_search_id": "S2B_T22MCT_20200722T135114_L2A",
+      "datetime_utc": "2020-07-22T13:54:24.652000+00:00",
+      "platform": "sentinel-2b",
+      "mgrs_tile": "22MCT",
+      "relative_orbit": 24,
+      "processing_baseline": "05.00",
+      "esa_product_uri": "S2B_MSIL2A_20200722T135119_N0500_R024_T22MCT_20230325T062153.SAFE",
+      "tile_cloud_cover_pct": 0.000982,
+      "sun_elevation_deg": 53.308963620391,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T22MCT_20200722T135114_L2A",
+      "search_valid_fraction_scl": 1.0,
+      "search_haze_fraction": 0.0,
+      "crop_valid_fraction_scl": 1.0,
+      "crop_haze_fraction": 0.0,
+      "cdse_product_id": "S2B_MSIL2A_20200722T135119_N0500_R024_T22MCT_20230325T062153",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20200722T135119_N0500_R024_T22MCT_20230325T062153",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.06954&lng=-52.37299&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-22T00%3A00%3A00.000Z&toTime=2020-07-22T23%3A59%3A59.999Z"
+    },
+    {
+      "earth_search_id": "S2A_T22MCT_20250723T135131_L2A",
+      "datetime_utc": "2025-07-23T13:54:41.804000+00:00",
+      "platform": "sentinel-2a",
+      "mgrs_tile": "22MCT",
+      "relative_orbit": 24,
+      "processing_baseline": "05.11",
+      "esa_product_uri": "S2A_MSIL2A_20250723T135131_N0511_R024_T22MCT_20250723T202415.SAFE",
+      "tile_cloud_cover_pct": 3.175102,
+      "sun_elevation_deg": 53.4653817021393,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2A_T22MCT_20250723T135131_L2A",
+      "search_valid_fraction_scl": 1.0,
+      "search_haze_fraction": 0.0,
+      "crop_valid_fraction_scl": 1.0,
+      "crop_haze_fraction": 0.0,
+      "cdse_product_id": "S2A_MSIL2A_20250723T135131_N0511_R024_T22MCT_20250723T202415",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20250723T135131_N0511_R024_T22MCT_20250723T202415",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.06954&lng=-52.37299&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-07-23T00%3A00%3A00.000Z&toTime=2025-07-23T23%3A59%3A59.999Z"
+    }
+  ],
+  "doy_difference_days": 0,
+  "same_mgrs_tile": true,
+  "same_relative_orbit": true,
+  "bands_10m_stack": [
+    "blue(B02)",
+    "green(B03)",
+    "red(B04)",
+    "rededge1(B05)",
+    "rededge2(B06)",
+    "rededge3(B07)",
+    "nir(B08)",
+    "nir08(B8A)",
+    "swir16(B11)",
+    "swir22(B12)"
+  ],
+  "reference_mapbiomas": {
+    "source": "MapBiomas Brasil — Col. 4 (10 m, Sentinel-2) e Col. 11 (30 m, Landsat), via Google Earth Engine",
+    "assets": {
+      "10m": "projects/mapbiomas-public/assets/brazil/lulc_10m/collection4/mapbiomas_10m_collection4_coverage_v1",
+      "30m": "projects/mapbiomas-public/assets/brazil/lulc/collection11/mapbiomas_brazil_collection11_coverage_v3"
+    },
+    "native_classes_col11": [
+      3,
+      6,
+      4,
+      7,
+      5,
+      49,
+      12,
+      77,
+      11,
+      84,
+      50,
+      32,
+      29
+    ],
+    "native_pct_10m_2020": 94.34,
+    "native_pct_10m_2025": 29.73,
+    "delta_pp_10m": -64.61,
+    "native_pct_30m_2020": 92.9,
+    "native_pct_30m_2025": 27.44,
+    "delta_pp_30m": -65.46,
+    "silviculture_pct_30m_2020": 0.0,
+    "silviculture_pct_30m_2025": 0.0,
+    "note": "Referência independente para validar o modelo; não é verdade absoluta (MapBiomas também tem erros)."
+  },
+  "model_estimate": null,
+  "qa": {
+    "auto_flags": [],
+    "visual": "pendente"
+  },
+  "license": "Copernicus Sentinel Data Legal Notice; MapBiomas CC-BY 4.0",
+  "attribution": "Contains modified Copernicus Sentinel data 2020, 2025; MapBiomas Brasil Col. 4 e 11",
+  "generated_utc": "2026-11-17T00:09:03.059671+00:00",
+  "season2": {
+    "status": "sem_cena",
+    "detail": "A=0 B=6 cenas limpas no ano"
+  },
+  "verification": {
+    "aligned_identical_grid": true,
+    "grid": [
+      "EPSG:32722",
+      [
+        10.0,
+        0.0,
+        347160.0,
+        0.0,
+        -10.0,
+        9219540.0
+      ],
+      240,
+      240
+    ],
+    "ibge_location_of_center": {
+      "ibge_municipio_codigo": "1507300",
+      "municipio": "São Félix do Xingu",
+      "uf": "PA"
+    },
+    "cdse_products_found": true
+  }
+}

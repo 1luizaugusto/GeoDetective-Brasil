@@ -1,0 +1,132 @@
+{
+ "name": "rio_tijuca",
+ "pair": [
+  {
+   "earth_search_id": "S2B_T23KPQ_20200806T130804_L2A",
+   "datetime_utc": "2020-08-06T13:08:39.749000+00:00",
+   "platform": "sentinel-2b",
+   "mgrs_tile": "23KPQ",
+   "relative_orbit": null,
+   "processing_baseline": "05.00",
+   "esa_product_uri": "S2B_MSIL2A_20200806T130249_N0500_R095_T23KPQ_20230406T023218.SAFE",
+   "tile_cloud_cover_pct": 0.073391,
+   "sun_elevation_deg": 42.0043119350314,
+   "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T23KPQ_20200806T130804_L2A"
+  },
+  {
+   "earth_search_id": "S2B_T23KPQ_20240805T130710_L2A",
+   "datetime_utc": "2024-08-05T13:08:38.966000+00:00",
+   "platform": "sentinel-2b",
+   "mgrs_tile": "23KPQ",
+   "relative_orbit": null,
+   "processing_baseline": "05.11",
+   "esa_product_uri": "S2B_MSIL2A_20240805T130249_N0511_R095_T23KPQ_20240805T181434.SAFE",
+   "tile_cloud_cover_pct": 0.015955,
+   "sun_elevation_deg": 41.7664973087602,
+   "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T23KPQ_20240805T130710_L2A"
+  }
+ ],
+ "valid": [
+  0.9902694444444444,
+  0.9909
+ ],
+ "metric": "woody",
+ "ndvi_t": 0.6,
+ "ndmi_t": 0.3,
+ "loss": [
+  {
+   "x": 200,
+   "y": 250,
+   "lon": -43.27526,
+   "lat": -22.96334,
+   "veg_a": 78.0,
+   "veg_b": 62.7,
+   "delta_pp": -15.3,
+   "valid": 0.982
+  },
+  {
+   "x": 150,
+   "y": 200,
+   "lon": -43.28513,
+   "lat": -22.95442,
+   "veg_a": 76.2,
+   "veg_b": 60.9,
+   "delta_pp": -15.2,
+   "valid": 0.975
+  },
+  {
+   "x": 200,
+   "y": 200,
+   "lon": -43.27538,
+   "lat": -22.95431,
+   "veg_a": 73.6,
+   "veg_b": 59.1,
+   "delta_pp": -14.5,
+   "valid": 0.991
+  }
+ ],
+ "gain": [
+  {
+   "x": 300,
+   "y": 0,
+   "lon": -43.25634,
+   "lat": -22.91798,
+   "veg_a": 9.0,
+   "veg_b": 8.5,
+   "delta_pp": -0.5,
+   "valid": 1.0
+  },
+  {
+   "x": 350,
+   "y": 0,
+   "lon": -43.24659,
+   "lat": -22.91787,
+   "veg_a": 7.4,
+   "veg_b": 6.6,
+   "delta_pp": -0.9,
+   "valid": 1.0
+  },
+  {
+   "x": 250,
+   "y": 0,
+   "lon": -43.26609,
+   "lat": -22.91809,
+   "veg_a": 11.8,
+   "veg_b": 10.6,
+   "delta_pp": -1.2,
+   "valid": 1.0
+  }
+ ],
+ "stable": [
+  {
+   "x": 300,
+   "y": 350,
+   "lon": -43.25553,
+   "lat": -22.98118,
+   "veg_a": 61.7,
+   "veg_b": 54.7,
+   "delta_pp": -7.0,
+   "valid": 0.986
+  },
+  {
+   "x": 250,
+   "y": 350,
+   "lon": -43.26528,
+   "lat": -22.98129,
+   "veg_a": 65.7,
+   "veg_b": 56.7,
+   "delta_pp": -9.0,
+   "valid": 0.973
+  },
+  {
+   "x": 350,
+   "y": 300,
+   "lon": -43.2459,
+   "lat": -22.97205,
+   "veg_a": 63.6,
+   "veg_b": 53.6,
+   "delta_pp": -10.0,
+   "valid": 0.984
+  }
+ ]
+}

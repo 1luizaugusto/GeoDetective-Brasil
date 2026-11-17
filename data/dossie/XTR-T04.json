@@ -1,0 +1,129 @@
+{
+ "id": "XTR-T04",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A mudança líquida de vegetação nativa é próxima de zero (armadilha).",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 0.0 pp e ganho 0.1 pp (líquido +0,1 pp); MapBiomas 30 m: perda 0.1 pp e ganho 0.2 pp (líquido +0,1 pp). NDVI mediano das imagens: 0.50→0.90. A imagem muda bastante, mas os mapas não registram troca de vegetação nativa.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-05-20 — S2B_MSIL2A_20200520T134209_N0500_R124_T22KDC_20230404T015936",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.30191&lng=-51.73061&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-05-20T00%3A00%3A00.000Z&toTime=2020-05-20T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-05-21 — S2A_MSIL2A_20250521T134231_N0511_R124_T22KDC_20250521T183602",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.30191&lng=-51.73061&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-05-21T00%3A00%3A00.000Z&toTime=2025-05-21T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 20/05/2020 e 21/05/2025 (0 dias de diferença no calendário). Época 2: 06/03/2020 e 05/03/2025 (2 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,50 → 0,89; época 2 0,71 → 0,86. Na época 2, 2025 está mais verde no recorte inteiro: essa diferença de cor vem do momento da foto (chuva, rebrota), e por isso o gabarito vem dos mapas e do modelo, não da cor.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-05-20 — S2B_MSIL2A_20200520T134209_N0500_R124_T22KDC_20230404T015936",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.30191&lng=-51.73061&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-05-20T00%3A00%3A00.000Z&toTime=2020-05-20T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-05-21 — S2A_MSIL2A_20250521T134231_N0511_R124_T22KDC_20250521T183602",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.30191&lng=-51.73061&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-05-21T00%3A00%3A00.000Z&toTime=2025-05-21T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-03-06 — S2A_MSIL2A_20200306T134211_N0500_R124_T22KDC_20230620T000108",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.30191&lng=-51.73061&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-03-06T00%3A00%3A00.000Z&toTime=2020-03-06T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-03-05 — S2B_MSIL2A_20250305T133839_N0511_R124_T22KDC_20250305T172200",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.30191&lng=-51.73061&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-03-05T00%3A00%3A00.000Z&toTime=2025-03-05T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: +0,7 pp; MapBiomas 10 m: +0,1 pp; diferença 0.6 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O verde novo é plantio comercial (silvicultura), não vegetação nativa.",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→98%; no mapa 30 m: 0→99%. NDVI nos pixels de plantio novo: +0.39 (dossel de árvores).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-05-20 — S2B_MSIL2A_20200520T134209_N0500_R124_T22KDC_20230404T015936",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.30191&lng=-51.73061&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-05-20T00%3A00%3A00.000Z&toTime=2020-05-20T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-05-21 — S2A_MSIL2A_20250521T134231_N0511_R124_T22KDC_20250521T183602",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.30191&lng=-51.73061&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-05-21T00%3A00%3A00.000Z&toTime=2025-05-21T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 0%; 2024: 0%; 2025: 0% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Selvíria/MS, bioma Cerrado.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 5007802) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 5007802",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/5007802"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Versão anterior: 'virou um eucaliptal'.",
+   "veredito": "corrigido",
+   "porque": "Os mapas dizem 'silvicultura' (árvores plantadas), sem dizer qual espécie. 'Eucalipto' saiu do texto.",
+   "fontes": []
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.2,
+  "2020": 0.0,
+  "2024": 0.0,
+  "2025": 0.0
+ },
+ "areas_protegidas": []
+}

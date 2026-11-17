@@ -1,0 +1,115 @@
+{
+ "id": "XTR-F02",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "Houve perda de vegetação nativa entre 2020 e 2025.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 100.0 pp e ganho 0.0 pp (líquido -100,0 pp); MapBiomas 30 m: perda 100.0 pp e ganho 0.0 pp (líquido -100,0 pp). NDVI mediano das imagens: 0.88→0.66. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.22 (vegetação a menos).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-07-15 — S2B_MSIL2A_20200715T140059_N0500_R067_T21MZP_20230423T062731",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-5.67528&lng=-53.56821&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-15T00%3A00%3A00.000Z&toTime=2020-07-15T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-07-16 — S2A_T21MZP_20250716T140111_L2A",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-5.67528&lng=-53.56821&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-07-16T00%3A00%3A00.000Z&toTime=2025-07-16T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Destino da vegetação nativa perdida.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Pastagem 100%; Mosaico de Usos 0%. Mapa 30 m: Pastagem 97%; Mosaico de Usos 3%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Houve fogo registrado no recorte.",
+   "veredito": "comprovado",
+   "porque": "Área queimada (MapBiomas Fogo): 2024: 44% do recorte. Fogo muda a cor da imagem; vegetação nativa queimada continua nativa.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Área De Proteção Ambiental Triunfo Do Xingu (Área de Proteção Ambiental, criada em 2006).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 100% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/352203"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Altamira/PA, bioma Amazônia.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 1500602) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 1500602",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/1500602"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2024": 43.7,
+  "2025": 0.0
+ },
+ "areas_protegidas": [
+  {
+   "nome": "Área De Proteção Ambiental Triunfo Do Xingu",
+   "tipo": "Área de Proteção Ambiental",
+   "ano": 2006,
+   "site_id": 352203,
+   "frac": 1.0
+  }
+ ]
+}

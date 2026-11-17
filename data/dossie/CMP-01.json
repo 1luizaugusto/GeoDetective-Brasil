@@ -1,0 +1,212 @@
+{
+ "id": "CMP-01",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 1.7 pp e ganho 1.3 pp (líquido -0,4 pp); MapBiomas 30 m: perda 1.4 pp e ganho 1.8 pp (líquido +0,4 pp). NDVI mediano das imagens: 0.76→0.69. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-07-25 — S2A_MSIL2A_20200725T131251_N0500_R138_T23KNT_20230425T191700",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.13465&lng=-44.09376&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-25T00%3A00%3A00.000Z&toTime=2020-07-25T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-07-24 — S2A_MSIL2A_20240724T131241_N0511_R138_T23KNT_20240724T213752",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.13465&lng=-44.09376&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-07-24T00%3A00%3A00.000Z&toTime=2024-07-24T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 25/07/2020 e 24/07/2024 (1 dia de diferença no calendário). Época 2: 01/05/2020 e 30/04/2024 (1 dia), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,69 → 0,62; época 2 0,80 → 0,79.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-07-25 — S2A_MSIL2A_20200725T131251_N0500_R138_T23KNT_20230425T191700",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.13465&lng=-44.09376&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-25T00%3A00%3A00.000Z&toTime=2020-07-25T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-07-24 — S2A_MSIL2A_20240724T131241_N0511_R138_T23KNT_20240724T213752",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.13465&lng=-44.09376&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-07-24T00%3A00%3A00.000Z&toTime=2024-07-24T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-05-01 — S2B_MSIL2A_20200501T131239_N0500_R138_T23KNT_20230404T042913",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.13465&lng=-44.09376&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-05-01T00%3A00%3A00.000Z&toTime=2020-05-01T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-04-30 — S2B_MSIL2A_20240430T131239_N0510_R138_T23KNT_20240430T141240",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.13465&lng=-44.09376&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-04-30T00%3A00%3A00.000Z&toTime=2024-04-30T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: -6,4 pp; MapBiomas 10 m: -0,4 pp; diferença 6.0 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Destino da vegetação nativa perdida.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Mosaico de Usos 78%; Pastagem 17%; Mineração 2%. Mapa 30 m: Mosaico de Usos 59%; Mineração 21%; Pastagem 19%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Origem da vegetação nativa ganha.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Mosaico de Usos 70%; Mineração 16%; Pastagem 13%. Mapa 30 m: Mosaico de Usos 62%; Pastagem 31%; Mineração 6%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 0%; 2023: 0%; 2024: 0% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Área De Proteção Ambiental Sul-Rmbh (Área de Proteção Ambiental, criada em 1994).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 26% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555576219"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Reserva Particular Do Patrimônio Natural Sítio Grimpas (Reserva Particular do Patrimônio Natural, criada em 1995).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 13% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555682746"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Brumadinho/MG, bioma Mata Atlântica.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 3109006) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 3109006",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/3109006"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Barragens da mina Córrego do Feijão (Vale) se romperam em 25/01/2019.",
+   "veredito": "comprovado",
+   "porque": "Pelo Governo de Minas Gerais, a barragem B-I rompeu às 12h28 e levou junto a B-IV e a B-IV-A. A lama desceu pelo Ribeirão Ferro-Carvão até o rio Paraopeba.",
+   "fontes": [
+    {
+     "nome": "Governo de Minas Gerais — Histórico do rompimento das barragens da Vale na Mina Córrego do Feijão",
+     "url": "https://www.mg.gov.br/pro-brumadinho/pagina/historico-do-rompimento-das-barragens-da-vale-na-mina-corrego-do-feijao"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Este recorte fica no entorno da mina, fora do caminho da lama.",
+   "veredito": "comprovado",
+   "porque": "O centro do recorte fica a cerca de 3,4 km a leste-sudeste do ponto da mina. A lama desceu para oeste, rumo ao rio Paraopeba.",
+   "fontes": [
+    {
+     "nome": "Wikipedia — Brumadinho dam disaster (coordenadas da mina)",
+     "url": "https://en.wikipedia.org/wiki/Brumadinho_dam_disaster"
+    },
+    {
+     "nome": "Governo de Minas Gerais — Histórico do rompimento das barragens da Vale na Mina Córrego do Feijão",
+     "url": "https://www.mg.gov.br/pro-brumadinho/pagina/historico-do-rompimento-das-barragens-da-vale-na-mina-corrego-do-feijao"
+    }
+   ]
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "areas_protegidas": [
+  {
+   "nome": "Área De Proteção Ambiental Sul-Rmbh",
+   "tipo": "Área de Proteção Ambiental",
+   "ano": 1994,
+   "site_id": 555576219,
+   "frac": 0.261702712391228
+  },
+  {
+   "nome": "Reserva Particular Do Patrimônio Natural Sítio Grimpas",
+   "tipo": "Reserva Particular do Patrimônio Natural",
+   "ano": 1995,
+   "site_id": 555682746,
+   "frac": 0.12754703027295744
+  }
+ ]
+}

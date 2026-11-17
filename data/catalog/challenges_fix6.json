@@ -1,0 +1,48 @@
+[
+  {
+    "id": "CAP-RN",
+    "name": "Natal – Parque das Dunas, Natal/RN",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -35.19,
+    "lat": -5.82,
+    "mode": "stable_edge",
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2025
+    ],
+    "hypothesis": "estável",
+    "notes": "Bioma costeiro a confirmar. | janela ampliada para 07-01/12-31 (sem cena limpa na janela original) | busca relaxada (ano inteiro, min_valid 0,5, 30 cenas) por excesso de nuvem | rodada 5: triagem CDSE, preferência 2025 | rodada 6: dunas brancas disparam o filtro de névoa (0,1–0,4 em cenas limpas) → haze_max 0,4; fumaça checada no QA visual",
+    "min_valid": 0.5,
+    "max_eval": 30,
+    "haze_max": 0.4
+  },
+  {
+    "id": "CAP-RR",
+    "name": "Boa Vista – lavrado e expansão urbana, Boa Vista/RR",
+    "group": "capital",
+    "biome": "Amazônia",
+    "lon": -60.72,
+    "lat": 2.82,
+    "mode": "loss",
+    "season": [
+      "01-01",
+      "03-31"
+    ],
+    "years": [
+      2020,
+      2025
+    ],
+    "hypothesis": "perda",
+    "notes": "Fogo no lavrado. | QA visual: pluma de fumaça/nuvem na data 'antes' | QA visual 2: nuvem e fumaça na data 'antes' | QA visual 3: fumaça/nuvem pequena na data 'antes' (2021-01-20) | rodada 5: triagem CDSE, preferência 2025 | rodada 6: janela jan–mar (estação seca de RR) no mesmo ano civil do rótulo MapBiomas",
+    "exclude": [
+      "S2B_T20NQJ_20210120T142730_L2A",
+      "S2B_T20NQJ_20210219T142728_L2A",
+      "S2B_T20NQJ_20210321T142730_L2A"
+    ]
+  }
+]

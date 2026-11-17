@@ -1,0 +1,155 @@
+{
+ "id": "PAN-03",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 0.0 pp e ganho 0.0 pp (líquido +0,0 pp); MapBiomas 30 m: perda 0.0 pp e ganho 0.0 pp (líquido +0,0 pp). NDVI mediano das imagens: 0.53→0.41. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-07-20 — S2A_MSIL2A_20200720T140101_N0500_R067_T21KVA_20230614T011838",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-18.02470&lng=-57.53302&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-20T00%3A00%3A00.000Z&toTime=2020-07-20T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-07-24 — S2B_MSIL2A_20240724T135709_N0511_R067_T21KVA_20240724T194013",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-18.02470&lng=-57.53302&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-07-24T00%3A00%3A00.000Z&toTime=2024-07-24T23%3A59%3A59.999Z"
+    }
+   ],
+   "revisao": "Revisão manual: estável nos dois mapas; MapBiomas Fogo: 0% queimado em 2024 → explicação antiga (queimada) era FALSA e foi reescrita"
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 20/07/2020 e 24/07/2024 (4 dias de diferença no calendário). Época 2: 16/04/2020 e 20/04/2024 (4 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,55 → 0,42; época 2 0,65 → 0,68.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-07-20 — S2A_MSIL2A_20200720T140101_N0500_R067_T21KVA_20230614T011838",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-18.02470&lng=-57.53302&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-20T00%3A00%3A00.000Z&toTime=2020-07-20T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-07-24 — S2B_MSIL2A_20240724T135709_N0511_R067_T21KVA_20240724T194013",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-18.02470&lng=-57.53302&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-07-24T00%3A00%3A00.000Z&toTime=2024-07-24T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-04-16 — S2B_MSIL2A_20200416T140049_N0500_R067_T21KVA_20230518T234155",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-18.02471&lng=-57.53302&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-04-16T00%3A00%3A00.000Z&toTime=2020-04-16T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-04-20 — S2A_MSIL2A_20240420T135711_N0510_R067_T21KVA_20240420T212452",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-18.02471&lng=-57.53302&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-04-20T00%3A00%3A00.000Z&toTime=2024-04-20T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: -1,9 pp; MapBiomas 10 m: +0,0 pp; diferença 1.9 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Houve fogo registrado no recorte.",
+   "veredito": "comprovado",
+   "porque": "Área queimada (MapBiomas Fogo): 2020: 96% do recorte. Fogo muda a cor da imagem; vegetação nativa queimada continua nativa.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Reserva Particular Do Patrimônio Natural Fazenda Acurizal E Fazenda Penha (Reserva Particular do Patrimônio Natural, criada em 1997).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 73% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555682555"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Aire de conservation du Pantanal (World Heritage Site (natural or mixed), criada em 2000).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 22% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/220297"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Corumbá/MS, bioma Pantanal.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 5003207) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 5003207",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/5003207"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'fogo de 2024'.",
+   "veredito": "corrigido",
+   "porque": "O MapBiomas Fogo marca 0% queimado em 2024 e 96% em 2020, então o nome do ano estava errado. Pela base WDPA, a RPPN Acurizal e Penha cobre 73% do recorte.",
+   "fontes": []
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 96.5,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "areas_protegidas": [
+  {
+   "nome": "Reserva Particular Do Patrimônio Natural Fazenda Acurizal E Fazenda Penha",
+   "tipo": "Reserva Particular do Patrimônio Natural",
+   "ano": 1997,
+   "site_id": 555682555,
+   "frac": 0.7252938637077974
+  },
+  {
+   "nome": "Aire de conservation du Pantanal",
+   "tipo": "World Heritage Site (natural or mixed)",
+   "ano": 2000,
+   "site_id": 220297,
+   "frac": 0.22473560403196402
+  }
+ ]
+}

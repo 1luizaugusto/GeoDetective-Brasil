@@ -1,0 +1,215 @@
+{
+  "assets": {
+    "lulc30_c11": {
+      "id": "projects/mapbiomas-public/assets/brazil/lulc/collection11/mapbiomas_brazil_collection11_coverage_v3",
+      "ok": true,
+      "n_bands": 41,
+      "first": [
+        "classification_1985",
+        "classification_1986",
+        "classification_1987"
+      ],
+      "last": [
+        "classification_2023",
+        "classification_2024",
+        "classification_2025"
+      ]
+    },
+    "lulc10_c4": {
+      "id": "projects/mapbiomas-public/assets/brazil/lulc_10m/collection4/mapbiomas_10m_collection4_coverage_v1",
+      "ok": true,
+      "n_bands": 9,
+      "first": [
+        "classification_2017",
+        "classification_2018",
+        "classification_2019"
+      ],
+      "last": [
+        "classification_2023",
+        "classification_2024",
+        "classification_2025"
+      ]
+    },
+    "defor_secveg_c11": {
+      "id": "projects/mapbiomas-public/assets/brazil/lulc/collection11/mapbiomas_brazil_collection11_deforestation_secondary_vegetation_v5",
+      "ok": true,
+      "n_bands": 39,
+      "first": [
+        "classification_1987",
+        "classification_1988",
+        "classification_1989"
+      ],
+      "last": [
+        "classification_2023",
+        "classification_2024",
+        "classification_2025"
+      ]
+    },
+    "fire_annual_c51": {
+      "id": "projects/mapbiomas-public/assets/brazil/fire/collection5_1/mapbiomas_fire_collection51_annual_burned_v1",
+      "ok": true,
+      "n_bands": 41,
+      "first": [
+        "burned_area_1985",
+        "burned_area_1986",
+        "burned_area_1987"
+      ],
+      "last": [
+        "burned_area_2023",
+        "burned_area_2024",
+        "burned_area_2025"
+      ]
+    },
+    "fire_year_last_c51": {
+      "id": "projects/mapbiomas-public/assets/brazil/fire/collection5_1/mapbiomas_fire_collection51_year_last_fire_v1",
+      "ok": true,
+      "n_bands": 42,
+      "first": [
+        "year_last_fire_1985",
+        "year_last_fire_1986",
+        "year_last_fire_1987"
+      ],
+      "last": [
+        "year_last_fire_2024",
+        "year_last_fire_2025",
+        "year_last_fire_2026"
+      ]
+    }
+  },
+  "pilots": {
+    "PILOTO-01-PERDA": {
+      "lulc30_c11_2020": {
+        "15": 3817,
+        "21": 14455,
+        "3": 39328
+      },
+      "lulc30_c11_2024": {
+        "15": 30907,
+        "21": 13499,
+        "3": 13194
+      },
+      "lulc10_c4_2020": {
+        "15": 17455,
+        "21": 38,
+        "3": 35835,
+        "6": 4272
+      },
+      "lulc10_c4_2024": {
+        "15": 42753,
+        "19": 621,
+        "21": 16,
+        "3": 11854,
+        "6": 2356
+      },
+      "defor_secveg_c11_2020": {
+        "1": 3147,
+        "2": 39328,
+        "4": 14982,
+        "7": 143
+      },
+      "defor_secveg_c11_2024": {
+        "1": 44415,
+        "2": 13167,
+        "7": 18
+      }
+    },
+    "PILOTO-02-ARMADILHA-PLANTADA": {
+      "lulc30_c11_2020": {
+        "11": 113,
+        "15": 45960,
+        "3": 6,
+        "33": 412,
+        "9": 11109
+      },
+      "lulc30_c11_2024": {
+        "11": 113,
+        "15": 3519,
+        "21": 593,
+        "3": 6,
+        "33": 493,
+        "9": 52876
+      },
+      "lulc10_c4_2020": {
+        "11": 153,
+        "15": 56695,
+        "21": 68,
+        "3": 57,
+        "33": 627
+      },
+      "lulc10_c4_2024": {
+        "11": 131,
+        "15": 3174,
+        "21": 32870,
+        "3": 245,
+        "33": 682,
+        "9": 20498
+      },
+      "defor_secveg_c11_2020": {
+        "1": 57069,
+        "2": 26,
+        "3": 90,
+        "7": 415
+      },
+      "defor_secveg_c11_2024": {
+        "1": 56988,
+        "2": 26,
+        "3": 90,
+        "7": 496
+      }
+    },
+    "PILOTO-03-ESTAVEL": {
+      "lulc30_c11_2020": {
+        "15": 2378,
+        "21": 1491,
+        "24": 5065,
+        "25": 693,
+        "3": 47883,
+        "33": 90
+      },
+      "lulc30_c11_2024": {
+        "15": 3006,
+        "21": 908,
+        "24": 6888,
+        "25": 2112,
+        "3": 44605,
+        "33": 81
+      },
+      "lulc10_c4_2020": {
+        "11": 400,
+        "15": 2030,
+        "21": 598,
+        "24": 9448,
+        "25": 2407,
+        "3": 42709,
+        "33": 8
+      },
+      "lulc10_c4_2024": {
+        "11": 719,
+        "15": 1923,
+        "21": 1055,
+        "24": 10624,
+        "25": 2230,
+        "3": 41043,
+        "33": 6
+      },
+      "defor_secveg_c11_2020": {
+        "1": 8970,
+        "2": 44025,
+        "3": 1575,
+        "4": 333,
+        "5": 2076,
+        "6": 135,
+        "7": 486
+      },
+      "defor_secveg_c11_2024": {
+        "1": 12587,
+        "2": 41526,
+        "3": 2889,
+        "4": 273,
+        "5": 10,
+        "6": 9,
+        "7": 306
+      }
+    }
+  }
+}

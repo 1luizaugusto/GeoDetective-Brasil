@@ -1,0 +1,225 @@
+[
+  {
+    "id": "CAP-MA",
+    "name": "São Luís – manguezais e área portuária do Itaqui, São Luís/MA",
+    "group": "capital",
+    "biome": "Amazônia",
+    "lon": -44.36,
+    "lat": -2.58,
+    "mode": "loss",
+    "season": [
+      "07-01",
+      "10-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda ou estável",
+    "notes": "Maré; nebulosidade. | QA visual: imagem preta (bug de nodata no tom, corrigido)"
+  },
+  {
+    "id": "CAP-SE",
+    "name": "Aracaju – Zona de Expansão, Aracaju/SE",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -37.09,
+    "lat": -11.0,
+    "mode": "loss",
+    "season": [
+      "09-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Nuvens no litoral. | QA visual: imagem preta (bug de nodata no tom, corrigido)"
+  },
+  {
+    "id": "CMP-01",
+    "name": "Brumadinho – Córrego do Feijão, Brumadinho/MG",
+    "group": "complementar",
+    "biome": "Mata Atlântica",
+    "lon": -44.12,
+    "lat": -20.12,
+    "mode": "stable_edge",
+    "season": [
+      "05-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável (sem recuperação evidente)",
+    "notes": "Hipótese inicial de ganho não confirmada na triagem. | QA visual: imagem preta (bug de nodata no tom, corrigido)"
+  },
+  {
+    "id": "GAN-01",
+    "name": "Ganho nativo — Pantanal (MT)",
+    "group": "complementar_ganho",
+    "biome": "Pantanal",
+    "lon": -57.38079,
+    "lat": -17.56027,
+    "mode": "gain",
+    "season": [
+      "06-01",
+      "09-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho de vegetação nativa (regeneração) segundo MapBiomas",
+    "notes": "célula GEE: ganho 59.0%, perda 0.1%, nativa 2020 31.2% | CAUTELA: no Pantanal o 'ganho' pode ser dinâmica de cheia/fogo, não regeneração | QA visual: imagem preta (bug de nodata no tom, corrigido)"
+  },
+  {
+    "id": "GAN-03",
+    "name": "Ganho nativo — Pantanal (MT)",
+    "group": "complementar_ganho",
+    "biome": "Pantanal",
+    "lon": -57.35923,
+    "lat": -17.77586,
+    "mode": "gain",
+    "season": [
+      "06-01",
+      "09-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho de vegetação nativa (regeneração) segundo MapBiomas",
+    "notes": "célula GEE: ganho 45.6%, perda 0.0%, nativa 2020 16.4% | CAUTELA: no Pantanal o 'ganho' pode ser dinâmica de cheia/fogo, não regeneração | QA visual: imagem preta (bug de nodata no tom, corrigido)"
+  },
+  {
+    "id": "CAP-AM",
+    "name": "Manaus – Reserva Florestal Adolpho Ducke, Manaus/AM",
+    "group": "capital",
+    "biome": "Amazônia",
+    "lon": -59.91895,
+    "lat": -2.94519,
+    "mode": "stable_edge",
+    "season": [
+      "07-01",
+      "10-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Considerar deslocar o recorte para incluir a borda urbana. | QA visual: recorte sem borda (floresta contínua): exige borda visível",
+    "item_a": "S2B_T20MRB_20200721T141737_L2A",
+    "item_b": "S2B_T20MRB_20240720T141713_L2A",
+    "search": 6000
+  },
+  {
+    "id": "CER-03",
+    "name": "Parque Nacional das Emas – borda com lavouras, Mineiros/GO",
+    "group": "bioma",
+    "biome": "Cerrado",
+    "lon": -52.92,
+    "lat": -18.1,
+    "mode": "stable_edge",
+    "season": [
+      "05-01",
+      "07-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Fogo e rebrota no campo cerrado alteram a aparência sem perda líquida. | QA visual: recorte sem borda (100% nativo): exige borda visível"
+  },
+  {
+    "id": "CMP-02",
+    "name": "Terra Indígena Apyterewa, São Félix do Xingu/PA",
+    "group": "complementar",
+    "biome": "Amazônia",
+    "lon": -52.0,
+    "lat": -5.3,
+    "mode": "loss",
+    "season": [
+      "06-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Coordenada aproximada; localizar área afetada. | QA visual: floresta uniforme super-contrastada: faixa mínima de contraste"
+  },
+  {
+    "id": "CAP-PB",
+    "name": "João Pessoa – Mata do Buraquinho, João Pessoa/PB",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -34.86,
+    "lat": -7.14,
+    "mode": "stable_edge",
+    "season": [
+      "07-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Nuvens no litoral. | janela ampliada para 07-01/12-31 (sem cena limpa na janela original) | QA visual: nuvens pequenas e sombras não marcadas pelo SCL na data 'depois'",
+    "exclude": [
+      "S2A_T25MBN_20240814T124318_L2A"
+    ],
+    "max_eval": 30,
+    "min_valid": 0.5
+  },
+  {
+    "id": "CAP-RR",
+    "name": "Boa Vista – lavrado e expansão urbana, Boa Vista/RR",
+    "group": "capital",
+    "biome": "Amazônia",
+    "lon": -60.72,
+    "lat": 2.82,
+    "mode": "loss",
+    "season": [
+      "12-01",
+      "03-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Fogo no lavrado. | QA visual: pluma de fumaça/nuvem na data 'antes'",
+    "exclude": [
+      "S2B_T20NQJ_20210219T142728_L2A"
+    ]
+  },
+  {
+    "id": "CAP-RS",
+    "name": "Porto Alegre – Delta do Jacuí, Porto Alegre/RS",
+    "group": "capital",
+    "biome": "Pampa",
+    "lon": -51.25,
+    "lat": -29.97,
+    "mode": "stable_edge",
+    "season": [
+      "11-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável ou variação por enchente",
+    "notes": "Água e sedimento pós-enchente não são perda de vegetação. | QA visual: nuvens pequenas na data 'depois'",
+    "exclude": [
+      "S2A_T22JDM_20241124T132231_L2A"
+    ]
+  }
+]

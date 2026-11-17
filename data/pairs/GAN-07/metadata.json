@@ -1,0 +1,204 @@
+{
+  "challenge_id": "GAN-07",
+  "name": "Ganho nativo — Nordeste do Pará",
+  "group": "complementar_ganho",
+  "biome": "Amazônia",
+  "mode": "gain",
+  "selection_hypothesis": "ganho de vegetação nativa (regeneração) segundo MapBiomas",
+  "notes": "célula GEE: ganho 16.8%, perda 0%, nativa 2020 22.4%",
+  "years": [
+    2020,
+    2024
+  ],
+  "target_definition": "vegetação nativa (MapBiomas: Floresta + Vegetação Herbácea e Arbustiva); silvicultura, agricultura e pastagem = não-alvo",
+  "search_center_lonlat": [
+    -47.9377,
+    -1.23968
+  ],
+  "center_lonlat": [
+    -47.934997,
+    -1.235314
+  ],
+  "aoi": {
+    "crs": "EPSG:32723",
+    "bounds_utm": [
+      172140.0,
+      9862080.0,
+      174540.0,
+      9864480.0
+    ],
+    "size_m": 2400,
+    "bbox_lonlat": [
+      -47.945781,
+      -1.246168,
+      -47.924213,
+      -1.22446
+    ],
+    "pixel_size_m": 10.0,
+    "shape": [
+      240,
+      240
+    ]
+  },
+  "crop_selection": {
+    "mode": "gain",
+    "search_size_m": 8000,
+    "offset_px": [
+      312,
+      234
+    ],
+    "based_on": "máscaras MapBiomas (nativa 10 m + 30 m; silvicultura 30 m)"
+  },
+  "display": {
+    "zoom_factor": 3,
+    "resampling": "Lanczos (sem super-resolução)",
+    "game_image_px": 720,
+    "tone": {
+      "bands": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "black": 0.0153999924659729,
+      "white": 0.1103999987244606,
+      "gamma": 0.5999,
+      "saturation": 1.12,
+      "percentiles": [
+        0.5,
+        99.0
+      ],
+      "target_mid": 0.36,
+      "scope": "par (duas datas juntas)"
+    }
+  },
+  "images": [
+    {
+      "earth_search_id": "S2B_T22MHD_20200808T134214_L2A",
+      "datetime_utc": "2020-08-08T13:42:47.481000+00:00",
+      "platform": "sentinel-2b",
+      "mgrs_tile": "22MHD",
+      "relative_orbit": 124,
+      "processing_baseline": "05.00",
+      "esa_product_uri": "S2B_MSIL2A_20200808T134219_N0500_R124_T22MHD_20230320T022258.SAFE",
+      "tile_cloud_cover_pct": 0.000295,
+      "sun_elevation_deg": 61.0436870699868,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T22MHD_20200808T134214_L2A",
+      "search_valid_fraction_scl": 1.0,
+      "search_haze_fraction": 0.0011,
+      "crop_valid_fraction_scl": 1.0,
+      "crop_haze_fraction": 0.0011,
+      "cdse_product_id": "S2B_MSIL2A_20200808T134219_N0500_R124_T22MHD_20230320T022258",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20200808T134219_N0500_R124_T22MHD_20230320T022258",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-1.23531&lng=-47.93500&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-08-08T00%3A00%3A00.000Z&toTime=2020-08-08T23%3A59%3A59.999Z"
+    },
+    {
+      "earth_search_id": "S2B_T22MHD_20240807T133836_L2A",
+      "datetime_utc": "2024-08-07T13:42:47.476000+00:00",
+      "platform": "sentinel-2b",
+      "mgrs_tile": "22MHD",
+      "relative_orbit": 124,
+      "processing_baseline": "05.11",
+      "esa_product_uri": "S2B_MSIL2A_20240807T133839_N0511_R124_T22MHD_20240807T172418.SAFE",
+      "tile_cloud_cover_pct": 1.863308,
+      "sun_elevation_deg": 60.8569892265754,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T22MHD_20240807T133836_L2A",
+      "search_valid_fraction_scl": 0.9955,
+      "search_haze_fraction": 0.0028,
+      "crop_valid_fraction_scl": 1.0,
+      "crop_haze_fraction": 0.0009,
+      "cdse_product_id": "S2B_MSIL2A_20240807T133839_N0511_R124_T22MHD_20240807T172418",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20240807T133839_N0511_R124_T22MHD_20240807T172418",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-1.23531&lng=-47.93500&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-08-07T00%3A00%3A00.000Z&toTime=2024-08-07T23%3A59%3A59.999Z"
+    }
+  ],
+  "doy_difference_days": 1,
+  "same_mgrs_tile": true,
+  "same_relative_orbit": true,
+  "bands_10m_stack": [
+    "blue(B02)",
+    "green(B03)",
+    "red(B04)",
+    "rededge1(B05)",
+    "rededge2(B06)",
+    "rededge3(B07)",
+    "nir(B08)",
+    "nir08(B8A)",
+    "swir16(B11)",
+    "swir22(B12)"
+  ],
+  "reference_mapbiomas": {
+    "source": "MapBiomas Brasil — Col. 4 (10 m, Sentinel-2) e Col. 11 (30 m, Landsat), via Google Earth Engine",
+    "assets": {
+      "10m": "projects/mapbiomas-public/assets/brazil/lulc_10m/collection4/mapbiomas_10m_collection4_coverage_v1",
+      "30m": "projects/mapbiomas-public/assets/brazil/lulc/collection11/mapbiomas_brazil_collection11_coverage_v3"
+    },
+    "native_classes_col11": [
+      3,
+      6,
+      4,
+      7,
+      5,
+      49,
+      12,
+      77,
+      11,
+      84,
+      50,
+      32,
+      29
+    ],
+    "native_pct_10m_2020": 41.33,
+    "native_pct_10m_2024": 45.05,
+    "delta_pp_10m": 3.72,
+    "native_pct_30m_2020": 28.47,
+    "native_pct_30m_2024": 45.06,
+    "delta_pp_30m": 16.59,
+    "silviculture_pct_30m_2020": 0.0,
+    "silviculture_pct_30m_2024": 0.0,
+    "note": "Referência independente para validar o modelo; não é verdade absoluta (MapBiomas também tem erros)."
+  },
+  "model_estimate": {
+    "model": "rf_native_v1",
+    "method": "out-of-fold (GroupKFold espacial)",
+    "fold": 4,
+    "native_pct_a": 61.02,
+    "native_pct_b": 70.08,
+    "delta_pp": 9.06,
+    "computed_utc": "2026-11-13T00:22:14.137754+00:00"
+  },
+  "qa": {
+    "auto_flags": [
+      "MAPAS_DIVERGEM>10pp"
+    ],
+    "visual": "pendente"
+  },
+  "license": "Copernicus Sentinel Data Legal Notice; MapBiomas CC-BY 4.0",
+  "attribution": "Contains modified Copernicus Sentinel data 2020, 2024; MapBiomas Brasil Col. 4 e 11",
+  "generated_utc": "2026-11-12T22:14:39.399262+00:00",
+  "verification": {
+    "aligned_identical_grid": true,
+    "grid": [
+      "EPSG:32723",
+      [
+        10.0,
+        0.0,
+        172140.0,
+        0.0,
+        -10.0,
+        9864480.0
+      ],
+      240,
+      240
+    ],
+    "ibge_location_of_center": {
+      "ibge_municipio_codigo": "1502400",
+      "municipio": "Castanhal",
+      "uf": "PA"
+    },
+    "cdse_products_found": true
+  },
+  "season2": {
+    "status": "sem_cena",
+    "detail": "A=1 B=0 cenas limpas no ano"
+  }
+}

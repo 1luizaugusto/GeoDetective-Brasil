@@ -1,0 +1,58 @@
+{
+  "generated_utc": "2026-11-13T00:22:14.137754+00:00",
+  "n_challenges": 65,
+  "n_groups": 62,
+  "folds": 5,
+  "validation": "GroupKFold espacial por desafio (out-of-fold)",
+  "rf_params": {
+    "n_estimators": 300,
+    "min_samples_leaf": 3,
+    "max_features": "sqrt",
+    "class_weight": "balanced_subsample",
+    "n_jobs": -1,
+    "random_state": 42
+  },
+  "features": [
+    "blue",
+    "green",
+    "red",
+    "rededge1",
+    "rededge2",
+    "rededge3",
+    "nir",
+    "nir08",
+    "swir16",
+    "swir22",
+    "NDVI",
+    "NDMI",
+    "NBR",
+    "NDWI",
+    "RE_ratio",
+    "NDVI_mean5",
+    "NDVI_std5",
+    "bioma_Amazônia",
+    "bioma_Caatinga",
+    "bioma_Cerrado",
+    "bioma_Mata Atlântica",
+    "bioma_Pampa",
+    "bioma_Pantanal"
+  ],
+  "pixels_per_image_train": 3000,
+  "pixel": {
+    "overall_accuracy": 0.8412,
+    "f1_native": 0.8385,
+    "n_pixels": 7487900
+  },
+  "delta_vs_mapbiomas10m": {
+    "MAE_pp": 7.86,
+    "bias_pp": 3.46,
+    "RMSE_pp": 18.0,
+    "pearson_r": 0.703
+  },
+  "delta_vs_mapbiomas30m": {
+    "MAE_pp": 9.08,
+    "bias_pp": 2.0,
+    "RMSE_pp": 18.53
+  },
+  "note": "MapBiomas é referência, não verdade absoluta. Sem amostra de campo/Olofsson ainda."
+}

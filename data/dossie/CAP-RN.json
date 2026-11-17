@@ -1,0 +1,130 @@
+{
+ "id": "CAP-RN",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2025.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 0.8 pp e ganho 0.1 pp (líquido -0,7 pp); MapBiomas 30 m: perda 0.8 pp e ganho 0.2 pp (líquido -0,6 pp). NDVI mediano das imagens: 0.52→0.55. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-09-29 — S2B_MSIL2A_20200929T124319_N0500_R009_T25MBP_20230405T093344",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-5.82271&lng=-35.19631&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-09-29T00%3A00%3A00.000Z&toTime=2020-09-29T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-09-28 — S2C_MSIL2A_20250928T124311_N0511_R009_T25MBP_20250928T165912",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-5.82271&lng=-35.19631&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-09-28T00%3A00%3A00.000Z&toTime=2025-09-28T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 29/09/2020 e 28/09/2025 (2 dias de diferença no calendário). Época 2: 17/05/2020 e 23/05/2025 (5 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,48 → 0,50; época 2 0,55 → 0,54.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-09-29 — S2B_MSIL2A_20200929T124319_N0500_R009_T25MBP_20230405T093344",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-5.82271&lng=-35.19631&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-09-29T00%3A00%3A00.000Z&toTime=2020-09-29T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-09-28 — S2C_MSIL2A_20250928T124311_N0511_R009_T25MBP_20250928T165912",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-5.82271&lng=-35.19631&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-09-28T00%3A00%3A00.000Z&toTime=2025-09-28T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-05-17 — S2A_MSIL2A_20200517T124321_N0500_R009_T25MBP_20230415T193115",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-5.82271&lng=-35.19631&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-05-17T00%3A00%3A00.000Z&toTime=2020-05-17T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-05-23 — S2A_MSIL2A_20250523T124331_N0511_R009_T25MBP_20250523T164611",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-5.82271&lng=-35.19631&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-05-23T00%3A00%3A00.000Z&toTime=2025-05-23T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: +3,7 pp; MapBiomas 10 m: -0,7 pp; diferença 4.4 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 0%; 2024: 0%; 2025: 0% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Parque Estadual Dunas De Natal \" Jornalista Luiz Maria Alves (Parque, criada em 1977).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 48% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555682917"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Natal/RN, bioma Mata Atlântica.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 2408102) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 2408102",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/2408102"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2024": 0.0,
+  "2025": 0.0
+ },
+ "areas_protegidas": [
+  {
+   "nome": "Parque Estadual Dunas De Natal \" Jornalista Luiz Maria Alves",
+   "tipo": "Parque",
+   "ano": 1977,
+   "site_id": 555682917,
+   "frac": 0.482698550137117
+  }
+ ]
+}

@@ -1,0 +1,611 @@
+[
+  {
+    "id": "XTR-T01",
+    "name": "Silvicultura em expansão, Ribas do Rio Pardo/MS",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -53.4276,
+    "lat": -20.6676,
+    "mode": "trap",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "armadilha",
+    "notes": "find_sites.py (trap): célula ~2,4 km MapBiomas 30 m — nativa 0.00→0.00, silvicultura 0.00→1.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-T02",
+    "name": "Chapadões rurais, Ribas do Rio Pardo/MS",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -52.9092,
+    "lat": -20.538,
+    "mode": "trap",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "armadilha",
+    "notes": "find_sites.py (trap): célula ~2,4 km MapBiomas 30 m — nativa 0.01→0.01, silvicultura 0.00→0.99, aberta 0.01→0.00"
+  },
+  {
+    "id": "XTR-T03",
+    "name": "Silvicultura em expansão, Água Clara/MS",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -52.8876,
+    "lat": -19.89,
+    "mode": "trap",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "armadilha",
+    "notes": "find_sites.py (trap): célula ~2,4 km MapBiomas 30 m — nativa 0.03→0.03, silvicultura 0.00→0.97, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-T04",
+    "name": "Chapadões rurais, Selvíria/MS",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -51.7212,
+    "lat": -20.2788,
+    "mode": "trap",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "armadilha",
+    "notes": "find_sites.py (trap): célula ~2,4 km MapBiomas 30 m — nativa 0.01→0.01, silvicultura 0.02→0.98, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-T05",
+    "name": "Silvicultura em expansão, Guarantã/SP",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -49.6868,
+    "lat": -21.8988,
+    "mode": "trap",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "armadilha",
+    "notes": "find_sites.py (trap): célula ~2,4 km MapBiomas 30 m — nativa 0.15→0.16, silvicultura 0.00→0.42, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-E01",
+    "name": "Borda de campo/savana nativa, Baixa Grande do Ribeiro/PI",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -45.3412,
+    "lat": -9.0132,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (open_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.70→0.70, silvicultura 0.00→0.00, aberta 0.70→0.70"
+  },
+  {
+    "id": "XTR-E02",
+    "name": "Borda de campo/savana nativa, Lagoa Real/BA",
+    "group": "extra",
+    "biome": "Caatinga",
+    "lon": -42.2524,
+    "lat": -14.0972,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (open_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.70→0.68, silvicultura 0.00→0.00, aberta 0.70→0.68"
+  },
+  {
+    "id": "XTR-E03",
+    "name": "Borda de campo/savana nativa, Tangará da Serra/MT",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -58.4684,
+    "lat": -14.4644,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (open_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.70→0.70, silvicultura 0.00→0.00, aberta 0.70→0.70"
+  },
+  {
+    "id": "XTR-E04",
+    "name": "Borda de campo/savana nativa, Pilão Arcado/BA",
+    "group": "extra",
+    "biome": "Caatinga",
+    "lon": -42.6628,
+    "lat": -9.7692,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (open_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.70→0.69, silvicultura 0.00→0.00, aberta 0.70→0.69"
+  },
+  {
+    "id": "XTR-E05",
+    "name": "Caatinga e roças, Boa Viagem/CE",
+    "group": "extra",
+    "biome": "Caatinga",
+    "lon": -40.0236,
+    "lat": -5.1644,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (open_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.70→0.70, silvicultura 0.00→0.00, aberta 0.70→0.70"
+  },
+  {
+    "id": "XTR-E06",
+    "name": "Borda de campo/savana nativa, Espinosa/MG",
+    "group": "extra",
+    "biome": "Caatinga",
+    "lon": -43.1596,
+    "lat": -14.7668,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (open_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.70→0.69, silvicultura 0.00→0.00, aberta 0.70→0.69"
+  },
+  {
+    "id": "XTR-E07",
+    "name": "Borda de campo/savana nativa, São João da Serra/PI",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -41.838,
+    "lat": -5.5532,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (open_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.70→0.71, silvicultura 0.00→0.00, aberta 0.70→0.71"
+  },
+  {
+    "id": "XTR-E08",
+    "name": "Borda de campo/savana nativa, Palmeira do Piauí/PI",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -44.5852,
+    "lat": -8.6028,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (open_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.70→0.70, silvicultura 0.00→0.00, aberta 0.70→0.70"
+  },
+  {
+    "id": "XTR-E09",
+    "name": "Borda de campo/savana nativa, São Gabriel/RS",
+    "group": "extra",
+    "biome": "Pampa",
+    "lon": -54.6196,
+    "lat": -30.1836,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (open_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.70→0.72, silvicultura 0.00→0.00, aberta 0.70→0.71"
+  },
+  {
+    "id": "XTR-E10",
+    "name": "Borda de campo/savana nativa, Palhoça/SC",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -48.6068,
+    "lat": -27.8468,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (open_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.70→0.68, silvicultura 0.00→0.02, aberta 0.70→0.67"
+  },
+  {
+    "id": "XTR-E11",
+    "name": "Borda de campo/savana nativa, Uruguaiana/RS",
+    "group": "extra",
+    "biome": "Pampa",
+    "lon": -56.3908,
+    "lat": -30.054,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (open_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.70→0.68, silvicultura 0.00→0.00, aberta 0.70→0.68"
+  },
+  {
+    "id": "XTR-E12",
+    "name": "Borda de campo/savana nativa, Boa Vista/RR",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -60.8228,
+    "lat": 3.3324,
+    "mode": "stable_edge",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "estável",
+    "notes": "find_sites.py (open_edge): célula ~2,4 km MapBiomas 30 m — nativa 0.70→0.68, silvicultura 0.00→0.00, aberta 0.70→0.68"
+  },
+  {
+    "id": "XTR-L01",
+    "name": "Perda de campo/savana nativa, Jaborandi/BA",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -45.5788,
+    "lat": -14.0324,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 0.99→0.00"
+  },
+  {
+    "id": "XTR-L02",
+    "name": "Perda de campo/savana nativa, Jaborandi/BA",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -45.622,
+    "lat": -14.4212,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 1.00→0.00"
+  },
+  {
+    "id": "XTR-L03",
+    "name": "Perda de campo/savana nativa, Cocos/BA",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -45.082,
+    "lat": -14.5508,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 1.00→0.00"
+  },
+  {
+    "id": "XTR-L04",
+    "name": "Perda de campo/savana nativa, Guadalupe/PI",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -43.678,
+    "lat": -6.8964,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 1.00→0.00"
+  },
+  {
+    "id": "XTR-L05",
+    "name": "Perda de campo/savana nativa, Pavussu/PI",
+    "group": "extra",
+    "biome": "Caatinga",
+    "lon": -43.2244,
+    "lat": -8.0196,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 1.00→0.00"
+  },
+  {
+    "id": "XTR-L06",
+    "name": "Perda de campo/savana nativa, Manoel Emídio/PI",
+    "group": "extra",
+    "biome": "Caatinga",
+    "lon": -43.9588,
+    "lat": -8.3652,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 0.51→0.00"
+  },
+  {
+    "id": "XTR-L07",
+    "name": "Perda de campo/savana nativa, Brasnorte/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -57.7516,
+    "lat": -12.5164,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 0.98→0.00, silvicultura 0.00→0.00, aberta 0.22→0.00"
+  },
+  {
+    "id": "XTR-L08",
+    "name": "Perda de campo/savana nativa, Piracuruca/PI",
+    "group": "extra",
+    "biome": "Caatinga",
+    "lon": -41.4924,
+    "lat": -3.9548,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 0.99→0.05, silvicultura 0.00→0.00, aberta 0.99→0.05"
+  },
+  {
+    "id": "XTR-L09",
+    "name": "Perda de campo/savana nativa, Santo Inácio do Piauí/PI",
+    "group": "extra",
+    "biome": "Caatinga",
+    "lon": -42.0796,
+    "lat": -7.5228,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 0.97→0.14, silvicultura 0.00→0.00, aberta 0.97→0.14"
+  },
+  {
+    "id": "XTR-L10",
+    "name": "Perda de campo/savana nativa, Dom Pedrito/RS",
+    "group": "extra",
+    "biome": "Pampa",
+    "lon": -54.058,
+    "lat": -30.9828,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 0.94→0.16, silvicultura 0.00→0.00, aberta 0.89→0.11"
+  },
+  {
+    "id": "XTR-L11",
+    "name": "Perda de campo/savana nativa, Jaguarão/RS",
+    "group": "extra",
+    "biome": "Pampa",
+    "lon": -53.622,
+    "lat": -32.3868,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 0.82→0.07, silvicultura 0.00→0.00, aberta 0.78→0.03"
+  },
+  {
+    "id": "XTR-L12",
+    "name": "Perda de campo/savana nativa, Uruguaiana/RS",
+    "group": "extra",
+    "biome": "Pampa",
+    "lon": -56.6284,
+    "lat": -29.6396,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 0.94→0.20, silvicultura 0.00→0.00, aberta 0.94→0.20"
+  }
+]

@@ -1,0 +1,198 @@
+{
+  "challenge_id": "PILOTO-02-ARMADILHA-PLANTADA",
+  "name": "Silvicultura a NO de Três Lagoas/MS (Cerrado)",
+  "group": "",
+  "biome": "",
+  "mode": "trap",
+  "selection_hypothesis": "armadilha: muito mais árvores (eucalipto plantado sobre pastagem), mas Δ de vegetação NATIVA esperado ≈ 0",
+  "notes": "Com o alvo 'vegetação nativa', silvicultura não conta. Desafio didático: verde ≠ nativo. Mata ciliar nativa deve ser checada com MapBiomas.",
+  "years": [
+    2020,
+    2024
+  ],
+  "target_definition": "vegetação nativa (MapBiomas: Floresta + Vegetação Herbácea e Arbustiva); silvicultura, agricultura e pastagem = não-alvo",
+  "search_center_lonlat": [
+    -51.97431,
+    -20.55425
+  ],
+  "center_lonlat": [
+    -51.963857,
+    -20.570213
+  ],
+  "aoi": {
+    "crs": "EPSG:32722",
+    "bounds_utm": [
+      398340.0,
+      7723920.0,
+      400740.0,
+      7726320.0
+    ],
+    "size_m": 2400,
+    "bbox_lonlat": [
+      -51.975437,
+      -20.581118,
+      -51.952277,
+      -20.559306
+    ],
+    "pixel_size_m": 10.0,
+    "shape": [
+      240,
+      240
+    ]
+  },
+  "crop_selection": {
+    "mode": "trap",
+    "search_size_m": 6000,
+    "offset_px": [
+      294,
+      360
+    ],
+    "based_on": "máscaras MapBiomas (nativa 10 m + 30 m; silvicultura 30 m)"
+  },
+  "display": {
+    "zoom_factor": 3,
+    "resampling": "Lanczos (sem super-resolução)",
+    "game_image_px": 720,
+    "tone": {
+      "bands": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "black": 0.01199999451637268,
+      "white": 0.10659999400377274,
+      "gamma": 1.0,
+      "saturation": 1.12,
+      "percentiles": [
+        0.5,
+        99.0
+      ],
+      "target_mid": 0.36,
+      "scope": "par (duas datas juntas)"
+    }
+  },
+  "images": [
+    {
+      "earth_search_id": "S2B_T22KCC_20200530T134212_L2A",
+      "datetime_utc": "2020-05-30T13:48:07.037000+00:00",
+      "platform": "sentinel-2b",
+      "mgrs_tile": "22KCC",
+      "relative_orbit": 124,
+      "processing_baseline": "05.00",
+      "esa_product_uri": "S2B_MSIL2A_20200530T134209_N0500_R124_T22KCC_20230405T065924.SAFE",
+      "tile_cloud_cover_pct": 0.005584,
+      "sun_elevation_deg": 41.2894862467788,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T22KCC_20200530T134212_L2A",
+      "search_valid_fraction_scl": 1.0,
+      "search_haze_fraction": 0.0,
+      "crop_valid_fraction_scl": 1.0,
+      "crop_haze_fraction": 0.0,
+      "cdse_product_id": "S2B_MSIL2A_20200530T134209_N0500_R124_T22KCC_20230405T065924",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20200530T134209_N0500_R124_T22KCC_20230405T065924",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.57021&lng=-51.96386&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-05-30T00%3A00%3A00.000Z&toTime=2020-05-30T23%3A59%3A59.999Z"
+    },
+    {
+      "earth_search_id": "S2B_T22KCC_20240529T134749_L2A",
+      "datetime_utc": "2024-05-29T13:48:05.324000+00:00",
+      "platform": "sentinel-2b",
+      "mgrs_tile": "22KCC",
+      "relative_orbit": 124,
+      "processing_baseline": "05.10",
+      "esa_product_uri": "S2B_MSIL2A_20240529T133839_N0510_R124_T22KCC_20240529T204948.SAFE",
+      "tile_cloud_cover_pct": 0.017591,
+      "sun_elevation_deg": 41.4244913080299,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T22KCC_20240529T134749_L2A",
+      "search_valid_fraction_scl": 1.0,
+      "search_haze_fraction": 0.0,
+      "crop_valid_fraction_scl": 1.0,
+      "crop_haze_fraction": 0.0,
+      "cdse_product_id": "S2B_MSIL2A_20240529T133839_N0510_R124_T22KCC_20240529T204948",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20240529T133839_N0510_R124_T22KCC_20240529T204948",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.57021&lng=-51.96386&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-05-29T00%3A00%3A00.000Z&toTime=2024-05-29T23%3A59%3A59.999Z"
+    }
+  ],
+  "doy_difference_days": 1,
+  "same_mgrs_tile": true,
+  "same_relative_orbit": true,
+  "bands_10m_stack": [
+    "blue(B02)",
+    "green(B03)",
+    "red(B04)",
+    "rededge1(B05)",
+    "rededge2(B06)",
+    "rededge3(B07)",
+    "nir(B08)",
+    "nir08(B8A)",
+    "swir16(B11)",
+    "swir22(B12)"
+  ],
+  "reference_mapbiomas": {
+    "source": "MapBiomas Brasil — Col. 4 (10 m, Sentinel-2) e Col. 11 (30 m, Landsat), via Google Earth Engine",
+    "assets": {
+      "10m": "projects/mapbiomas-public/assets/brazil/lulc_10m/collection4/mapbiomas_10m_collection4_coverage_v1",
+      "30m": "projects/mapbiomas-public/assets/brazil/lulc/collection11/mapbiomas_brazil_collection11_coverage_v3"
+    },
+    "native_classes_col11": [
+      3,
+      6,
+      4,
+      7,
+      5,
+      49,
+      12,
+      77,
+      11,
+      84,
+      50,
+      32,
+      29
+    ],
+    "native_pct_10m_2020": 0.73,
+    "native_pct_10m_2024": 1.08,
+    "delta_pp_10m": 0.35,
+    "native_pct_30m_2020": 0.56,
+    "native_pct_30m_2024": 0.54,
+    "delta_pp_30m": -0.02,
+    "silviculture_pct_30m_2020": 17.02,
+    "silviculture_pct_30m_2024": 90.94,
+    "note": "Referência independente para validar o modelo; não é verdade absoluta (MapBiomas também tem erros)."
+  },
+  "model_estimate": {
+    "model": "rf_native_v1",
+    "method": "out-of-fold (GroupKFold espacial)",
+    "fold": 3,
+    "native_pct_a": 3.51,
+    "native_pct_b": 95.96,
+    "delta_pp": 92.45,
+    "computed_utc": "2026-11-13T00:22:14.137754+00:00"
+  },
+  "qa": {
+    "auto_flags": [],
+    "visual": "pendente"
+  },
+  "license": "Copernicus Sentinel Data Legal Notice; MapBiomas CC-BY 4.0",
+  "attribution": "Contains modified Copernicus Sentinel data 2020, 2024; MapBiomas Brasil Col. 4 e 11",
+  "generated_utc": "2026-11-12T19:06:47.243579+00:00",
+  "verification": {
+    "aligned_identical_grid": true,
+    "grid": [
+      "EPSG:32722",
+      [
+        10.0,
+        0.0,
+        398340.0,
+        0.0,
+        -10.0,
+        7726320.0
+      ],
+      240,
+      240
+    ],
+    "ibge_location_of_center": {
+      "ibge_municipio_codigo": "5008305",
+      "municipio": "Três Lagoas",
+      "uf": "MS"
+    },
+    "cdse_products_found": true
+  }
+}

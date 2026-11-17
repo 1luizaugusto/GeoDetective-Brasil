@@ -1,0 +1,134 @@
+{
+ "id": "PAN-01",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A mudança líquida de vegetação nativa é próxima de zero (armadilha).",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 0.0 pp e ganho 0.0 pp (líquido +0,0 pp); MapBiomas 30 m: perda 0.0 pp e ganho 0.0 pp (líquido +0,0 pp). NDVI mediano das imagens: 0.22→0.48. A imagem muda bastante, mas os mapas não registram troca de vegetação nativa.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-09-23 — S2B_MSIL2A_20200923T140059_N0500_R067_T21KWA_20230421T171438",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-17.35290&lng=-56.87651&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-09-23T00%3A00%3A00.000Z&toTime=2020-09-23T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-09-22 — S2B_MSIL2A_20240922T135659_N0511_R067_T21KWA_20240922T194135",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-17.35290&lng=-56.87651&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-09-22T00%3A00%3A00.000Z&toTime=2024-09-22T23%3A59%3A59.999Z"
+    }
+   ],
+   "revisao": "Revisão manual: queimada confirmada: MapBiomas Fogo 88% do recorte queimado em 2020; nativa sem mudança nos dois mapas → armadilha do fogo"
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 23/09/2020 e 22/09/2024 (1 dia de diferença no calendário). Época 2: 21/04/2020 e 20/04/2024 (1 dia), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,29 → 0,52; época 2 0,79 → 0,83.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-09-23 — S2B_MSIL2A_20200923T140059_N0500_R067_T21KWA_20230421T171438",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-17.35290&lng=-56.87651&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-09-23T00%3A00%3A00.000Z&toTime=2020-09-23T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-09-22 — S2B_MSIL2A_20240922T135659_N0511_R067_T21KWA_20240922T194135",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-17.35290&lng=-56.87651&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-09-22T00%3A00%3A00.000Z&toTime=2024-09-22T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-04-21 — S2A_MSIL2A_20200421T140051_N0500_R067_T21KWA_20230522T022854",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-17.35290&lng=-56.87651&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-04-21T00%3A00%3A00.000Z&toTime=2020-04-21T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-04-20 — S2A_MSIL2A_20240420T135711_N0510_R067_T21KWA_20240420T212452",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-17.35290&lng=-56.87651&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-04-20T00%3A00%3A00.000Z&toTime=2024-04-20T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "não comprovado",
+   "porque": "Modelo de duas épocas: +16,9 pp; MapBiomas 10 m: +0,0 pp; diferença 16.9 pp, FORA da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Houve fogo registrado no recorte.",
+   "veredito": "comprovado",
+   "porque": "Área queimada (MapBiomas Fogo): 2020: 88% do recorte; 2023: 64% do recorte. Fogo muda a cor da imagem; vegetação nativa queimada continua nativa.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Poconé/MT, bioma Pantanal.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 5106505) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 5106505",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/5106505"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Em 2020 grandes incêndios queimaram o Pantanal.",
+   "veredito": "comprovado",
+   "porque": "Estudo do INPE divulgado pela FAPESP: os incêndios de 2020 queimaram cerca de 30% do Pantanal brasileiro. O MapBiomas Fogo marca 88% deste recorte queimado em 2020 (a imagem 'antes' é de 23/09/2020).",
+   "fontes": [
+    {
+     "nome": "Agência FAPESP (29/08/2023) — Em 2020, grandes incêndios queimaram 30% do Pantanal",
+     "url": "https://agencia.fapesp.br/em-2020-grandes-incendios-queimaram-30-do-pantanal/44693"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'Parque Estadual Encontro das Águas'.",
+   "veredito": "corrigido",
+   "porque": "Pela base WDPA, o parque fica a 17 km do recorte, então o nome agora traz só o município (Poconé).",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA — PE Encontro das Águas",
+     "url": "https://www.protectedplanet.net/555576191"
+    }
+   ]
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 87.7,
+  "2023": 64.1,
+  "2024": 1.6
+ },
+ "areas_protegidas": []
+}

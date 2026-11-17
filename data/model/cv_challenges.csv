@@ -1,0 +1,66 @@
+id,fold,mode,biome,pred_a,pred_b,delta_pred,delta_ref10,delta_ref30
+CAP-AC,0,loss,Amazônia,9.83,8.62,-1.22,-3.11,-2.61
+CAP-ES,0,stable_edge,Mata Atlântica,45.69,45.79,0.1,-0.17,-0.38
+CAP-MA,0,loss,Amazônia,47.99,44.66,-3.33,-1.52,-2.49
+CAP-MS,0,stable_edge,Cerrado,63.46,58.27,-5.19,-3.4,0.32
+CAP-PE,0,stable_edge,Mata Atlântica,53.7,51.14,-2.56,-1.18,0.77
+CAP-PI,0,loss,Cerrado,3.43,6.63,3.2,-7.5,-3.54
+CAP-RS,0,stable_edge,Pampa,77.46,69.76,-7.7,-0.96,-0.45
+CER-02,0,loss,Cerrado,84.76,21.45,-63.31,-64.78,-67.26
+GAN-02,0,gain,Pantanal,57.13,99.42,42.29,65.84,54.61
+GAN-09,0,gain,Amazônia,50.46,47.35,-3.11,-2.48,16.52
+GAN-11,0,gain,Mata Atlântica,13.06,18.73,5.67,1.13,4.82
+PAM-02,0,trap,Pampa,78.91,73.03,-5.88,0.01,-0.34
+PAN-02,0,stable_edge,Pantanal,96.22,89.1,-7.11,-3.84,3.62
+AMZ-03,1,stable_edge,Amazônia,52.47,52.02,-0.45,0.07,0.02
+CAA-03,1,stable_edge,Caatinga,48.0,31.3,-16.7,-2.5,-0.24
+CAP-AM,1,stable_edge,Amazônia,74.42,74.49,0.07,0.29,-0.07
+CAP-PA,1,stable_edge,Amazônia,53.49,52.51,-0.98,-0.03,0.41
+CAP-RR,1,loss,Amazônia,2.06,1.55,-0.52,-7.09,-2.84
+CAP-SE,1,loss,Mata Atlântica,29.29,31.59,2.3,0.23,-5.8
+CAP-SP,1,loss,Mata Atlântica,42.33,35.81,-6.53,-5.27,-4.96
+CAP-TO,1,loss,Cerrado,28.56,21.84,-6.72,-8.94,-14.82
+CMP-02,1,loss,Amazônia,97.89,89.25,-8.64,-8.34,-10.14
+CMP-03,1,stable_edge,Cerrado,5.95,8.41,2.46,-0.93,-1.09
+GAN-05,1,gain,Cerrado,38.14,67.1,28.96,30.35,17.43
+PAM-01,1,stable_edge,Pampa,72.46,89.26,16.79,-0.01,0.05
+PAM-03,1,loss,Pampa,25.95,31.4,5.45,-8.4,-12.31
+PILOTO-03-ESTAVEL,1,stable_edge,,76.85,75.7,-1.14,0.69,-0.18
+CAP-BA,2,stable_edge,Mata Atlântica,46.22,47.63,1.42,-2.2,-1.27
+CAP-CE,2,stable_edge,Caatinga,8.9,13.83,4.93,-1.14,-0.62
+CAP-DF,2,stable_edge,Cerrado,46.95,46.37,-0.58,-0.58,-0.03
+CAP-MT,2,loss,Cerrado,27.69,30.86,3.16,-3.92,-5.93
+CAP-PB,2,stable_edge,Mata Atlântica,47.88,45.17,-2.71,-1.55,-0.07
+CAP-PR,2,loss,Mata Atlântica,32.12,32.55,0.43,-1.7,-1.41
+CER-03,2,stable_edge,Cerrado,25.78,25.75,-0.02,-1.36,1.4
+CMP-01,2,stable_edge,Mata Atlântica,55.45,51.12,-4.33,-0.45,0.4
+GAN-08,2,gain,Amazônia,85.03,84.7,-0.32,-0.43,16.36
+GAN-12,2,gain,Mata Atlântica,33.82,40.54,6.72,2.99,7.84
+MAT-01,2,gain,Mata Atlântica,39.33,44.56,5.23,1.23,2.06
+PAN-01,2,gain,Pantanal,91.99,99.57,7.58,0.0,0.02
+AMZ-01,3,loss,Amazônia,76.36,35.3,-41.07,-42.98,-44.37
+CAA-02,3,stable_edge,Caatinga,56.14,56.04,-0.1,-0.32,2.2
+CAP-MG,3,loss,Mata Atlântica,23.36,22.88,-0.48,-7.41,-4.53
+CAP-RJ,3,stable_edge,Mata Atlântica,46.31,49.41,3.09,-0.96,-1.12
+CAP-RN,3,stable_edge,Mata Atlântica,24.32,33.24,8.92,-0.76,-0.6
+CER-01,3,trap,Cerrado,3.51,95.96,92.45,0.35,-0.02
+CMP-04,3,gain,Mata Atlântica,45.89,51.45,5.56,2.97,2.44
+GAN-03,3,gain,Pantanal,33.89,95.23,61.34,57.65,56.47
+GAN-04,3,gain,Cerrado,52.21,68.82,16.61,26.48,31.36
+GAN-10,3,gain,Mata Atlântica,52.62,55.06,2.43,1.91,5.17
+MAT-02,3,loss,Mata Atlântica,16.65,9.32,-7.33,-12.73,-17.01
+PAN-03,3,loss,Pantanal,100.0,99.89,-0.11,0.0,0.0
+PILOTO-02-ARMADILHA-PLANTADA,3,trap,,3.51,95.96,92.45,0.35,-0.02
+AMZ-02,4,stable_edge,Amazônia,82.03,50.44,-31.59,-0.16,-0.02
+CAA-01,4,loss,Caatinga,40.07,52.17,12.1,-4.36,-4.47
+CAP-AL,4,gain,Mata Atlântica,30.4,23.67,-6.73,2.19,2.17
+CAP-AP,4,loss,Amazônia,13.94,11.03,-2.91,-3.45,-6.06
+CAP-GO,4,loss,Cerrado,38.44,37.66,-0.78,-3.44,-1.36
+CAP-RO,4,loss,Amazônia,88.94,38.37,-50.57,-44.96,-45.37
+CAP-SC,4,stable_edge,Mata Atlântica,57.09,59.72,2.63,0.39,0.47
+CMP-05,4,stable_edge,Cerrado,99.98,99.38,-0.61,-0.01,0.0
+GAN-01,4,gain,Pantanal,40.46,89.38,48.92,58.97,66.38
+GAN-06,4,gain,Cerrado,3.11,28.02,24.91,2.98,45.67
+GAN-07,4,gain,Amazônia,61.02,70.08,9.06,3.72,16.59
+MAT-03,4,stable_edge,Mata Atlântica,55.35,55.88,0.53,0.13,-0.26
+PILOTO-01-PERDA,4,loss,,88.94,38.37,-50.57,-44.96,-45.37

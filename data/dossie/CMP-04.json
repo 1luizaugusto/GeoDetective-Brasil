@@ -1,0 +1,112 @@
+{
+ "id": "CMP-04",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "Houve ganho (regeneração) de vegetação nativa entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 1.4 pp e ganho 4.4 pp (líquido +3,0 pp); MapBiomas 30 m: perda 0.7 pp e ganho 3.1 pp (líquido +2,4 pp). NDVI mediano das imagens: 0.74→0.77. Nos pixels que os dois mapas marcam como ganho, o NDVI subiu 0.12.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-06-12 — S2A_MSIL2A_20200612T130251_N0500_R095_T23KPT_20230327T055733",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.23994&lng=-43.42058&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-06-12T00%3A00%3A00.000Z&toTime=2020-06-12T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-06-11 — S2A_MSIL2A_20240611T130251_N0510_R095_T23KPT_20240611T175646",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.23994&lng=-43.42058&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-06-11T00%3A00%3A00.000Z&toTime=2024-06-11T23%3A59%3A59.999Z"
+    }
+   ],
+   "revisao": "Revisão manual: regeneração pequena confirmada: ganho líquido nos dois mapas (10 m +3,0, 30 m +2,4 pp), NDVI +0,12 nos pixels de ganho, manchas verdes novas visíveis na sobreposição"
+  },
+  {
+   "afirmacao": "Origem da vegetação nativa ganha.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Mosaico de Usos 86%; Pastagem 9%; Rio/Lago/Oceano 3%. Mapa 30 m: Pastagem 68%; Rio/Lago/Oceano 28%; Mineração 4%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 0%; 2023: 0%; 2024: 0% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Mariana/MG, bioma Mata Atlântica.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 3140001) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 3140001",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/3140001"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "A barragem de Fundão (Samarco) rompeu em 05/11/2015 e soterrou Bento Rodrigues.",
+   "veredito": "comprovado",
+   "porque": "Pelo MPF, a onda de rejeitos soterrou boa parte de Bento Rodrigues e desceu pelo rio Gualaxo do Norte. O centro do recorte fica a cerca de 0,5 km das coordenadas do distrito.",
+   "fontes": [
+    {
+     "nome": "Ministério Público Federal — Caso Samarco: o desastre",
+     "url": "https://www.mpf.mp.br/grandes-casos/caso-samarco/o-desastre"
+    },
+    {
+     "nome": "Wikipedia — Bento Rodrigues (coordenadas)",
+     "url": "https://pt.wikipedia.org/wiki/Bento_Rodrigues"
+    }
+   ]
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2023": 0.0,
+  "2024": 0.2
+ },
+ "areas_protegidas": []
+}

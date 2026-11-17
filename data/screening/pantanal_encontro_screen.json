@@ -1,0 +1,101 @@
+{
+ "name": "pantanal_encontro",
+ "pair": [
+  {
+   "earth_search_id": "S2A_T21KWA_20200928T140058_L2A",
+   "datetime_utc": "2020-09-28T14:07:32.799000+00:00",
+   "platform": "sentinel-2a",
+   "mgrs_tile": "21KWA",
+   "relative_orbit": null,
+   "processing_baseline": "05.00",
+   "esa_product_uri": "S2A_MSIL2A_20200928T140101_N0500_R067_T21KWA_20230425T105640.SAFE",
+   "tile_cloud_cover_pct": 0.187176,
+   "sun_elevation_deg": 63.3539976247516,
+   "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2A_T21KWA_20200928T140058_L2A"
+  },
+  {
+   "earth_search_id": "S2B_T21KWA_20250927T140650_L2A",
+   "datetime_utc": "2025-09-27T14:07:27.497000+00:00",
+   "platform": "sentinel-2b",
+   "mgrs_tile": "21KWA",
+   "relative_orbit": null,
+   "processing_baseline": "05.11",
+   "esa_product_uri": "S2B_MSIL2A_20250927T135659_N0511_R067_T21KWA_20250927T203045.SAFE",
+   "tile_cloud_cover_pct": 3.186101,
+   "sun_elevation_deg": 62.970671580385,
+   "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T21KWA_20250927T140650_L2A"
+  }
+ ],
+ "valid": [
+  0.99869,
+  0.999871
+ ],
+ "metric": "ndvi",
+ "ndvi_t": 0.6,
+ "ndmi_t": 0.3,
+ "loss": [
+  {
+   "x": 100,
+   "y": 350,
+   "lon": -56.90193,
+   "lat": -17.34551,
+   "veg_a": 0.0,
+   "veg_b": 60.7,
+   "delta_pp": 60.7,
+   "valid": 1.0
+  },
+  {
+   "x": 350,
+   "y": 100,
+   "lon": -56.8549,
+   "lat": -17.30028,
+   "veg_a": 0.3,
+   "veg_b": 61.7,
+   "delta_pp": 61.4,
+   "valid": 0.994
+  },
+  {
+   "x": 350,
+   "y": 50,
+   "lon": -56.85491,
+   "lat": -17.29124,
+   "veg_a": 0.5,
+   "veg_b": 62.1,
+   "delta_pp": 61.6,
+   "valid": 0.994
+  }
+ ],
+ "gain": [
+  {
+   "x": 550,
+   "y": 450,
+   "lon": -56.8172,
+   "lat": -17.36353,
+   "veg_a": 0.4,
+   "veg_b": 96.8,
+   "delta_pp": 96.4,
+   "valid": 1.0
+  },
+  {
+   "x": 500,
+   "y": 450,
+   "lon": -56.82661,
+   "lat": -17.36353,
+   "veg_a": 0.2,
+   "veg_b": 96.4,
+   "delta_pp": 96.2,
+   "valid": 1.0
+  },
+  {
+   "x": 0,
+   "y": 750,
+   "lon": -56.92072,
+   "lat": -17.41783,
+   "veg_a": 0.0,
+   "veg_b": 96.1,
+   "delta_pp": 96.1,
+   "valid": 1.0
+  }
+ ],
+ "stable": []
+}

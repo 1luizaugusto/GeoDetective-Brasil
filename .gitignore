@@ -1,0 +1,32 @@
+# rasters científicos são reprodutíveis pelos scripts (publicar versão final no Zenodo)
+data/pairs/**/*.tif
+data/external/
+data/screening/*.png
+data/zoom_study/
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+game/dist/
+data/qa/
+data/catalog/build_v1.log
+game/node_modules/
+game/dist/
+models/
+data/model/*.png
+science/.env
+.env
+# imagens intermediárias dos pares (reprodutíveis pelos scripts; o jogo usa game/public/data)
+data/pairs/**/*.png
+# configurações locais do Claude Code / editor
+.claude/
+# segredos: nunca versionar
+*.env
+.env.*
+!.env.example
+credentials*.json
+*service-account*.json
+*.pem
+*.key
+# logs de execução (caminhos locais)
+*.log

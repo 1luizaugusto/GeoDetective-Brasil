@@ -1,0 +1,275 @@
+{
+  "challenge_id": "CAP-PR",
+  "name": "Curitiba – expansão sul (CIC/Tatuquara), Curitiba/PR",
+  "group": "capital",
+  "biome": "Mata Atlântica",
+  "mode": "loss",
+  "selection_hypothesis": "perda",
+  "notes": "Geadas alteram gramados no inverno.",
+  "years": [
+    2020,
+    2024
+  ],
+  "target_definition": "vegetação nativa (MapBiomas: Floresta + Vegetação Herbácea e Arbustiva); silvicultura, agricultura e pastagem = não-alvo",
+  "search_center_lonlat": [
+    -49.33,
+    -25.57
+  ],
+  "center_lonlat": [
+    -49.317041,
+    -25.563163
+  ],
+  "aoi": {
+    "crs": "EPSG:32722",
+    "bounds_utm": [
+      667860.0,
+      7170420.0,
+      670260.0,
+      7172820.0
+    ],
+    "size_m": 2400,
+    "bbox_lonlat": [
+      -49.329133,
+      -25.574132,
+      -49.304947,
+      -25.552194
+    ],
+    "pixel_size_m": 10.0,
+    "shape": [
+      240,
+      240
+    ]
+  },
+  "crop_selection": {
+    "mode": "loss",
+    "search_size_m": 8000,
+    "offset_px": [
+      414,
+      210
+    ],
+    "based_on": "máscaras MapBiomas (nativa 10 m + 30 m; silvicultura 30 m)"
+  },
+  "display": {
+    "zoom_factor": 3,
+    "resampling": "Lanczos (sem super-resolução)",
+    "game_image_px": 720,
+    "tone": {
+      "bands": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "black": 0.01019999384880066,
+      "white": 0.24540001153945923,
+      "gamma": 0.6186,
+      "saturation": 1.12,
+      "percentiles": [
+        0.5,
+        99.0
+      ],
+      "target_mid": 0.36,
+      "scope": "par (duas datas juntas)"
+    }
+  },
+  "images": [
+    {
+      "earth_search_id": "S2B_T22JFS_20200723T132503_L2A",
+      "datetime_utc": "2020-07-23T13:29:33.714000+00:00",
+      "platform": "sentinel-2b",
+      "mgrs_tile": "22JFS",
+      "relative_orbit": 38,
+      "processing_baseline": "05.00",
+      "esa_product_uri": "S2B_MSIL2A_20200723T132239_N0500_R038_T22JFS_20230325T072624.SAFE",
+      "tile_cloud_cover_pct": 1.160497,
+      "sun_elevation_deg": 36.4680636251909,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T22JFS_20200723T132503_L2A",
+      "search_valid_fraction_scl": 0.9999,
+      "search_haze_fraction": 0.005,
+      "crop_valid_fraction_scl": 1.0,
+      "crop_haze_fraction": 0.0053,
+      "cdse_product_id": "S2B_MSIL2A_20200723T132239_N0500_R038_T22JFS_20230325T072624",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20200723T132239_N0500_R038_T22JFS_20230325T072624",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-25.56316&lng=-49.31704&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-23T00%3A00%3A00.000Z&toTime=2020-07-23T23%3A59%3A59.999Z"
+    },
+    {
+      "earth_search_id": "S2B_T22JFS_20240722T132235_L2A",
+      "datetime_utc": "2024-07-22T13:29:35.015000+00:00",
+      "platform": "sentinel-2b",
+      "mgrs_tile": "22JFS",
+      "relative_orbit": 38,
+      "processing_baseline": "05.10",
+      "esa_product_uri": "S2B_MSIL2A_20240722T132239_N0510_R038_T22JFS_20240722T153350.SAFE",
+      "tile_cloud_cover_pct": 0.446953,
+      "sun_elevation_deg": 36.3044233611313,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T22JFS_20240722T132235_L2A",
+      "search_valid_fraction_scl": 1.0,
+      "search_haze_fraction": 0.0109,
+      "crop_valid_fraction_scl": 1.0,
+      "crop_haze_fraction": 0.0135,
+      "cdse_product_id": "S2B_MSIL2A_20240722T132239_N0510_R038_T22JFS_20240722T153350",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20240722T132239_N0510_R038_T22JFS_20240722T153350",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-25.56316&lng=-49.31704&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-07-22T00%3A00%3A00.000Z&toTime=2024-07-22T23%3A59%3A59.999Z"
+    }
+  ],
+  "doy_difference_days": 1,
+  "same_mgrs_tile": true,
+  "same_relative_orbit": true,
+  "bands_10m_stack": [
+    "blue(B02)",
+    "green(B03)",
+    "red(B04)",
+    "rededge1(B05)",
+    "rededge2(B06)",
+    "rededge3(B07)",
+    "nir(B08)",
+    "nir08(B8A)",
+    "swir16(B11)",
+    "swir22(B12)"
+  ],
+  "reference_mapbiomas": {
+    "source": "MapBiomas Brasil — Col. 4 (10 m, Sentinel-2) e Col. 11 (30 m, Landsat), via Google Earth Engine",
+    "assets": {
+      "10m": "projects/mapbiomas-public/assets/brazil/lulc_10m/collection4/mapbiomas_10m_collection4_coverage_v1",
+      "30m": "projects/mapbiomas-public/assets/brazil/lulc/collection11/mapbiomas_brazil_collection11_coverage_v3"
+    },
+    "native_classes_col11": [
+      3,
+      6,
+      4,
+      7,
+      5,
+      49,
+      12,
+      77,
+      11,
+      84,
+      50,
+      32,
+      29
+    ],
+    "native_pct_10m_2020": 32.43,
+    "native_pct_10m_2024": 30.73,
+    "delta_pp_10m": -1.7,
+    "native_pct_30m_2020": 29.34,
+    "native_pct_30m_2024": 27.93,
+    "delta_pp_30m": -1.41,
+    "silviculture_pct_30m_2020": 0.0,
+    "silviculture_pct_30m_2024": 0.0,
+    "note": "Referência independente para validar o modelo; não é verdade absoluta (MapBiomas também tem erros)."
+  },
+  "model_estimate": {
+    "model": "rf_native_v2",
+    "method": "out-of-fold (GroupKFold espacial), duas estações por ano",
+    "fold": 2,
+    "native_pct_a": 29.19,
+    "native_pct_b": 30.28,
+    "delta_pp": 1.08,
+    "computed_utc": "2026-11-17T03:50:14.426819+00:00"
+  },
+  "qa": {
+    "auto_flags": [],
+    "visual": "pendente"
+  },
+  "license": "Copernicus Sentinel Data Legal Notice; MapBiomas CC-BY 4.0",
+  "attribution": "Contains modified Copernicus Sentinel data 2020, 2024; MapBiomas Brasil Col. 4 e 11",
+  "generated_utc": "2026-11-12T21:10:04.026894+00:00",
+  "verification": {
+    "aligned_identical_grid": true,
+    "grid": [
+      "EPSG:32722",
+      [
+        10.0,
+        0.0,
+        667860.0,
+        0.0,
+        -10.0,
+        7172820.0
+      ],
+      240,
+      240
+    ],
+    "ibge_location_of_center": {
+      "ibge_municipio_codigo": "4106902",
+      "municipio": "Curitiba",
+      "uf": "PR"
+    },
+    "cdse_products_found": true
+  },
+  "season2": {
+    "status": "ok",
+    "images": [
+      {
+        "earth_search_id": "S2B_T22JFS_20200315T132231_L2A",
+        "datetime_utc": "2020-03-15T13:29:29.626000+00:00",
+        "platform": "sentinel-2b",
+        "mgrs_tile": "22JFS",
+        "relative_orbit": null,
+        "processing_baseline": "05.00",
+        "esa_product_uri": "S2B_MSIL2A_20200315T132229_N0500_R038_T22JFS_20230425T153335.SAFE",
+        "tile_cloud_cover_pct": 0.304641,
+        "sun_elevation_deg": 53.0066348087067,
+        "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T22JFS_20200315T132231_L2A",
+        "crop_valid_fraction_scl": 0.9996,
+        "cdse_product_id": "S2B_MSIL2A_20200315T132229_N0500_R038_T22JFS_20230425T153335",
+        "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-25.56316&lng=-49.31704&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-03-15T00%3A00%3A00.000Z&toTime=2020-03-15T23%3A59%3A59.999Z"
+      },
+      {
+        "earth_search_id": "S2B_T22JFS_20240314T132230_L2A",
+        "datetime_utc": "2024-03-14T13:29:29.413000+00:00",
+        "platform": "sentinel-2b",
+        "mgrs_tile": "22JFS",
+        "relative_orbit": null,
+        "processing_baseline": "05.10",
+        "esa_product_uri": "S2B_MSIL2A_20240314T132229_N0510_R038_T22JFS_20240314T153246.SAFE",
+        "tile_cloud_cover_pct": 1.122876,
+        "sun_elevation_deg": 53.2192946581889,
+        "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T22JFS_20240314T132230_L2A",
+        "crop_valid_fraction_scl": 0.9996,
+        "cdse_product_id": "S2B_MSIL2A_20240314T132229_N0510_R038_T22JFS_20240314T153246",
+        "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-25.56316&lng=-49.31704&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-03-14T00%3A00%3A00.000Z&toTime=2024-03-14T23%3A59%3A59.999Z"
+      }
+    ],
+    "doy_difference_days": 1,
+    "ndvi_gain_vs_primary": [
+      0.034,
+      0.032
+    ],
+    "ndvi_crop": {
+      "season2": [
+        0.506,
+        0.521
+      ],
+      "primary": [
+        0.471,
+        0.49
+      ]
+    },
+    "rule": "par mais verde em comum: entre datas limpas (cobertura 100%, SCL válido ≥ 99,9%, névoa ≤ 0,006, s2cloudless ≤ 0,2%) do mesmo ano civil, a ≥ 45 dias da data principal e com ≤ 30 dias de diferença de dia do ano entre os anos, maximiza o menor NDVI médio do recorte",
+    "display_tone": {
+      "bands": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "black": 0.015199996531009674,
+      "white": 0.28220000863075256,
+      "gamma": 0.5987,
+      "saturation": 1.12,
+      "percentiles": [
+        0.5,
+        99.0
+      ],
+      "target_mid": 0.36,
+      "scope": "par (duas datas juntas)"
+    }
+  },
+  "model_estimate_v1": {
+    "model": "rf_native_v1",
+    "method": "out-of-fold (GroupKFold espacial)",
+    "fold": 2,
+    "native_pct_a": 32.12,
+    "native_pct_b": 32.55,
+    "delta_pp": 0.43,
+    "computed_utc": "2026-11-13T00:22:14.137754+00:00"
+  }
+}

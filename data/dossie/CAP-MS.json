@@ -1,0 +1,160 @@
+{
+ "id": "CAP-MS",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 3.6 pp e ganho 0.2 pp (líquido -3,4 pp); MapBiomas 30 m: perda 0.6 pp e ganho 0.9 pp (líquido +0,3 pp). NDVI mediano das imagens: 0.69→0.66. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-06-07 — S2A_MSIL2A_20200607T135121_N0500_R024_T21KYT_20230326T100229",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.44843&lng=-54.56005&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-06-07T00%3A00%3A00.000Z&toTime=2020-06-07T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-06-06 — S2A_MSIL2A_20240606T134711_N0510_R024_T21KYT_20240606T203856",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.44843&lng=-54.56005&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-06-06T00%3A00%3A00.000Z&toTime=2024-06-06T23%3A59%3A59.999Z"
+    }
+   ],
+   "revisao": "Revisão manual: parque visivelmente igual na sobreposição (evidencia_revisao1.png); os 3,6% \"urbanizados\" do 10 m são ruído de borda; 30 m líquido +0,3 pp"
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 07/06/2020 e 06/06/2024 (1 dia de diferença no calendário). Época 2: 09/03/2020 e 03/03/2024 (6 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,60 → 0,58; época 2 0,59 → 0,58.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-06-07 — S2A_MSIL2A_20200607T135121_N0500_R024_T21KYT_20230326T100229",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.44843&lng=-54.56005&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-06-07T00%3A00%3A00.000Z&toTime=2020-06-07T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-06-06 — S2A_MSIL2A_20240606T134711_N0510_R024_T21KYT_20240606T203856",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.44843&lng=-54.56005&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-06-06T00%3A00%3A00.000Z&toTime=2024-06-06T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-03-09 — S2A_MSIL2A_20200309T135111_N0500_R024_T21KYT_20230627T151341",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.44843&lng=-54.56005&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-03-09T00%3A00%3A00.000Z&toTime=2020-03-09T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-03-03 — S2B_MSIL2A_20240303T134659_N0510_R024_T21KYT_20240303T174415",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.44843&lng=-54.56005&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-03-03T00%3A00%3A00.000Z&toTime=2024-03-03T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: -4,3 pp; MapBiomas 10 m: -3,4 pp; diferença 0.9 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 0%; 2023: 0%; 2024: 0% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Parque Estadual Do Prosa (Parque, criada em 2002).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 22% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/352023"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Área De Proteção Ambiental Dos Mananciais Do Córrego Lajeado - Apa Do Lajeado (Área de Proteção Ambiental, criada em 2001).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela fica a menos de 1 km do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555799702"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Campo Grande/MS, bioma Cerrado.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 5002704) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 5002704",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/5002704"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O recorte fica no Parque dos Poderes, que inclui o Parque Estadual do Prosa.",
+   "veredito": "comprovado",
+   "porque": "Pelo OpenStreetMap, o centro está a 0,4 km do Parque dos Poderes. Pela base WDPA, o Parque Estadual do Prosa (2002) cobre 22% do recorte.",
+   "fontes": [
+    {
+     "nome": "OpenStreetMap — Parque dos Poderes",
+     "url": "https://www.openstreetmap.org/relation/6196851"
+    }
+   ]
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "areas_protegidas": [
+  {
+   "nome": "Parque Estadual Do Prosa",
+   "tipo": "Parque",
+   "ano": 2002,
+   "site_id": 352023,
+   "frac": 0.2224823571397996
+  },
+  {
+   "nome": "Área De Proteção Ambiental Dos Mananciais Do Córrego Lajeado - Apa Do Lajeado",
+   "tipo": "Área de Proteção Ambiental",
+   "ano": 2001,
+   "site_id": 555799702,
+   "frac": 0.0
+  }
+ ]
+}

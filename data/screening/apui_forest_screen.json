@@ -1,0 +1,122 @@
+{
+ "name": "apui_forest",
+ "pair": [
+  {
+   "earth_search_id": "S2A_T20MRT_20200716T141740_L2A",
+   "datetime_utc": "2020-07-16T14:24:39.590000+00:00",
+   "platform": "sentinel-2a",
+   "mgrs_tile": "20MRT",
+   "relative_orbit": null,
+   "processing_baseline": "05.00",
+   "esa_product_uri": "S2A_MSIL2A_20200716T141741_N0500_R010_T20MRT_20230322T203006.SAFE",
+   "tile_cloud_cover_pct": 2.001908,
+   "sun_elevation_deg": 52.6395143514827,
+   "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2A_T20MRT_20200716T141740_L2A"
+  },
+  {
+   "earth_search_id": "S2A_T20MRT_20240715T142306_L2A",
+   "datetime_utc": "2024-07-15T14:24:36.511000+00:00",
+   "platform": "sentinel-2a",
+   "mgrs_tile": "20MRT",
+   "relative_orbit": null,
+   "processing_baseline": "05.10",
+   "esa_product_uri": "S2A_MSIL2A_20240715T141711_N0510_R010_T20MRT_20240715T184846.SAFE",
+   "tile_cloud_cover_pct": 0.270636,
+   "sun_elevation_deg": 52.5256737496705,
+   "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2A_T20MRT_20240715T142306_L2A"
+  }
+ ],
+ "valid": [
+  0.9997125,
+  0.9994513888888888
+ ],
+ "metric": "forest",
+ "ndvi_t": 0.6,
+ "ndmi_t": 0.3,
+ "loss": [
+  {
+   "x": 0,
+   "y": 650,
+   "lon": -59.97634,
+   "lat": -7.23081,
+   "veg_a": 29.8,
+   "veg_b": 22.9,
+   "delta_pp": -6.8,
+   "valid": 1.0
+  },
+  {
+   "x": 0,
+   "y": 600,
+   "lon": -59.97628,
+   "lat": -7.22178,
+   "veg_a": 31.9,
+   "veg_b": 25.3,
+   "delta_pp": -6.6,
+   "valid": 1.0
+  },
+  {
+   "x": 50,
+   "y": 650,
+   "lon": -59.9673,
+   "lat": -7.23087,
+   "veg_a": 38.3,
+   "veg_b": 31.7,
+   "delta_pp": -6.5,
+   "valid": 1.0
+  }
+ ],
+ "gain": [
+  {
+   "x": 50,
+   "y": 400,
+   "lon": -59.967,
+   "lat": -7.1857,
+   "veg_a": 57.8,
+   "veg_b": 59.4,
+   "delta_pp": 1.7,
+   "valid": 1.0
+  },
+  {
+   "x": 200,
+   "y": 0,
+   "lon": -59.9394,
+   "lat": -7.11361,
+   "veg_a": 46.0,
+   "veg_b": 47.3,
+   "delta_pp": 1.3,
+   "valid": 1.0
+  },
+  {
+   "x": 50,
+   "y": 350,
+   "lon": -59.96694,
+   "lat": -7.17667,
+   "veg_a": 51.8,
+   "veg_b": 53.1,
+   "delta_pp": 1.3,
+   "valid": 1.0
+  }
+ ],
+ "stable": [
+  {
+   "x": 50,
+   "y": 450,
+   "lon": -59.96706,
+   "lat": -7.19474,
+   "veg_a": 61.4,
+   "veg_b": 60.4,
+   "delta_pp": -0.9,
+   "valid": 1.0
+  },
+  {
+   "x": 100,
+   "y": 450,
+   "lon": -59.95802,
+   "lat": -7.1948,
+   "veg_a": 61.9,
+   "veg_b": 60.6,
+   "delta_pp": -1.3,
+   "valid": 1.0
+  }
+ ]
+}

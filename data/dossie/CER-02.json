@@ -1,0 +1,166 @@
+{
+ "id": "CER-02",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "Houve perda de vegetação nativa entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 64.8 pp e ganho 0.0 pp (líquido -64,8 pp); MapBiomas 30 m: perda 67.3 pp e ganho 0.0 pp (líquido -67,3 pp). NDVI mediano das imagens: 0.62→0.22. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.45 (vegetação a menos).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-08-27 — S2A_MSIL2A_20200827T132241_N0500_R038_T23LMH_20230316T103413",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-11.22480&lng=-45.59050&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-08-27T00%3A00%3A00.000Z&toTime=2020-08-27T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-08-26 — S2A_MSIL2A_20240826T132231_N0511_R038_T23LMH_20240826T184153",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-11.22480&lng=-45.59050&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-08-26T00%3A00%3A00.000Z&toTime=2024-08-26T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 27/08/2020 e 26/08/2024 (1 dia de diferença no calendário). Época 2: 04/04/2020 e 03/05/2024 (29 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,60 → 0,30; época 2 0,73 → 0,59. Na época 2, 2020 está mais verde no recorte inteiro: essa diferença de cor vem do momento da foto (chuva, rebrota), e por isso o gabarito vem dos mapas e do modelo, não da cor.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-08-27 — S2A_MSIL2A_20200827T132241_N0500_R038_T23LMH_20230316T103413",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-11.22480&lng=-45.59050&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-08-27T00%3A00%3A00.000Z&toTime=2020-08-27T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-08-26 — S2A_MSIL2A_20240826T132231_N0511_R038_T23LMH_20240826T184153",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-11.22480&lng=-45.59050&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-08-26T00%3A00%3A00.000Z&toTime=2024-08-26T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-04-04 — S2B_T23LMH_20200404T132230_L2A",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-11.22480&lng=-45.59050&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-04-04T00%3A00%3A00.000Z&toTime=2020-04-04T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-05-03 — S2B_MSIL2A_20240503T132229_N0510_R038_T23LMH_20240503T153146",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-11.22480&lng=-45.59050&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-05-03T00%3A00%3A00.000Z&toTime=2024-05-03T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: -61,5 pp; MapBiomas 10 m: -64,8 pp; diferença 3.3 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Destino da vegetação nativa perdida.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Mosaico de Usos 100%. Mapa 30 m: Mosaico de Usos 69%; Soja 18%; Outras Lav. Temporárias 13%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Houve fogo registrado no recorte.",
+   "veredito": "comprovado",
+   "porque": "Área queimada (MapBiomas Fogo): 2024: 21% do recorte. Fogo muda a cor da imagem; vegetação nativa queimada continua nativa.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Área De Proteção Ambiental Do Rio Preto (Área de Proteção Ambiental, criada em 2006).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 98% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555600312"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Formosa do Rio Preto/BA, bioma Cerrado.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 2911105) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 2911105",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/2911105"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Formosa do Rio Preto (BA) faz parte do MATOPIBA.",
+   "veredito": "comprovado",
+   "porque": "O município está na lista de municípios da delimitação oficial da Embrapa (p. 18).",
+   "fontes": [
+    {
+     "nome": "Embrapa — Proposta de Delimitação Territorial do MATOPIBA (Nota Técnica GITE 1, lista de municípios p. 18)",
+     "url": "https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1037313/1/NT1DelimitacaoMatopiba.pdf"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Versão anterior: 'convertido em lavoura mecanizada em grande escala'.",
+   "veredito": "corrigido",
+   "porque": "O mapa 10 m classifica a área aberta como mosaico de usos. O mapa 30 m mostra soja (18%) e outras lavouras temporárias (13%) em parte dela. O texto agora diz exatamente isso.",
+   "fontes": []
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2023": 0.0,
+  "2024": 21.2
+ },
+ "areas_protegidas": [
+  {
+   "nome": "Área De Proteção Ambiental Do Rio Preto",
+   "tipo": "Área de Proteção Ambiental",
+   "ano": 2006,
+   "site_id": 555600312,
+   "frac": 0.9772968001079045
+  }
+ ]
+}

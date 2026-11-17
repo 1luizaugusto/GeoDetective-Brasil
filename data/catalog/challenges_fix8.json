@@ -1,0 +1,32 @@
+[
+  {
+    "id": "CAP-PB",
+    "name": "João Pessoa – Mata do Buraquinho, João Pessoa/PB",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -34.86,
+    "lat": -7.14,
+    "mode": "stable_edge",
+    "season": [
+      "07-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2025
+    ],
+    "hypothesis": "estável",
+    "notes": "Nuvens no litoral. | janela ampliada para 07-01/12-31 (sem cena limpa na janela original) | QA visual: nuvens pequenas e sombras não marcadas pelo SCL na data 'depois' | QA visual 2: nuvens pequenas nas duas datas | QA visual 3: nuvens na data 'antes' (2020-10-04) | rodada 5: triagem CDSE, preferência 2025 | rodada 7: cúmulos com sombra nas duas datas (2020-10-24, 2025-12-09) | rodada 8: véu de nuvem no canto inferior (2020-08-25)",
+    "exclude": [
+      "S2A_T25MBN_20200924T124323_L2A",
+      "S2A_T25MBN_20201004T124323_L2A",
+      "S2A_T25MBN_20201024T124323_L2A",
+      "S2A_T25MBN_20240814T124318_L2A",
+      "S2A_T25MBN_20251010T124330_L2A",
+      "S2A_T25MBN_20251209T124330_L2A",
+      "S2A_T25MBN_20200825T124323_L2A"
+    ],
+    "max_eval": 30,
+    "min_valid": 0.5
+  }
+]

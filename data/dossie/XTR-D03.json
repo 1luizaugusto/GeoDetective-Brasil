@@ -1,0 +1,130 @@
+{
+ "id": "XTR-D03",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "Houve perda de vegetação nativa entre 2020 e 2025.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 53.8 pp e ganho 0.1 pp (líquido -53,7 pp); MapBiomas 30 m: perda 50.2 pp e ganho 0.1 pp (líquido -50,1 pp). NDVI mediano das imagens: 0.88→0.72. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.17 (vegetação a menos).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-07-14 — S2B_MSIL2A_20200714T142729_N0500_R053_T20MPS_20230423T053710",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.66934&lng=-61.24375&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-14T00%3A00%3A00.000Z&toTime=2020-07-14T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-07-15 — S2A_MSIL2A_20250715T142811_N0511_R053_T20MPS_20250715T211004",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.66934&lng=-61.24375&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-07-15T00%3A00%3A00.000Z&toTime=2025-07-15T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 14/07/2020 e 15/07/2025 (0 dias de diferença no calendário). Época 2: 07/10/2020 e 06/10/2025 (2 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,85 → 0,70; época 2 0,76 → 0,71.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-07-14 — S2B_MSIL2A_20200714T142729_N0500_R053_T20MPS_20230423T053710",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.66934&lng=-61.24375&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-14T00%3A00%3A00.000Z&toTime=2020-07-14T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-07-15 — S2A_MSIL2A_20250715T142811_N0511_R053_T20MPS_20250715T211004",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.66934&lng=-61.24375&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-07-15T00%3A00%3A00.000Z&toTime=2025-07-15T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-10-07 — S2A_MSIL2A_20201007T142741_N0500_R053_T20MPS_20230412T191013",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.66934&lng=-61.24375&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-10-07T00%3A00%3A00.000Z&toTime=2020-10-07T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-10-06 — S2B_MSIL2A_20251006T142709_N0511_R053_T20MPS_20251006T181459",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-7.66934&lng=-61.24375&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-10-06T00%3A00%3A00.000Z&toTime=2025-10-06T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: -54,4 pp; MapBiomas 10 m: -53,7 pp; diferença 0.7 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Destino da vegetação nativa perdida.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Pastagem 84%; Mosaico de Usos 16%. Mapa 30 m: Pastagem 72%; Mosaico de Usos 28%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Houve fogo registrado no recorte.",
+   "veredito": "comprovado",
+   "porque": "Área queimada (MapBiomas Fogo): 2020: 21% do recorte; 2024: 94% do recorte. Fogo muda a cor da imagem; vegetação nativa queimada continua nativa.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Novo Aripuanã/AM, bioma Amazônia.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 1303304) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 1303304",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/1303304"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  }
+ ],
+ "fire_pct": {
+  "2019": 1.8,
+  "2020": 20.6,
+  "2024": 94.1,
+  "2025": 0.0
+ },
+ "areas_protegidas": []
+}

@@ -1,0 +1,395 @@
+{
+ "AMZ-01": [
+  {
+   "afirmacao": "Versão anterior: 'desmatamento ao longo da BR-163'.",
+   "veredito": "corrigido",
+   "porque": "O centro do recorte fica a cerca de 19 km a oeste da sede de Novo Progresso; não conferimos que o recorte esteja no eixo da rodovia, então o nome da estrada saiu. O que é certo: 96% da floresta perdida virou pastagem (mapa 10 m).",
+   "fontes": []
+  }
+ ],
+ "AMZ-03": [
+  {
+   "afirmacao": "A Amazônia teve uma seca severa em 2023–24.",
+   "veredito": "comprovado",
+   "porque": "O Cemaden lista 2023–24 entre as secas mais severas da Amazônia e a seca mais extensa da série histórica no Brasil. A imagem 'depois' é de julho de 2024. A cor mais amarelada do pasto combina com isso, mas a imagem sozinha não prova a causa.",
+   "fontes": [
+    {
+     "nome": "Cemaden — Nota Técnica nº 679/2024: Análise das Secas no Brasil",
+     "url": "https://www.semadesc.ms.gov.br/wp-content/uploads/2024/12/NotaTcnicaHistricodeSecasnoBrasileProjecoes_2024_CEMADEN_202411.pdf"
+    }
+   ]
+  }
+ ],
+ "CAA-02": [
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'Parque Nacional da Serra da Capivara'.",
+   "veredito": "corrigido",
+   "porque": "Pela base WDPA, o parque fica a menos de 1 km, mas fora do recorte (0% de área em comum). O nome agora diz 'entorno'.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA — PARNA Serra da Capivara",
+     "url": "https://www.protectedplanet.net/64"
+    }
+   ]
+  }
+ ],
+ "CAA-03": [
+  {
+   "afirmacao": "Carnaúba dos Dantas faz parte do Núcleo de Desertificação do Seridó.",
+   "veredito": "comprovado",
+   "porque": "Trabalho publicado pela Embrapa lista Carnaúba dos Dantas entre os municípios do núcleo.",
+   "fontes": [
+    {
+     "nome": "Embrapa — trabalho sobre o Núcleo de Desertificação do Seridó (cita Carnaúba dos Dantas)",
+     "url": "https://www.alice.cnptia.embrapa.br/alice/bitstream/doc/1015492/1/V2P41.pdf"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Na seca a Caatinga perde as folhas, mas continua nativa.",
+   "veredito": "comprovado",
+   "porque": "A Embrapa Semiárido descreve as espécies estudadas como caducifólias: perdem as folhas no período seco.",
+   "fontes": [
+    {
+     "nome": "Embrapa Semiárido — fenologia de espécies da Caatinga (caducifólias)",
+     "url": "https://www.alice.cnptia.embrapa.br/alice/bitstream/doc/1083575/1/Magna7.pdf"
+    }
+   ]
+  }
+ ],
+ "CAP-AM": [
+  {
+   "afirmacao": "O recorte fica na borda da Reserva Florestal Adolpho Ducke.",
+   "veredito": "comprovado",
+   "porque": "A reserva é do INPA e não aparece na base WDPA. Pelo OpenStreetMap, o centro do recorte cai dentro do retângulo da reserva.",
+   "fontes": [
+    {
+     "nome": "INPA/PPBio — Reserva Florestal Adolpho Ducke (e-book)",
+     "url": "https://ppbio.inpa.gov.br/sites/default/files/RFAD_ebook.pdf"
+    },
+    {
+     "nome": "OpenStreetMap — Reserva Florestal Adolpho Ducke",
+     "url": "https://www.openstreetmap.org/way/161393396"
+    }
+   ]
+  }
+ ],
+ "CAP-AP": [
+  {
+   "afirmacao": "Versão anterior: 'obras viárias e loteamentos sobre áreas de ressaca'.",
+   "veredito": "corrigido",
+   "porque": "Não conferimos 'obras viárias' nem 'loteamentos'. O que os mapas mostram é que 93% da vegetação perdida virou área urbanizada.",
+   "fontes": []
+  }
+ ],
+ "CAP-BA": [
+  {
+   "afirmacao": "O recorte fica no Parque Metropolitano de Pituaçu.",
+   "veredito": "comprovado",
+   "porque": "O parque é gerido pelo INEMA e não aparece na base WDPA. Pelo OpenStreetMap, o centro do recorte cai dentro dos limites do parque (a 1,2 km do ponto central dele).",
+   "fontes": [
+    {
+     "nome": "INEMA/Governo da Bahia — Parque Metropolitano de Pituaçu",
+     "url": "https://www.ba.gov.br/inema/2024/10/obras-de-requalificacao-do-parque-metropolitano-de-pituacu-comecam-em-dezembro"
+    },
+    {
+     "nome": "OpenStreetMap — Parque Metropolitano de Pituaçu",
+     "url": "https://www.openstreetmap.org/way/29204845"
+    }
+   ]
+  }
+ ],
+ "CAP-ES": [
+  {
+   "afirmacao": "Versão anterior: 'a maré muda a cor da água'.",
+   "veredito": "corrigido",
+   "porque": "Não conferimos a maré na hora de cada imagem. O texto agora diz só que a cor da água mudou.",
+   "fontes": []
+  }
+ ],
+ "CAP-MA": [
+  {
+   "afirmacao": "O recorte fica perto do Porto do Itaqui.",
+   "veredito": "comprovado",
+   "porque": "Pelo OpenStreetMap, o porto fica a cerca de 2,8 km do centro do recorte.",
+   "fontes": [
+    {
+     "nome": "OpenStreetMap — Porto do Itaqui",
+     "url": "https://www.openstreetmap.org/relation/10189309"
+    }
+   ]
+  }
+ ],
+ "CAP-MG": [
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'Serra do Curral'.",
+   "veredito": "corrigido",
+   "porque": "O centro do recorte fica em Nova Lima (IBGE). Não conferimos se ele está na própria Serra do Curral, então o nome agora traz só o município.",
+   "fontes": []
+  }
+ ],
+ "CAP-MS": [
+  {
+   "afirmacao": "O recorte fica no Parque dos Poderes, que inclui o Parque Estadual do Prosa.",
+   "veredito": "comprovado",
+   "porque": "Pelo OpenStreetMap, o centro está a 0,4 km do Parque dos Poderes. Pela base WDPA, o Parque Estadual do Prosa (2002) cobre 22% do recorte.",
+   "fontes": [
+    {
+     "nome": "OpenStreetMap — Parque dos Poderes",
+     "url": "https://www.openstreetmap.org/relation/6196851"
+    }
+   ]
+  }
+ ],
+ "CAP-PA": [
+  {
+   "afirmacao": "Versão anterior: 'os lagos mudam de cor com as algas'.",
+   "veredito": "removido",
+   "porque": "Não temos medida de algas, então a explicação saiu. O texto diz só que a cor da água muda.",
+   "fontes": []
+  }
+ ],
+ "CAP-PB": [
+  {
+   "afirmacao": "Versão anterior: 'uma das maiores florestas urbanas do país'.",
+   "veredito": "removido",
+   "porque": "Não achamos fonte oficial para esse ranking, então ele saiu. Pela base WDPA, o Refúgio de Vida Silvestre Mata do Buraquinho cobre 41% do recorte.",
+   "fontes": []
+  }
+ ],
+ "CAP-PI": [
+  {
+   "afirmacao": "Versão anterior: 'loteamentos e terraplanagem'.",
+   "veredito": "corrigido",
+   "porque": "Agora o texto usa só o que os mapas mostram: 77% da vegetação perdida virou área urbanizada e 13% virou solo exposto.",
+   "fontes": []
+  }
+ ],
+ "CAP-RO": [
+  {
+   "afirmacao": "A perda de floresta aconteceu dentro da Terra Indígena Karipuna.",
+   "veredito": "comprovado",
+   "porque": "Pela base WDPA, a TI Karipuna cobre 60% do recorte. Os dois mapas MapBiomas mostram perda de floresta para pastagem.",
+   "fontes": []
+  }
+ ],
+ "CAP-RR": [
+  {
+   "afirmacao": "Lavrado é o nome regional das savanas naturais de Roraima.",
+   "veredito": "comprovado",
+   "porque": "A Embrapa Roraima chama de 'lavrado' as áreas de pastagem natural (savana) do estado. O aeroporto fica a 0,6 km do centro do recorte (OpenStreetMap).",
+   "fontes": [
+    {
+     "nome": "Embrapa Roraima — sistemas de produção (áreas de lavrado)",
+     "url": "https://www.alice.cnptia.embrapa.br/alice/bitstream/doc/68108/1/RoraimaSistemasProducao-19728.pdf"
+    },
+    {
+     "nome": "OpenStreetMap — Aeroporto Internacional de Boa Vista",
+     "url": "https://www.openstreetmap.org/way/321933284"
+    }
+   ]
+  }
+ ],
+ "CAP-RS": [
+  {
+   "afirmacao": "Versão anterior: 'o rio muda de cor com o sedimento'.",
+   "veredito": "corrigido",
+   "porque": "Não medimos sedimento. O texto agora diz só que a cor da água muda.",
+   "fontes": []
+  }
+ ],
+ "CAP-SC": [
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'Parque Estadual do Rio Vermelho'.",
+   "veredito": "corrigido",
+   "porque": "Pela base WDPA, quem cobre o recorte é o Refúgio de Vida Silvestre Municipal Meiembipe (40%). O Parque Estadual do Rio Vermelho fica a menos de 1 km, mas fora do recorte.",
+   "fontes": []
+  }
+ ],
+ "CAP-SP": [
+  {
+   "afirmacao": "Versão anterior: 'terraplanagem para ocupação perto da Billings'.",
+   "veredito": "corrigido",
+   "porque": "Agora o texto usa os mapas: a vegetação perdida virou mosaico de usos (69%) e solo exposto (21%). Pela base WDPA, a APA Bororé-Colônia cobre 95% do recorte.",
+   "fontes": []
+  }
+ ],
+ "CAP-TO": [
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'expansão de Taquaralto'.",
+   "veredito": "corrigido",
+   "porque": "Não confirmamos que o recorte fica no bairro Taquaralto, então o nome mudou.",
+   "fontes": []
+  }
+ ],
+ "CER-02": [
+  {
+   "afirmacao": "Formosa do Rio Preto (BA) faz parte do MATOPIBA.",
+   "veredito": "comprovado",
+   "porque": "O município está na lista de municípios da delimitação oficial da Embrapa (p. 18).",
+   "fontes": [
+    {
+     "nome": "Embrapa — Proposta de Delimitação Territorial do MATOPIBA (Nota Técnica GITE 1, lista de municípios p. 18)",
+     "url": "https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1037313/1/NT1DelimitacaoMatopiba.pdf"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Versão anterior: 'convertido em lavoura mecanizada em grande escala'.",
+   "veredito": "corrigido",
+   "porque": "O mapa 10 m classifica a área aberta como mosaico de usos. O mapa 30 m mostra soja (18%) e outras lavouras temporárias (13%) em parte dela. O texto agora diz exatamente isso.",
+   "fontes": []
+  }
+ ],
+ "CMP-01": [
+  {
+   "afirmacao": "Barragens da mina Córrego do Feijão (Vale) se romperam em 25/01/2019.",
+   "veredito": "comprovado",
+   "porque": "Pelo Governo de Minas Gerais, a barragem B-I rompeu às 12h28 e levou junto a B-IV e a B-IV-A. A lama desceu pelo Ribeirão Ferro-Carvão até o rio Paraopeba.",
+   "fontes": [
+    {
+     "nome": "Governo de Minas Gerais — Histórico do rompimento das barragens da Vale na Mina Córrego do Feijão",
+     "url": "https://www.mg.gov.br/pro-brumadinho/pagina/historico-do-rompimento-das-barragens-da-vale-na-mina-corrego-do-feijao"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Este recorte fica no entorno da mina, fora do caminho da lama.",
+   "veredito": "comprovado",
+   "porque": "O centro do recorte fica a cerca de 3,4 km a leste-sudeste do ponto da mina. A lama desceu para oeste, rumo ao rio Paraopeba.",
+   "fontes": [
+    {
+     "nome": "Wikipedia — Brumadinho dam disaster (coordenadas da mina)",
+     "url": "https://en.wikipedia.org/wiki/Brumadinho_dam_disaster"
+    },
+    {
+     "nome": "Governo de Minas Gerais — Histórico do rompimento das barragens da Vale na Mina Córrego do Feijão",
+     "url": "https://www.mg.gov.br/pro-brumadinho/pagina/historico-do-rompimento-das-barragens-da-vale-na-mina-corrego-do-feijao"
+    }
+   ]
+  }
+ ],
+ "CMP-02": [
+  {
+   "afirmacao": "O recorte fica dentro da Terra Indígena Trincheira/Bacajá.",
+   "veredito": "comprovado",
+   "porque": "Pela base WDPA, a TI cobre 100% do recorte. Ela se estende por São Félix do Xingu, Altamira, Anapu e Senador José Porfírio.",
+   "fontes": [
+    {
+     "nome": "Wikipedia — Trincheira/Bacajá Indigenous Territory",
+     "url": "https://en.wikipedia.org/wiki/Trincheira/Bacaj%C3%A1_Indigenous_Territory"
+    }
+   ]
+  }
+ ],
+ "CMP-04": [
+  {
+   "afirmacao": "A barragem de Fundão (Samarco) rompeu em 05/11/2015 e soterrou Bento Rodrigues.",
+   "veredito": "comprovado",
+   "porque": "Pelo MPF, a onda de rejeitos soterrou boa parte de Bento Rodrigues e desceu pelo rio Gualaxo do Norte. O centro do recorte fica a cerca de 0,5 km das coordenadas do distrito.",
+   "fontes": [
+    {
+     "nome": "Ministério Público Federal — Caso Samarco: o desastre",
+     "url": "https://www.mpf.mp.br/grandes-casos/caso-samarco/o-desastre"
+    },
+    {
+     "nome": "Wikipedia — Bento Rodrigues (coordenadas)",
+     "url": "https://pt.wikipedia.org/wiki/Bento_Rodrigues"
+    }
+   ]
+  }
+ ],
+ "CMP-05": [
+  {
+   "afirmacao": "A mancha clara de 2024 é área queimada.",
+   "veredito": "comprovado",
+   "porque": "O MapBiomas Fogo marca 40% do recorte como queimado em 2024. Pela base WDPA, o recorte fica no Parque Nacional do Araguaia e na TI Inawebohona (Ilha do Bananal).",
+   "fontes": []
+  }
+ ],
+ "GAN-05": [
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'Cerrado (GO/DF)'.",
+   "veredito": "corrigido",
+   "porque": "O centro do recorte fica em Vila Boa (GO), pela malha do IBGE.",
+   "fontes": []
+  }
+ ],
+ "GAN-10": [
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'Vale do Paraíba (SP/RJ)'.",
+   "veredito": "corrigido",
+   "porque": "O centro do recorte fica em Mangaratiba (RJ), pela malha do IBGE, que não é Vale do Paraíba. O ganho de vegetação também foi pequeno demais para chamar o caso de 'ganho nativo'.",
+   "fontes": []
+  }
+ ],
+ "MAT-01": [
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'regeneração em pastagens'.",
+   "veredito": "corrigido",
+   "porque": "Os mapas mostram só um ganho pequeno; o caso é praticamente estável. O nome foi ajustado.",
+   "fontes": []
+  }
+ ],
+ "MAT-02": [
+  {
+   "afirmacao": "Nova Lima é município minerador do Quadrilátero Ferrífero.",
+   "veredito": "comprovado",
+   "porque": "Um estudo acadêmico sobre o Quadrilátero Ferrífero lista Nova Lima entre os municípios com minas de ferro. Os dois mapas MapBiomas mostram a vegetação perdida virando mineração (56%) e solo exposto.",
+   "fontes": [
+    {
+     "nome": "Revista Gestão & Regionalidade (USCS) — O Quadrilátero Ferrífero de Minas Gerais (cita Nova Lima)",
+     "url": "https://seer.uscs.edu.br/index.php/revista_gestao/article/download/8476/4329?inline=1"
+    }
+   ]
+  }
+ ],
+ "PAM-02": [
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'silvicultura'.",
+   "veredito": "corrigido",
+   "porque": "A silvicultura no recorte é pequena (9→11% no mapa 10 m) e quase não mudou. O nome agora não destaca o plantio.",
+   "fontes": []
+  }
+ ],
+ "PAN-01": [
+  {
+   "afirmacao": "Em 2020 grandes incêndios queimaram o Pantanal.",
+   "veredito": "comprovado",
+   "porque": "Estudo do INPE divulgado pela FAPESP: os incêndios de 2020 queimaram cerca de 30% do Pantanal brasileiro. O MapBiomas Fogo marca 88% deste recorte queimado em 2020 (a imagem 'antes' é de 23/09/2020).",
+   "fontes": [
+    {
+     "nome": "Agência FAPESP (29/08/2023) — Em 2020, grandes incêndios queimaram 30% do Pantanal",
+     "url": "https://agencia.fapesp.br/em-2020-grandes-incendios-queimaram-30-do-pantanal/44693"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'Parque Estadual Encontro das Águas'.",
+   "veredito": "corrigido",
+   "porque": "Pela base WDPA, o parque fica a 17 km do recorte, então o nome agora traz só o município (Poconé).",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA — PE Encontro das Águas",
+     "url": "https://www.protectedplanet.net/555576191"
+    }
+   ]
+  }
+ ],
+ "PAN-03": [
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'fogo de 2024'.",
+   "veredito": "corrigido",
+   "porque": "O MapBiomas Fogo marca 0% queimado em 2024 e 96% em 2020, então o nome do ano estava errado. Pela base WDPA, a RPPN Acurizal e Penha cobre 73% do recorte.",
+   "fontes": []
+  }
+ ],
+ "XTR-T04": [
+  {
+   "afirmacao": "Versão anterior: 'virou um eucaliptal'.",
+   "veredito": "corrigido",
+   "porque": "Os mapas dizem 'silvicultura' (árvores plantadas), sem dizer qual espécie. 'Eucalipto' saiu do texto.",
+   "fontes": []
+  }
+ ]
+}

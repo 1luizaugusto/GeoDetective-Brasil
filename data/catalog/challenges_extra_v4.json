@@ -1,0 +1,422 @@
+[
+  {
+    "id": "XTR-D21",
+    "name": "Floresta e áreas abertas, Apuí/AM",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -60.4772,
+    "lat": -7.566,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.55, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-D22",
+    "name": "Floresta e áreas abertas, Dom Eliseu/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -48.218,
+    "lat": -4.1708,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.55, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-D23",
+    "name": "Floresta e áreas abertas, São Félix do Xingu/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -52.3476,
+    "lat": -7.0692,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 0.99→0.54, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-D24",
+    "name": "Floresta e áreas abertas, Diamantino/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -56.8012,
+    "lat": -13.9852,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 0.80→0.35, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-D25",
+    "name": "Floresta e áreas abertas, Formoso do Araguaia/TO",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -50.274,
+    "lat": -12.3868,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 0.98→0.52, silvicultura 0.00→0.00, aberta 0.04→0.02"
+  },
+  {
+    "id": "XTR-D26",
+    "name": "Floresta e áreas abertas, Grajaú/MA",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -46.1012,
+    "lat": -5.8988,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 0.93→0.48, silvicultura 0.00→0.00, aberta 0.02→0.03"
+  },
+  {
+    "id": "XTR-D27",
+    "name": "Floresta e áreas abertas, Diamantino/MT",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -56.3908,
+    "lat": -13.9204,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.54, silvicultura 0.00→0.00, aberta 0.03→0.04"
+  },
+  {
+    "id": "XTR-D28",
+    "name": "Floresta e áreas abertas, Guaraí/TO",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -48.3908,
+    "lat": -8.7324,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.53, silvicultura 0.00→0.00, aberta 0.03→0.02"
+  },
+  {
+    "id": "XTR-F21",
+    "name": "Floresta e áreas abertas, Novo Aripuanã/AM",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -59.9588,
+    "lat": -6.0972,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-F22",
+    "name": "Floresta e áreas abertas, Apuí/AM",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -58.9868,
+    "lat": -6.594,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-F23",
+    "name": "Floresta e áreas abertas, Apuí/AM",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -59.6564,
+    "lat": -6.7452,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-F24",
+    "name": "Floresta e áreas abertas, Apuí/AM",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -59.1812,
+    "lat": -7.0692,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-F25",
+    "name": "Floresta e áreas abertas, Colinas/MA",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -43.9588,
+    "lat": -6.1188,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.16, silvicultura 0.00→0.00, aberta 0.07→0.00"
+  },
+  {
+    "id": "XTR-F26",
+    "name": "Floresta e áreas abertas, Lagoa da Confusão/TO",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -49.8596,
+    "lat": -10.5508,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.15, silvicultura 0.00→0.00, aberta 0.01→0.01"
+  },
+  {
+    "id": "XTR-L21",
+    "name": "Vegetação e roças, Floriano/PI",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -42.8788,
+    "lat": -6.9612,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 1.00→0.00"
+  },
+  {
+    "id": "XTR-L22",
+    "name": "Vegetação e roças, Uruçuí/PI",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -44.7364,
+    "lat": -7.782,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 1.00→0.00"
+  },
+  {
+    "id": "XTR-L23",
+    "name": "Vegetação e roças, Sebastião Leal/PI",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -44.1532,
+    "lat": -7.9116,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 1.00→0.00"
+  },
+  {
+    "id": "XTR-L24",
+    "name": "Vegetação e roças, Baixa Grande do Ribeiro/PI",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -45.082,
+    "lat": -8.646,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.00, silvicultura 0.00→0.00, aberta 1.00→0.00"
+  },
+  {
+    "id": "XTR-L25",
+    "name": "Vegetação e roças, Pilão Arcado/BA",
+    "group": "extra",
+    "biome": "Caatinga",
+    "lon": -43.5916,
+    "lat": -9.8124,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 0.98→0.15, silvicultura 0.00→0.00, aberta 0.98→0.15"
+  },
+  {
+    "id": "XTR-L26",
+    "name": "Vegetação e roças, Flores do Piauí/PI",
+    "group": "extra",
+    "biome": "Caatinga",
+    "lon": -42.7276,
+    "lat": -7.5012,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (open_loss): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.19, silvicultura 0.00→0.00, aberta 1.00→0.19"
+  }
+]

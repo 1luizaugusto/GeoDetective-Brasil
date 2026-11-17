@@ -1,0 +1,126 @@
+{
+ "id": "CAP-AM",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 1.6 pp e ganho 1.9 pp (líquido +0,3 pp); MapBiomas 30 m: perda 0.8 pp e ganho 0.8 pp (líquido +0,0 pp). NDVI mediano das imagens: 0.85→0.83. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-07-21 — S2B_MSIL2A_20200721T141739_N0500_R010_T20MRB_20230323T122052",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-2.95153&lng=-59.98133&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-21T00%3A00%3A00.000Z&toTime=2020-07-21T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-07-20 — S2B_MSIL2A_20240720T141719_N0510_R010_T20MRB_20240720T163517",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-2.95153&lng=-59.98133&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-07-20T00%3A00%3A00.000Z&toTime=2024-07-20T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 21/07/2020 e 20/07/2024 (1 dia de diferença no calendário). Época 2: 22/09/2020 e 16/09/2024 (6 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,78 → 0,78; época 2 0,76 → 0,76.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-07-21 — S2B_MSIL2A_20200721T141739_N0500_R010_T20MRB_20230323T122052",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-2.95153&lng=-59.98133&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-07-21T00%3A00%3A00.000Z&toTime=2020-07-21T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-07-20 — S2B_MSIL2A_20240720T141719_N0510_R010_T20MRB_20240720T163517",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-2.95153&lng=-59.98133&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-07-20T00%3A00%3A00.000Z&toTime=2024-07-20T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-09-22 — S2B_MSIL2A_20200922T142739_N0500_R053_T20MRB_20230315T235409",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-2.95153&lng=-59.98133&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-09-22T00%3A00%3A00.000Z&toTime=2020-09-22T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-09-16 — S2A_MSIL2A_20240916T142711_N0511_R053_T20MRB_20240916T215158",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-2.95153&lng=-59.98133&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-09-16T00%3A00%3A00.000Z&toTime=2024-09-16T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: +0,9 pp; MapBiomas 10 m: +0,3 pp; diferença 0.6 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 0%; 2023: 0%; 2024: 0% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Manaus/AM, bioma Amazônia.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 1302603) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 1302603",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/1302603"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O recorte fica na borda da Reserva Florestal Adolpho Ducke.",
+   "veredito": "comprovado",
+   "porque": "A reserva é do INPA e não aparece na base WDPA. Pelo OpenStreetMap, o centro do recorte cai dentro do retângulo da reserva.",
+   "fontes": [
+    {
+     "nome": "INPA/PPBio — Reserva Florestal Adolpho Ducke (e-book)",
+     "url": "https://ppbio.inpa.gov.br/sites/default/files/RFAD_ebook.pdf"
+    },
+    {
+     "nome": "OpenStreetMap — Reserva Florestal Adolpho Ducke",
+     "url": "https://www.openstreetmap.org/way/161393396"
+    }
+   ]
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.3,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "areas_protegidas": []
+}

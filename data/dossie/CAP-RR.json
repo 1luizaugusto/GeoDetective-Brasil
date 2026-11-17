@@ -1,0 +1,146 @@
+{
+ "id": "CAP-RR",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "Houve perda de vegetação nativa entre 2020 e 2025.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 7.6 pp e ganho 0.5 pp (líquido -7,1 pp); MapBiomas 30 m: perda 2.8 pp e ganho 0.0 pp (líquido -2,8 pp). NDVI mediano das imagens: 0.22→0.20. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.21 (vegetação a menos).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-03-01 — S2A_MSIL2A_20200301T142731_N0500_R053_T20NQJ_20230412T024525",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=2.84539&lng=-60.69504&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-03-01T00%3A00%3A00.000Z&toTime=2020-03-01T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-02-28 — S2B_MSIL2A_20250228T142719_N0511_R053_T20NQJ_20250228T161738",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=2.84539&lng=-60.69504&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-02-28T00%3A00%3A00.000Z&toTime=2025-02-28T23%3A59%3A59.999Z"
+    }
+   ],
+   "revisao": "Revisão manual: perda confirmada nos dois mapas (10 m −7,1, 30 m −2,8 pp) para área urbana; NDVI −0,21 nos pixels perdidos"
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 01/03/2020 e 28/02/2025 (2 dias de diferença no calendário). Época 2: 17/10/2020 e 21/09/2025 (27 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,25 → 0,23; época 2 0,34 → 0,29.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-03-01 — S2A_MSIL2A_20200301T142731_N0500_R053_T20NQJ_20230412T024525",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=2.84539&lng=-60.69504&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-03-01T00%3A00%3A00.000Z&toTime=2020-03-01T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-02-28 — S2B_MSIL2A_20250228T142719_N0511_R053_T20NQJ_20250228T161738",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=2.84539&lng=-60.69504&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-02-28T00%3A00%3A00.000Z&toTime=2025-02-28T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-10-17 — S2A_MSIL2A_20201017T142741_N0500_R053_T20NQJ_20230308T010631",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=2.84539&lng=-60.69503&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-10-17T00%3A00%3A00.000Z&toTime=2020-10-17T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-09-21 — S2C_MSIL2A_20250921T142731_N0511_R053_T20NQJ_20250921T193415",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=2.84539&lng=-60.69503&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-09-21T00%3A00%3A00.000Z&toTime=2025-09-21T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: -0,2 pp; MapBiomas 10 m: -7,1 pp; diferença 6.9 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Destino da vegetação nativa perdida.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Área Urbanizada 75%; Outras não Vegetadas 20%; Mosaico de Usos 3%. Mapa 30 m: Área Urbanizada 90%; Outras não Vegetadas 10%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Houve fogo registrado no recorte.",
+   "veredito": "comprovado",
+   "porque": "Área queimada (MapBiomas Fogo): 2024: 21% do recorte. Fogo muda a cor da imagem; vegetação nativa queimada continua nativa.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Boa Vista/RR, bioma Amazônia.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 1400100) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 1400100",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/1400100"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Lavrado é o nome regional das savanas naturais de Roraima.",
+   "veredito": "comprovado",
+   "porque": "A Embrapa Roraima chama de 'lavrado' as áreas de pastagem natural (savana) do estado. O aeroporto fica a 0,6 km do centro do recorte (OpenStreetMap).",
+   "fontes": [
+    {
+     "nome": "Embrapa Roraima — sistemas de produção (áreas de lavrado)",
+     "url": "https://www.alice.cnptia.embrapa.br/alice/bitstream/doc/68108/1/RoraimaSistemasProducao-19728.pdf"
+    },
+    {
+     "nome": "OpenStreetMap — Aeroporto Internacional de Boa Vista",
+     "url": "https://www.openstreetmap.org/way/321933284"
+    }
+   ]
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2024": 21.0,
+  "2025": 0.0
+ },
+ "areas_protegidas": []
+}

@@ -1,58 +1,52 @@
 # GeoDetective Brasil
 
-**Projeto final — Space Tech Bootcamp 2026 / Future Tech Leaders Brasil**
+**Projeto final — Space Tech Bootcamp 2026 / Future Tech Leaders Brasil** · Autor: Luiz Augusto de Oliveira Almeida
 
-**Autor:** Luiz Augusto de Oliveira Almeida  
+### ▶ [Jogar agora](https://1luizaugusto.github.io/GeoDetective-Brasil/)
 
-## Objetivo
+Jogo web educativo (ODS 4 e 15). O jogador compara dois recortes reais de Sentinel-2 da mesma área (2020 × 2024/2025; nos casos de regeneração longa, 2018 × 2025) e estima a variação líquida da **vegetação nativa**, de −100 a +100 pp.
+O resultado de referência é calculado **antes da publicação** por um modelo Random Forest. O jogo não executa ML.
 
-Jogo educativo de interpretação de imagens gratuitas de satélite. Cada desafio apresenta **duas imagens da mesma área**, em datas distintas. O jogador estima a **variação líquida na proporção da área coberta por vegetação**, numa escala de **−100 a +100 pontos percentuais**. A resposta é comparada a uma referência geoespacial independente e a uma estimativa produzida por Machine Learning.
+**Estado atual (2026-11-17):**
+- **44 desafios jogáveis**: 22 desmatamento, 15 estáveis, 5 regeneração e 2 armadilhas. Quatro dos casos de regeneração comparam **2018 × 2025** (mata que voltou em 7 anos); os demais, 2020 × 2024/2025. Para entrar no jogo, cada um passou por:
+  - QA visual;
+  - **auditoria de evidências** (dois mapas MapBiomas + NDVI + MapBiomas Fogo);
+  - **regra de justiça**: o modelo e o MapBiomas concordam dentro da tolerância, então chutar o valor do MapBiomas sempre rende 100;
+  - imagens de **duas épocas por ano**, as mesmas para o jogador e para o modelo.
+- Random Forest de duas épocas (`rf_native_v2`), com validação espacial out-of-fold:
+  - acurácia por pixel 0,85;
+  - MAE do Δ de 13,56 pp contra o MapBiomas 10 m, em 109 desafios. O acervo inclui muitas perdas totais, em que o modelo erra mais; no jogo só entram os casos em que ele concorda com o MapBiomas.
+- O jogo (estética de videogame dos anos 90) está pronto e é gerado como site estático (`npm run build`).
 
-**Escopo planejado:** até **100 imagens individuais**, agrupadas em até **50 pares/desafios**, cobrindo os **6 biomas brasileiros** e as **27 capitais**. Sem promessa de 50 desafios prontos nesta versão inicial.
+Documentação: [docs/01-primeira-entrega.md](docs/01-primeira-entrega.md) · [docs/03-pipeline-modelo-e-jogo.md](docs/03-pipeline-modelo-e-jogo.md).
 
-## Fontes e tecnologia planejadas
+## Estrutura
+- `science/`: aquisição (Earth Search + triagem no Copernicus Data Space), máscaras MapBiomas via Google Earth Engine, QA, Random Forest e export — em Python.
+- `data/`: catálogos, decisões de QA, pares e metadados de proveniência.
+- `game/`: Vite + Svelte 5 + TypeScript, publicado pelo GitHub Pages (`.github/workflows/pages.yml`).
 
-- **Copernicus Sentinel-2 L2A:** bandas multiespectrais para as duas datas.
-- **MapBiomas:** rótulos auxiliares para preparação do treinamento e aferição, sujeitos a revisão independente.
-- **IBGE:** limites geográficos dos biomas e municípios.
-- **Python:** rasterio, numpy, pandas e scikit-learn (`RandomForestClassifier`).
-- **Web:** HTML, CSS e JavaScript; hospedagem via GitHub Pages.
+## Rodar o jogo
+```bash
+cd game && npm ci --legacy-peer-deps && npm run dev
+```
 
-## Metodologia em resumo
+## Regerar os dados
+Python em `%USERPROFILE%\.venvs\geodet` (`science/requirements.txt`).
+Credenciais do CDSE ficam em `science/.env`, que **não é versionado** (`CDSE_CLIENT_ID`, `CDSE_CLIENT_SECRET`). O Google Earth Engine usa a autenticação local (`earthengine authenticate`). Nenhuma chave fica no repositório.
 
-1. Definir áreas de interesse (AOIs), delimitações e período comparável do ano.
-2. Obter pares de imagens Sentinel-2, com correção/máscara de nuvens e alinhamento de grade.
-3. Construir amostras rotuladas de cobertura vegetal, distinguindo vegetação nativa de cultivos quando a pergunta exigir.
-4. Treinar Random Forest em atributos espectrais e índices; separar treino/teste **geograficamente**.
-5. Avaliar F1, precisão, recall e matriz de confusão; comparar estimativas percentuais com referência não usada no treinamento (MAE em pontos percentuais).
-6. Exportar desafios reais com imagens RGB, metadados, estimativa do modelo e referência.
-7. Publicar a interface gamificada com pontuação por erro absoluto.
+Rasters e imagens intermediárias (`data/pairs/**/*.tif`, `*.png`) não são versionados: são reproduzíveis pelos scripts. O jogo usa só `game/public/data`.
+```bash
+python science/scripts/build_from_catalog.py data/catalog/challenges_v1.json --skip-done
+python science/scripts/export_labels.py
+python science/scripts/build_season2.py
+python science/scripts/train_rf2.py
+python science/scripts/audit_challenges.py
+python science/scripts/build_dossier.py
+python science/scripts/export_game.py
+```
+Detalhes do pipeline, das regras de justiça e do QA: [docs/03-pipeline-modelo-e-jogo.md](docs/03-pipeline-modelo-e-jogo.md).
 
-**Definição matemática:** `delta_pp = 100 * (vegetated_area_after - vegetated_area_before) / valid_area`. O denominador deve representar a mesma área válida nos dois anos; um saldo igual a zero pode ocultar perdas e ganhos locais compensatórios. É incorreto chamar toda variação sazonal de degradação/recuperação ambiental.
-
-## Estado atual
-
-**Protótipo inicial:** interface local demonstrativa usando um cenário abstrato. **Não contém imagens de satélite reais, modelo treinado ou resultados científicos.** Esses componentes serão inseridos nas próximas etapas.
-
-## Executar demonstração local
-
-Abra `game/index.html` no navegador. Para publicar como GitHub Pages, configure Pages para servir a pasta `/game` via GitHub Actions, ou copie os arquivos do jogo para a raiz ou `/docs` (configuração *Deploy from a branch*).
-
-## Organização
-
-- `game/`: protótipo estático do jogo.
-- `scripts/`: processamento, treinamento e exportação dos desafios (a implementar).
-- `data/`: apenas orientações e metadados; GeoTIFFs grandes não devem ser enviados ao Git.
-- `models/`: modelos treinados e documentação (a implementar).
-- `docs/`: metodologia e referências (a implementar).
-
-## Referências iniciais a revisar na redação final
-
-- Copernicus Sentinel-2: https://dataspace.copernicus.eu/
-- MapBiomas: https://brasil.mapbiomas.org/
-- IBGE: https://www.ibge.gov.br/
-- scikit-learn Random Forest: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
-
-## Licença
-
-Código-fonte sob licença MIT (consulte `LICENSE`). Dados e imagens de terceiros permanecem sujeitos às respectivas condições e atribuições.
+## Créditos e licenças
+- Código: licença MIT ([LICENSE](LICENSE)).
+- Imagens: *Contains modified Copernicus Sentinel data 2018, 2020, 2024, 2025* (Copernicus Sentinel Data Legal Notice).
+- Referência: MapBiomas Brasil (CC-BY 4.0). Limites: IBGE.

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "XTR-D01",
+    "name": "Floresta e áreas abertas, Mirador/MA",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -44.3692,
+    "lat": -6.1836,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 0.81→0.36, silvicultura 0.00→0.00, aberta 0.02→0.02"
+  },
+  {
+    "id": "XTR-D02",
+    "name": "Floresta e áreas abertas, Peixoto de Azevedo/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -53.838,
+    "lat": -9.942,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 0.91→0.46, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-D03",
+    "name": "Floresta e áreas abertas, Novo Aripuanã/AM",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -61.2548,
+    "lat": -7.674,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 0.96→0.51, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-D04",
+    "name": "Floresta e áreas abertas, Barcelos/AM",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -63.2892,
+    "lat": 0.6068,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 0.97→0.52, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-D05",
+    "name": "Floresta e áreas abertas, Pimenteiras do Oeste/RO",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -61.8812,
+    "lat": -13.0348,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 0.87→0.42, silvicultura 0.00→0.00, aberta 0.09→0.03"
+  },
+  {
+    "id": "XTR-D06",
+    "name": "Floresta e áreas abertas, Santa Carmem/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -55.03,
+    "lat": -11.782,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 0.88→0.44, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-D07",
+    "name": "Floresta e áreas abertas, Bela Vista/MS",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -57.0172,
+    "lat": -22.162,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 0.99→0.54, silvicultura 0.00→0.00, aberta 0.06→0.01"
+  },
+  {
+    "id": "XTR-D08",
+    "name": "Floresta e áreas abertas, Santa Rita do Tocantins/TO",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -49.6436,
+    "lat": -10.9828,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.55, silvicultura 0.00→0.00, aberta 0.06→0.01"
+  },
+  {
+    "id": "XTR-D09",
+    "name": "Floresta e áreas abertas, Cocalinho/MT",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -51.5052,
+    "lat": -13.942,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.56, silvicultura 0.00→0.00, aberta 0.07→0.01"
+  },
+  {
+    "id": "XTR-D10",
+    "name": "Floresta e áreas abertas, Santana do Araguaia/PA",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -50.0148,
+    "lat": -9.1644,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 0.99→0.55, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-D11",
+    "name": "Floresta e áreas abertas, Cascavel/CE",
+    "group": "extra",
+    "biome": "Caatinga",
+    "lon": -38.3604,
+    "lat": -4.1924,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 0.87→0.50, silvicultura 0.00→0.00, aberta 0.07→0.05"
+  },
+  {
+    "id": "XTR-D12",
+    "name": "Floresta e áreas abertas, Tamboril do Piauí/PI",
+    "group": "extra",
+    "biome": "Caatinga",
+    "lon": -43.1812,
+    "lat": -8.3868,
+    "mode": "loss",
+    "years": [
+      2020,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "perda",
+    "notes": "find_sites.py (forest_partial): célula ~2,4 km MapBiomas 30 m — nativa 1.00→0.68, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  }
+]

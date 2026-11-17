@@ -1,0 +1,43 @@
+[
+  {
+    "id": "PAM-03",
+    "name": "Dom Pedrito – conversão de campo em lavoura, Dom Pedrito/RS",
+    "group": "bioma",
+    "biome": "Pampa",
+    "lon": -54.65,
+    "lat": -31.0,
+    "mode": "loss",
+    "season": [
+      "11-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda (campo nativo)",
+    "notes": "Ciclo da soja: datas precisam coincidir com a mesma fase. | QA visual: nuvem na data 'depois'",
+    "exclude": [
+      "S2A_T21JYF_20241230T135050_L2A"
+    ]
+  },
+  {
+    "id": "PAN-03",
+    "name": "Serra do Amolar – fogo de 2024, Corumbá/MS",
+    "group": "bioma",
+    "biome": "Pantanal",
+    "lon": -57.55,
+    "lat": -18.05,
+    "mode": "loss",
+    "season": [
+      "06-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda transitória por fogo",
+    "notes": "Fogo também em 2020; perda pode ser temporária (rebrota). | QA visual: recorte ~75% rio: penalidade de água no posicionamento"
+  }
+]

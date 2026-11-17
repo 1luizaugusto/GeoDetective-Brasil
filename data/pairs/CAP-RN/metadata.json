@@ -1,0 +1,275 @@
+{
+  "challenge_id": "CAP-RN",
+  "name": "Natal – Parque das Dunas, Natal/RN",
+  "group": "capital",
+  "biome": "Mata Atlântica",
+  "mode": "stable_edge",
+  "selection_hypothesis": "estável",
+  "notes": "Bioma costeiro a confirmar. | janela ampliada para 07-01/12-31 (sem cena limpa na janela original) | busca relaxada (ano inteiro, min_valid 0,5, 30 cenas) por excesso de nuvem | rodada 5: triagem CDSE, preferência 2025 | rodada 6: dunas brancas disparam o filtro de névoa (0,1–0,4 em cenas limpas) → haze_max 0,4; fumaça checada no QA visual",
+  "years": [
+    2020,
+    2025
+  ],
+  "target_definition": "vegetação nativa (MapBiomas: Floresta + Vegetação Herbácea e Arbustiva); silvicultura, agricultura e pastagem = não-alvo",
+  "search_center_lonlat": [
+    -35.19,
+    -5.82
+  ],
+  "center_lonlat": [
+    -35.196306,
+    -5.822713
+  ],
+  "aoi": {
+    "crs": "EPSG:32725",
+    "bounds_utm": [
+      255600.0,
+      9354720.0,
+      258000.0,
+      9357120.0
+    ],
+    "size_m": 2400,
+    "bbox_lonlat": [
+      -35.20718,
+      -5.833603,
+      -35.185432,
+      -5.811823
+    ],
+    "pixel_size_m": 10.0,
+    "shape": [
+      240,
+      240
+    ]
+  },
+  "crop_selection": {
+    "mode": "stable_edge",
+    "search_size_m": 8000,
+    "offset_px": [
+      216,
+      312
+    ],
+    "based_on": "máscaras MapBiomas (nativa 10 m + 30 m; silvicultura 30 m)"
+  },
+  "display": {
+    "zoom_factor": 3,
+    "resampling": "Lanczos (sem super-resolução)",
+    "game_image_px": 720,
+    "tone": {
+      "bands": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "black": 0.0291999951004982,
+      "white": 0.3271999955177307,
+      "gamma": 0.6185,
+      "saturation": 1.12,
+      "percentiles": [
+        0.5,
+        99.0
+      ],
+      "target_mid": 0.36,
+      "scope": "par (duas datas juntas)"
+    }
+  },
+  "images": [
+    {
+      "earth_search_id": "S2B_T25MBP_20200929T124320_L2A",
+      "datetime_utc": "2020-09-29T12:43:43.780000+00:00",
+      "platform": "sentinel-2b",
+      "mgrs_tile": "25MBP",
+      "relative_orbit": 9,
+      "processing_baseline": "05.00",
+      "esa_product_uri": "S2B_MSIL2A_20200929T124319_N0500_R009_T25MBP_20230405T093344.SAFE",
+      "tile_cloud_cover_pct": 21.926054,
+      "sun_elevation_deg": 68.0119904160932,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T25MBP_20200929T124320_L2A",
+      "search_valid_fraction_scl": 0.9934,
+      "search_haze_fraction": 0.3873,
+      "crop_valid_fraction_scl": 0.9994,
+      "crop_haze_fraction": 0.0269,
+      "cdse_product_id": "S2B_MSIL2A_20200929T124319_N0500_R009_T25MBP_20230405T093344",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2B_MSIL2A_20200929T124319_N0500_R009_T25MBP_20230405T093344",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-5.82271&lng=-35.19631&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-09-29T00%3A00%3A00.000Z&toTime=2020-09-29T23%3A59%3A59.999Z"
+    },
+    {
+      "earth_search_id": "S2C_T25MBP_20250928T124305_L2A",
+      "datetime_utc": "2025-09-28T12:43:56.314000+00:00",
+      "platform": "sentinel-2c",
+      "mgrs_tile": "25MBP",
+      "relative_orbit": 9,
+      "processing_baseline": "05.11",
+      "esa_product_uri": "S2C_MSIL2A_20250928T124311_N0511_R009_T25MBP_20250928T165912.SAFE",
+      "tile_cloud_cover_pct": 29.135123,
+      "sun_elevation_deg": 67.8803938356297,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2C_T25MBP_20250928T124305_L2A",
+      "search_valid_fraction_scl": 0.9844,
+      "search_haze_fraction": 0.3859,
+      "crop_valid_fraction_scl": 0.9975,
+      "crop_haze_fraction": 0.0089,
+      "cdse_product_id": "S2C_MSIL2A_20250928T124311_N0511_R009_T25MBP_20250928T165912",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2C_MSIL2A_20250928T124311_N0511_R009_T25MBP_20250928T165912",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-5.82271&lng=-35.19631&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-09-28T00%3A00%3A00.000Z&toTime=2025-09-28T23%3A59%3A59.999Z"
+    }
+  ],
+  "doy_difference_days": 2,
+  "same_mgrs_tile": true,
+  "same_relative_orbit": true,
+  "bands_10m_stack": [
+    "blue(B02)",
+    "green(B03)",
+    "red(B04)",
+    "rededge1(B05)",
+    "rededge2(B06)",
+    "rededge3(B07)",
+    "nir(B08)",
+    "nir08(B8A)",
+    "swir16(B11)",
+    "swir22(B12)"
+  ],
+  "reference_mapbiomas": {
+    "source": "MapBiomas Brasil — Col. 4 (10 m, Sentinel-2) e Col. 11 (30 m, Landsat), via Google Earth Engine",
+    "assets": {
+      "10m": "projects/mapbiomas-public/assets/brazil/lulc_10m/collection4/mapbiomas_10m_collection4_coverage_v1",
+      "30m": "projects/mapbiomas-public/assets/brazil/lulc/collection11/mapbiomas_brazil_collection11_coverage_v3"
+    },
+    "native_classes_col11": [
+      3,
+      6,
+      4,
+      7,
+      5,
+      49,
+      12,
+      77,
+      11,
+      84,
+      50,
+      32,
+      29
+    ],
+    "native_pct_10m_2020": 49.98,
+    "native_pct_10m_2025": 49.22,
+    "delta_pp_10m": -0.76,
+    "native_pct_30m_2020": 49.0,
+    "native_pct_30m_2025": 48.4,
+    "delta_pp_30m": -0.6,
+    "silviculture_pct_30m_2020": 0.0,
+    "silviculture_pct_30m_2025": 0.0,
+    "note": "Referência independente para validar o modelo; não é verdade absoluta (MapBiomas também tem erros)."
+  },
+  "model_estimate": {
+    "model": "rf_native_v2",
+    "method": "out-of-fold (GroupKFold espacial), duas estações por ano",
+    "fold": 0,
+    "native_pct_a": 29.11,
+    "native_pct_b": 32.77,
+    "delta_pp": 3.66,
+    "computed_utc": "2026-11-17T03:50:14.426819+00:00"
+  },
+  "qa": {
+    "auto_flags": [],
+    "visual": "pendente"
+  },
+  "license": "Copernicus Sentinel Data Legal Notice; MapBiomas CC-BY 4.0",
+  "attribution": "Contains modified Copernicus Sentinel data 2020, 2025; MapBiomas Brasil Col. 4 e 11",
+  "generated_utc": "2026-11-12T23:58:42.831707+00:00",
+  "verification": {
+    "aligned_identical_grid": true,
+    "grid": [
+      "EPSG:32725",
+      [
+        10.0,
+        0.0,
+        255600.0,
+        0.0,
+        -10.0,
+        9357120.0
+      ],
+      240,
+      240
+    ],
+    "ibge_location_of_center": {
+      "ibge_municipio_codigo": "2408102",
+      "municipio": "Natal",
+      "uf": "RN"
+    },
+    "cdse_products_found": true
+  },
+  "season2": {
+    "status": "ok",
+    "images": [
+      {
+        "earth_search_id": "S2A_T25MBP_20200517T124323_L2A",
+        "datetime_utc": "2020-05-17T12:43:45.995000+00:00",
+        "platform": "sentinel-2a",
+        "mgrs_tile": "25MBP",
+        "relative_orbit": null,
+        "processing_baseline": "05.00",
+        "esa_product_uri": "S2A_MSIL2A_20200517T124321_N0500_R009_T25MBP_20230415T193115.SAFE",
+        "tile_cloud_cover_pct": 31.850478,
+        "sun_elevation_deg": 55.7076227564764,
+        "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2A_T25MBP_20200517T124323_L2A",
+        "crop_valid_fraction_scl": 0.9994,
+        "cdse_product_id": "S2A_MSIL2A_20200517T124321_N0500_R009_T25MBP_20230415T193115",
+        "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-5.82271&lng=-35.19631&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-05-17T00%3A00%3A00.000Z&toTime=2020-05-17T23%3A59%3A59.999Z"
+      },
+      {
+        "earth_search_id": "S2A_T25MBP_20250523T124332_L2A",
+        "datetime_utc": "2025-05-23T12:43:57.262000+00:00",
+        "platform": "sentinel-2a",
+        "mgrs_tile": "25MBP",
+        "relative_orbit": null,
+        "processing_baseline": "05.11",
+        "esa_product_uri": "S2A_MSIL2A_20250523T124331_N0511_R009_T25MBP_20250523T164611.SAFE",
+        "tile_cloud_cover_pct": 20.720348,
+        "sun_elevation_deg": 54.8277873066504,
+        "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2A_T25MBP_20250523T124332_L2A",
+        "crop_valid_fraction_scl": 1.0,
+        "cdse_product_id": "S2A_MSIL2A_20250523T124331_N0511_R009_T25MBP_20250523T164611",
+        "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-5.82271&lng=-35.19631&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-05-23T00%3A00%3A00.000Z&toTime=2025-05-23T23%3A59%3A59.999Z"
+      }
+    ],
+    "doy_difference_days": 5,
+    "ndvi_gain_vs_primary": [
+      0.063,
+      0.043
+    ],
+    "ndvi_crop": {
+      "season2": [
+        0.548,
+        0.54
+      ],
+      "primary": [
+        0.484,
+        0.497
+      ]
+    },
+    "rule": "par mais verde em comum: entre datas limpas (cobertura 100%, SCL válido ≥ 99,9%, névoa ≤ 0,006, s2cloudless ≤ 0,2%) do mesmo ano civil, a ≥ 45 dias da data principal e com ≤ 30 dias de diferença de dia do ano entre os anos, maximiza o menor NDVI médio do recorte",
+    "display_tone": {
+      "bands": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "black": 0.0153999924659729,
+      "white": 0.311599999666214,
+      "gamma": 0.5546,
+      "saturation": 1.12,
+      "percentiles": [
+        0.5,
+        99.0
+      ],
+      "target_mid": 0.36,
+      "scope": "par (duas datas juntas)"
+    }
+  },
+  "model_estimate_v1": {
+    "model": "rf_native_v1",
+    "method": "out-of-fold (GroupKFold espacial)",
+    "fold": 3,
+    "native_pct_a": 24.32,
+    "native_pct_b": 33.24,
+    "delta_pp": 8.92,
+    "computed_utc": "2026-11-13T00:22:14.137754+00:00"
+  }
+}

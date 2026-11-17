@@ -1,0 +1,67 @@
+// Contrato gerado por science/scripts/export_game.py (schema_version 1.x)
+export interface Challenge {
+  id: string;
+  name: string;
+  group: string;
+  biome: string;
+  uf: string | null;
+  municipality: string | null;
+  center_lonlat: [number, number];
+  bbox_lonlat: [number, number, number, number];
+  size_km: number;
+  pixel_m: number;
+  dates: [string, string];
+  years: [number, number];
+  images: {
+    before: string; after: string; context_before: string; context_after: string;
+    /** Outra época do ano (a mais verde que os dois anos têm em comum) — o modelo v2 também usa estas */
+    before2?: string; after2?: string; context_before2?: string; context_after2?: string;
+  };
+  dates2?: [string, string] | null;
+  /** época 1 bem menos verde que a época 2 nos dois anos: avisar que mata sem folhas pode parecer pasto */
+  season_hint?: boolean;
+  products: { id: string; browser_url: string | null }[];
+  model_estimate_pp: number;
+  model_uncertainty_pp: number;
+  /** faixa de 100 pontos: [min(modelo, MapBiomas) − 3, max(modelo, MapBiomas) + 3] */
+  score_band?: [number, number];
+  reference_pp: { mapbiomas_10m: number; mapbiomas_30m: number };
+  native_pct: { model: [number, number]; mapbiomas_10m: [number, number] };
+  kind: "loss" | "gain" | "stable_edge" | "trap";
+  hypothesis: string;
+  explanation: string;
+  qa_note: string;
+  attribution: string;
+  /** Dossiê de evidências (science/scripts/build_dossier.py): cada afirmação com veredito, porquê e fontes. */
+  dossier: Claim[];
+}
+
+export interface Claim {
+  afirmacao: string;
+  veredito: "comprovado" | "corrigido" | "removido" | "não comprovado";
+  porque: string;
+  revisao?: string;
+  fontes: { nome: string; url: string }[];
+}
+
+export interface Dataset {
+  schema_version: string;
+  generated_utc: string;
+  target: string;
+  scoring: { formula: string; tolerance_pp: number; margin_pp?: number; source: string };
+  model: {
+    name: string;
+    validation: string;
+    pixel: { overall_accuracy: number; f1_native: number; n_pixels: number };
+    delta_vs_mapbiomas10m: { MAE_pp: number; bias_pp: number; RMSE_pp: number; pearson_r: number };
+  };
+  limitations: string[];
+  licenses: string;
+  challenges: Challenge[];
+}
+
+export interface Attempt {
+  guess: number;
+  points: number;
+  at: string;
+}

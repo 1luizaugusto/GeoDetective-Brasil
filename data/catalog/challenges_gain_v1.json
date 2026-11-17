@@ -1,0 +1,230 @@
+[
+  {
+    "id": "GAN-01",
+    "name": "Ganho nativo — Pantanal (MT)",
+    "group": "complementar_ganho",
+    "biome": "Pantanal",
+    "lon": -57.38079,
+    "lat": -17.56027,
+    "mode": "gain",
+    "season": [
+      "06-01",
+      "09-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho de vegetação nativa (regeneração) segundo MapBiomas",
+    "notes": "célula GEE: ganho 59.0%, perda 0.1%, nativa 2020 31.2% | CAUTELA: no Pantanal o 'ganho' pode ser dinâmica de cheia/fogo, não regeneração"
+  },
+  {
+    "id": "GAN-02",
+    "name": "Ganho nativo — Pantanal (MT)",
+    "group": "complementar_ganho",
+    "biome": "Pantanal",
+    "lon": -57.46703,
+    "lat": -16.56853,
+    "mode": "gain",
+    "season": [
+      "06-01",
+      "09-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho de vegetação nativa (regeneração) segundo MapBiomas",
+    "notes": "célula GEE: ganho 50.7%, perda 0.0%, nativa 2020 13.4% | CAUTELA: no Pantanal o 'ganho' pode ser dinâmica de cheia/fogo, não regeneração"
+  },
+  {
+    "id": "GAN-03",
+    "name": "Ganho nativo — Pantanal (MT)",
+    "group": "complementar_ganho",
+    "biome": "Pantanal",
+    "lon": -57.35923,
+    "lat": -17.77586,
+    "mode": "gain",
+    "season": [
+      "06-01",
+      "09-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho de vegetação nativa (regeneração) segundo MapBiomas",
+    "notes": "célula GEE: ganho 45.6%, perda 0.0%, nativa 2020 16.4% | CAUTELA: no Pantanal o 'ganho' pode ser dinâmica de cheia/fogo, não regeneração"
+  },
+  {
+    "id": "GAN-04",
+    "name": "Ganho nativo — Cerrado (GO/DF)",
+    "group": "complementar_ganho",
+    "biome": "Cerrado",
+    "lon": -47.11843,
+    "lat": -14.69284,
+    "mode": "gain",
+    "season": [
+      "05-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho de vegetação nativa (regeneração) segundo MapBiomas",
+    "notes": "célula GEE: ganho 29.1%, perda 0%, nativa 2020 52.7%"
+  },
+  {
+    "id": "GAN-05",
+    "name": "Ganho nativo — Cerrado (GO/DF)",
+    "group": "complementar_ganho",
+    "biome": "Cerrado",
+    "lon": -47.11843,
+    "lat": -14.95156,
+    "mode": "gain",
+    "season": [
+      "05-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho de vegetação nativa (regeneração) segundo MapBiomas",
+    "notes": "célula GEE: ganho 24.8%, perda 2.0%, nativa 2020 26.2%"
+  },
+  {
+    "id": "GAN-06",
+    "name": "Ganho nativo — Cerrado (GO/DF)",
+    "group": "complementar_ganho",
+    "biome": "Cerrado",
+    "lon": -47.0322,
+    "lat": -14.54193,
+    "mode": "gain",
+    "season": [
+      "05-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho de vegetação nativa (regeneração) segundo MapBiomas",
+    "notes": "célula GEE: ganho 24.7%, perda 0.6%, nativa 2020 12.2%"
+  },
+  {
+    "id": "GAN-07",
+    "name": "Ganho nativo — Nordeste do Pará",
+    "group": "complementar_ganho",
+    "biome": "Amazônia",
+    "lon": -47.9377,
+    "lat": -1.23968,
+    "mode": "gain",
+    "season": [
+      "07-01",
+      "11-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho de vegetação nativa (regeneração) segundo MapBiomas",
+    "notes": "célula GEE: ganho 16.8%, perda 0%, nativa 2020 22.4%"
+  },
+  {
+    "id": "GAN-08",
+    "name": "Ganho nativo — Nordeste do Pará",
+    "group": "complementar_ganho",
+    "biome": "Amazônia",
+    "lon": -47.9377,
+    "lat": -1.54151,
+    "mode": "gain",
+    "season": [
+      "07-01",
+      "11-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho de vegetação nativa (regeneração) segundo MapBiomas",
+    "notes": "célula GEE: ganho 16.6%, perda 0.6%, nativa 2020 61.5%"
+  },
+  {
+    "id": "GAN-09",
+    "name": "Ganho nativo — Nordeste do Pará",
+    "group": "complementar_ganho",
+    "biome": "Amazônia",
+    "lon": -47.31247,
+    "lat": -1.7571,
+    "mode": "gain",
+    "season": [
+      "07-01",
+      "11-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho de vegetação nativa (regeneração) segundo MapBiomas",
+    "notes": "célula GEE: ganho 13.8%, perda 2.0%, nativa 2020 26.4%"
+  },
+  {
+    "id": "GAN-10",
+    "name": "Ganho nativo — Vale do Paraíba (SP/RJ)",
+    "group": "complementar_ganho",
+    "biome": "Mata Atlântica",
+    "lon": -44.10009,
+    "lat": -22.95016,
+    "mode": "gain",
+    "season": [
+      "05-01",
+      "09-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho de vegetação nativa (regeneração) segundo MapBiomas",
+    "notes": "célula GEE: ganho 9.8%, perda 5.3%, nativa 2020 34.0%"
+  },
+  {
+    "id": "GAN-11",
+    "name": "Ganho nativo — Vale do Paraíba (SP/RJ)",
+    "group": "complementar_ganho",
+    "biome": "Mata Atlântica",
+    "lon": -45.09183,
+    "lat": -22.713,
+    "mode": "gain",
+    "season": [
+      "05-01",
+      "09-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho de vegetação nativa (regeneração) segundo MapBiomas",
+    "notes": "célula GEE: ganho 7.3%, perda 5.4%, nativa 2020 41.9%"
+  },
+  {
+    "id": "GAN-12",
+    "name": "Ganho nativo — Vale do Paraíba (SP/RJ)",
+    "group": "complementar_ganho",
+    "biome": "Mata Atlântica",
+    "lon": -45.6955,
+    "lat": -23.05796,
+    "mode": "gain",
+    "season": [
+      "05-01",
+      "09-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho de vegetação nativa (regeneração) segundo MapBiomas",
+    "notes": "célula GEE: ganho 6.9%, perda 1.7%, nativa 2020 11.4%"
+  }
+]

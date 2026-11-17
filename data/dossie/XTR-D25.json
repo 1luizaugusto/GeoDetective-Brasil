@@ -1,0 +1,149 @@
+{
+ "id": "XTR-D25",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "Houve perda de vegetação nativa entre 2020 e 2025.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 47.1 pp e ganho 0.1 pp (líquido -47,0 pp); MapBiomas 30 m: perda 46.8 pp e ganho 0.0 pp (líquido -46,8 pp). NDVI mediano das imagens: 0.42→0.43. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.08 (vegetação a menos).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-08-28 — S2B_MSIL2A_20200828T134219_N0500_R124_T22LEM_20230425T053429",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-12.38777&lng=-50.27381&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-08-28T00%3A00%3A00.000Z&toTime=2020-08-28T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-08-29 — S2A_MSIL2A_20250829T134221_N0511_R124_T22LEM_20250829T163313",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-12.38777&lng=-50.27381&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-08-29T00%3A00%3A00.000Z&toTime=2025-08-29T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 28/08/2020 e 29/08/2025 (0 dias de diferença no calendário). Época 2: 05/04/2020 e 04/04/2025 (2 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,50 → 0,49; época 2 0,70 → 0,84. Na época 2, 2025 está mais verde no recorte inteiro: essa diferença de cor vem do momento da foto (chuva, rebrota), e por isso o gabarito vem dos mapas e do modelo, não da cor.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-08-28 — S2B_MSIL2A_20200828T134219_N0500_R124_T22LEM_20230425T053429",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-12.38777&lng=-50.27381&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-08-28T00%3A00%3A00.000Z&toTime=2020-08-28T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-08-29 — S2A_MSIL2A_20250829T134221_N0511_R124_T22LEM_20250829T163313",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-12.38777&lng=-50.27381&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-08-29T00%3A00%3A00.000Z&toTime=2025-08-29T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-04-05 — S2A_MSIL2A_20200405T134211_N0500_R124_T22LEM_20230424T120037",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-12.38777&lng=-50.27381&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-04-05T00%3A00%3A00.000Z&toTime=2020-04-05T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-04-04 — S2B_MSIL2A_20250404T133829_N0511_R124_T22LEM_20250404T171357",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-12.38777&lng=-50.27381&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-04-04T00%3A00%3A00.000Z&toTime=2025-04-04T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: -50,3 pp; MapBiomas 10 m: -47,0 pp; diferença 3.3 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Destino da vegetação nativa perdida.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Pastagem 97%; Mosaico de Usos 3%. Mapa 30 m: Pastagem 95%; Mosaico de Usos 5%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Houve fogo registrado no recorte.",
+   "veredito": "comprovado",
+   "porque": "Área queimada (MapBiomas Fogo): 2025: 47% do recorte. Fogo muda a cor da imagem; vegetação nativa queimada continua nativa.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Parque do Araguaia (Terra Indígena, criada em 2001).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 100% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/352420"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Formoso do Araguaia/TO, bioma Cerrado.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 1708205) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 1708205",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/1708205"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2024": 0.0,
+  "2025": 47.1
+ },
+ "areas_protegidas": [
+  {
+   "nome": "Parque do Araguaia",
+   "tipo": "Terra Indígena",
+   "ano": 2001,
+   "site_id": 352420,
+   "frac": 1.0
+  }
+ ]
+}

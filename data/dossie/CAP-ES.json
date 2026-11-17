@@ -1,0 +1,170 @@
+{
+ "id": "CAP-ES",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 0.3 pp e ganho 0.1 pp (líquido -0,2 pp); MapBiomas 30 m: perda 0.4 pp e ganho 0.0 pp (líquido -0,4 pp). NDVI mediano das imagens: 0.66→0.65. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-06-14 — S2B_MSIL2A_20200614T125309_N0500_R052_T24KUC_20230403T043123",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.26482&lng=-40.32329&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-06-14T00%3A00%3A00.000Z&toTime=2020-06-14T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-06-18 — S2A_MSIL2A_20240618T125311_N0510_R052_T24KUC_20240618T173250",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-20.26482&lng=-40.32329&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-06-18T00%3A00%3A00.000Z&toTime=2024-06-18T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 0%; 2023: 0%; 2024: 0% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Estação Ecológica Municipal Ilha Do Lameirão (Estação Ecológica, criada em 1986).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 38% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555576263"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Parque Natural Municipal Dom Luiz Gonzaga Fernandes (Parque, criada em 1998).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 10% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555576430"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Área De Proteção Ambiental Do Maciço Central (Área de Proteção Ambiental, criada em 1992).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 3% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555576238"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Área De Proteção Ambiental Municípal Manguezal Sul Da Serra (Área de Proteção Ambiental, criada em 2012).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 1% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555576233"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Vitória/ES, bioma Mata Atlântica.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 3205309) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 3205309",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/3205309"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Versão anterior: 'a maré muda a cor da água'.",
+   "veredito": "corrigido",
+   "porque": "Não conferimos a maré na hora de cada imagem. O texto agora diz só que a cor da água mudou.",
+   "fontes": []
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "areas_protegidas": [
+  {
+   "nome": "Estação Ecológica Municipal Ilha Do Lameirão",
+   "tipo": "Estação Ecológica",
+   "ano": 1986,
+   "site_id": 555576263,
+   "frac": 0.37770798240682224
+  },
+  {
+   "nome": "Parque Natural Municipal Dom Luiz Gonzaga Fernandes",
+   "tipo": "Parque",
+   "ano": 1998,
+   "site_id": 555576430,
+   "frac": 0.09704992713812303
+  },
+  {
+   "nome": "Área De Proteção Ambiental Do Maciço Central",
+   "tipo": "Área de Proteção Ambiental",
+   "ano": 1992,
+   "site_id": 555576238,
+   "frac": 0.028242396203769955
+  },
+  {
+   "nome": "Área De Proteção Ambiental Municípal Manguezal Sul Da Serra",
+   "tipo": "Área de Proteção Ambiental",
+   "ano": 2012,
+   "site_id": 555576233,
+   "frac": 0.011588765671186297
+  },
+  {
+   "nome": "Reserva De Desenvolvimento Sustentável Municipal Do Manguezal De Cariacica",
+   "tipo": "Reserva de Desenvolvimento Sustentável",
+   "ano": 2007,
+   "site_id": 555576435,
+   "frac": 0.0
+  },
+  {
+   "nome": "Parque Natural Municipal Vale Do Mulembá",
+   "tipo": "Parque",
+   "ano": 2008,
+   "site_id": 555576228,
+   "frac": 0.0
+  }
+ ]
+}

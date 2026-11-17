@@ -1,0 +1,185 @@
+{
+ "id": "CAP-PE",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2025.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 1.9 pp e ganho 0.7 pp (líquido -1,2 pp); MapBiomas 30 m: perda 0.6 pp e ganho 1.3 pp (líquido +0,7 pp). NDVI mediano das imagens: 0.88→0.88. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-06-21 — S2B_MSIL2A_20200621T124319_N0500_R009_T25MBM_20230412T121938",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-8.00973&lng=-34.94416&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-06-21T00%3A00%3A00.000Z&toTime=2020-06-21T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2025-04-16 — S2B_MSIL2A_20250416T124249_N0511_R009_T25MBM_20250416T160533",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-8.00973&lng=-34.94416&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-04-16T00%3A00%3A00.000Z&toTime=2025-04-16T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 0→0%; no mapa 30 m: 0→0%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 0%; 2024: 0%; 2025: 0% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Área De Relevante Interesse Ecológico Dois Irmãos (Área de Relevante Interesse Ecológico, criada em 2014).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 66% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555758939"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Área De Proteção Ambiental Aldeia-Beberibe (Área de Proteção Ambiental, criada em 2010).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 47% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555600296"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Parque Estadual De Dois Irmãos (Parque, criada em 1987).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 47% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555682393"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Área protegida: Área De Relevante Interesse Ecológico Açude De Apipucos (Área de Relevante Interesse Ecológico, criada em 2020).",
+   "veredito": "comprovado",
+   "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 10% do recorte.",
+   "fontes": [
+    {
+     "nome": "Protected Planet / WDPA (UNEP-WCMC)",
+     "url": "https://www.protectedplanet.net/555758934"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Recife/PE, bioma Mata Atlântica.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 2611606) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 2611606",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/2611606"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2024": 0.0,
+  "2025": 0.0
+ },
+ "areas_protegidas": [
+  {
+   "nome": "Área De Relevante Interesse Ecológico Dois Irmãos",
+   "tipo": "Área de Relevante Interesse Ecológico",
+   "ano": 2014,
+   "site_id": 555758939,
+   "frac": 0.6575609721452756
+  },
+  {
+   "nome": "Área De Proteção Ambiental Aldeia-Beberibe",
+   "tipo": "Área de Proteção Ambiental",
+   "ano": 2010,
+   "site_id": 555600296,
+   "frac": 0.47157945044733734
+  },
+  {
+   "nome": "Parque Estadual De Dois Irmãos",
+   "tipo": "Parque",
+   "ano": 1987,
+   "site_id": 555682393,
+   "frac": 0.470297282623517
+  },
+  {
+   "nome": "Área De Relevante Interesse Ecológico Açude De Apipucos",
+   "tipo": "Área de Relevante Interesse Ecológico",
+   "ano": 2020,
+   "site_id": 555758934,
+   "frac": 0.10387012481874926
+  },
+  {
+   "nome": "Área De Proteção Ambiental Sítio Dos Pintos",
+   "tipo": "Área de Proteção Ambiental",
+   "ano": 2014,
+   "site_id": 555758932,
+   "frac": 0.058363630596423584
+  },
+  {
+   "nome": "Área De Relevante Interesse Ecológico Beberibe",
+   "tipo": "Área de Relevante Interesse Ecológico",
+   "ano": 2014,
+   "site_id": 555758935,
+   "frac": 0.0
+  },
+  {
+   "nome": "Área De Relevante Interesse Ecológico Capivaras",
+   "tipo": "Área de Relevante Interesse Ecológico",
+   "ano": 2020,
+   "site_id": 555758936,
+   "frac": 0.0
+  },
+  {
+   "nome": "Área De Relevante Interesse Ecológico Iputinga",
+   "tipo": "Área de Relevante Interesse Ecológico",
+   "ano": 2020,
+   "site_id": 555758943,
+   "frac": 0.0
+  },
+  {
+   "nome": "Área De Relevante Interesse Ecológico Mata Da Várzea",
+   "tipo": "Área de Relevante Interesse Ecológico",
+   "ano": 1996,
+   "site_id": 555758947,
+   "frac": 0.0
+  }
+ ]
+}

@@ -1,0 +1,132 @@
+{
+ "name": "cmp04_mariana",
+ "pair": [
+  {
+   "earth_search_id": "S2A_T23KPT_20200612T130326_L2A",
+   "datetime_utc": "2020-06-12T13:07:59.248000+00:00",
+   "platform": "sentinel-2a",
+   "mgrs_tile": "23KPT",
+   "relative_orbit": null,
+   "processing_baseline": "05.00",
+   "esa_product_uri": "S2A_MSIL2A_20200612T130251_N0500_R095_T23KPT_20230327T055733.SAFE",
+   "tile_cloud_cover_pct": 7.909698,
+   "sun_elevation_deg": 39.3271666862404,
+   "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2A_T23KPT_20200612T130326_L2A"
+  },
+  {
+   "earth_search_id": "S2A_T23KPT_20240611T130251_L2A",
+   "datetime_utc": "2024-06-11T13:07:59.102000+00:00",
+   "platform": "sentinel-2a",
+   "mgrs_tile": "23KPT",
+   "relative_orbit": null,
+   "processing_baseline": "05.10",
+   "esa_product_uri": "S2A_MSIL2A_20240611T130251_N0510_R095_T23KPT_20240611T175646.SAFE",
+   "tile_cloud_cover_pct": 0.115737,
+   "sun_elevation_deg": 39.3970197244328,
+   "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2A_T23KPT_20240611T130251_L2A"
+  }
+ ],
+ "valid": [
+  0.99750625,
+  0.9971453125
+ ],
+ "metric": "forest",
+ "ndvi_t": 0.6,
+ "ndmi_t": 0.3,
+ "loss": [
+  {
+   "x": 100,
+   "y": 50,
+   "lon": -43.45429,
+   "lat": -20.19922,
+   "veg_a": 42.2,
+   "veg_b": 38.8,
+   "delta_pp": -3.4,
+   "valid": 0.995
+  },
+  {
+   "x": 150,
+   "y": 50,
+   "lon": -43.44472,
+   "lat": -20.19914,
+   "veg_a": 46.0,
+   "veg_b": 42.6,
+   "delta_pp": -3.4,
+   "valid": 0.999
+  },
+  {
+   "x": 100,
+   "y": 100,
+   "lon": -43.4542,
+   "lat": -20.20826,
+   "veg_a": 37.2,
+   "veg_b": 34.1,
+   "delta_pp": -3.1,
+   "valid": 0.994
+  }
+ ],
+ "gain": [
+  {
+   "x": 500,
+   "y": 0,
+   "lon": -43.37784,
+   "lat": -20.1895,
+   "veg_a": 65.2,
+   "veg_b": 83.5,
+   "delta_pp": 18.3,
+   "valid": 0.989
+  },
+  {
+   "x": 550,
+   "y": 0,
+   "lon": -43.36827,
+   "lat": -20.18941,
+   "veg_a": 69.8,
+   "veg_b": 87.4,
+   "delta_pp": 17.6,
+   "valid": 0.998
+  },
+  {
+   "x": 450,
+   "y": 0,
+   "lon": -43.38741,
+   "lat": -20.18959,
+   "veg_a": 60.2,
+   "veg_b": 77.2,
+   "delta_pp": 17.0,
+   "valid": 0.989
+  }
+ ],
+ "stable": [
+  {
+   "x": 100,
+   "y": 250,
+   "lon": -43.45393,
+   "lat": -20.23536,
+   "veg_a": 68.9,
+   "veg_b": 70.5,
+   "delta_pp": 1.6,
+   "valid": 0.997
+  },
+  {
+   "x": 150,
+   "y": 250,
+   "lon": -43.44436,
+   "lat": -20.23527,
+   "veg_a": 63.0,
+   "veg_b": 65.2,
+   "delta_pp": 2.2,
+   "valid": 0.999
+  },
+  {
+   "x": 50,
+   "y": 250,
+   "lon": -43.4635,
+   "lat": -20.23544,
+   "veg_a": 65.4,
+   "veg_b": 68.2,
+   "delta_pp": 2.7,
+   "valid": 0.997
+  }
+ ]
+}

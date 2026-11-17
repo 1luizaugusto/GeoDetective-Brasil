@@ -1,0 +1,95 @@
+[
+  {
+    "id": "CAP-PB",
+    "name": "João Pessoa – Mata do Buraquinho, João Pessoa/PB",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -34.86,
+    "lat": -7.14,
+    "mode": "stable_edge",
+    "season": [
+      "07-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Nuvens no litoral. | janela ampliada para 07-01/12-31 (sem cena limpa na janela original) | QA visual: nuvens pequenas e sombras não marcadas pelo SCL na data 'depois' | QA visual 2: nuvens pequenas nas duas datas | QA visual 3: nuvens na data 'antes' (2020-10-04)",
+    "exclude": [
+      "S2A_T25MBN_20200924T124323_L2A",
+      "S2A_T25MBN_20201004T124323_L2A",
+      "S2A_T25MBN_20240814T124318_L2A",
+      "S2A_T25MBN_20251010T124330_L2A"
+    ],
+    "max_eval": 30,
+    "min_valid": 0.5
+  },
+  {
+    "id": "CAP-RR",
+    "name": "Boa Vista – lavrado e expansão urbana, Boa Vista/RR",
+    "group": "capital",
+    "biome": "Amazônia",
+    "lon": -60.72,
+    "lat": 2.82,
+    "mode": "loss",
+    "season": [
+      "12-01",
+      "03-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Fogo no lavrado. | QA visual: pluma de fumaça/nuvem na data 'antes' | QA visual 2: nuvem e fumaça na data 'antes' | QA visual 3: fumaça/nuvem pequena na data 'antes' (2021-01-20)",
+    "exclude": [
+      "S2B_T20NQJ_20210120T142730_L2A",
+      "S2B_T20NQJ_20210219T142728_L2A",
+      "S2B_T20NQJ_20210321T142730_L2A"
+    ]
+  },
+  {
+    "id": "CER-03",
+    "name": "Parque Nacional das Emas – borda com lavouras, Mineiros/GO",
+    "group": "bioma",
+    "biome": "Cerrado",
+    "lon": -52.92,
+    "lat": -18.1,
+    "mode": "stable_edge",
+    "season": [
+      "05-01",
+      "07-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Fogo e rebrota no campo cerrado alteram a aparência sem perda líquida. | QA visual: recorte sem borda (100% nativo): exige borda visível | QA visual 2: busca de 8 km toda em campo nativo; busca ampliada para 16 km para alcançar a borda do parque | QA visual 3: busca de 16 km não coube num único tile; tenta 12 km",
+    "search": 12000,
+    "exclude": []
+  },
+  {
+    "id": "CAP-BA",
+    "name": "Salvador – Parque de Pituaçu / Av. Paralela, Salvador/BA",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -38.42,
+    "lat": -12.96,
+    "mode": "stable_edge",
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável com perda na borda",
+    "notes": "Nuvens no litoral. | busca relaxada (ano inteiro, min_valid 0,5, 30 cenas) por excesso de nuvem | QA visual 3: sem par válido nas tentativas anteriores; critérios mais frouxos",
+    "min_valid": 0.3,
+    "max_eval": 40
+  }
+]

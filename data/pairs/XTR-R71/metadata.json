@@ -1,0 +1,194 @@
+{
+  "challenge_id": "XTR-R71",
+  "name": "Floresta e áreas abertas, Cardeal da Silva/BA",
+  "group": "extra",
+  "biome": "Mata Atlântica",
+  "mode": "gain",
+  "selection_hypothesis": "ganho",
+  "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.19→0.43, silvicultura 0.04→0.06, aberta 0.00→0.00 | seleção 2017→2025; Sentinel-2 L2A c1 só existe a partir de 2018 → par 2018×2025",
+  "years": [
+    2018,
+    2025
+  ],
+  "target_definition": "vegetação nativa (MapBiomas: Floresta + Vegetação Herbácea e Arbustiva); silvicultura, agricultura e pastagem = não-alvo",
+  "search_center_lonlat": [
+    -37.946,
+    -12.0844
+  ],
+  "center_lonlat": [
+    -37.942134,
+    -12.10403
+  ],
+  "aoi": {
+    "crs": "EPSG:32724",
+    "bounds_utm": [
+      613920.0,
+      8660520.0,
+      616320.0,
+      8662920.0
+    ],
+    "size_m": 2400,
+    "bbox_lonlat": [
+      -37.953202,
+      -12.114922,
+      -37.931065,
+      -12.093138
+    ],
+    "pixel_size_m": 10.0,
+    "shape": [
+      240,
+      240
+    ]
+  },
+  "crop_selection": {
+    "mode": "gain",
+    "search_size_m": 8000,
+    "offset_px": [
+      324,
+      498
+    ],
+    "based_on": "máscaras MapBiomas (nativa 10 m + 30 m; silvicultura 30 m)"
+  },
+  "display": {
+    "zoom_factor": 3,
+    "resampling": "Lanczos (sem super-resolução)",
+    "game_image_px": 720,
+    "tone": {
+      "bands": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "black": 0.005599997937679291,
+      "white": 0.13114999681711198,
+      "gamma": 0.7054,
+      "saturation": 1.12,
+      "percentiles": [
+        0.5,
+        99.0
+      ],
+      "target_mid": 0.36,
+      "scope": "par (duas datas juntas)"
+    }
+  },
+  "images": [
+    {
+      "earth_search_id": "S2A_T24LXM_20180829T125306_L2A",
+      "datetime_utc": "2018-08-29T12:55:24.338000+00:00",
+      "platform": "sentinel-2a",
+      "mgrs_tile": "24LXM",
+      "relative_orbit": 52,
+      "processing_baseline": "05.00",
+      "esa_product_uri": "S2A_MSIL2A_20180829T125311_N0500_R052_T24LXM_20230626T110818.SAFE",
+      "tile_cloud_cover_pct": 55.6431,
+      "sun_elevation_deg": 57.91959873426,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2A_T24LXM_20180829T125306_L2A",
+      "search_valid_fraction_scl": 0.8313,
+      "search_haze_fraction": 0.0257,
+      "crop_valid_fraction_scl": 0.99,
+      "crop_haze_fraction": 0.0006,
+      "cdse_product_id": "S2A_MSIL2A_20180829T125311_N0500_R052_T24LXM_20230626T110818",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20180829T125311_N0500_R052_T24LXM_20230626T110818",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-12.10403&lng=-37.94213&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2018-08-29T00%3A00%3A00.000Z&toTime=2018-08-29T23%3A59%3A59.999Z"
+    },
+    {
+      "earth_search_id": "S2A_T24LXM_20250426T125321_L2A",
+      "datetime_utc": "2025-04-26T12:55:40.405000+00:00",
+      "platform": "sentinel-2a",
+      "mgrs_tile": "24LXM",
+      "relative_orbit": 52,
+      "processing_baseline": "05.11",
+      "esa_product_uri": "S2A_MSIL2A_20250426T125321_N0511_R052_T24LXM_20250426T185404.SAFE",
+      "tile_cloud_cover_pct": 4.029917,
+      "sun_elevation_deg": 55.3961432441422,
+      "stac_item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2A_T24LXM_20250426T125321_L2A",
+      "search_valid_fraction_scl": 0.9998,
+      "search_haze_fraction": 0.0018,
+      "crop_valid_fraction_scl": 1.0,
+      "crop_haze_fraction": 0.0029,
+      "cdse_product_id": "S2A_MSIL2A_20250426T125321_N0511_R052_T24LXM_20250426T185404",
+      "cdse_stac_item_url": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20250426T125321_N0511_R052_T24LXM_20250426T185404",
+      "copernicus_browser_url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-12.10403&lng=-37.94213&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2025-04-26T00%3A00%3A00.000Z&toTime=2025-04-26T23%3A59%3A59.999Z"
+    }
+  ],
+  "doy_difference_days": 125,
+  "same_mgrs_tile": true,
+  "same_relative_orbit": true,
+  "bands_10m_stack": [
+    "blue(B02)",
+    "green(B03)",
+    "red(B04)",
+    "rededge1(B05)",
+    "rededge2(B06)",
+    "rededge3(B07)",
+    "nir(B08)",
+    "nir08(B8A)",
+    "swir16(B11)",
+    "swir22(B12)"
+  ],
+  "reference_mapbiomas": {
+    "source": "MapBiomas Brasil — Col. 4 (10 m, Sentinel-2) e Col. 11 (30 m, Landsat), via Google Earth Engine",
+    "assets": {
+      "10m": "projects/mapbiomas-public/assets/brazil/lulc_10m/collection4/mapbiomas_10m_collection4_coverage_v1",
+      "30m": "projects/mapbiomas-public/assets/brazil/lulc/collection11/mapbiomas_brazil_collection11_coverage_v3"
+    },
+    "native_classes_col11": [
+      3,
+      6,
+      4,
+      7,
+      5,
+      49,
+      12,
+      77,
+      11,
+      84,
+      50,
+      32,
+      29
+    ],
+    "native_pct_10m_2018": 25.29,
+    "native_pct_10m_2025": 42.95,
+    "delta_pp_10m": 17.66,
+    "native_pct_30m_2018": 23.11,
+    "native_pct_30m_2025": 40.67,
+    "delta_pp_30m": 17.56,
+    "silviculture_pct_30m_2018": 26.04,
+    "silviculture_pct_30m_2025": 27.35,
+    "note": "Referência independente para validar o modelo; não é verdade absoluta (MapBiomas também tem erros)."
+  },
+  "model_estimate": null,
+  "qa": {
+    "auto_flags": [],
+    "visual": "pendente"
+  },
+  "license": "Copernicus Sentinel Data Legal Notice; MapBiomas CC-BY 4.0",
+  "attribution": "Contains modified Copernicus Sentinel data 2018, 2025; MapBiomas Brasil Col. 4 e 11",
+  "generated_utc": "2026-11-17T03:10:54.499712+00:00",
+  "season2": {
+    "status": "sem_cena",
+    "detail": "A=1 B=0 cenas limpas no ano"
+  },
+  "verification": {
+    "aligned_identical_grid": true,
+    "grid": [
+      "EPSG:32724",
+      [
+        10.0,
+        0.0,
+        613920.0,
+        0.0,
+        -10.0,
+        8662920.0
+      ],
+      240,
+      240
+    ],
+    "ibge_location_of_center": {
+      "ibge_municipio_codigo": "2907004",
+      "municipio": "Cardeal da Silva",
+      "uf": "BA"
+    },
+    "cdse_products_found": true
+  }
+}

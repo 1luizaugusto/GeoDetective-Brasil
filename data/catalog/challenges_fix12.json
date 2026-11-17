@@ -1,0 +1,23 @@
+[
+  {
+    "id": "CAP-MA",
+    "name": "São Luís – manguezais e área portuária do Itaqui, São Luís/MA",
+    "group": "capital",
+    "biome": "Amazônia",
+    "lon": -44.36,
+    "lat": -2.58,
+    "mode": "loss",
+    "season": [
+      "07-01",
+      "10-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda ou estável",
+    "notes": "Maré; nebulosidade. | rodada 11: penalidade de divergência 10 m × 30 m na escolha do recorte; triagem CDSE | rodada 12: 2025 com nuvem/sombra no recorte (preview_dates); par limpo 2020-07-28 × 2024-07-22",
+    "item_a": "S2A_T23MNT_20200728T132239_L2A",
+    "item_b": "S2B_T23MNT_20240722T132235_L2A"
+  }
+]

@@ -1,0 +1,961 @@
+[
+  {
+    "id": "AMZ-01",
+    "name": "Novo Progresso – eixo da BR-163, Novo Progresso/PA",
+    "group": "bioma",
+    "biome": "Amazônia",
+    "lon": -55.55,
+    "lat": -7.1,
+    "mode": "loss",
+    "season": [
+      "06-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Fumaça de queimadas em ago-set; pasto seco em 2024."
+  },
+  {
+    "id": "AMZ-02",
+    "name": "Parque Indígena do Xingu – borda leste (região de Querência), Querência/MT",
+    "group": "bioma",
+    "biome": "Amazônia",
+    "lon": -52.55,
+    "lat": -12.45,
+    "mode": "stable_edge",
+    "season": [
+      "06-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Borda exata precisa ser confirmada com limite oficial (FUNAI); fogo."
+  },
+  {
+    "id": "AMZ-03",
+    "name": "Apuí – floresta remanescente x pasto seco, Apuí/AM",
+    "group": "bioma",
+    "biome": "Amazônia",
+    "lon": -59.96706,
+    "lat": -7.19474,
+    "mode": "stable_edge",
+    "season": [
+      "06-01",
+      "09-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável (floresta) com pasto mais seco em 2024",
+    "notes": "Jogador pode confundir secagem do pasto com perda de vegetação."
+  },
+  {
+    "id": "CER-01",
+    "name": "Silvicultura a NO de Três Lagoas, Três Lagoas/MS",
+    "group": "bioma",
+    "biome": "Cerrado",
+    "lon": -51.97431,
+    "lat": -20.55425,
+    "mode": "trap",
+    "season": [
+      "05-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho (vegetação plantada)",
+    "notes": "Silvicultura não é vegetação nativa: depende da definição-alvo.",
+    "item_a": "S2B_T22KCC_20200530T134212_L2A",
+    "item_b": "S2B_T22KCC_20240529T134749_L2A",
+    "search": 6000
+  },
+  {
+    "id": "CER-02",
+    "name": "Formosa do Rio Preto – MATOPIBA, Formosa do Rio Preto/BA",
+    "group": "bioma",
+    "biome": "Cerrado",
+    "lon": -45.6,
+    "lat": -11.2,
+    "mode": "loss",
+    "season": [
+      "05-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Coordenada exata do desmatamento a localizar por triagem."
+  },
+  {
+    "id": "CER-03",
+    "name": "Parque Nacional das Emas – borda com lavouras, Mineiros/GO",
+    "group": "bioma",
+    "biome": "Cerrado",
+    "lon": -52.92,
+    "lat": -18.1,
+    "mode": "stable_edge",
+    "season": [
+      "05-01",
+      "07-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Fogo e rebrota no campo cerrado alteram a aparência sem perda líquida."
+  },
+  {
+    "id": "CAA-01",
+    "name": "Petrolina – perímetro irrigado sobre a Caatinga, Petrolina/PE",
+    "group": "bioma",
+    "biome": "Caatinga",
+    "lon": -40.6,
+    "lat": -9.3,
+    "mode": "loss",
+    "season": [
+      "07-01",
+      "09-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda de Caatinga nativa com aumento de verde agrícola",
+    "notes": "Caatinga decídua na seca parece 'solo exposto': janela sazonal crítica."
+  },
+  {
+    "id": "CAA-02",
+    "name": "Parque Nacional da Serra da Capivara, Coronel José Dias/PI",
+    "group": "bioma",
+    "biome": "Caatinga",
+    "lon": -42.55,
+    "lat": -8.83,
+    "mode": "stable_edge",
+    "season": [
+      "07-01",
+      "09-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Forte sazonalidade de folhas; anos chuvosos x secos."
+  },
+  {
+    "id": "CAA-03",
+    "name": "Núcleo de desertificação do Seridó (Carnaúba dos Dantas), Carnaúba dos Dantas/RN",
+    "group": "bioma",
+    "biome": "Caatinga",
+    "lon": -36.59,
+    "lat": -6.55,
+    "mode": "stable_edge",
+    "season": [
+      "07-01",
+      "09-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável ou degradação lenta",
+    "notes": "Mudanças sutis; pode ser difícil para jogador e modelo."
+  },
+  {
+    "id": "MAT-01",
+    "name": "São Luiz do Paraitinga – regeneração em pastagens, São Luiz do Paraitinga/SP",
+    "group": "bioma",
+    "biome": "Mata Atlântica",
+    "lon": -45.31,
+    "lat": -23.22,
+    "mode": "gain",
+    "season": [
+      "05-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho (regeneração natural)",
+    "notes": "Ganho lento: 4 anos podem ser pouco visíveis."
+  },
+  {
+    "id": "MAT-02",
+    "name": "Quadrilátero Ferrífero – mineração, Nova Lima/MG",
+    "group": "bioma",
+    "biome": "Mata Atlântica",
+    "lon": -43.85,
+    "lat": -20.2,
+    "mode": "loss",
+    "season": [
+      "05-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Coordenada exata a localizar; transição Cerrado/Mata Atlântica."
+  },
+  {
+    "id": "MAT-03",
+    "name": "Parque Nacional do Iguaçu – borda norte (Céu Azul), Céu Azul/PR",
+    "group": "bioma",
+    "biome": "Mata Atlântica",
+    "lon": -53.85,
+    "lat": -25.12,
+    "mode": "stable_edge",
+    "season": [
+      "05-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Lavouras de inverno mudam de cor fora da floresta."
+  },
+  {
+    "id": "PAN-01",
+    "name": "Parque Estadual Encontro das Águas – pós-fogo, Poconé/MT",
+    "group": "bioma",
+    "biome": "Pantanal",
+    "lon": -56.85,
+    "lat": -17.35,
+    "mode": "gain",
+    "season": [
+      "09-15",
+      "10-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho (recuperação pós-fogo 2020)",
+    "notes": "PAR 2020-09-28 REJEITADO: fumaça densa classificada como válida pelo SCL. Buscar outra data."
+  },
+  {
+    "id": "PAN-02",
+    "name": "Nhecolândia – lagoas salinas, Corumbá/MS",
+    "group": "bioma",
+    "biome": "Pantanal",
+    "lon": -56.55,
+    "lat": -19.05,
+    "mode": "stable_edge",
+    "season": [
+      "08-01",
+      "10-15"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Pulso de inundação altera água x vegetação."
+  },
+  {
+    "id": "PAN-03",
+    "name": "Serra do Amolar – fogo de 2024, Corumbá/MS",
+    "group": "bioma",
+    "biome": "Pantanal",
+    "lon": -57.55,
+    "lat": -18.05,
+    "mode": "loss",
+    "season": [
+      "06-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda transitória por fogo",
+    "notes": "Fogo também em 2020; perda pode ser temporária (rebrota)."
+  },
+  {
+    "id": "PAM-01",
+    "name": "APA do Ibirapuitã – campo nativo, Sant'Ana do Livramento/RS",
+    "group": "bioma",
+    "biome": "Pampa",
+    "lon": -55.65,
+    "lat": -30.35,
+    "mode": "stable_edge",
+    "season": [
+      "11-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Campo nativo x pastagem/lavoura são espectralmente parecidos."
+  },
+  {
+    "id": "PAM-02",
+    "name": "Encruzilhada do Sul – silvicultura, Encruzilhada do Sul/RS",
+    "group": "bioma",
+    "biome": "Pampa",
+    "lon": -52.55,
+    "lat": -30.55,
+    "mode": "trap",
+    "season": [
+      "11-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho (vegetação plantada)",
+    "notes": "Plantio substitui vegetação nativa campestre: 'ganho' é ambíguo."
+  },
+  {
+    "id": "PAM-03",
+    "name": "Dom Pedrito – conversão de campo em lavoura, Dom Pedrito/RS",
+    "group": "bioma",
+    "biome": "Pampa",
+    "lon": -54.65,
+    "lat": -31.0,
+    "mode": "loss",
+    "season": [
+      "11-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda (campo nativo)",
+    "notes": "Ciclo da soja: datas precisam coincidir com a mesma fase."
+  },
+  {
+    "id": "CAP-AC",
+    "name": "Rio Branco – expansão urbana, Rio Branco/AC",
+    "group": "capital",
+    "biome": "Amazônia",
+    "lon": -67.8,
+    "lat": -9.97,
+    "mode": "loss",
+    "season": [
+      "06-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Fumaça regional em ago-set."
+  },
+  {
+    "id": "CAP-AL",
+    "name": "Maceió – bairros desocupados pelo afundamento do solo, Maceió/AL",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -35.745,
+    "lat": -9.625,
+    "mode": "gain",
+    "season": [
+      "09-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho (revegetação após demolições)",
+    "notes": "Nuvens no litoral; hipótese a verificar."
+  },
+  {
+    "id": "CAP-AP",
+    "name": "Macapá – áreas de ressaca, Macapá/AP",
+    "group": "capital",
+    "biome": "Amazônia",
+    "lon": -51.08,
+    "lat": 0.04,
+    "mode": "loss",
+    "season": [
+      "08-01",
+      "11-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Nebulosidade equatorial; nível d'água."
+  },
+  {
+    "id": "CAP-AM",
+    "name": "Manaus – Reserva Florestal Adolpho Ducke, Manaus/AM",
+    "group": "capital",
+    "biome": "Amazônia",
+    "lon": -59.91895,
+    "lat": -2.94519,
+    "mode": "stable_edge",
+    "season": [
+      "07-01",
+      "10-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Considerar deslocar o recorte para incluir a borda urbana.",
+    "item_a": "S2B_T20MRB_20200721T141737_L2A",
+    "item_b": "S2B_T20MRB_20240720T141713_L2A",
+    "search": 6000
+  },
+  {
+    "id": "CAP-BA",
+    "name": "Salvador – Parque de Pituaçu / Av. Paralela, Salvador/BA",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -38.42,
+    "lat": -12.96,
+    "mode": "stable_edge",
+    "season": [
+      "09-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável com perda na borda",
+    "notes": "Nuvens no litoral."
+  },
+  {
+    "id": "CAP-CE",
+    "name": "Fortaleza – Parque Estadual do Cocó, Fortaleza/CE",
+    "group": "capital",
+    "biome": "Caatinga",
+    "lon": -38.49,
+    "lat": -3.76,
+    "mode": "stable_edge",
+    "season": [
+      "08-01",
+      "11-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Bioma costeiro: confirmar com IBGE."
+  },
+  {
+    "id": "CAP-DF",
+    "name": "Brasília – borda do Parque Nacional de Brasília, Brasília/DF",
+    "group": "capital",
+    "biome": "Cerrado",
+    "lon": -48.03,
+    "lat": -15.77,
+    "mode": "stable_edge",
+    "season": [
+      "05-01",
+      "07-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável com expansão urbana na borda",
+    "notes": "Fogo no Cerrado; gramíneas secam no inverno."
+  },
+  {
+    "id": "CAP-ES",
+    "name": "Vitória – manguezal da E.E. Ilha do Lameirão, Vitória/ES",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -40.32,
+    "lat": -20.25,
+    "mode": "stable_edge",
+    "season": [
+      "05-01",
+      "09-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Maré altera água x mangue."
+  },
+  {
+    "id": "CAP-GO",
+    "name": "Goiânia – expansão sudoeste, Goiânia/GO",
+    "group": "capital",
+    "biome": "Cerrado",
+    "lon": -49.33,
+    "lat": -16.75,
+    "mode": "loss",
+    "season": [
+      "05-01",
+      "07-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Lavouras e pastos secam no inverno."
+  },
+  {
+    "id": "CAP-MA",
+    "name": "São Luís – manguezais e área portuária do Itaqui, São Luís/MA",
+    "group": "capital",
+    "biome": "Amazônia",
+    "lon": -44.36,
+    "lat": -2.58,
+    "mode": "loss",
+    "season": [
+      "07-01",
+      "10-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda ou estável",
+    "notes": "Maré; nebulosidade."
+  },
+  {
+    "id": "CAP-MT",
+    "name": "Cuiabá – expansão urbana, Cuiabá/MT",
+    "group": "capital",
+    "biome": "Cerrado",
+    "lon": -56.05,
+    "lat": -15.55,
+    "mode": "loss",
+    "season": [
+      "05-01",
+      "07-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Fumaça em ago-set."
+  },
+  {
+    "id": "CAP-MS",
+    "name": "Campo Grande – Parque dos Poderes e franja urbana, Campo Grande/MS",
+    "group": "capital",
+    "biome": "Cerrado",
+    "lon": -54.57,
+    "lat": -20.45,
+    "mode": "stable_edge",
+    "season": [
+      "05-01",
+      "07-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável com perda na franja",
+    "notes": "Gramíneas secam no inverno."
+  },
+  {
+    "id": "CAP-MG",
+    "name": "Serra do Curral – divisa Belo Horizonte/Nova Lima, Nova Lima/MG",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -43.93,
+    "lat": -19.97,
+    "mode": "loss",
+    "season": [
+      "05-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda (mineração) ou estável",
+    "notes": "Bioma de transição: confirmar com IBGE."
+  },
+  {
+    "id": "CAP-PA",
+    "name": "Belém – Parque Estadual do Utinga, Belém/PA",
+    "group": "capital",
+    "biome": "Amazônia",
+    "lon": -48.43,
+    "lat": -1.42,
+    "mode": "stable_edge",
+    "season": [
+      "07-01",
+      "10-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Nebulosidade alta."
+  },
+  {
+    "id": "CAP-PB",
+    "name": "João Pessoa – Mata do Buraquinho, João Pessoa/PB",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -34.86,
+    "lat": -7.14,
+    "mode": "stable_edge",
+    "season": [
+      "07-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Nuvens no litoral. | janela ampliada para 07-01/12-31 (sem cena limpa na janela original)"
+  },
+  {
+    "id": "CAP-PR",
+    "name": "Curitiba – expansão sul (CIC/Tatuquara), Curitiba/PR",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -49.33,
+    "lat": -25.57,
+    "mode": "loss",
+    "season": [
+      "04-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Geadas alteram gramados no inverno."
+  },
+  {
+    "id": "CAP-PE",
+    "name": "Recife – Mata de Dois Irmãos, Recife/PE",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -34.95,
+    "lat": -8.01,
+    "mode": "stable_edge",
+    "season": [
+      "07-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Nuvens no litoral. | janela ampliada para 07-01/12-31 (sem cena limpa na janela original)"
+  },
+  {
+    "id": "CAP-PI",
+    "name": "Teresina – expansão sudeste, Teresina/PI",
+    "group": "capital",
+    "biome": "Cerrado",
+    "lon": -42.75,
+    "lat": -5.13,
+    "mode": "loss",
+    "season": [
+      "07-01",
+      "09-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Bioma a confirmar com IBGE."
+  },
+  {
+    "id": "CAP-RJ",
+    "name": "Rio de Janeiro – Floresta da Tijuca e Jacarepaguá, Rio de Janeiro/RJ",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -43.29,
+    "lat": -22.96,
+    "mode": "stable_edge",
+    "season": [
+      "05-01",
+      "09-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Triagem mostrou deslocamento sistemático de −15 pp no índice: limiar fixo inadequado."
+  },
+  {
+    "id": "CAP-RN",
+    "name": "Natal – Parque das Dunas, Natal/RN",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -35.19,
+    "lat": -5.82,
+    "mode": "stable_edge",
+    "season": [
+      "07-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável",
+    "notes": "Bioma costeiro a confirmar. | janela ampliada para 07-01/12-31 (sem cena limpa na janela original)"
+  },
+  {
+    "id": "CAP-RS",
+    "name": "Porto Alegre – Delta do Jacuí, Porto Alegre/RS",
+    "group": "capital",
+    "biome": "Pampa",
+    "lon": -51.25,
+    "lat": -29.97,
+    "mode": "stable_edge",
+    "season": [
+      "11-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável ou variação por enchente",
+    "notes": "Água e sedimento pós-enchente não são perda de vegetação."
+  },
+  {
+    "id": "CAP-RO",
+    "name": "Porto Velho – União Bandeirantes, Porto Velho/RO",
+    "group": "capital",
+    "biome": "Amazônia",
+    "lon": -64.47106,
+    "lat": -9.79139,
+    "mode": "loss",
+    "season": [
+      "06-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Pastagem mais seca em 2024.",
+    "item_a": "S2B_T20LLQ_20200727T143729_L2A",
+    "item_b": "S2B_T20LLQ_20240726T144346_L2A",
+    "search": 6000
+  },
+  {
+    "id": "CAP-RR",
+    "name": "Boa Vista – lavrado e expansão urbana, Boa Vista/RR",
+    "group": "capital",
+    "biome": "Amazônia",
+    "lon": -60.72,
+    "lat": 2.82,
+    "mode": "loss",
+    "season": [
+      "12-01",
+      "03-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Fogo no lavrado."
+  },
+  {
+    "id": "CAP-SC",
+    "name": "Florianópolis – Parque Estadual do Rio Vermelho, Florianópolis/SC",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -48.42,
+    "lat": -27.52,
+    "mode": "stable_edge",
+    "season": [
+      "04-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "variação (remoção de pinus e restinga)",
+    "notes": "'Perda' de árvores exóticas pode ser ganho ecológico: explicar."
+  },
+  {
+    "id": "CAP-SP",
+    "name": "São Paulo – Parelheiros / borda da Billings, São Paulo/SP",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -46.7,
+    "lat": -23.8,
+    "mode": "loss",
+    "season": [
+      "05-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Nebulosidade."
+  },
+  {
+    "id": "CAP-SE",
+    "name": "Aracaju – Zona de Expansão, Aracaju/SE",
+    "group": "capital",
+    "biome": "Mata Atlântica",
+    "lon": -37.09,
+    "lat": -11.0,
+    "mode": "loss",
+    "season": [
+      "09-01",
+      "12-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Nuvens no litoral."
+  },
+  {
+    "id": "CAP-TO",
+    "name": "Palmas – expansão de Taquaralto, Palmas/TO",
+    "group": "capital",
+    "biome": "Cerrado",
+    "lon": -48.33,
+    "lat": -10.3,
+    "mode": "loss",
+    "season": [
+      "05-01",
+      "07-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Fogo no Cerrado."
+  },
+  {
+    "id": "CMP-01",
+    "name": "Brumadinho – Córrego do Feijão, Brumadinho/MG",
+    "group": "complementar",
+    "biome": "Mata Atlântica",
+    "lon": -44.12,
+    "lat": -20.12,
+    "mode": "stable_edge",
+    "season": [
+      "05-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "estável (sem recuperação evidente)",
+    "notes": "Hipótese inicial de ganho não confirmada na triagem."
+  },
+  {
+    "id": "CMP-02",
+    "name": "Terra Indígena Apyterewa, São Félix do Xingu/PA",
+    "group": "complementar",
+    "biome": "Amazônia",
+    "lon": -52.0,
+    "lat": -5.3,
+    "mode": "loss",
+    "season": [
+      "06-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "perda",
+    "notes": "Coordenada aproximada; localizar área afetada."
+  },
+  {
+    "id": "CMP-03",
+    "name": "Parque Nacional dos Lençóis Maranhenses (controle), Santo Amaro do Maranhão/MA",
+    "group": "complementar",
+    "biome": "Cerrado",
+    "lon": -43.1,
+    "lat": -2.5,
+    "mode": "stable_edge",
+    "season": [
+      "07-01",
+      "09-30"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "controle: mudança sem vegetação",
+    "notes": "Bioma a confirmar com IBGE."
+  },
+  {
+    "id": "CMP-04",
+    "name": "Mariana – Bento Rodrigues / rio Gualaxo, Mariana/MG",
+    "group": "complementar",
+    "biome": "Mata Atlântica",
+    "lon": -43.42,
+    "lat": -20.24,
+    "mode": "gain",
+    "season": [
+      "05-01",
+      "08-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "ganho (revegetação)",
+    "notes": "Mudança de 2020 a 2024 pode ser pequena."
+  },
+  {
+    "id": "CMP-05",
+    "name": "Ilha do Bananal – ecótono, Lagoa da Confusão/TO",
+    "group": "complementar",
+    "biome": "Cerrado",
+    "lon": -50.2,
+    "lat": -10.8,
+    "mode": "stable_edge",
+    "season": [
+      "05-01",
+      "07-31"
+    ],
+    "years": [
+      2020,
+      2024
+    ],
+    "hypothesis": "variação por fogo",
+    "notes": "Fogo e inundação."
+  }
+]

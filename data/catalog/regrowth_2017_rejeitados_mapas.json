@@ -1,0 +1,1178 @@
+[
+  {
+    "id": "XTR-R01",
+    "name": "Floresta e áreas abertas, Porto Velho/RO",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -64.2396,
+    "lat": -9.0348,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.24→0.92, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R02",
+    "name": "Floresta e áreas abertas, Vila Bela da Santíssima Trindade/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -60.1532,
+    "lat": -15.7388,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.32→0.96, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R06",
+    "name": "Floresta e áreas abertas, Cumaru do Norte/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -51.03,
+    "lat": -8.3652,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.41→0.86, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R08",
+    "name": "Floresta e áreas abertas, Campos de Júlio/MT",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -59.2892,
+    "lat": -14.2916,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.19→0.42, silvicultura 0.00→0.00, aberta 0.19→0.19"
+  },
+  {
+    "id": "XTR-R09",
+    "name": "Floresta e áreas abertas, Santa Rita do Trivelato/MT",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -55.03,
+    "lat": -13.9636,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.17→0.40, silvicultura 0.00→0.00, aberta 0.13→0.10"
+  },
+  {
+    "id": "XTR-R11",
+    "name": "Floresta e áreas abertas, Careiro da Várzea/AM",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -59.8508,
+    "lat": -3.35,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.37→0.77, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R12",
+    "name": "Floresta e áreas abertas, Gaúcha do Norte/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -53.5356,
+    "lat": -13.0132,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.28→0.68, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R14",
+    "name": "Floresta e áreas abertas, Vila Bela da Santíssima Trindade/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -59.8724,
+    "lat": -15.3932,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.58→0.96, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R15",
+    "name": "Floresta e áreas abertas, São Félix do Xingu/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -52.7148,
+    "lat": -6.8748,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.22→0.59, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R16",
+    "name": "Floresta e áreas abertas, Santa Terezinha/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -50.9436,
+    "lat": -10.594,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.20→0.57, silvicultura 0.00→0.00, aberta 0.02→0.04"
+  },
+  {
+    "id": "XTR-R18",
+    "name": "Floresta e áreas abertas, Manacapuru/AM",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -61.2548,
+    "lat": -3.2204,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.44→0.80, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R19",
+    "name": "Floresta e áreas abertas, Vila Bela da Santíssima Trindade/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -60.4556,
+    "lat": -15.1556,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.34→0.69, silvicultura 0.00→0.00, aberta 0.02→0.03"
+  },
+  {
+    "id": "XTR-R21",
+    "name": "Floresta e áreas abertas, Presidente Figueiredo/AM",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -60.1748,
+    "lat": -1.618,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.41→0.77, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R22",
+    "name": "Floresta e áreas abertas, São José do Xingu/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -52.3908,
+    "lat": -10.9612,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.30→0.64, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R26",
+    "name": "Floresta e áreas abertas, Monte Castelo/SP",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -51.5268,
+    "lat": -21.2076,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.53→0.79, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R27",
+    "name": "Floresta e áreas abertas, Bataguassu/MS",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -52.3476,
+    "lat": -21.7908,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.40→0.60, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R30",
+    "name": "Floresta e áreas abertas, Itinga do Maranhão/MA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -47.03,
+    "lat": -3.7388,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.12→0.98, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R31",
+    "name": "Floresta e áreas abertas, Itinga do Maranhão/MA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -47.5916,
+    "lat": -4.5596,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.18→0.95, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R33",
+    "name": "Floresta e áreas abertas, Linhares/ES",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -39.7644,
+    "lat": -19.35,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.09→0.83, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R34",
+    "name": "Floresta e áreas abertas, Porto Velho/RO",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -64.2396,
+    "lat": -9.0348,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.24→0.92, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R35",
+    "name": "Floresta e áreas abertas, Vila Bela da Santíssima Trindade/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -60.1532,
+    "lat": -15.7388,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.32→0.96, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R36",
+    "name": "Floresta e áreas abertas, Ulianópolis/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -47.894,
+    "lat": -3.8468,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.18→0.79, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R37",
+    "name": "Floresta e áreas abertas, Santo Amaro/BA",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -38.7924,
+    "lat": -12.5596,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.25→0.77, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R38",
+    "name": "Floresta e áreas abertas, Cumaru do Norte/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -51.03,
+    "lat": -8.3652,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.41→0.86, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R39",
+    "name": "Floresta e áreas abertas, Itinga do Maranhão/MA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -47.3108,
+    "lat": -4.2356,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.15→0.60, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R40",
+    "name": "Floresta e áreas abertas, Paragominas/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -47.1596,
+    "lat": -3.3716,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.04→0.48, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R41",
+    "name": "Floresta e áreas abertas, São Francisco do Brejão/MA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -47.462,
+    "lat": -5.1644,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.09→0.52, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R42",
+    "name": "Floresta e áreas abertas, Paragominas/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -47.5268,
+    "lat": -3.0692,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.41→0.84, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R43",
+    "name": "Floresta e áreas abertas, Vitória do Mearim/MA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -44.9092,
+    "lat": -3.4364,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.31→0.74, silvicultura 0.00→0.00, aberta 0.02→0.02"
+  },
+  {
+    "id": "XTR-R44",
+    "name": "Floresta e áreas abertas, Açailândia/MA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -46.9436,
+    "lat": -4.538,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.36→0.78, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R48",
+    "name": "Floresta e áreas abertas, Gaúcha do Norte/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -53.5356,
+    "lat": -13.0132,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.28→0.68, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R50",
+    "name": "Floresta e áreas abertas, Vila Bela da Santíssima Trindade/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -59.8724,
+    "lat": -15.3932,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.58→0.96, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R51",
+    "name": "Floresta e áreas abertas, São Félix do Xingu/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -52.7148,
+    "lat": -6.8748,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.22→0.59, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R52",
+    "name": "Floresta e áreas abertas, Santa Terezinha/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -50.9436,
+    "lat": -10.594,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.20→0.57, silvicultura 0.00→0.00, aberta 0.02→0.04"
+  },
+  {
+    "id": "XTR-R53",
+    "name": "Floresta e áreas abertas, Manacapuru/AM",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -61.2548,
+    "lat": -3.2204,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.44→0.80, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R54",
+    "name": "Floresta e áreas abertas, Vila Bela da Santíssima Trindade/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -60.4556,
+    "lat": -15.1556,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.34→0.69, silvicultura 0.00→0.00, aberta 0.02→0.03"
+  },
+  {
+    "id": "XTR-R55",
+    "name": "Floresta e áreas abertas, Presidente Figueiredo/AM",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -60.1748,
+    "lat": -1.618,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.41→0.77, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R57",
+    "name": "Floresta e áreas abertas, Garrafão do Norte/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -47.1596,
+    "lat": -2.5724,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.23→0.56, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R58",
+    "name": "Floresta e áreas abertas, Ananás/TO",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -47.9804,
+    "lat": -6.2484,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.36→0.69, silvicultura 0.10→0.08, aberta 0.12→0.07"
+  },
+  {
+    "id": "XTR-R59",
+    "name": "Floresta e áreas abertas, Vera/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -55.3972,
+    "lat": -12.2572,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.58→0.90, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R60",
+    "name": "Floresta e áreas abertas, Moju/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -49.406,
+    "lat": -3.2636,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.55→0.87, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R61",
+    "name": "Floresta e áreas abertas, Piçarra/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -49.082,
+    "lat": -6.5292,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.53→0.84, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R62",
+    "name": "Floresta e áreas abertas, Bom Jesus do Araguaia/MT",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -51.786,
+    "lat": -12.1276,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.36→0.68, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R63",
+    "name": "Floresta e áreas abertas, Nova Esperança do Piriá/PA",
+    "group": "extra",
+    "biome": "Amazônia",
+    "lon": -46.814,
+    "lat": -2.0756,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.51→0.82, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R64",
+    "name": "Floresta e áreas abertas, Piúma/ES",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -40.7796,
+    "lat": -20.862,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.30→0.61, silvicultura 0.00→0.00, aberta 0.07→0.07"
+  },
+  {
+    "id": "XTR-R65",
+    "name": "Floresta e áreas abertas, Angélica/MS",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -53.6004,
+    "lat": -22.162,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.51→0.78, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R66",
+    "name": "Floresta e áreas abertas, Monte Castelo/SP",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -51.5268,
+    "lat": -21.2076,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.53→0.79, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R67",
+    "name": "Floresta e áreas abertas, São Fernando/RN",
+    "group": "extra",
+    "biome": "Caatinga",
+    "lon": -37.1684,
+    "lat": -6.2052,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.21→0.48, silvicultura 0.00→0.00, aberta 0.20→0.23"
+  },
+  {
+    "id": "XTR-R68",
+    "name": "Floresta e áreas abertas, Porto Seguro/BA",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -39.1164,
+    "lat": -16.646,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.32→0.58, silvicultura 0.00→0.00, aberta 0.03→0.03"
+  },
+  {
+    "id": "XTR-R70",
+    "name": "Floresta e áreas abertas, Seropédica/RJ",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -43.6996,
+    "lat": -22.7884,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.26→0.50, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R72",
+    "name": "Floresta e áreas abertas, Campos de Júlio/MT",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -59.2892,
+    "lat": -14.2916,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.19→0.42, silvicultura 0.00→0.00, aberta 0.19→0.19"
+  },
+  {
+    "id": "XTR-R73",
+    "name": "Floresta e áreas abertas, Santa Rita do Trivelato/MT",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -55.03,
+    "lat": -13.9636,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.17→0.40, silvicultura 0.00→0.00, aberta 0.13→0.10"
+  },
+  {
+    "id": "XTR-R74",
+    "name": "Floresta e áreas abertas, Mascote/BA",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -39.5268,
+    "lat": -15.6524,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.21→0.43, silvicultura 0.00→0.02, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R76",
+    "name": "Floresta e áreas abertas, Cabo Frio/RJ",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -42.1012,
+    "lat": -22.594,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.35→0.57, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R77",
+    "name": "Floresta e áreas abertas, Governador Eugênio Barros/MA",
+    "group": "extra",
+    "biome": "Cerrado",
+    "lon": -43.894,
+    "lat": -5.402,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.39→0.61, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  },
+  {
+    "id": "XTR-R79",
+    "name": "Floresta e áreas abertas, Bataguassu/MS",
+    "group": "extra",
+    "biome": "Mata Atlântica",
+    "lon": -52.3476,
+    "lat": -21.7908,
+    "mode": "gain",
+    "years": [
+      2017,
+      2025
+    ],
+    "season": [
+      "01-01",
+      "12-31"
+    ],
+    "min_valid": 0.7,
+    "max_eval": 30,
+    "hypothesis": "ganho",
+    "notes": "find_sites.py (regrowth): célula ~2,4 km MapBiomas 30 m — nativa 0.40→0.60, silvicultura 0.00→0.00, aberta 0.00→0.00"
+  }
+]

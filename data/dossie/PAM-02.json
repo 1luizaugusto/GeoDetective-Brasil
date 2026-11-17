@@ -1,0 +1,156 @@
+{
+ "id": "PAM-02",
+ "gerado": "build_dossier.py",
+ "afirmacoes": [
+  {
+   "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas 10 m: perda 3.1 pp e ganho 3.1 pp (líquido +0,0 pp); MapBiomas 30 m: perda 1.6 pp e ganho 1.3 pp (líquido -0,3 pp). NDVI mediano das imagens: 0.75→0.74. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-12-18 — S2A_MSIL2A_20201218T133221_N0500_R081_T22JCM_20230313T111029",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-30.56712&lng=-52.55620&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-12-18T00%3A00%3A00.000Z&toTime=2020-12-18T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-12-12 — S2B_MSIL2A_20241212T133149_N0511_R081_T22JCM_20241212T170546",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-30.56712&lng=-52.55620&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-12-12T00%3A00%3A00.000Z&toTime=2024-12-12T23%3A59%3A59.999Z"
+    }
+   ],
+   "revisao": "Revisão manual: não é armadilha (silvicultura só +1 a +2 pp); nativa estável nos dois mapas → tipo estável"
+  },
+  {
+   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "veredito": "comprovado",
+   "porque": "Época 1: 18/12/2020 e 12/12/2024 (6 dias de diferença no calendário). Época 2: 02/02/2020 e 01/02/2024 (1 dia), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,71 → 0,65; época 2 0,81 → 0,81.",
+   "fontes": [
+    {
+     "nome": "Sentinel-2 L2A 2020-12-18 — S2A_MSIL2A_20201218T133221_N0500_R081_T22JCM_20230313T111029",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-30.56712&lng=-52.55620&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-12-18T00%3A00%3A00.000Z&toTime=2020-12-18T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-12-12 — S2B_MSIL2A_20241212T133149_N0511_R081_T22JCM_20241212T170546",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-30.56712&lng=-52.55620&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-12-12T00%3A00%3A00.000Z&toTime=2024-12-12T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2020-02-02 — S2A_MSIL2A_20200202T133221_N0500_R081_T22JCM_20230704T115544",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-30.56712&lng=-52.55620&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2020-02-02T00%3A00%3A00.000Z&toTime=2020-02-02T23%3A59%3A59.999Z"
+    },
+    {
+     "nome": "Sentinel-2 L2A 2024-02-01 — S2A_MSIL2A_20240201T133141_N0510_R081_T22JCM_20240201T173647",
+     "url": "https://browser.dataspace.copernicus.eu/?zoom=14&lat=-30.56712&lng=-52.55620&themeId=DEFAULT-THEME&datasetId=S2_L2A_CDAS&layerId=1_TRUE_COLOR&fromTime=2024-02-01T00%3A00%3A00.000Z&toTime=2024-02-01T23%3A59%3A59.999Z"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
+   "veredito": "comprovado",
+   "porque": "Modelo de duas épocas: +1,2 pp; MapBiomas 10 m: +0,0 pp; diferença 1.2 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Destino da vegetação nativa perdida.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Silvicultura 81%; Mosaico de Usos 15%; Lavoura Temporária 4%. Mapa 30 m: Silvicultura 57%; Mosaico de Usos 22%; Soja 20%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Origem da vegetação nativa ganha.",
+   "veredito": "comprovado",
+   "porque": "Mapa 10 m: Mosaico de Usos 56%; Lavoura Temporária 35%; Silvicultura 9%. Mapa 30 m: Mosaico de Usos 92%; Soja 8%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas — códigos de legenda",
+     "url": "https://brasil.mapbiomas.org/downloads/codigos-de-legenda/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve expansão de plantio comercial (silvicultura).",
+   "veredito": "comprovado",
+   "porque": "Silvicultura no mapa 10 m: 9→11%; no mapa 30 m: 6→7%.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-10m/cobertura/"
+    },
+    {
+     "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Não houve fogo relevante no recorte.",
+   "veredito": "comprovado",
+   "porque": "MapBiomas Fogo: 2019: 0%; 2020: 0%; 2023: 0%; 2024: 0% do recorte queimado.",
+   "fontes": [
+    {
+     "nome": "MapBiomas Fogo — mapeamento anual de área queimada (Col. 5.1)",
+     "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/fogo/mapeamento-anual/anual/"
+    }
+   ]
+  },
+  {
+   "afirmacao": "O centro do recorte fica em Encruzilhada do Sul/RS, bioma Pampa.",
+   "veredito": "comprovado",
+   "porque": "Malha municipal oficial do IBGE (código 4306908) e mapa de biomas do IBGE.",
+   "fontes": [
+    {
+     "nome": "IBGE — município 4306908",
+     "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios/4306908"
+    },
+    {
+     "nome": "IBGE — Biomas (1:250.000)",
+     "url": "https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html"
+    }
+   ]
+  },
+  {
+   "afirmacao": "Versão anterior: o nome dizia 'silvicultura'.",
+   "veredito": "corrigido",
+   "porque": "A silvicultura no recorte é pequena (9→11% no mapa 10 m) e quase não mudou. O nome agora não destaca o plantio.",
+   "fontes": []
+  }
+ ],
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "areas_protegidas": []
+}
