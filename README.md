@@ -1,6 +1,6 @@
 # GeoDetective Brasil
 
-**Projeto final — Space Tech Bootcamp 2026 / Future Tech Leaders Brasil** · Autor: Luiz Augusto de Oliveira Almeida
+Feito por **Luiz Augusto de Almeida**, no âmbito do **Future Tech Leaders Brasil 2026**, Space Tech Bootcamp.
 
 ### ▶ [Jogar agora](https://1luizaugusto.github.io/GeoDetective-Brasil/)
 

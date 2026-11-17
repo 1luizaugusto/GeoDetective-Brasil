@@ -59,6 +59,8 @@
 
   <section class="win">
     <span class="win-title">CRÉDITOS</span>
+    <p>Feito por <b class="gold-t">Luiz Augusto de Almeida</b>, no âmbito do <b>Future Tech Leaders Brasil 2026</b>, Space Tech Bootcamp.</p>
+    <p>Código aberto (licença MIT): <a href="https://github.com/1luizaugusto/GeoDetective-Brasil" target="_blank" rel="noopener">github.com/1luizaugusto/GeoDetective-Brasil</a></p>
     <p>{data.licenses}. Malha dos estados: IBGE.</p>
     <p class="dim">Dados gerados em {new Date(data.generated_utc).toLocaleDateString("pt-BR")} · esquema {data.schema_version}.</p>
   </section>
