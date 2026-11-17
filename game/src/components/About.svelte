@@ -57,17 +57,7 @@
     <ul>{#each data.limitations as l}<li>{l}</li>{/each}</ul>
   </section>
 
-  <section class="win">
-    <span class="win-title">CRÉDITOS</span>
-    <p>Desenvolvido por <b class="gold-t">Luiz Augusto de Almeida</b>, no âmbito do <b>Future Tech Leaders Brasil 2026 – Space Tech Bootcamp</b>.</p>
-    <p>O projeto integra as atividades desenvolvidas durante o programa, que conta com a parceria do
-      <b>Programa das Nações Unidas para o Desenvolvimento (PNUD/UNDP)</b>, do <b>SDG AI Lab</b>, da
-      <b>Agência Espacial Brasileira (AEB)</b> e do <b>PNUD Brasil</b>.</p>
-    <p><b>As instituições mencionadas são parceiras do Future Tech Leaders Brasil 2026, não constituindo parcerias diretas ou endosso institucional a este projeto.</b></p>
-    <p>Código aberto (licença MIT): <a href="https://github.com/1luizaugusto/GeoDetective-Brasil" target="_blank" rel="noopener">github.com/1luizaugusto/GeoDetective-Brasil</a></p>
-    <p>{data.licenses}. Malha dos estados: IBGE.</p>
-    <p class="dim">Dados gerados em {new Date(data.generated_utc).toLocaleDateString("pt-BR")} · esquema {data.schema_version}.</p>
-  </section>
+  <p class="more"><a href="#/creditos">CRÉDITOS ▶</a></p>
 </article>
 
 <style>
@@ -81,5 +71,6 @@
   dt, dd { margin: 0; padding: 6px 0; border-bottom: 2px dashed var(--line-lo); }
   dt { font-family: var(--px); font-size: 9px; display: flex; align-items: center; color: var(--dim); }
   dd { text-align: right; font-family: var(--px); font-size: 12px; color: var(--gold); }
+  .more { text-align: center; margin: 0; font-family: var(--px); font-size: 10px; }
   .ranks b { font-family: var(--px); font-weight: 400; }
 </style>

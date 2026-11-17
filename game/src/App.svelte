@@ -3,6 +3,7 @@
   import MapView from "./components/MapView.svelte";
   import ChallengeView from "./components/ChallengeView.svelte";
   import About from "./components/About.svelte";
+  import Credits from "./components/Credits.svelte";
   import Options from "./components/Options.svelte";
   import Records from "./components/Records.svelte";
   import RunResult from "./components/RunResult.svelte";
@@ -88,6 +89,8 @@
       <Options />
     {:else if route.page === "sobre"}
       <About {data} />
+    {:else if route.page === "creditos"}
+      <Credits {data} />
     {:else}
       <Home {data} {total} {played} />
     {/if}

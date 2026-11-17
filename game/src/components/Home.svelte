@@ -38,7 +38,8 @@
     { label: "ESCOLHER FASE", hint: "MAPA DO BRASIL", go: () => (location.hash = "#/mapa") },
     { label: "RECORDES", go: () => (location.hash = "#/recordes") },
     { label: "OPÇÕES", go: () => (location.hash = "#/opcoes") },
-    { label: "MANUAL E CRÉDITOS", go: () => (location.hash = "#/sobre") },
+    { label: "MANUAL", go: () => (location.hash = "#/sobre") },
+    { label: "CRÉDITOS", go: () => (location.hash = "#/creditos") },
   ]);
   const confirmItems = $derived<Item[]>(ask ? [
     { label: "SIM", go: () => { const y = ask!.yes; ask = null; y(); } },
