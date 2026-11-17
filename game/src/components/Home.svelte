@@ -98,7 +98,7 @@
   <div class="rules">
     <div><b>1</b> COMPARE AS DUAS IMAGENS</div>
     <div><b>2</b> ESTIME A MUDANÇA DA VEGETAÇÃO NATIVA</div>
-    <div><b>3</b> CUIDADO: VERDE NÃO É NATIVO</div>
+    <div><b>3</b> CUIDADO: VERDE PODE NÃO SER NATIVO!</div>
   </div>
 </section>
 
