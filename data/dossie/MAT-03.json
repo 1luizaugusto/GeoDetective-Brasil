@@ -5,7 +5,7 @@
   {
    "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
    "veredito": "comprovado",
-   "porque": "MapBiomas 10 m: perda 0.3 pp e ganho 0.5 pp (líquido +0,2 pp); MapBiomas 30 m: perda 0.8 pp e ganho 0.5 pp (líquido -0,3 pp). NDVI mediano das imagens: 0.84→0.85. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "porque": "MapBiomas 10 m: perda 0,3 pp e ganho 0,5 pp (líquido +0,2 pp); MapBiomas 30 m: perda 0,8 pp e ganho 0,5 pp (líquido -0,3 pp). NDVI mediano das imagens: 0,84→0,85. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
@@ -26,9 +26,9 @@
    ]
   },
   {
-   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "afirmacao": "Cada ano tem uma foto em cada época, e as datas são pareadas entre os anos.",
    "veredito": "comprovado",
-   "porque": "Época 1: 19/07/2020 e 18/07/2024 (1 dia de diferença no calendário). Época 2: 06/01/2020 e 30/01/2024 (24 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,67 → 0,66; época 2 0,71 → 0,69.",
+   "porque": "Época 1: 19/07/2020 e 18/07/2024 (1 dia de diferença no calendário). Época 2: 06/01/2020 e 30/01/2024 (24 dias de diferença no calendário), um par alternativo a pelo menos 45 dias da época 1, sem nuvem no recorte. NDVI médio do recorte: época 1 0,67 → 0,66; época 2 0,71 → 0,69.",
    "fontes": [
     {
      "nome": "Sentinel-2 L2A 2020-07-19 — S2B_MSIL2A_20200719T134209_N0500_R124_T21JZN_20230424T225844",
@@ -51,7 +51,7 @@
   {
    "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
    "veredito": "comprovado",
-   "porque": "Modelo de duas épocas: -2,4 pp; MapBiomas 10 m: +0,2 pp; diferença 2.6 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "porque": "Modelo de duas épocas: -2,4 pp; MapBiomas 10 m: +0,2 pp; diferença 2,6 pp, dentro do limite de entrada no jogo (10,0 pp). O modelo usa as bandas do Sentinel-2 das duas épocas de cada ano, índices como o NDVI e o bioma; este caso foi estimado por um modelo que não treinou com ele (validação espacial).",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
@@ -86,7 +86,7 @@
    ]
   },
   {
-   "afirmacao": "Área protegida: Parque Nacional Do Iguaçu (Parque, criada em 1939).",
+   "afirmacao": "Área protegida: Parque Nacional Do Iguaçu (Parque, ano de status na WDPA: 1939).",
    "veredito": "comprovado",
    "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 45% do recorte.",
    "fontes": [
@@ -97,7 +97,7 @@
    ]
   },
   {
-   "afirmacao": "Área protegida: Parc national d'Iguaçu (World Heritage Site (natural or mixed), criada em 1986).",
+   "afirmacao": "Área protegida: Parc national d'Iguaçu (World Heritage Site (natural or mixed), inscrita em 1986).",
    "veredito": "comprovado",
    "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 43% do recorte.",
    "fontes": [

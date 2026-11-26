@@ -16,6 +16,8 @@ export interface Challenge {
     before: string; after: string; context_before: string; context_after: string;
     /** Outra época do ano (a mais verde que os dois anos têm em comum) — o modelo v2 também usa estas */
     before2?: string; after2?: string; context_before2?: string; context_after2?: string;
+    /** botão MAPA: nativa no 1º ano / nativa + perdida + ganha no 2º ano (MapBiomas 10 m) */
+    native_a?: string; native_b?: string;
   };
   dates2?: [string, string] | null;
   /** época 1 bem menos verde que a época 2 nos dois anos: avisar que mata sem folhas pode parecer pasto */
@@ -28,8 +30,17 @@ export interface Challenge {
   reference_pp: { mapbiomas_10m: number; mapbiomas_30m: number };
   native_pct: { model: [number, number]; mapbiomas_10m: [number, number] };
   kind: "loss" | "gain" | "stable_edge" | "trap";
-  hypothesis: string;
   explanation: string;
+  explanation_en?: string;
+  hint?: string;
+  hint_en?: string;
+  name_en?: string;
+  /** % do recorte por grupo de cobertura (MapBiomas 10 m), por ano: {"2020": {"forest": 8.2, ...}} */
+  composition?: Record<string, Record<string, number>>;
+  fire_pct?: Record<string, number>;
+  protected?: { name: string; type: string; year: number; pct: number }[];
+  /** pistas falsas e lições: fire, open, plantation, crop, season, water, regrowth, conversion */
+  tags?: string[];
   qa_note: string;
   attribution: string;
   /** Dossiê de evidências (science/scripts/build_dossier.py): cada afirmação com veredito, porquê e fontes. */
@@ -53,9 +64,10 @@ export interface Dataset {
     name: string;
     validation: string;
     pixel: { overall_accuracy: number; f1_native: number; n_pixels: number };
-    delta_vs_mapbiomas10m: { MAE_pp: number; bias_pp: number; RMSE_pp: number; pearson_r: number };
+    delta_vs_mapbiomas10m: { MAE_pp: number; bias_pp: number; RMSE_pp: number };
   };
   limitations: string[];
+  limitations_en?: string[];
   licenses: string;
   challenges: Challenge[];
 }

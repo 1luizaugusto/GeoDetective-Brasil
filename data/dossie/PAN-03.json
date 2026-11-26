@@ -5,7 +5,7 @@
   {
    "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
    "veredito": "comprovado",
-   "porque": "MapBiomas 10 m: perda 0.0 pp e ganho 0.0 pp (líquido +0,0 pp); MapBiomas 30 m: perda 0.0 pp e ganho 0.0 pp (líquido +0,0 pp). NDVI mediano das imagens: 0.53→0.41. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "porque": "MapBiomas 10 m: perda 0,0 pp e ganho 0,0 pp (líquido +0,0 pp); MapBiomas 30 m: perda 0,0 pp e ganho 0,0 pp (líquido +0,0 pp). NDVI mediano das imagens: 0,53→0,41. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
@@ -27,9 +27,9 @@
    "revisao": "Revisão manual: estável nos dois mapas; MapBiomas Fogo: 0% queimado em 2024 → explicação antiga (queimada) era FALSA e foi reescrita"
   },
   {
-   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "afirmacao": "Cada ano tem uma foto em cada época, e as datas são pareadas entre os anos.",
    "veredito": "comprovado",
-   "porque": "Época 1: 20/07/2020 e 24/07/2024 (4 dias de diferença no calendário). Época 2: 16/04/2020 e 20/04/2024 (4 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,55 → 0,42; época 2 0,65 → 0,68.",
+   "porque": "Época 1: 20/07/2020 e 24/07/2024 (4 dias de diferença no calendário). Época 2: 16/04/2020 e 20/04/2024 (4 dias de diferença no calendário), um par alternativo a pelo menos 45 dias da época 1, sem nuvem no recorte. NDVI médio do recorte: época 1 0,55 → 0,42; época 2 0,65 → 0,68.",
    "fontes": [
     {
      "nome": "Sentinel-2 L2A 2020-07-20 — S2A_MSIL2A_20200720T140101_N0500_R067_T21KVA_20230614T011838",
@@ -52,7 +52,7 @@
   {
    "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
    "veredito": "comprovado",
-   "porque": "Modelo de duas épocas: -1,9 pp; MapBiomas 10 m: +0,0 pp; diferença 1.9 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "porque": "Modelo de duas épocas: -1,9 pp; MapBiomas 10 m: +0,0 pp; diferença 1,9 pp, dentro do limite de entrada no jogo (10,0 pp). O modelo usa as bandas do Sentinel-2 das duas épocas de cada ano, índices como o NDVI e o bioma; este caso foi estimado por um modelo que não treinou com ele (validação espacial).",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
@@ -87,7 +87,7 @@
    ]
   },
   {
-   "afirmacao": "Área protegida: Reserva Particular Do Patrimônio Natural Fazenda Acurizal E Fazenda Penha (Reserva Particular do Patrimônio Natural, criada em 1997).",
+   "afirmacao": "Área protegida: Reserva Particular Do Patrimônio Natural Fazenda Acurizal E Fazenda Penha (Reserva Particular do Patrimônio Natural, inscrita em 1997).",
    "veredito": "comprovado",
    "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 73% do recorte.",
    "fontes": [
@@ -98,7 +98,7 @@
    ]
   },
   {
-   "afirmacao": "Área protegida: Aire de conservation du Pantanal (World Heritage Site (natural or mixed), criada em 2000).",
+   "afirmacao": "Área protegida: Aire de conservation du Pantanal (World Heritage Site (natural or mixed), inscrita em 2000).",
    "veredito": "comprovado",
    "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 22% do recorte.",
    "fontes": [

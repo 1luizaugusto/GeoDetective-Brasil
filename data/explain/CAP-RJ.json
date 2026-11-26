@@ -1,0 +1,35 @@
+{
+ "id": "CAP-RJ",
+ "source": "MapBiomas Col. 4 (10 m), mesma grade do recorte; fogo: MapBiomas Fogo Col. 5.1; áreas protegidas: WDPA",
+ "composition": {
+  "2020": {
+   "forest": 49.6,
+   "rock": 1.0,
+   "pasture": 1.5,
+   "mosaic": 13.9,
+   "urban": 34.0
+  },
+  "2024": {
+   "forest": 48.7,
+   "rock": 0.9,
+   "pasture": 1.5,
+   "mosaic": 9.0,
+   "urban": 39.9
+  }
+ },
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "protected": [
+  {
+   "name": "Parque Nacional Da Tijuca",
+   "type": "Parque",
+   "year": 1961,
+   "pct": 24
+  }
+ ],
+ "tags": []
+}

@@ -1,0 +1,35 @@
+{
+ "id": "CAP-AC",
+ "source": "MapBiomas Col. 4 (10 m), mesma grade do recorte; fogo: MapBiomas Fogo Col. 5.1; áreas protegidas: WDPA",
+ "composition": {
+  "2020": {
+   "forest": 11.0,
+   "wetland": 2.0,
+   "pasture": 23.7,
+   "mosaic": 1.6,
+   "water": 0.4,
+   "urban": 57.8,
+   "bare": 3.4
+  },
+  "2024": {
+   "forest": 8.8,
+   "wetland": 1.2,
+   "pasture": 21.3,
+   "crop": 0.1,
+   "mosaic": 3.0,
+   "water": 0.5,
+   "urban": 62.9,
+   "bare": 2.2
+  }
+ },
+ "fire_pct": {
+  "2019": 0.4,
+  "2020": 1.2,
+  "2023": 0.9,
+  "2024": 4.7
+ },
+ "protected": [],
+ "tags": [
+  "season"
+ ]
+}

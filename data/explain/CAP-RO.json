@@ -1,0 +1,33 @@
+{
+ "id": "CAP-RO",
+ "source": "MapBiomas Col. 4 (10 m), mesma grade do recorte; fogo: MapBiomas Fogo Col. 5.1; áreas protegidas: WDPA",
+ "composition": {
+  "2020": {
+   "forest": 69.6,
+   "pasture": 30.3,
+   "mosaic": 0.1
+  },
+  "2024": {
+   "forest": 24.7,
+   "pasture": 74.2,
+   "crop": 1.1
+  }
+ },
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 37.5,
+  "2023": 4.4,
+  "2024": 41.0
+ },
+ "protected": [
+  {
+   "name": "Karipuna",
+   "type": "Terra Indígena",
+   "year": 1999,
+   "pct": 60
+  }
+ ],
+ "tags": [
+  "fire"
+ ]
+}

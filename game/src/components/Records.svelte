@@ -3,6 +3,8 @@
   import { progress } from "../lib/progress.svelte";
   import { run } from "../lib/run.svelte";
   import { rank, pad, fmtDate, zeroScore } from "../lib/score";
+  import { L, biomeName } from "../lib/i18n.svelte";
+  const T = $derived(L());
 
   let { data }: { data: Dataset } = $props();
 
@@ -29,18 +31,18 @@
   const traps = $derived(data.challenges.filter((c) => c.kind === "trap"));
 </script>
 
-<h1 class="gold-t">RECORDES</h1>
+<h1 class="gold-t">{T.records}</h1>
 
 <div class="cols">
   <section class="win">
-    <span class="win-title">CAMPANHA</span>
+    <span class="win-title">{T.campaign}</span>
     <dl>
-      <dt>PONTOS</dt><dd class="gold-t">{pad(total)}</dd>
-      <dt>CASOS</dt><dd>{played.length}/{data.challenges.length}</dd>
-      <dt>MÉDIA</dt><dd>{avg.toFixed(0)} <span class="dim">({rank(avg)})</span></dd>
-      <dt>× CHUTE ZERO</dt><dd class={total - zero > 0 ? "up" : total - zero < 0 ? "down" : ""}>{total - zero > 0 ? "+" : ""}{total - zero}</dd>
-      <dt>MUDANÇAS CLARAS</dt><dd>{clear.length ? `${clearAvg.toFixed(0)} (${rank(clearAvg)})` : "—"} <span class="dim">{clear.length} casos</span></dd>
-      <dt>ARMADILHAS</dt><dd>{traps.filter((c) => progress.attempts[c.id]?.points >= 80).length}/{traps.length} <span class="dim">desarmadas</span></dd>
+      <dt>{T.points}</dt><dd class="gold-t">{pad(total)}</dd>
+      <dt>{T.cases}</dt><dd>{played.length}/{data.challenges.length}</dd>
+      <dt>{T.average}</dt><dd>{avg.toFixed(0)} <span class="dim">({rank(avg)})</span></dd>
+      <dt>{T.vsZeroShort}</dt><dd class={total - zero > 0 ? "up" : total - zero < 0 ? "down" : ""}>{total - zero > 0 ? "+" : ""}{total - zero}</dd>
+      <dt>{T.clearChanges}</dt><dd>{clear.length ? `${clearAvg.toFixed(0)} (${rank(clearAvg)})` : "—"} <span class="dim">{clear.length} {T.casesWord}</span></dd>
+      <dt>{T.traps}</dt><dd>{traps.filter((c) => progress.attempts[c.id]?.points >= 80).length}/{traps.length} <span class="dim">{T.disarmed}</span></dd>
     </dl>
     <div class="ranks">
       {#each ranks as [r, n]}<div class={`rk r${r}`}><b>{r}</b><span>{n}</span></div>{/each}
@@ -48,7 +50,7 @@
   </section>
 
   <section class="win">
-    <span class="win-title">PARTIDA RÁPIDA · TOP 5</span>
+    <span class="win-title">{T.top5}</span>
     {#if run.best.length}
       <ol>
         {#each run.best as b}
@@ -56,23 +58,23 @@
         {/each}
       </ol>
     {:else}
-      <p class="dim">Nenhuma partida completa ainda.</p>
+      <p class="dim">{T.noRuns}</p>
     {/if}
   </section>
 </div>
 
 <section class="win">
-  <span class="win-title">POR BIOMA</span>
+  <span class="win-title">{T.byBiome}</span>
   <table>
-    <thead><tr><th>BIOMA</th><th>CASOS</th><th>MÉDIA</th></tr></thead>
+    <thead><tr><th>{T.biome}</th><th>{T.cases}</th><th>{T.average}</th></tr></thead>
     <tbody>
       {#each byBiome as [b, v]}
-        <tr><td>{b}</td><td>{v.n}/{v.all}</td><td>{v.n ? `${(v.pts / v.n).toFixed(0)} (${rank(v.pts / v.n)})` : "—"}</td></tr>
+        <tr><td>{biomeName(b)}</td><td>{v.n}/{v.all}</td><td>{v.n ? `${(v.pts / v.n).toFixed(0)} (${rank(v.pts / v.n)})` : "—"}</td></tr>
       {/each}
     </tbody>
   </table>
 </section>
-<p><a class="pbtn" href="#/">◀ MENU</a></p>
+<p><a class="pbtn" href="#/">{T.menuBack}</a></p>
 
 <style>
   h1 { font-size: clamp(16px, 3vw, 24px); margin: 6px 0 22px; }

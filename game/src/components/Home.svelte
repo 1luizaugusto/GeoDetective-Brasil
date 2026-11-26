@@ -5,6 +5,8 @@
   import { resetProgress } from "../lib/progress.svelte";
   import { run, startRun } from "../lib/run.svelte";
   import { pad } from "../lib/score";
+  import { L, i18n, setLang } from "../lib/i18n.svelte";
+  const T = $derived(L());
 
   let { data, total, played }: { data: Dataset; total: number; played: number } = $props();
 
@@ -20,30 +22,30 @@
   function newGame() {
     const go = () => { resetProgress(); location.hash = `#/desafio/${data.challenges[0].id}`; };
     if (!played) return go();
-    ask = { text: `APAGAR O PROGRESSO (${played} CASOS, ${pad(total)} PONTOS) E COMEÇAR DO ZERO?`, yes: go };
+    ask = { text: T.askWipe(played, pad(total)), yes: go };
     sel = 1; // cursor em NÃO, como nos jogos
   }
   function quickRun() {
     const go = () => (location.hash = startRun(data.challenges, 5));
     if (!runOpen) return go();
-    ask = { text: `JÁ HÁ UMA PARTIDA NO CASO ${runAt}/${runOpen.ids.length}. SORTEAR OUTRA?`, yes: go };
+    ask = { text: T.askRun(runAt, runOpen.ids.length), yes: go };
     sel = 1;
   }
 
   const menu = $derived<Item[]>([
-    ...(played && !allDone ? [{ label: "CONTINUAR", hint: `${played}/${data.challenges.length} CASOS`, go: () => (location.hash = `#/desafio/${next.id}`) }] : []),
-    { label: "NOVO JOGO", go: newGame },
-    ...(runOpen ? [{ label: "RETOMAR PARTIDA", hint: `CASO ${runAt}/${runOpen.ids.length}`, go: () => (location.hash = `#/partida/${runAt}`) }] : []),
-    { label: "PARTIDA RÁPIDA", hint: "5 CASOS SORTEADOS", go: quickRun },
-    { label: "ESCOLHER FASE", hint: "MAPA DO BRASIL", go: () => (location.hash = "#/mapa") },
-    { label: "RECORDES", go: () => (location.hash = "#/recordes") },
-    { label: "OPÇÕES", go: () => (location.hash = "#/opcoes") },
-    { label: "MANUAL", go: () => (location.hash = "#/sobre") },
-    { label: "CRÉDITOS", go: () => (location.hash = "#/creditos") },
+    ...(played && !allDone ? [{ label: T.continue, hint: T.hintCases(played, data.challenges.length), go: () => (location.hash = `#/desafio/${next.id}`) }] : []),
+    { label: T.newGame, go: newGame },
+    ...(runOpen ? [{ label: T.resumeRun, hint: T.hintCase(runAt, runOpen.ids.length), go: () => (location.hash = `#/partida/${runAt}`) }] : []),
+    { label: T.quickRun, hint: T.hintRandom, go: quickRun },
+    { label: T.pickStage, hint: T.hintMap, go: () => (location.hash = "#/mapa") },
+    { label: T.records, go: () => (location.hash = "#/recordes") },
+    { label: T.options, go: () => (location.hash = "#/opcoes") },
+    { label: T.manual, go: () => (location.hash = "#/sobre") },
+    { label: T.credits, go: () => (location.hash = "#/creditos") },
   ]);
   const confirmItems = $derived<Item[]>(ask ? [
-    { label: "SIM", go: () => { const y = ask!.yes; ask = null; y(); } },
-    { label: "NÃO", go: () => { ask = null; sel = 0; } },
+    { label: T.yes, go: () => { const y = ask!.yes; ask = null; y(); } },
+    { label: T.no, go: () => { ask = null; sel = 0; } },
   ] : []);
   const items = $derived(ask ? confirmItems : menu);
   let sel = $state(0);
@@ -70,12 +72,16 @@
 
   <h1 class="logo"><span class="a">GEO</span><span class="b">DETECTIVE</span></h1>
   <p class="sub">★ BRASIL ★</p>
-  <p class="tag">Investigue imagens reais de satélite e descubra quanto da vegetação nativa mudou.</p>
+  <p class="tag">{T.tagline}</p>
+  <div class="langs" role="group" aria-label="Idioma / Language">
+    <button class:on={i18n.lang === "pt"} aria-pressed={i18n.lang === "pt"} onclick={() => { setLang("pt"); sfx("move"); }}>PT</button>
+    <button class:on={i18n.lang === "en"} aria-pressed={i18n.lang === "en"} onclick={() => { setLang("en"); sfx("move"); }}>EN</button>
+  </div>
 
   <div class="grid">
 
     <div class="win menu">
-      <span class="win-title">{ask ? "TEM CERTEZA?" : "MENU"}</span>
+      <span class="win-title">{ask ? T.sure : T.menu}</span>
       {#if ask}<p class="ask">{ask.text}</p>{/if}
       <ul role="menu">
         {#each items as it, i}
@@ -88,17 +94,17 @@
           </li>
         {/each}
       </ul>
-      <p class="hint lbl"><span class="blink">APERTE ENTER</span> · SETAS ESCOLHEM</p>
+      <p class="hint lbl"><span class="blink">{T.pressEnter}</span> · {T.arrowsPick}</p>
       {#if played}
-        <p class="rec lbl">RECORDE <b class="gold-t">{pad(total)}</b> · {played}/{data.challenges.length} CASOS</p>
+        <p class="rec lbl">{T.record} <b class="gold-t">{pad(total)}</b> · {T.hintCases(played, data.challenges.length)}</p>
       {/if}
     </div>
   </div>
 
   <div class="rules">
-    <div><b>1</b> COMPARE AS DUAS IMAGENS</div>
-    <div><b>2</b> ESTIME A MUDANÇA DA VEGETAÇÃO NATIVA</div>
-    <div><b>3</b> CUIDADO: VERDE PODE NÃO SER NATIVO!</div>
+    <div><b>1</b> {T.rule1}</div>
+    <div><b>2</b> {T.rule2}</div>
+    <div><b>3</b> {T.rule3}</div>
   </div>
 </section>
 
@@ -110,7 +116,10 @@
   .logo .a { color: var(--gold); text-shadow: 4px 4px 0 var(--red-dk), 8px 8px 0 var(--shadow); }
   .logo .b { color: var(--ink); text-shadow: 4px 4px 0 var(--line-lo), 8px 8px 0 var(--shadow); }
   .sub { font-family: var(--px); font-size: 11px; color: var(--cyan); letter-spacing: 0.3em; margin: 10px 0; }
-  .tag { font-size: 20px; color: var(--dim); margin: 0 auto 22px; }
+  .tag { font-size: 20px; color: var(--dim); margin: 0 auto 10px; }
+  .langs { display: flex; justify-content: center; gap: 6px; margin: 0 0 16px; }
+  .langs button { font-family: var(--px); font-size: 9px; background: var(--navy); border: 2px solid var(--line-lo); color: var(--dim); padding: 6px 8px 5px; }
+  .langs button.on { background: var(--cyan); color: var(--night); border-color: var(--ink); }
   .grid { max-width: 420px; margin: 0 auto; text-align: left; }
   .menu ul { list-style: none; margin: 8px 0 14px; padding: 0; }
   .menu button { display: flex; align-items: center; gap: 8px; width: 100%; background: none; border: 0; padding: 8px 4px; font-family: var(--px); font-size: 13px; text-align: left; color: var(--dim); }

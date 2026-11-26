@@ -5,7 +5,7 @@
   {
    "afirmacao": "Houve perda de vegetação nativa entre 2020 e 2024.",
    "veredito": "comprovado",
-   "porque": "MapBiomas 10 m: perda 8.3 pp e ganho 0.0 pp (líquido -8,3 pp); MapBiomas 30 m: perda 10.1 pp e ganho 0.0 pp (líquido -10,1 pp). NDVI mediano das imagens: 0.87→0.85. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.06 (vegetação a menos).",
+   "porque": "MapBiomas 10 m: perda 8,3 pp e ganho 0,0 pp (líquido -8,3 pp); MapBiomas 30 m: perda 10,1 pp e ganho 0,0 pp (líquido -10,1 pp). NDVI mediano das imagens: 0,87→0,85. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.06 (vegetação a menos).",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
@@ -26,9 +26,9 @@
    ]
   },
   {
-   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "afirmacao": "Cada ano tem uma foto em cada época, e as datas são pareadas entre os anos.",
    "veredito": "comprovado",
-   "porque": "Época 1: 06/08/2020 e 05/08/2024 (1 dia de diferença no calendário). Época 2: 17/06/2020 e 21/06/2024 (4 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,86 → 0,83; época 2 0,87 → 0,87.",
+   "porque": "Época 1: 06/08/2020 e 05/08/2024 (1 dia de diferença no calendário). Época 2: 17/06/2020 e 21/06/2024 (4 dias de diferença no calendário), um par alternativo a pelo menos 45 dias da época 1, sem nuvem no recorte. NDVI médio do recorte: época 1 0,86 → 0,83; época 2 0,87 → 0,87.",
    "fontes": [
     {
      "nome": "Sentinel-2 L2A 2020-08-06 — S2A_MSIL2A_20200806T135121_N0500_R024_T22MCV_20230422T000447",
@@ -51,7 +51,7 @@
   {
    "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
    "veredito": "comprovado",
-   "porque": "Modelo de duas épocas: -2,6 pp; MapBiomas 10 m: -8,3 pp; diferença 5.7 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "porque": "Modelo de duas épocas: -2,6 pp; MapBiomas 10 m: -8,3 pp; diferença 5,7 pp, dentro do limite de entrada no jogo (10,0 pp). O modelo usa as bandas do Sentinel-2 das duas épocas de cada ano, índices como o NDVI e o bioma; este caso foi estimado por um modelo que não treinou com ele (validação espacial).",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
@@ -105,7 +105,7 @@
    ]
   },
   {
-   "afirmacao": "Área protegida: Trincheira Bacaja (Terra Indígena, criada em 1998).",
+   "afirmacao": "Área protegida: Trincheira Bacaja (Terra Indígena, ano de status na WDPA: 1998).",
    "veredito": "comprovado",
    "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 100% do recorte.",
    "fontes": [

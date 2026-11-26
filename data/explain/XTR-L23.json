@@ -1,0 +1,27 @@
+{
+ "id": "XTR-L23",
+ "source": "MapBiomas Col. 4 (10 m), mesma grade do recorte; fogo: MapBiomas Fogo Col. 5.1; áreas protegidas: WDPA",
+ "composition": {
+  "2020": {
+   "savanna": 100.0
+  },
+  "2025": {
+   "savanna": 0.3,
+   "crop": 2.0,
+   "mosaic": 97.7,
+   "bare": 0.1
+  }
+ },
+ "fire_pct": {
+  "2019": 69.8,
+  "2020": 31.6,
+  "2024": 11.2,
+  "2025": 2.1
+ },
+ "protected": [],
+ "tags": [
+  "fire",
+  "open",
+  "conversion"
+ ]
+}

@@ -1,0 +1,225 @@
+{
+ "_doc": "Textos curtos da tela ENTENDA O CASO (pt-BR e en). Fatos conferidos com o dossiê (data/dossie), a auditoria (data/qa/auditoria_desafios.csv) e data/explain. Vocabulário técnico, sem juízo de valor (ex.: 'fisionomia aberta', não 'pobre'). Campos opcionais hint_pt/hint_en: dica mostrada antes do palpite, no lugar da legenda.",
+ "XTR-D06": {
+  "name_en": "Forest and open land",
+  "pt": "Santa Carmem (MT): um grande bloco de floresta amazônica foi suprimido e convertido em uso agropecuário até 2025, sobretudo pastagem no mapa de 10 m. Restam só faixas de mata nas bordas.",
+  "en": "Santa Carmem (MT): a large block of Amazon forest was cleared and converted to farming by 2025, mostly pasture on the 10 m map. Only forest strips along the edges remain."
+ },
+ "CAP-AM": {
+  "name_en": "Manaus – Adolpho Ducke Forest Reserve",
+  "pt": "Borda da Reserva Florestal Adolpho Ducke, em Manaus: na margem há solo exposto e pasto, já presentes em 2020. A floresta ficou praticamente igual.",
+  "en": "Edge of the Adolpho Ducke Forest Reserve in Manaus: bare soil and pasture along the margin were already there in 2020. The forest stayed virtually unchanged."
+ },
+ "CAP-MG": {
+  "name_en": "Nova Lima – urban fringe",
+  "pt": "Nova Lima, na franja urbana de Belo Horizonte: a expansão urbana avançou sobre a vegetação nativa (perda de cerca de 7 pp, quase toda para área urbanizada).",
+  "en": "Nova Lima, on the urban fringe of Belo Horizonte: urban expansion encroached on native vegetation (about 7 pp lost, almost all to built-up area)."
+ },
+ "AMZ-03": {
+  "name_en": "Apuí – remnant forest vs. dry pasture",
+  "pt": "Armadilha da seca: em 2024 o pasto aparece mais amarelado. 2023–24 foi um período de seca severa na Amazônia (Cemaden), mas a floresta nativa não mudou de tamanho.",
+  "en": "Drought trap: in 2024 the pasture looks more yellow. 2023–24 was a period of severe drought in the Amazon (Cemaden), but the native forest did not change in extent."
+ },
+ "CAP-GO": {
+  "name_en": "Goiânia – southwest expansion",
+  "pt": "Goiânia: fragmentos de mata e cerrado entre bairros novos perderam pouco (cerca de 3 pp), para pasto, mosaico de usos e área urbana.",
+  "en": "Goiânia: forest and cerrado fragments between new neighborhoods lost a little (about 3 pp) to pasture, land-use mosaic and built-up area."
+ },
+ "XTR-R49": {
+  "name_en": "Forest and open land",
+  "pt": "Senador La Rocque (MA): parte do pasto de 2018 virou floresta em 2025 (+22 pp no mapa de 10 m, +27 pp no de 30 m). A mudança é sutil: parte das clareiras de 2018 foi coberta pela mata.",
+  "en": "Senador La Rocque (MA): part of the 2018 pasture became forest by 2025 (+22 pp on the 10 m map, +27 pp on the 30 m map). The change is subtle: part of the 2018 clearings was overgrown."
+ },
+ "CAP-RR": {
+  "name_en": "Boa Vista – lavrado and urban expansion",
+  "pt": "Perto do aeroporto de Boa Vista, áreas de lavrado foram abertas. O lavrado é a savana nativa de Roraima: uma formação aberta, de capim, e não floresta.",
+  "en": "Near Boa Vista airport, patches of lavrado were cleared. Lavrado is Roraima's native savanna: an open, grass-dominated formation, not forest."
+ },
+ "CAP-RN": {
+  "name_en": "Natal – Dunes Park",
+  "pt": "O Parque das Dunas é uma faixa de mata e dunas fixas colada a Natal. O limite entre a vegetação e os bairros ficou no mesmo lugar de 2020 a 2025.",
+  "en": "Dunes Park is a strip of forest and stabilized dunes next to Natal. The boundary between vegetation and neighborhoods stayed in place from 2020 to 2025."
+ },
+ "CAP-SP": {
+  "name_en": "São Paulo – Parelheiros / Billings shore",
+  "pt": "Parelheiros, extremo sul de São Paulo: a APA Bororé-Colônia cobre 95% do recorte (WDPA). Trechos de mata viraram mosaico de usos e solo exposto.",
+  "en": "Parelheiros, on the southern edge of São Paulo: the Bororé-Colônia Environmental Protection Area covers 95% of the tile (WDPA). Patches of forest became land-use mosaic and bare soil."
+ },
+ "PAN-03": {
+  "name_en": "Serra do Amolar – Acurizal Private Reserve",
+  "pt": "Topo da Serra do Amolar: fisionomia aberta, de campo nativo e afloramento rochoso, com mata só nas grotas. Em 2020 o recorte queimou. A cor muda com a seca e o fogo, mas a cobertura nativa é a mesma nos dois anos.",
+  "en": "Serra do Amolar ridge: an open physiognomy of native grassland and rock outcrop, with forest only in the ravines. The tile burned in 2020. Color shifts with the dry season and fire, but native cover is the same in both years."
+ },
+ "CAP-RO": {
+  "name_en": "Porto Velho – Karipuna Indigenous Territory",
+  "pt": "Terra Indígena Karipuna (cerca de 60% do recorte, WDPA): grandes áreas de floresta foram convertidas em pastagem entre 2020 e 2024, perda de cerca de 45 pp nos dois mapas.",
+  "en": "Karipuna Indigenous Territory (about 60% of the tile, WDPA): large areas of forest were converted to pasture between 2020 and 2024, a loss of about 45 pp on both maps."
+ },
+ "XTR-R03": {
+  "name_en": "Forest and open land",
+  "pt": "Gaúcha do Norte (MT): a mata ficou quase igual, com pequeno ganho nas bordas (cerca de 5 a 7 pp). O verde à esquerda é uso agropecuário, não vegetação nativa. Em 2018, cerca de 40% do recorte tinha queimado.",
+  "en": "Gaúcha do Norte (MT): the forest barely changed, with a small gain along its edges (about 5 to 7 pp). The green area on the left is farmland, not native vegetation. In 2018 about 40% of the tile had burned."
+ },
+ "CAP-AC": {
+  "name_en": "Rio Branco – urban expansion",
+  "pt": "Rio Branco: a cidade avançou sobre a vegetação nativa da periferia. A perda é pequena (cerca de 3 pp), quase toda para área urbana e pasto.",
+  "en": "Rio Branco: the city expanded into native vegetation on its outskirts. The loss is small (about 3 pp), mostly to built-up area and pasture."
+ },
+ "CAA-03": {
+  "name_en": "Seridó desertification hotspot (Carnaúba dos Dantas)",
+  "pt": "Seridó: na estação seca, a caatinga perde as folhas e fica cinza-amarronzada, mas continua sendo vegetação nativa. A mudança aqui é pequena.",
+  "en": "Seridó: in the dry season the caatinga drops its leaves and turns greyish-brown, but it is still native vegetation. The change here is small."
+ },
+ "XTR-D21": {
+  "name_en": "Forest and open land",
+  "pt": "Apuí (AM): cerca de 80% da floresta do recorte foi convertida em pasto entre 2020 e 2025.",
+  "en": "Apuí (AM): about 80% of the forest in the tile was converted to pasture between 2020 and 2025."
+ },
+ "XTR-T03": {
+  "name_en": "Rural plateaus",
+  "pt": "ARMADILHA! Em 2020 era pasto; em 2025 aparecem talhões em fileiras, que o mapa de 30 m classifica como silvicultura (o de 10 m, como mosaico de usos e silvicultura). Ficou mais verde, mas a variação de nativa é quase zero.",
+  "en": "TRAP! Pasture in 2020; by 2025 there are stands in rows that the 30 m map classifies as tree plantation (the 10 m map, as land-use mosaic and plantation). It got greener, but the change in native cover is near zero."
+ },
+ "XTR-L23": {
+  "name_en": "Native vegetation and smallholdings",
+  "pt": "Sebastião Leal (PI): praticamente todo o cerrado do recorte foi convertido em uso agropecuário entre 2020 e 2025.",
+  "en": "Sebastião Leal (PI): virtually all the cerrado in the tile was converted to agricultural use between 2020 and 2025."
+ },
+ "PAM-02": {
+  "name_en": "Encruzilhada do Sul – crops, pastures and forests",
+  "pt": "As manchas que mudam de cor são lavouras, pastagens e silvicultura; a vegetação nativa (matas e campos) ficou praticamente igual.",
+  "en": "The patches that change color are cropland, pasture and tree plantation; native vegetation (forest and grassland) stayed virtually the same."
+ },
+ "XTR-D07": {
+  "name_en": "Forest and open land",
+  "pt": "Bela Vista (MS): a mata da parte de cima virou pasto; sobrou a mata ciliar do córrego. As listras verdes de 2025 ficam em área mapeada como pastagem, não são plantio de árvores.",
+  "en": "Bela Vista (MS): the forest in the upper part became pasture; only the riparian forest along the stream remains. The green stripes in 2025 lie in an area mapped as pasture; they are not a tree plantation."
+ },
+ "CAP-DF": {
+  "name_en": "Brasília – edge of Brasília National Park",
+  "pt": "A borda do Parque Nacional de Brasília é quase uma régua: cerrado protegido de um lado, cidade do outro.",
+  "en": "The edge of Brasília National Park is almost ruler-straight: protected cerrado on one side, city on the other."
+ },
+ "XTR-D25": {
+  "name_en": "Forest and open land",
+  "pt": "Formoso do Araguaia (TO): quase metade da vegetação nativa do recorte virou pasto. Campo alagado também é vegetação nativa.",
+  "en": "Formoso do Araguaia (TO): almost half of the native vegetation in the tile became pasture. Seasonally flooded grassland is native vegetation too.",
+  "hint_pt": "Dica: campo alagado é vegetação nativa, mesmo sem árvores. Compare onde ele está, não a cor.",
+  "hint_en": "Hint: seasonally flooded grassland is native, even without trees. Compare where it is, not its color."
+ },
+ "XTR-R07": {
+  "name_en": "Forest and open land",
+  "pt": "Oriximiná (PA), Floresta Nacional Saracá-Taquera: cerca de 35% do recorte era mina de bauxita em 2018 e virou floresta em 2025 nos dois mapas. A Mineração Rio do Norte informa reflorestar com espécies nativas as áreas lavradas.",
+  "en": "Oriximiná (PA), Saracá-Taquera National Forest: about 35% of the tile was a bauxite mine in 2018 and both maps show forest in 2025. Mineração Rio do Norte reports replanting mined-out areas with native species."
+ },
+ "PAM-03": {
+  "name_en": "Dom Pedrito – grassland converted to cropland",
+  "pt": "Dom Pedrito: parte dos campos nativos do Pampa virou lavoura (mapa de 10 m). Campo nativo também é vegetação nativa, mesmo sem árvores.",
+  "en": "Dom Pedrito: part of the native Pampa grassland became cropland (10 m map). Native grassland is native vegetation, even without trees."
+ },
+ "CAP-SC": {
+  "name_en": "Florianópolis – Meiembipe Refuge / Rio Vermelho",
+  "pt": "Florianópolis, Rio Vermelho: mata protegida ao lado de bairros. A cobertura nativa ficou praticamente igual entre 2020 e 2024.",
+  "en": "Florianópolis, Rio Vermelho: protected forest next to neighborhoods. Native cover stayed virtually the same between 2020 and 2024."
+ },
+ "CER-02": {
+  "name_en": "Formosa do Rio Preto – MATOPIBA",
+  "pt": "MATOPIBA, oeste da Bahia: o cerrado nativo foi aberto para uso agropecuário; o mapa de 30 m já reconhece soja e outras lavouras em parte da área.",
+  "en": "MATOPIBA, western Bahia: native cerrado was cleared for agriculture; the 30 m map already identifies soybean and other crops in part of the area."
+ },
+ "CAP-MS": {
+  "name_en": "Campo Grande – Parque dos Poderes and urban fringe",
+  "pt": "O Parque dos Poderes preserva uma mancha de cerrado e mata dentro de Campo Grande; na franja, a cidade avançou um pouco (cerca de 3 pp).",
+  "en": "Parque dos Poderes keeps a patch of cerrado and forest inside Campo Grande; at the fringe, the city advanced slightly (about 3 pp)."
+ },
+ "CMP-02": {
+  "name_en": "Trincheira/Bacajá Indigenous Territory",
+  "pt": "Terra Indígena Trincheira/Bacajá (São Félix do Xingu/PA): uma clareira nova foi aberta na floresta, no lado direito do recorte. O mapa de 10 m a classifica como pasto.",
+  "en": "Trincheira/Bacajá Indigenous Territory (São Félix do Xingu, PA): a new clearing was opened in the forest on the right side of the tile. The 10 m map classifies it as pasture."
+ },
+ "CAA-02": {
+  "name_en": "Surroundings of Serra da Capivara National Park",
+  "pt": "Entorno do Parque Nacional da Serra da Capivara: caatinga e pastos lado a lado. A caatinga muda de cor com a seca, mas a cobertura nativa ficou praticamente igual.",
+  "en": "Surroundings of Serra da Capivara National Park: caatinga and pastures side by side. The caatinga changes color with the dry season, but native cover stayed virtually the same."
+ },
+ "XTR-D01": {
+  "name_en": "Forest and open land",
+  "pt": "Mirador (MA): cerca de dois terços do recorte perderam vegetação nativa entre 2020 e 2025; a floresta virou pasto e mosaico de usos.",
+  "en": "Mirador (MA): about two thirds of the tile lost native vegetation between 2020 and 2025; the forest became pasture and land-use mosaic."
+ },
+ "CMP-01": {
+  "name_en": "Brumadinho – around the Córrego do Feijão mine",
+  "pt": "Brumadinho, perto da mina Córrego do Feijão, onde barragens da Vale se romperam em 2019. A lama desceu para oeste; neste recorte, a cobertura nativa quase não mudou.",
+  "en": "Brumadinho, near the Córrego do Feijão mine, where Vale's tailings dams collapsed in 2019. The mudflow ran west; in this tile, native cover barely changed."
+ },
+ "XTR-D03": {
+  "name_en": "Forest and open land",
+  "pt": "Novo Aripuanã (AM): metade da floresta do recorte foi derrubada e virou pasto. Na ÉPOCA 2 de 2020 (outubro) já aparece no alto uma mancha compatível com queimada.",
+  "en": "Novo Aripuanã (AM): half of the forest in the tile was cleared and became pasture. In SEASON 2 of 2020 (October) a patch consistent with a burn scar is already visible at the top."
+ },
+ "GAN-05": {
+  "name_en": "Vila Boa – cerrado regrowth",
+  "pt": "Vila Boa (GO): a vegetação nativa voltou a ocupar parte de antigas pastagens e lavouras: +30 pp no mapa de 10 m e +17 pp no de 30 m.",
+  "en": "Vila Boa (GO): native vegetation reclaimed part of former pasture and cropland: +30 pp on the 10 m map and +17 pp on the 30 m map."
+ },
+ "CAP-TO": {
+  "name_en": "Palmas – southern outskirts",
+  "pt": "Palmas: uma área de cerrado ao lado de uma mata ciliar foi aberta e virou solo exposto entre 2020 e 2024.",
+  "en": "Palmas: a patch of cerrado next to a riparian forest was cleared and became bare soil between 2020 and 2024."
+ },
+ "CAP-RS": {
+  "name_en": "Porto Alegre – Jacuí Delta",
+  "pt": "Delta do Jacuí, em Porto Alegre: a cor da água muda entre as datas, mas as matas e os banhados (campo alagado) ficaram estáveis.",
+  "en": "Jacuí Delta, Porto Alegre: the water color changes between dates, but the forests and marshes (wetlands) stayed stable."
+ },
+ "XTR-L25": {
+  "name_en": "Native vegetation and smallholdings",
+  "pt": "Pilão Arcado (BA): mais de 80% da caatinga do recorte foi suprimida; nos mapas, virou pasto e mosaico de usos.",
+  "en": "Pilão Arcado (BA): over 80% of the caatinga in the tile was cleared; the maps show pasture and land-use mosaic."
+ },
+ "XTR-T04": {
+  "name_en": "Rural plateaus",
+  "pt": "ARMADILHA! O pasto de 2020 virou um plantio fechado de árvores (silvicultura) em 2025. Ficou mais verde, mas plantio não é vegetação nativa: a variação de nativa é quase zero.",
+  "en": "TRAP! The 2020 pasture became a closed tree plantation (silviculture) by 2025. It got greener, but a plantation is not native vegetation: the change in native cover is near zero."
+ },
+ "XTR-F04": {
+  "name_en": "Forest and open land",
+  "pt": "Passagem Franca (MA): toda a vegetação nativa de 2020 foi derrubada até 2025, para mosaico de usos, pasto e lavoura.",
+  "en": "Passagem Franca (MA): all the 2020 native vegetation was cleared by 2025, to land-use mosaic, pasture and cropland."
+ },
+ "CMP-05": {
+  "name_en": "Bananal Island – ecotone",
+  "pt": "Ilha do Bananal: a mancha clara de 2024 é compatível com queimada (o MapBiomas Fogo registra 40% do recorte queimado em 2024). Fogo muda a cor, mas a vegetação continua nativa.",
+  "en": "Bananal Island: the pale patch in 2024 is consistent with a burn (MapBiomas Fire maps 40% of the tile burned in 2024). Fire changes the color, but the vegetation is still native."
+ },
+ "XTR-D11": {
+  "name_en": "Native vegetation and smallholdings",
+  "pt": "Cascavel (CE): no centro do recorte, a vegetação nativa foi aberta em talhões, para lavoura, pasto e mosaico de usos; em volta, ficou.",
+  "en": "Cascavel (CE): in the center of the tile, native vegetation was cleared into fields for crops, pasture and land-use mosaic; the surroundings remained."
+ },
+ "CAP-RJ": {
+  "name_en": "Rio de Janeiro – Tijuca Forest and Jacarepaguá",
+  "pt": "Encostas do Maciço da Tijuca: floresta e ocupação urbana lado a lado, com pouca mudança no período.",
+  "en": "Slopes of the Tijuca Massif: forest and urban settlement side by side, with little change over the period."
+ },
+ "MAT-02": {
+  "name_en": "Quadrilátero Ferrífero – mining",
+  "pt": "Mineração de ferro no Quadrilátero Ferrífero: a área minerada se expandiu sobre a vegetação nativa, sobretudo campo nativo.",
+  "en": "Iron mining in the Quadrilátero Ferrífero: the mined area expanded over native vegetation, mostly native grassland."
+ },
+ "XTR-R23": {
+  "name_en": "Forest and open land",
+  "pt": "Juara (MT): cerca de 40% do recorte queimou em 2017. Em 2018, cerca de metade era pasto e mosaico de usos; em 2025, a floresta ocupa cerca de 80% (mapa de 10 m). Na ÉPOCA 2, as manchas de solo de 2018 diminuem sob a mata.",
+  "en": "Juara (MT): about 40% of the tile burned in 2017. In 2018 about half was pasture and land-use mosaic; by 2025 forest covers about 80% (10 m map). In SEASON 2, the 2018 bare patches shrink under the forest."
+ },
+ "CAP-PR": {
+  "name_en": "Curitiba – southern expansion (CIC/Tatuquara)",
+  "pt": "Curitiba, expansão sul (CIC/Tatuquara): a cidade avançou um pouco sobre a mata (cerca de 2 pp), para área urbana e mosaico de usos.",
+  "en": "Southern Curitiba (CIC/Tatuquara): the city advanced slightly into the forest (about 2 pp), to built-up area and land-use mosaic."
+ },
+ "MAT-03": {
+  "name_en": "Iguaçu National Park – northern edge (Céu Azul)",
+  "pt": "A borda norte do Parque Nacional do Iguaçu: floresta protegida encostada na cidade, sem mudança.",
+  "en": "Northern edge of Iguaçu National Park: protected forest bordering the town, with no change."
+ }
+}

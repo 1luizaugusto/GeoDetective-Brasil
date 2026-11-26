@@ -1,0 +1,47 @@
+{
+ "id": "CAP-MG",
+ "source": "MapBiomas Col. 4 (10 m), mesma grade do recorte; fogo: MapBiomas Fogo Col. 5.1; áreas protegidas: WDPA",
+ "composition": {
+  "2020": {
+   "forest": 24.5,
+   "grassland": 16.9,
+   "rock": 0.1,
+   "pasture": 0.9,
+   "silviculture": 0.1,
+   "mosaic": 4.0,
+   "urban": 52.1,
+   "bare": 1.5
+  },
+  "2024": {
+   "forest": 20.8,
+   "grassland": 13.2,
+   "rock": 0.1,
+   "pasture": 0.4,
+   "silviculture": 0.1,
+   "mosaic": 1.6,
+   "urban": 62.6,
+   "bare": 1.2
+  }
+ },
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 1.7,
+  "2023": 0.5,
+  "2024": 1.4
+ },
+ "protected": [
+  {
+   "name": "Área De Proteção Ambiental Sul-Rmbh",
+   "type": "Área de Proteção Ambiental",
+   "year": 1994,
+   "pct": 100
+  },
+  {
+   "name": "Estação Ecológica Do Cercadinho",
+   "type": "Estação Ecológica",
+   "year": 2006,
+   "pct": 10
+  }
+ ],
+ "tags": []
+}

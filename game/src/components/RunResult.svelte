@@ -3,6 +3,8 @@
   import { run, startRun } from "../lib/run.svelte";
   import { rank, pad, fmtPP, zeroScore } from "../lib/score";
   import { sfx } from "../lib/sfx.svelte";
+  import { L, i18n } from "../lib/i18n.svelte";
+  const T = $derived(L());
 
   let { data }: { data: Dataset } = $props();
   const r = $derived(run.cur);
@@ -15,28 +17,28 @@
 </script>
 
 {#if !r}
-  <div class="win"><p>Nenhuma partida em andamento. <a href="#/">Voltar ao menu</a></p></div>
+  <div class="win"><p>{T.noRun} <a href="#/">{T.backMenu}</a></p></div>
 {:else}
   <section class="win res">
-    <span class="win-title">FIM DA PARTIDA</span>
-    {#if isBest}<p class="new blink">★ NOVO RECORDE ★</p>{/if}
+    <span class="win-title">{T.runOver}</span>
+    {#if isBest}<p class="new blink">{T.newRecord}</p>{/if}
     <div class="top">
-      <div><p class="lbl">TOTAL</p><p class="big">{pad(total, 3)}<span class="dim">/{max}</span></p></div>
+      <div><p class="lbl">{T.total}</p><p class="big">{pad(total, 3)}<span class="dim">/{max}</span></p></div>
       <div class={`rank r${rk}`}>{rk}</div>
     </div>
     <p class={`vs ${total > zero ? "win-t" : "lose-t"}`}>
-      VOCÊ {pad(total, 3)} × {pad(zero, 3)} CHUTE ZERO —
-      {total > zero ? `VENCEU POR ${total - zero}!` : total === zero ? "EMPATE. Arrisque mais!" : `PERDEU POR ${zero - total}. Olhe melhor as imagens!`}
+      {T.vsZero(pad(total, 3), pad(zero, 3))}
+      {total > zero ? T.won(total - zero) : total === zero ? T.tie : T.lost(zero - total)}
     </p>
-    <p class="dim small">"Chute zero" é quem sempre diz que nada mudou. Vencê-lo prova que você viu a mudança.</p>
+    <p class="dim small">{T.zeroNote}</p>
     <table>
-      <thead><tr><th>#</th><th>CASO</th><th>VOCÊ</th><th>MODELO</th><th>PTS</th><th>ZERO</th></tr></thead>
+      <thead><tr><th>#</th><th>{T.thCase}</th><th>{T.thYou}</th><th>{T.thModel}</th><th>{T.thPts}</th><th>{T.thZero}</th></tr></thead>
       <tbody>
         {#each r.ids as id, i}
           {@const c = byId(id)}
           <tr>
             <td>{i + 1}</td>
-            <td><a href={`#/partida/${i + 1}`}>{c.name}</a></td>
+            <td><a href={`#/partida/${i + 1}`}>{i18n.lang === "en" && c.name_en ? c.name_en : c.name}</a></td>
             <td>{r.guesses[i] === null ? "—" : fmtPP(r.guesses[i]!)}</td>
             <td>{fmtPP(c.model_estimate_pp)}</td>
             <td class="gold-t">{r.points[i] ?? "—"}</td>
@@ -46,9 +48,9 @@
       </tbody>
     </table>
     <div class="actions">
-      <button class="pbtn gold" onclick={() => { sfx("select"); location.hash = startRun(data.challenges, 5); }}>JOGAR DE NOVO</button>
-      <a class="pbtn" href="#/recordes">RECORDES</a>
-      <a class="pbtn" href="#/">MENU</a>
+      <button class="pbtn gold" onclick={() => { sfx("select"); location.hash = startRun(data.challenges, 5); }}>{T.playAgain}</button>
+      <a class="pbtn" href="#/recordes">{T.records}</a>
+      <a class="pbtn" href="#/">{T.menu}</a>
     </div>
   </section>
 {/if}

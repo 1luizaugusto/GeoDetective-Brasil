@@ -1,0 +1,47 @@
+{
+ "id": "CAP-RS",
+ "source": "MapBiomas Col. 4 (10 m), mesma grade do recorte; fogo: MapBiomas Fogo Col. 5.1; áreas protegidas: WDPA",
+ "composition": {
+  "2020": {
+   "forest": 31.5,
+   "grassland": 2.1,
+   "wetland": 43.1,
+   "mosaic": 0.1,
+   "water": 13.7,
+   "urban": 5.9,
+   "bare": 3.5
+  },
+  "2024": {
+   "forest": 31.8,
+   "grassland": 1.2,
+   "wetland": 42.8,
+   "mosaic": 0.9,
+   "water": 13.6,
+   "urban": 7.3,
+   "bare": 2.4
+  }
+ },
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "protected": [
+  {
+   "name": "Área De Proteção Ambiental Estadual Delta Do Jacuí",
+   "type": "Área de Proteção Ambiental",
+   "year": 2005,
+   "pct": 100
+  },
+  {
+   "name": "Parque Estadual Do Delta Do Jacuí",
+   "type": "Parque",
+   "year": 1976,
+   "pct": 68
+  }
+ ],
+ "tags": [
+  "open"
+ ]
+}

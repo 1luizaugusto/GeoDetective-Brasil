@@ -5,7 +5,7 @@
   {
    "afirmacao": "Houve perda de vegetação nativa entre 2020 e 2024.",
    "veredito": "comprovado",
-   "porque": "MapBiomas 10 m: perda 6.3 pp e ganho 1.0 pp (líquido -5,3 pp); MapBiomas 30 m: perda 5.6 pp e ganho 0.7 pp (líquido -4,9 pp). NDVI mediano das imagens: 0.70→0.63. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.43 (vegetação a menos).",
+   "porque": "MapBiomas 10 m: perda 6,3 pp e ganho 1,0 pp (líquido -5,3 pp); MapBiomas 30 m: perda 5,6 pp e ganho 0,7 pp (líquido -4,9 pp). NDVI mediano das imagens: 0,70→0,63. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.43 (vegetação a menos).",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
@@ -26,9 +26,9 @@
    ]
   },
   {
-   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "afirmacao": "Cada ano tem uma foto em cada época, e as datas são pareadas entre os anos.",
    "veredito": "comprovado",
-   "porque": "Época 1: 04/08/2020 e 03/08/2024 (1 dia de diferença no calendário). Época 2: 11/05/2020 e 05/05/2024 (6 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,56 → 0,52; época 2 0,59 → 0,57.",
+   "porque": "Época 1: 04/08/2020 e 03/08/2024 (1 dia de diferença no calendário). Época 2: 11/05/2020 e 05/05/2024 (6 dias de diferença no calendário), um par alternativo a pelo menos 45 dias da época 1, sem nuvem no recorte. NDVI médio do recorte: época 1 0,56 → 0,52; época 2 0,59 → 0,57.",
    "fontes": [
     {
      "nome": "Sentinel-2 L2A 2020-08-04 — S2A_MSIL2A_20200804T131251_N0500_R138_T23KLP_20230319T120623",
@@ -51,7 +51,7 @@
   {
    "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
    "veredito": "comprovado",
-   "porque": "Modelo de duas épocas: -7,7 pp; MapBiomas 10 m: -5,3 pp; diferença 2.4 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "porque": "Modelo de duas épocas: -7,7 pp; MapBiomas 10 m: -5,3 pp; diferença 2,4 pp, dentro do limite de entrada no jogo (10,0 pp). O modelo usa as bandas do Sentinel-2 das duas épocas de cada ano, índices como o NDVI e o bioma; este caso foi estimado por um modelo que não treinou com ele (validação espacial).",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
@@ -105,7 +105,7 @@
    ]
   },
   {
-   "afirmacao": "Área protegida: Área De Proteção Ambiental Bororé-Colônia (Área de Proteção Ambiental, criada em 2006).",
+   "afirmacao": "Área protegida: Área De Proteção Ambiental Bororé-Colônia (Área de Proteção Ambiental, ano de status na WDPA: 2006).",
    "veredito": "comprovado",
    "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 95% do recorte.",
    "fontes": [
@@ -116,7 +116,7 @@
    ]
   },
   {
-   "afirmacao": "Área protegida: Parque Natural Municipal Varginha (Parque, criada em 2012).",
+   "afirmacao": "Área protegida: Parque Natural Municipal Varginha (Parque, ano de status na WDPA: 2012).",
    "veredito": "comprovado",
    "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 12% do recorte.",
    "fontes": [
@@ -127,7 +127,7 @@
    ]
   },
   {
-   "afirmacao": "Área protegida: Parque Natural Municipal Bororé (Parque, criada em 2012).",
+   "afirmacao": "Área protegida: Parque Natural Municipal Bororé (Parque, ano de status na WDPA: 2012).",
    "veredito": "comprovado",
    "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela fica a menos de 1 km do recorte.",
    "fontes": [

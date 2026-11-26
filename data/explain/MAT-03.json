@@ -1,0 +1,47 @@
+{
+ "id": "MAT-03",
+ "source": "MapBiomas Col. 4 (10 m), mesma grade do recorte; fogo: MapBiomas Fogo Col. 5.1; áreas protegidas: WDPA",
+ "composition": {
+  "2020": {
+   "forest": 50.1,
+   "pasture": 1.3,
+   "crop": 5.9,
+   "silviculture": 0.1,
+   "mosaic": 8.8,
+   "water": 0.2,
+   "urban": 33.6
+  },
+  "2024": {
+   "forest": 50.3,
+   "pasture": 1.4,
+   "crop": 5.9,
+   "silviculture": 0.1,
+   "mosaic": 7.6,
+   "water": 0.2,
+   "urban": 34.5
+  }
+ },
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "protected": [
+  {
+   "name": "Parque Nacional Do Iguaçu",
+   "type": "Parque",
+   "year": 1939,
+   "pct": 45
+  },
+  {
+   "name": "Parc national d'Iguaçu",
+   "type": "World Heritage Site (natural or mixed)",
+   "year": 1986,
+   "pct": 43
+  }
+ ],
+ "tags": [
+  "crop"
+ ]
+}

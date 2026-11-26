@@ -1,0 +1,35 @@
+{
+ "id": "CAP-RN",
+ "source": "MapBiomas Col. 4 (10 m), mesma grade do recorte; fogo: MapBiomas Fogo Col. 5.1; áreas protegidas: WDPA",
+ "composition": {
+  "2020": {
+   "forest": 42.4,
+   "grassland": 7.6,
+   "mosaic": 0.6,
+   "urban": 48.8,
+   "bare": 0.6
+  },
+  "2025": {
+   "forest": 42.1,
+   "grassland": 7.1,
+   "mosaic": 0.9,
+   "urban": 49.2,
+   "bare": 0.6
+  }
+ },
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2024": 0.0,
+  "2025": 0.0
+ },
+ "protected": [
+  {
+   "name": "Parque Estadual Dunas De Natal \" Jornalista Luiz Maria Alves",
+   "type": "Parque",
+   "year": 1977,
+   "pct": 48
+  }
+ ],
+ "tags": []
+}

@@ -1,0 +1,45 @@
+{
+ "id": "CMP-05",
+ "source": "MapBiomas Col. 4 (10 m), mesma grade do recorte; fogo: MapBiomas Fogo Col. 5.1; áreas protegidas: WDPA",
+ "composition": {
+  "2020": {
+   "forest": 67.7,
+   "savanna": 1.8,
+   "wetland": 30.5
+  },
+  "2024": {
+   "forest": 68.7,
+   "savanna": 0.4,
+   "wetland": 30.9
+  }
+ },
+ "fire_pct": {
+  "2019": 40.4,
+  "2020": 0.0,
+  "2023": 2.8,
+  "2024": 39.8
+ },
+ "protected": [
+  {
+   "name": "Inawebohona",
+   "type": "Terra Indígena",
+   "year": 2009,
+   "pct": 100
+  },
+  {
+   "name": "Parque Nacional Do Araguaia",
+   "type": "Parque",
+   "year": 1959,
+   "pct": 100
+  },
+  {
+   "name": "Ilha do Bananal",
+   "type": "Wetland of International Importance (Ramsar Site)",
+   "year": 1993,
+   "pct": 100
+  }
+ ],
+ "tags": [
+  "fire"
+ ]
+}

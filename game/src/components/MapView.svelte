@@ -4,6 +4,9 @@
   import { rank } from "../lib/score";
   import { sfx } from "../lib/sfx.svelte";
   import ufmap from "../lib/ufs.json";
+  import { L, i18n, biomeName } from "../lib/i18n.svelte";
+  const T = $derived(L());
+  const nm = (c: Challenge) => (i18n.lang === "en" && c.name_en ? c.name_en : c.name);
 
   let { data, uf = "" }: { data: Dataset; uf?: string } = $props();
   let biome = $state("");
@@ -35,9 +38,9 @@
 
 <div class="layout">
   <section class="win mapwin">
-    <span class="win-title">MAPA DE FASES</span>
-    <p class="lbl status">{hover ? `▶ ${hover}` : uf ? `▶ ${ufName.toUpperCase()}` : "▶ ESCOLHA UM ESTADO"}</p>
-    <svg viewBox={`-10 -10 ${ufmap.width + 20} ${ufmap.height + 20}`} role="group" aria-label="Mapa do Brasil por estado" shape-rendering="crispEdges">
+    <span class="win-title">{T.stageMap}</span>
+    <p class="lbl status">{hover ? `▶ ${hover}` : uf ? `▶ ${ufName.toUpperCase()}` : T.pickState}</p>
+    <svg viewBox={`-10 -10 ${ufmap.width + 20} ${ufmap.height + 20}`} role="group" aria-label={T.mapAria} shape-rendering="crispEdges">
       {#each ufmap.ufs as u (u.uf)}
         <path
           d={u.d}
@@ -45,8 +48,8 @@
           class:sel={u.uf === uf}
           role="button"
           tabindex={byUf[u.uf] ? 0 : -1}
-          aria-label={`${u.name}: ${byUf[u.uf]?.length ?? 0} casos`}
-          onmouseenter={() => (hover = `${u.name.toUpperCase()} · ${byUf[u.uf]?.length ?? 0} CASO(S)`)}
+          aria-label={T.ufAria(u.name, byUf[u.uf]?.length ?? 0)}
+          onmouseenter={() => (hover = T.stateCases(u.name, byUf[u.uf]?.length ?? 0))}
           onmouseleave={() => (hover = "")}
           onclick={() => byUf[u.uf] && selectUf(u.uf)}
           onkeydown={(e) => (e.key === "Enter" || e.key === " ") && byUf[u.uf] && selectUf(u.uf)}
@@ -54,7 +57,7 @@
       {/each}
       {#each data.challenges as c (c.id)}
         {@const p = xy(c.center_lonlat[0], c.center_lonlat[1])}
-        <a href={`#/desafio/${c.id}`} aria-label={c.name} onclick={() => sfx("select")}>
+        <a href={`#/desafio/${c.id}`} aria-label={nm(c)} onclick={() => sfx("select")}>
           <rect x={p[0] - 7} y={p[1] - 7} width="14" height="14" class="dot" class:played={!!progress.attempts[c.id]} />
         </a>
       {/each}
@@ -63,20 +66,20 @@
       {/each}
     </svg>
     <div class="legend lbl">
-      <span><i class="sw todo"></i>NOVO</span><span><i class="sw partial"></i>EM CURSO</span>
-      <span><i class="sw done"></i>COMPLETO</span><span><i class="sw none"></i>VAZIO</span>
+      <span><i class="sw todo"></i>{T.legNew}</span><span><i class="sw partial"></i>{T.legPartial}</span>
+      <span><i class="sw done"></i>{T.legDone}</span><span><i class="sw none"></i>{T.legEmpty}</span>
     </div>
   </section>
 
   <section class="win side">
-    <span class="win-title">{uf ? `CASOS · ${uf}` : "TODOS OS CASOS"}</span>
+    <span class="win-title">{uf ? T.casesUf(uf) : T.allCases}</span>
     <div class="chips">
-      <button class:on={!biome} onclick={() => { biome = ""; sfx("move"); }}>TODOS</button>
+      <button class:on={!biome} onclick={() => { biome = ""; sfx("move"); }}>{T.all}</button>
       {#each biomes as b}
-        <button class:on={biome === b} onclick={() => { biome = b; sfx("move"); }}>{b.toUpperCase()}</button>
+        <button class:on={biome === b} onclick={() => { biome = b; sfx("move"); }}>{biomeName(b).toUpperCase()}</button>
       {/each}
     </div>
-    {#if uf}<a class="lbl back" href="#/mapa">◀ TODOS OS ESTADOS</a>{/if}
+    {#if uf}<a class="lbl back" href="#/mapa">{T.allStates}</a>{/if}
     <ol class="list">
       {#each list as c (c.id)}
         {@const a = progress.attempts[c.id]}
@@ -85,18 +88,18 @@
             <span class="no">{String(data.challenges.indexOf(c) + 1).padStart(2, "0")}</span>
             <img src={c.images.after} alt="" loading="lazy" />
             <span class="meta">
-              <span class="nm">{c.name}</span>
-              <span class="dim sm">{c.biome}{c.uf ? ` · ${c.uf}` : ""}</span>
+              <span class="nm">{nm(c)}</span>
+              <span class="dim sm">{biomeName(c.biome)}{c.uf ? ` · ${c.uf}` : ""}</span>
             </span>
             {#if a}<span class={`rk r${rank(a.points)}`}>{rank(a.points)}</span>{:else}<span class="new blink">NEW</span>{/if}
           </a>
         </li>
       {:else}
-        <li class="dim">Nenhum caso com esse filtro.</li>
+        <li class="dim">{T.noFilter}</li>
       {/each}
     </ol>
     {#if Object.keys(progress.attempts).length}
-      <button class="pbtn small" onclick={() => confirm("Apagar seu progresso neste navegador?") && resetProgress()}>APAGAR SAVE</button>
+      <button class="pbtn small" onclick={() => confirm(T.wipeSaveAsk) && resetProgress()}>{T.wipeSave}</button>
     {/if}
   </section>
 </div>

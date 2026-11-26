@@ -12,6 +12,8 @@
   import type { Dataset } from "./lib/types";
   import { progress } from "./lib/progress.svelte";
   import { pad } from "./lib/score";
+  import { L, applyLang } from "./lib/i18n.svelte";
+  const T = $derived(L());
 
   let data = $state<Dataset | null>(null);
   let error = $state("");
@@ -26,6 +28,7 @@
     .catch((e) => (error = String(e)));
 
   applySettings();
+  applyLang();
   // ESC em qualquer tela volta ao menu principal (como "pausa" de jogo); no menu, ESC fecha a confirmação
   addEventListener("keydown", (e) => {
     if (e.key === "Escape" && route.page !== "home" && !(e.target as HTMLElement)?.closest?.("input,textarea")) location.hash = "#/";
@@ -52,18 +55,18 @@
     <a class="logo" href="#/">GEO<span>DETECTIVE</span></a>
     {#if data}
       <div class="stats">
-        <span title="pontos"><i class="lbl">PTS</i> <b class="gold-t">{pad(total)}</b></span>
-        <span title="casos jogados"><i class="lbl">CASOS</i> <b>{String(played).padStart(2, "0")}/{data.challenges.length}</b></span>
+        <span title={T.ptsTitle}><i class="lbl">{T.pts}</i> <b class="gold-t">{pad(total)}</b></span>
+        <span title={T.casesTitle}><i class="lbl">{T.cases}</i> <b>{String(played).padStart(2, "0")}/{data.challenges.length}</b></span>
       </div>
     {/if}
-    {#if route.page !== "home"}<a class="menu-btn" href="#/">MENU</a>{/if}
+    {#if route.page !== "home"}<a class="menu-btn" href="#/">{T.menu}</a>{/if}
   </header>
 
   <main class:fixed={route.page === "desafio" || route.page === "partida"}>
     {#if error}
-      <div class="win"><span class="win-title">ERRO</span><p>Não foi possível carregar os desafios.</p><p class="dim">{error}</p></div>
+      <div class="win"><span class="win-title">{T.error}</span><p>{T.loadErr}</p><p class="dim">{error}</p></div>
     {:else if !data}
-      <p class="loading lbl">CARREGANDO<span class="blink">_</span></p>
+      <p class="loading lbl">{T.loading}<span class="blink">_</span></p>
     {:else if route.page === "mapa"}
       <MapView {data} uf={route.arg} />
     {:else if route.page === "desafio"}
@@ -71,7 +74,7 @@
       {#if c}
         {#key c.id}<ChallengeView {data} challenge={c} />{/key}
       {:else}
-        <div class="win"><p>Caso não encontrado. <a href="#/mapa">Voltar ao mapa</a></p></div>
+        <div class="win"><p>{T.caseNotFound} <a href="#/mapa">{T.backMap}</a></p></div>
       {/if}
     {:else if route.page === "partida"}
       {@const i = Number(route.arg) - 1}
@@ -79,7 +82,7 @@
       {#if c}
         {#key `${run.cur?.started}-${i}`}<ChallengeView {data} challenge={c} runIdx={i} />{/key}
       {:else}
-        <div class="win"><p>Nenhuma partida em andamento. <a href="#/">Voltar ao menu</a></p></div>
+        <div class="win"><p>{T.noRun} <a href="#/">{T.backMenu}</a></p></div>
       {/if}
     {:else if route.page === "resultado"}
       <RunResult {data} />

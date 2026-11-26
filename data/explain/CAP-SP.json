@@ -1,0 +1,50 @@
+{
+ "id": "CAP-SP",
+ "source": "MapBiomas Col. 4 (10 m), mesma grade do recorte; fogo: MapBiomas Fogo Col. 5.1; áreas protegidas: WDPA",
+ "composition": {
+  "2020": {
+   "forest": 39.6,
+   "grassland": 0.1,
+   "wetland": 0.7,
+   "pasture": 2.6,
+   "crop": 0.1,
+   "mosaic": 23.5,
+   "water": 2.5,
+   "urban": 28.4,
+   "mining": 0.1,
+   "bare": 2.4
+  },
+  "2024": {
+   "forest": 34.3,
+   "wetland": 0.7,
+   "pasture": 3.1,
+   "crop": 0.2,
+   "mosaic": 25.6,
+   "water": 2.6,
+   "urban": 29.9,
+   "mining": 0.1,
+   "bare": 3.4
+  }
+ },
+ "fire_pct": {
+  "2019": 0.0,
+  "2020": 0.0,
+  "2023": 0.0,
+  "2024": 0.0
+ },
+ "protected": [
+  {
+   "name": "Área De Proteção Ambiental Bororé-Colônia",
+   "type": "Área de Proteção Ambiental",
+   "year": 2006,
+   "pct": 95
+  },
+  {
+   "name": "Parque Natural Municipal Varginha",
+   "type": "Parque",
+   "year": 2012,
+   "pct": 12
+  }
+ ],
+ "tags": []
+}

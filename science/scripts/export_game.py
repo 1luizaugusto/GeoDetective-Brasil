@@ -34,7 +34,10 @@ qa = json.loads(qa_path.read_text(encoding="utf-8")) if qa_path.exists() else {}
 import csv  # noqa: E402
 aud_path = ROOT / "data" / "qa" / "auditoria_desafios.csv"
 audit = {r["id"]: r for r in csv.DictReader(aud_path.open(encoding="utf-8"))} if aud_path.exists() else {}
-# modelo de DUAS ESTAÇÕES (train_rf2.py): vê seca + chuva de cada ano, as mesmas imagens do botão ESTAÇÃO
+# modelo de DUAS ÉPOCAS (train_rf2.py): vê as duas datas de cada ano, as mesmas imagens do botão ÉPOCA 2
+# textos curtos da tela ENTENDA O CASO (pt/en) e dados de composição/etiquetas (build_explain.py)
+TEXTS = json.loads((ROOT / "data" / "catalog" / "case_texts.json").read_text(encoding="utf-8"))
+EXPLAIN = ROOT / "data" / "explain"
 cv = json.loads((ROOT / "data" / "model" / "cv_report_v2.json").read_text(encoding="utf-8"))
 MODEL = "rf_native_v2"
 mae = cv["delta_vs_mapbiomas10m"]["MAE_pp"]
@@ -47,8 +50,8 @@ max_gap = a.max_gap if a.max_gap is not None else tol
 MARGIN = 3.0
 
 
-def webp(src, dst, size=None):
-    im = Image.open(src).convert("RGB")
+def webp(src, dst, size=None, alpha=False):
+    im = Image.open(src).convert("RGBA" if alpha else "RGB")
     if size:
         im = im.resize((size, size), Image.LANCZOS)
     im.save(dst, "WEBP", quality=a.quality, method=6)
@@ -91,6 +94,11 @@ for mp in sorted((ROOT / "data" / "pairs").glob("*/metadata.json")):
         cl["porque"] = re.sub(r"(\d)\.(\d)", r"\1,\2", cl["porque"])
     if not a.all and not dossier:
         skipped.append((cid, "sem dossiê de evidências (build_dossier.py)")); continue
+    xp_path = EXPLAIN / f"{cid}.json"
+    if not a.all and (not xp_path.exists() or cid not in TEXTS):
+        skipped.append((cid, "sem composição (build_explain.py) ou texto (case_texts.json)")); continue
+    xp = json.loads(xp_path.read_text(encoding="utf-8")) if xp_path.exists() else {}
+    tx = TEXTS.get(cid, {})
     items.append({
         "id": cid, "name": name, "group": m.get("group", ""), "biome": m.get("biome", ""),
         "uf": ver.get("uf"), "municipality": ver.get("municipio"),
@@ -102,6 +110,10 @@ for mp in sorted((ROOT / "data" / "pairs").glob("*/metadata.json")):
             "after": webp(d / f"game_{dates[1]}.png", img_dir / f"{cid}_{yb}.webp"),
             "context_before": webp(d / f"context_{dates[0]}.png", img_dir / f"{cid}_{ya}_ctx.webp"),
             "context_after": webp(d / f"context_{dates[1]}.png", img_dir / f"{cid}_{yb}_ctx.webp"),
+            # botão MAPA (só depois do palpite): onde é nativa em cada ano, e o que foi perdido/ganho
+            **({"native_a": webp(EXPLAIN / f"{cid}_nat_a.png", img_dir / f"{cid}_nat_a.webp", alpha=True),
+                "native_b": webp(EXPLAIN / f"{cid}_nat_b.png", img_dir / f"{cid}_nat_b.webp", alpha=True)}
+               if (EXPLAIN / f"{cid}_nat_a.png").exists() else {}),
             **({"before2": webp(d / "season2" / f"game_{dates2[0]}.png", img_dir / f"{cid}_{ya}_s2.webp"),
                 "after2": webp(d / "season2" / f"game_{dates2[1]}.png", img_dir / f"{cid}_{yb}_s2.webp"),
                 "context_before2": webp(d / "season2" / f"context_{dates2[0]}.png", img_dir / f"{cid}_{ya}_s2_ctx.webp"),
@@ -121,8 +133,14 @@ for mp in sorted((ROOT / "data" / "pairs").glob("*/metadata.json")):
         "native_pct": {"model": [round(m["model_estimate"]["native_pct_a"], 1), round(m["model_estimate"]["native_pct_b"], 1)],
                        "mapbiomas_10m": [ref[f"native_pct_10m_{ya}"], ref[f"native_pct_10m_{yb}"]]},
         "kind": qa.get(cid, {}).get("kind_override", m["mode"]),  # tipo comprovado na auditoria
-        "hypothesis": m.get("selection_hypothesis", ""),
-        "explanation": qa.get(cid, {}).get("explanation", ""),
+        "name_en": tx.get("name_en", name),
+        "explanation": tx.get("pt") or qa.get(cid, {}).get("explanation", ""),
+        "explanation_en": tx.get("en", ""),
+        "hint": tx.get("hint_pt", ""), "hint_en": tx.get("hint_en", ""),
+        "composition": xp.get("composition", {}),
+        "fire_pct": xp.get("fire_pct", {}),
+        "protected": xp.get("protected", []),
+        "tags": xp.get("tags", []),
         "qa_note": qa.get(cid, {}).get("player_note", ""),  # "note" é registro técnico do QA; só player_note vai ao jogador
         "dossier": dossier,
         "attribution": m["attribution"],
@@ -161,16 +179,24 @@ doc = {
     "scoring": {"formula": "round(100 * max(0, 1 - distancia_ate_a_faixa / 40)); faixa = [min(modelo, MapBiomas) - 3, max(modelo, MapBiomas) + 3]",
                 "margin_pp": MARGIN, "tolerance_pp": tol,
                 "source": "faixa de 100 pontos por caso: do modelo ao MapBiomas 10 m, mais 3 pp de margem. "
-                          f"Só entram casos em que os dois diferem no máximo {tol:g} pp (erro médio do modelo na validação espacial)."},
-    "model": {"name": MODEL, "seasons": "duas imagens por ano: a principal (seca) e a mais verde em comum (chuva)", "validation": cv["validation"], "pixel": cv["pixel"],
+                          f"Só entram casos em que os dois diferem no máximo {tol:g} pp (erro médio do modelo na validação espacial, limitado a 10 pp)."},
+    "model": {"name": MODEL, "seasons": "duas imagens por ano: a principal e um par alternativo a pelo menos 45 dias dela (época 2)", "validation": cv["validation"], "pixel": cv["pixel"],
               "delta_vs_mapbiomas10m": cv["delta_vs_mapbiomas10m"]},
     "limitations": [
         "A resposta é a estimativa de um modelo (Random Forest), não uma medição de campo.",
         "O MapBiomas é usado como referência independente, mas também tem erros.",
         "Imagens Sentinel-2 com 10 m por pixel, ampliadas ×3 sem super-resolução: detalhes menores que ~20 m não são confiáveis.",
-        "Diferenças de estação, seca ou fumaça podem mudar a cor sem mudar a vegetação nativa. Por isso cada ano tem duas imagens (seca e chuva), que o modelo também usa.",
+        "Diferenças de data, seca, fogo ou fumaça podem mudar a cor sem mudar a vegetação nativa. Por isso cada ano tem duas imagens, em duas épocas, que o modelo também usa.",
         "O modelo reconhece bem florestas, mas subestima formações abertas nativas (campos, savanas como o lavrado, caatinga, restinga), que parecem pasto. A mudança estimada ainda é confiável nos casos do jogo; a quantidade total de nativa, nem sempre.",
-        "Só entram casos em que o modelo e o MapBiomas concordam dentro da tolerância de pontuação; quando discordam, o caso fica fora do jogo.",
+        "Só entram casos em que o modelo e o MapBiomas diferem no máximo 10 pp; quando discordam mais, o caso fica fora do jogo.",
+    ],
+    "limitations_en": [
+        "The answer key is a model estimate (Random Forest), not a field survey.",
+        "MapBiomas is used as an independent reference, but it has its own errors.",
+        "Sentinel-2 imagery at 10 m per pixel, upscaled ×3 without super-resolution: features smaller than ~20 m are not reliable.",
+        "Acquisition date, drought, fire or smoke can change color without changing native cover. That is why each year has two images, from two seasons, which the model also uses.",
+        "The model detects forests well but underestimates open native formations (grasslands, savannas such as the lavrado, caatinga, restinga), which resemble pasture. The estimated change is still reliable in the game's cases; the total amount of native cover is not always.",
+        "Only cases where the model and MapBiomas differ by at most 10 pp are included; when they disagree more, the case is left out.",
     ],
     "licenses": "Contains modified Copernicus Sentinel data (Copernicus Sentinel Data Legal Notice); MapBiomas Brasil (CC-BY 4.0)",
     "challenges": items,

@@ -5,7 +5,7 @@
   {
    "afirmacao": "Houve perda de vegetação nativa entre 2020 e 2024.",
    "veredito": "comprovado",
-   "porque": "MapBiomas 10 m: perda 7.9 pp e ganho 0.4 pp (líquido -7,5 pp); MapBiomas 30 m: perda 4.7 pp e ganho 0.1 pp (líquido -4,6 pp). NDVI mediano das imagens: 0.55→0.52. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.07 (vegetação a menos).",
+   "porque": "MapBiomas 10 m: perda 7,9 pp e ganho 0,4 pp (líquido -7,5 pp); MapBiomas 30 m: perda 4,7 pp e ganho 0,1 pp (líquido -4,6 pp). NDVI mediano das imagens: 0,55→0,52. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.07 (vegetação a menos).",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
@@ -26,9 +26,9 @@
    ]
   },
   {
-   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "afirmacao": "Cada ano tem uma foto em cada época, e as datas são pareadas entre os anos.",
    "veredito": "comprovado",
-   "porque": "Época 1: 12/06/2020 e 11/06/2024 (1 dia de diferença no calendário). Época 2: 30/07/2020 e 26/07/2024 (4 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,51 → 0,50; época 2 0,46 → 0,44.",
+   "porque": "Época 1: 12/06/2020 e 11/06/2024 (1 dia de diferença no calendário). Época 2: 30/07/2020 e 26/07/2024 (4 dias de diferença no calendário), um par alternativo a pelo menos 45 dias da época 1, sem nuvem no recorte. NDVI médio do recorte: época 1 0,51 → 0,50; época 2 0,46 → 0,44.",
    "fontes": [
     {
      "nome": "Sentinel-2 L2A 2020-06-12 — S2A_MSIL2A_20200612T130251_N0500_R095_T23KPT_20230327T055733",
@@ -51,7 +51,7 @@
   {
    "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
    "veredito": "comprovado",
-   "porque": "Modelo de duas épocas: -5,9 pp; MapBiomas 10 m: -7,5 pp; diferença 1.6 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "porque": "Modelo de duas épocas: -5,9 pp; MapBiomas 10 m: -7,5 pp; diferença 1,6 pp, dentro do limite de entrada no jogo (10,0 pp). O modelo usa as bandas do Sentinel-2 das duas épocas de cada ano, índices como o NDVI e o bioma; este caso foi estimado por um modelo que não treinou com ele (validação espacial).",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
@@ -105,7 +105,7 @@
    ]
   },
   {
-   "afirmacao": "Área protegida: Área De Proteção Ambiental Sul-Rmbh (Área de Proteção Ambiental, criada em 1994).",
+   "afirmacao": "Área protegida: Área De Proteção Ambiental Sul-Rmbh (Área de Proteção Ambiental, ano de status na WDPA: 1994).",
    "veredito": "comprovado",
    "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 100% do recorte.",
    "fontes": [
@@ -116,7 +116,7 @@
    ]
   },
   {
-   "afirmacao": "Área protegida: Estação Ecológica Do Cercadinho (Estação Ecológica, criada em 2006).",
+   "afirmacao": "Área protegida: Estação Ecológica Do Cercadinho (Estação Ecológica, ano de status na WDPA: 2006).",
    "veredito": "comprovado",
    "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 10% do recorte.",
    "fontes": [
@@ -127,7 +127,7 @@
    ]
   },
   {
-   "afirmacao": "Área protegida: Parque Estadual Serra Do Rola Moça (Parque, criada em 1994).",
+   "afirmacao": "Área protegida: Parque Estadual Serra Do Rola Moça (Parque, ano de status na WDPA: 1994).",
    "veredito": "comprovado",
    "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela fica a menos de 1 km do recorte.",
    "fontes": [
@@ -171,14 +171,14 @@
    "tipo": "Área de Proteção Ambiental",
    "ano": 1994,
    "site_id": 555576219,
-   "frac": 0.9956075527437309
+   "frac": 0.9956075527437949
   },
   {
    "nome": "Estação Ecológica Do Cercadinho",
    "tipo": "Estação Ecológica",
    "ano": 2006,
    "site_id": 478581,
-   "frac": 0.10076037855464386
+   "frac": 0.10076037855459971
   },
   {
    "nome": "Parque Estadual Serra Do Rola Moça",

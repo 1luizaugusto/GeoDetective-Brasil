@@ -1,6 +1,6 @@
 {
   "challenge_id": "PAN-03",
-  "name": "Serra do Amolar – fogo de 2024, Corumbá/MS",
+  "name": "Serra do Amolar – RPPN Acurizal, Corumbá/MS",
   "group": "bioma",
   "biome": "Pantanal",
   "mode": "loss",
@@ -271,5 +271,6 @@
     "native_pct_b": 99.89,
     "delta_pp": -0.11,
     "computed_utc": "2026-11-13T00:22:14.137754+00:00"
-  }
+  },
+  "selection_hypothesis_result": "não confirmada: MapBiomas 10 m e 30 m dão cobertura nativa estável (campo nativo e afloramento rochoso); o fogo registrado é de 2020 (96,5% do recorte), não de 2024"
 }

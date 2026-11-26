@@ -1,4 +1,5 @@
 import type { Challenge } from "./types";
+import { i18n, locale } from "./i18n.svelte";
 
 // Pontuação (docs/03 §3): FAIXA DE 100 PONTOS por caso = do valor do modelo ao do MapBiomas, ±3 pp.
 // Fora da faixa: pontos = round(100 × max(0, 1 − distância até a faixa / 40)).
@@ -23,7 +24,7 @@ export function pad(n: number, w = 6): string {
 export function fmtPP(v: number, digits = 0): string {
   const r = Number(v.toFixed(digits));
   if (r === 0) return "0 pp";
-  return `${r > 0 ? "+" : "-"}${Math.abs(r).toLocaleString("pt-BR", { maximumFractionDigits: digits })} pp`;
+  return `${r > 0 ? "+" : "-"}${Math.abs(r).toLocaleString(locale(), { maximumFractionDigits: digits })} pp`;
 }
 
 // pp → hectares equivalentes no recorte (área do recorte = size_km² × 100 ha).
@@ -32,12 +33,13 @@ export function fmtHa(pp: number, sizeKm: number): string {
   const ha = (pp / 100) * sizeKm * sizeKm * 100;
   const r = Math.round(ha);
   if (r === 0) return "0 ha";
-  return `${r > 0 ? "+" : "-"}${Math.abs(r).toLocaleString("pt-BR")} ha`;
+  return `${r > 0 ? "+" : "-"}${Math.abs(r).toLocaleString(locale())} ha`;
 }
 
+const MON_EN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 export function fmtDate(iso: string): string {
   const [y, m, d] = iso.split("-");
-  return `${d}/${m}/${y}`;
+  return i18n.lang === "en" ? `${Number(d)} ${MON_EN[Number(m) - 1]} ${y}` : `${d}/${m}/${y}`;
 }
 
 /** Pontos de quem chuta 0 (nenhuma mudança) — o "adversário preguiçoso" que o detetive precisa vencer. */

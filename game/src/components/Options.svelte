@@ -3,8 +3,10 @@
   import { settings, saveSettings } from "../lib/settings.svelte";
   import { resetProgress, progress } from "../lib/progress.svelte";
   import { clearRuns } from "../lib/run.svelte";
+  import { L, i18n, setLang } from "../lib/i18n.svelte";
+  const T = $derived(L());
 
-  const MODES = [["curtain", "CORTINA"], ["side", "LADO A LADO"], ["blink", "PISCA"]] as const;
+  const MODES = $derived([["curtain", T.curtain], ["side", T.sideLong], ["blink", T.blink]] as const);
   let confirmReset = $state(false);
   let done = $state("");
 
@@ -17,10 +19,11 @@
 
   type Row = { label: string; value: string; act: (d: number) => void };
   const rows = $derived<Row[]>([
-    { label: "SOM", value: sound.on ? "ON" : "OFF", act: () => toggleSound() },
-    { label: "COMPARAÇÃO INICIAL", value: MODES.find((m) => m[0] === settings.compareMode)![1], act: cycleMode },
-    { label: "EFEITO TV (SCANLINES)", value: settings.crt ? "ON" : "OFF", act: () => flip("crt") },
-    { label: "TEXTO DATILOGRAFADO", value: settings.typewriter ? "ON" : "OFF", act: () => flip("typewriter") },
+    { label: T.language, value: i18n.lang === "pt" ? "PORTUGUÊS" : "ENGLISH", act: () => { setLang(i18n.lang === "pt" ? "en" : "pt"); sfx("move"); } },
+    { label: T.sound, value: sound.on ? "ON" : "OFF", act: () => toggleSound() },
+    { label: T.initialCompare, value: MODES.find((m) => m[0] === settings.compareMode)![1], act: cycleMode },
+    { label: T.crt, value: settings.crt ? "ON" : "OFF", act: () => flip("crt") },
+    { label: T.typewriter, value: settings.typewriter ? "ON" : "OFF", act: () => flip("typewriter") },
   ]);
   let sel = $state(0);
   function onkey(e: KeyboardEvent) {
@@ -35,32 +38,32 @@
 
 <svelte:window onkeydown={onkey} />
 
-<h1 class="gold-t">OPÇÕES</h1>
+<h1 class="gold-t">{T.options}</h1>
 <section class="win opts">
-  <span class="win-title">CONFIGURAÇÃO</span>
+  <span class="win-title">{T.config}</span>
   {#each rows as r, i}
     <button class="row" class:sel={i === sel} onmouseenter={() => (sel = i)} onclick={() => { sel = i; r.act(1); }}>
       <span class="cur">{i === sel ? "▶" : ""}</span><span>{r.label}</span><b>◀ {r.value} ▶</b>
     </button>
   {/each}
-  <p class="lbl hint">SETAS ESCOLHEM · ◀ ▶ MUDAM · ESC VOLTA AO MENU</p>
+  <p class="lbl hint">{T.optHint}</p>
 </section>
 
 <section class="win opts">
-  <span class="win-title">DADOS SALVOS</span>
-  <p>O progresso fica só neste navegador. Nada é enviado para servidor nenhum.</p>
+  <span class="win-title">{T.saved}</span>
+  <p>{T.savedText}</p>
   {#if !confirmReset}
-    <button class="pbtn" onclick={() => { confirmReset = true; sfx("move"); }}>APAGAR PROGRESSO E RECORDES</button>
+    <button class="pbtn" onclick={() => { confirmReset = true; sfx("move"); }}>{T.wipeBtn}</button>
   {:else}
-    <p class="gold-t">Apagar {nPlayed} casos jogados e os recordes de partida? Não dá para desfazer.</p>
+    <p class="gold-t">{T.wipeAsk(nPlayed)}</p>
     <div class="row2">
-      <button class="pbtn gold" onclick={() => { resetProgress(); clearRuns(); confirmReset = false; done = "PROGRESSO APAGADO."; sfx("bad"); }}>SIM, APAGAR</button>
-      <button class="pbtn" onclick={() => { confirmReset = false; sfx("move"); }}>NÃO</button>
+      <button class="pbtn gold" onclick={() => { resetProgress(); clearRuns(); confirmReset = false; done = T.wiped; sfx("bad"); }}>{T.wipeYes}</button>
+      <button class="pbtn" onclick={() => { confirmReset = false; sfx("move"); }}>{T.no}</button>
     </div>
   {/if}
   {#if done}<p class="lbl">{done}</p>{/if}
 </section>
-<p><a class="pbtn" href="#/">◀ MENU</a></p>
+<p><a class="pbtn" href="#/">{T.menuBack}</a></p>
 
 <style>
   h1 { font-size: clamp(16px, 3vw, 24px); margin: 6px 0 22px; }

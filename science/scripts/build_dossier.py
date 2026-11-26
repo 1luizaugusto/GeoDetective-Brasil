@@ -83,7 +83,19 @@ def br(iso):
     return f"{iso[8:10]}/{iso[5:7]}/{iso[:4]}"
 
 
-# tolerância de pontuação = MAE do modelo de duas épocas (mesma regra do export_game.py)
+def cal_gap(a, b):
+    """Distância no calendário (dia e mês, ignorando o ano) entre duas datas ISO, em texto."""
+    from datetime import date
+    da, db = date.fromisoformat(a), date.fromisoformat(b)
+    try:
+        db = db.replace(year=da.year)
+    except ValueError:  # 29/02
+        db = db.replace(year=da.year, day=28)
+    d = min(abs((db - da).days), 365 - abs((db - da).days))
+    return "mesmo dia e mês" if d == 0 else f"{d} dia{'' if d == 1 else 's'} de diferença no calendário"
+
+
+# limite de entrada no jogo = MAE do modelo de duas épocas, limitado a 10 pp (mesma regra do export_game.py)
 _cv2 = ROOT / "data" / "model" / "cv_report_v2.json"
 TOL = round(min(10.0, max(3.0, json.loads(_cv2.read_text(encoding="utf-8"))["delta_vs_mapbiomas10m"]["MAE_pp"])), 1) if _cv2.exists() else 7.9
 
@@ -102,9 +114,10 @@ def build(cid, aud, ctx, qa):
 
     # 1) tipo de mudança — o centro do desafio
     ndvi = A.get("ndvi_mediana", "")
-    numbers = (f"MapBiomas 10 m: perda {p10:.1f} pp e ganho {g10:.1f} pp (líquido {fnum(net10)} pp); "
-               f"MapBiomas 30 m: perda {p30:.1f} pp e ganho {g30:.1f} pp (líquido {fnum(net30)} pp). "
-               f"NDVI mediano das imagens: {ndvi}.")
+    c1 = lambda x: f"{x:.1f}".replace(".", ",")
+    numbers = (f"MapBiomas 10 m: perda {c1(p10)} pp e ganho {c1(g10)} pp (líquido {fnum(net10)} pp); "
+               f"MapBiomas 30 m: perda {c1(p30)} pp e ganho {c1(g30)} pp (líquido {fnum(net30)} pp). "
+               f"NDVI mediano das imagens: {str(ndvi).replace('.', ',')}.")
     if kind == "loss":
         dn = A.get("dNDVI_perda", "")
         claims.append({"afirmacao": f"Houve perda de vegetação nativa entre {ya} e {yb}.", "veredito": "comprovado",
@@ -120,7 +133,10 @@ def build(cid, aud, ctx, qa):
                        "porque": numbers + " A imagem muda bastante, mas os mapas não registram troca de vegetação nativa.",
                        "fontes": src("mb30", "mb10") + imgs})
     else:
-        claims.append({"afirmacao": f"A vegetação nativa ficou praticamente estável entre {ya} e {yb}.", "veredito": "comprovado",
+        big = max(abs(net10), abs(net30))
+        head = (f"A vegetação nativa ficou praticamente estável entre {ya} e {yb}." if big < 2 else
+                f"A vegetação nativa mudou pouco entre {ya} e {yb} (no máximo {c1(big)} pp, conforme o mapa).")
+        claims.append({"afirmacao": head, "veredito": "comprovado",
                        "porque": numbers + " Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
                        "fontes": src("mb30", "mb10") + imgs})
     if qa.get("audit_override"):
@@ -131,14 +147,14 @@ def build(cid, aud, ctx, qa):
     if s2m.get("status") == "ok":
         d1 = [im["datetime_utc"][:10] for im in m["images"]]; d2 = [im["datetime_utc"][:10] for im in s2m["images"]]
         n1 = s2m["ndvi_crop"]["primary"]; n2 = s2m["ndvi_crop"]["season2"]
-        txt = (f"Época 1: {br(d1[0])} e {br(d1[1])} ({m['doy_difference_days']} dia{'' if m['doy_difference_days'] == 1 else 's'} de diferença no calendário). "
-               f"Época 2: {br(d2[0])} e {br(d2[1])} ({s2m['doy_difference_days']} dia{'' if s2m['doy_difference_days'] == 1 else 's'}), a data mais verde que os dois anos "
-               f"têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 {fnum2(n1[0])} → {fnum2(n1[1])}; "
+        txt = (f"Época 1: {br(d1[0])} e {br(d1[1])} ({cal_gap(d1[0], d1[1])}). "
+               f"Época 2: {br(d2[0])} e {br(d2[1])} ({cal_gap(d2[0], d2[1])}), um par alternativo a pelo menos 45 dias da época 1, "
+               f"sem nuvem no recorte. NDVI médio do recorte: época 1 {fnum2(n1[0])} → {fnum2(n1[1])}; "
                f"época 2 {fnum2(n2[0])} → {fnum2(n2[1])}.")
         if abs(n2[0] - n2[1]) > 0.08:
-            txt += (f" Na época 2, {ya if n2[0] > n2[1] else yb} está mais verde no recorte inteiro: essa diferença de cor "
-                    "vem do momento da foto (chuva, rebrota), e por isso o gabarito vem dos mapas e do modelo, não da cor.")
-        claims.append({"afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+            txt += (f" Na época 2, {ya if n2[0] > n2[1] else yb} está mais verde no recorte inteiro. A cor sozinha não mede "
+                    "a troca de vegetação; por isso o gabarito vem dos mapas e do modelo.")
+        claims.append({"afirmacao": "Cada ano tem uma foto em cada época, e as datas são pareadas entre os anos.",
                        "veredito": "comprovado", "porque": txt,
                        "fontes": imgs + [{"nome": f"Sentinel-2 L2A {im['datetime_utc'][:10]} — {im.get('cdse_product_id') or im['earth_search_id']}",
                                           "url": im.get("copernicus_browser_url") or SRC["sentinel_legal"]["url"]} for im in s2m["images"]]})
@@ -148,9 +164,9 @@ def build(cid, aud, ctx, qa):
         claims.append({"afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
                        "veredito": "comprovado" if gap <= TOL else "não comprovado",
                        "porque": (f"Modelo de duas épocas: {fnum(me['delta_pp'])} pp; MapBiomas 10 m: {fnum(net10)} pp; "
-                                  f"diferença {gap:.1f} pp, {'dentro' if gap <= TOL else 'FORA'} da tolerância de pontuação ({TOL:.1f} pp). "
-                                  "O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas "
-                                  "que não usou no treino (validação espacial)."),
+                                  f"diferença {gap:.1f} pp, {'dentro' if gap <= TOL else 'FORA'} do limite de entrada no jogo ({TOL:.1f} pp). ".replace(".", ",", 2) +
+                                  "O modelo usa as bandas do Sentinel-2 das duas épocas de cada ano, índices como o NDVI e o bioma; "
+                                  "este caso foi estimado por um modelo que não treinou com ele (validação espacial)."),
                        "fontes": src("mb10")})
 
     # 2) para onde foi / de onde veio
@@ -201,7 +217,9 @@ def build(cid, aud, ctx, qa):
     pas = [p for p in protected_areas(m["aoi"]["bbox_lonlat"]) if p["frac"] > 0.005 or p["frac"] == 0]
     for p in pas[:4]:
         rel = f"cobre {100 * p['frac']:.0f}% do recorte".replace(".", ",") if p["frac"] > 0.005 else "fica a menos de 1 km do recorte"
-        claims.append({"afirmacao": f"Área protegida: {p['nome']} ({p['tipo']}{', criada em ' + str(p['ano']) if p['ano'] else ''}).",
+        wh = "world heritage" in str(p["tipo"]).lower() or "patrim" in str(p["tipo"]).lower()
+        yr = (f", inscrita em {p['ano']}" if wh else f", ano de status na WDPA: {p['ano']}") if p["ano"] else ""
+        claims.append({"afirmacao": f"Área protegida: {p['nome']} ({p['tipo']}{yr}).",
                        "veredito": "comprovado", "porque": f"Segundo a base mundial de áreas protegidas (WDPA), ela {rel}.",
                        "fontes": [{"nome": "Protected Planet / WDPA (UNEP-WCMC)",
                                    "url": f"https://www.protectedplanet.net/{p['site_id']}" if p["site_id"] else "https://www.protectedplanet.net/"}]})

@@ -1,0 +1,44 @@
+{
+ "id": "CAP-DF",
+ "source": "MapBiomas Col. 4 (10 m), mesma grade do recorte; fogo: MapBiomas Fogo Col. 5.1; áreas protegidas: WDPA",
+ "composition": {
+  "2020": {
+   "forest": 6.9,
+   "savanna": 40.2,
+   "grassland": 3.9,
+   "wetland": 0.2,
+   "pasture": 2.7,
+   "mosaic": 0.3,
+   "urban": 45.7,
+   "bare": 0.1
+  },
+  "2024": {
+   "forest": 6.3,
+   "savanna": 40.3,
+   "grassland": 3.9,
+   "wetland": 0.2,
+   "pasture": 0.2,
+   "urban": 48.9,
+   "bare": 0.2
+  }
+ },
+ "fire_pct": {
+  "2019": 2.2,
+  "2020": 2.8,
+  "2023": 0.0,
+  "2024": 22.2
+ },
+ "protected": [
+  {
+   "name": "Parque Nacional De Brasília",
+   "type": "Parque",
+   "year": 1961,
+   "pct": 52
+  }
+ ],
+ "tags": [
+  "fire",
+  "open",
+  "season"
+ ]
+}

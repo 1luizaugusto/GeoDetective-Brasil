@@ -5,7 +5,7 @@
   {
    "afirmacao": "A mudança líquida de vegetação nativa é próxima de zero (armadilha).",
    "veredito": "comprovado",
-   "porque": "MapBiomas 10 m: perda 0.0 pp e ganho 0.1 pp (líquido +0,1 pp); MapBiomas 30 m: perda 0.1 pp e ganho 0.2 pp (líquido +0,1 pp). NDVI mediano das imagens: 0.50→0.90. A imagem muda bastante, mas os mapas não registram troca de vegetação nativa.",
+   "porque": "MapBiomas 10 m: perda 0,0 pp e ganho 0,1 pp (líquido +0,1 pp); MapBiomas 30 m: perda 0,1 pp e ganho 0,2 pp (líquido +0,1 pp). NDVI mediano das imagens: 0,50→0,90. A imagem muda bastante, mas os mapas não registram troca de vegetação nativa.",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
@@ -26,9 +26,9 @@
    ]
   },
   {
-   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "afirmacao": "Cada ano tem uma foto em cada época, e as datas são pareadas entre os anos.",
    "veredito": "comprovado",
-   "porque": "Época 1: 20/05/2020 e 21/05/2025 (0 dias de diferença no calendário). Época 2: 06/03/2020 e 05/03/2025 (2 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,50 → 0,89; época 2 0,71 → 0,86. Na época 2, 2025 está mais verde no recorte inteiro: essa diferença de cor vem do momento da foto (chuva, rebrota), e por isso o gabarito vem dos mapas e do modelo, não da cor.",
+   "porque": "Época 1: 20/05/2020 e 21/05/2025 (1 dia de diferença no calendário). Época 2: 06/03/2020 e 05/03/2025 (1 dia de diferença no calendário), um par alternativo a pelo menos 45 dias da época 1, sem nuvem no recorte. NDVI médio do recorte: época 1 0,50 → 0,89; época 2 0,71 → 0,86. Na época 2, 2025 está mais verde no recorte inteiro. A cor sozinha não mede a troca de vegetação; por isso o gabarito vem dos mapas e do modelo.",
    "fontes": [
     {
      "nome": "Sentinel-2 L2A 2020-05-20 — S2B_MSIL2A_20200520T134209_N0500_R124_T22KDC_20230404T015936",
@@ -51,7 +51,7 @@
   {
    "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
    "veredito": "comprovado",
-   "porque": "Modelo de duas épocas: +0,7 pp; MapBiomas 10 m: +0,1 pp; diferença 0.6 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "porque": "Modelo de duas épocas: +0,7 pp; MapBiomas 10 m: +0,1 pp; diferença 0,6 pp, dentro do limite de entrada no jogo (10,0 pp). O modelo usa as bandas do Sentinel-2 das duas épocas de cada ano, índices como o NDVI e o bioma; este caso foi estimado por um modelo que não treinou com ele (validação espacial).",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",

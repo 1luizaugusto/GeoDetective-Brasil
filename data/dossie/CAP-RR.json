@@ -5,7 +5,7 @@
   {
    "afirmacao": "Houve perda de vegetação nativa entre 2020 e 2025.",
    "veredito": "comprovado",
-   "porque": "MapBiomas 10 m: perda 7.6 pp e ganho 0.5 pp (líquido -7,1 pp); MapBiomas 30 m: perda 2.8 pp e ganho 0.0 pp (líquido -2,8 pp). NDVI mediano das imagens: 0.22→0.20. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.21 (vegetação a menos).",
+   "porque": "MapBiomas 10 m: perda 7,6 pp e ganho 0,5 pp (líquido -7,1 pp); MapBiomas 30 m: perda 2,8 pp e ganho 0,0 pp (líquido -2,8 pp). NDVI mediano das imagens: 0,22→0,20. Nos pixels que os dois mapas marcam como perda, o NDVI variou -0.21 (vegetação a menos).",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
@@ -27,9 +27,9 @@
    "revisao": "Revisão manual: perda confirmada nos dois mapas (10 m −7,1, 30 m −2,8 pp) para área urbana; NDVI −0,21 nos pixels perdidos"
   },
   {
-   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "afirmacao": "Cada ano tem uma foto em cada época, e as datas são pareadas entre os anos.",
    "veredito": "comprovado",
-   "porque": "Época 1: 01/03/2020 e 28/02/2025 (2 dias de diferença no calendário). Época 2: 17/10/2020 e 21/09/2025 (27 dias), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,25 → 0,23; época 2 0,34 → 0,29.",
+   "porque": "Época 1: 01/03/2020 e 28/02/2025 (2 dias de diferença no calendário). Época 2: 17/10/2020 e 21/09/2025 (26 dias de diferença no calendário), um par alternativo a pelo menos 45 dias da época 1, sem nuvem no recorte. NDVI médio do recorte: época 1 0,25 → 0,23; época 2 0,34 → 0,29.",
    "fontes": [
     {
      "nome": "Sentinel-2 L2A 2020-03-01 — S2A_MSIL2A_20200301T142731_N0500_R053_T20NQJ_20230412T024525",
@@ -52,7 +52,7 @@
   {
    "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
    "veredito": "comprovado",
-   "porque": "Modelo de duas épocas: -0,2 pp; MapBiomas 10 m: -7,1 pp; diferença 6.9 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "porque": "Modelo de duas épocas: -0,2 pp; MapBiomas 10 m: -7,1 pp; diferença 6,9 pp, dentro do limite de entrada no jogo (10,0 pp). O modelo usa as bandas do Sentinel-2 das duas épocas de cada ano, índices como o NDVI e o bioma; este caso foi estimado por um modelo que não treinou com ele (validação espacial).",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",

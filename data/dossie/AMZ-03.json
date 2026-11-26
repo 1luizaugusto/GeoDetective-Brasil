@@ -5,7 +5,7 @@
   {
    "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
    "veredito": "comprovado",
-   "porque": "MapBiomas 10 m: perda 0.1 pp e ganho 0.2 pp (líquido +0,1 pp); MapBiomas 30 m: perda 0.2 pp e ganho 0.2 pp (líquido +0,0 pp). NDVI mediano das imagens: 0.82→0.82. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "porque": "MapBiomas 10 m: perda 0,1 pp e ganho 0,2 pp (líquido +0,1 pp); MapBiomas 30 m: perda 0,2 pp e ganho 0,2 pp (líquido +0,0 pp). NDVI mediano das imagens: 0,82→0,82. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
@@ -26,9 +26,9 @@
    ]
   },
   {
-   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "afirmacao": "Cada ano tem uma foto em cada época, e as datas são pareadas entre os anos.",
    "veredito": "comprovado",
-   "porque": "Época 1: 16/07/2020 e 15/07/2024 (1 dia de diferença no calendário). Época 2: 09/10/2020 e 08/10/2024 (1 dia), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,76 → 0,72; época 2 0,68 → 0,68.",
+   "porque": "Época 1: 16/07/2020 e 15/07/2024 (1 dia de diferença no calendário). Época 2: 09/10/2020 e 08/10/2024 (1 dia de diferença no calendário), um par alternativo a pelo menos 45 dias da época 1, sem nuvem no recorte. NDVI médio do recorte: época 1 0,76 → 0,72; época 2 0,68 → 0,68.",
    "fontes": [
     {
      "nome": "Sentinel-2 L2A 2020-07-16 — S2A_MSIL2A_20200716T141741_N0500_R010_T20MRT_20230322T203006",
@@ -51,7 +51,7 @@
   {
    "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
    "veredito": "comprovado",
-   "porque": "Modelo de duas épocas: +0,5 pp; MapBiomas 10 m: +0,1 pp; diferença 0.4 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "porque": "Modelo de duas épocas: +0,5 pp; MapBiomas 10 m: +0,1 pp; diferença 0,4 pp, dentro do limite de entrada no jogo (10,0 pp). O modelo usa as bandas do Sentinel-2 das duas épocas de cada ano, índices como o NDVI e o bioma; este caso foi estimado por um modelo que não treinou com ele (validação espacial).",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",

@@ -5,7 +5,7 @@
   {
    "afirmacao": "A vegetação nativa ficou praticamente estável entre 2020 e 2024.",
    "veredito": "comprovado",
-   "porque": "MapBiomas 10 m: perda 1.7 pp e ganho 1.3 pp (líquido -0,4 pp); MapBiomas 30 m: perda 1.4 pp e ganho 1.8 pp (líquido +0,4 pp). NDVI mediano das imagens: 0.76→0.69. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
+   "porque": "MapBiomas 10 m: perda 1,7 pp e ganho 1,3 pp (líquido -0,4 pp); MapBiomas 30 m: perda 1,4 pp e ganho 1,8 pp (líquido +0,4 pp). NDVI mediano das imagens: 0,76→0,69. Mudanças de cor (estação, safra, água, fogo) não contam como troca de vegetação.",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 11, cobertura e uso da terra (30 m, Landsat)",
@@ -26,9 +26,9 @@
    ]
   },
   {
-   "afirmacao": "As duas fotos de cada ano são da mesma época, e há uma segunda época para comparar.",
+   "afirmacao": "Cada ano tem uma foto em cada época, e as datas são pareadas entre os anos.",
    "veredito": "comprovado",
-   "porque": "Época 1: 25/07/2020 e 24/07/2024 (1 dia de diferença no calendário). Época 2: 01/05/2020 e 30/04/2024 (1 dia), a data mais verde que os dois anos têm na mesma época, sem nuvem no recorte. NDVI médio do recorte: época 1 0,69 → 0,62; época 2 0,80 → 0,79.",
+   "porque": "Época 1: 25/07/2020 e 24/07/2024 (1 dia de diferença no calendário). Época 2: 01/05/2020 e 30/04/2024 (1 dia de diferença no calendário), um par alternativo a pelo menos 45 dias da época 1, sem nuvem no recorte. NDVI médio do recorte: época 1 0,69 → 0,62; época 2 0,80 → 0,79.",
    "fontes": [
     {
      "nome": "Sentinel-2 L2A 2020-07-25 — S2A_MSIL2A_20200725T131251_N0500_R138_T23KNT_20230425T191700",
@@ -51,7 +51,7 @@
   {
    "afirmacao": "O gabarito do jogo (modelo) concorda com o MapBiomas.",
    "veredito": "comprovado",
-   "porque": "Modelo de duas épocas: -6,4 pp; MapBiomas 10 m: -0,4 pp; diferença 6.0 pp, dentro da tolerância de pontuação (10.0 pp). O modelo vê só as imagens deste caso (as duas épocas de cada ano) e foi testado em áreas que não usou no treino (validação espacial).",
+   "porque": "Modelo de duas épocas: -6,4 pp; MapBiomas 10 m: -0,4 pp; diferença 6,0 pp, dentro do limite de entrada no jogo (10,0 pp). O modelo usa as bandas do Sentinel-2 das duas épocas de cada ano, índices como o NDVI e o bioma; este caso foi estimado por um modelo que não treinou com ele (validação espacial).",
    "fontes": [
     {
      "nome": "MapBiomas Brasil — Coleção 4, cobertura 10 m (Sentinel-2)",
@@ -124,7 +124,7 @@
    ]
   },
   {
-   "afirmacao": "Área protegida: Área De Proteção Ambiental Sul-Rmbh (Área de Proteção Ambiental, criada em 1994).",
+   "afirmacao": "Área protegida: Área De Proteção Ambiental Sul-Rmbh (Área de Proteção Ambiental, ano de status na WDPA: 1994).",
    "veredito": "comprovado",
    "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 26% do recorte.",
    "fontes": [
@@ -135,7 +135,7 @@
    ]
   },
   {
-   "afirmacao": "Área protegida: Reserva Particular Do Patrimônio Natural Sítio Grimpas (Reserva Particular do Patrimônio Natural, criada em 1995).",
+   "afirmacao": "Área protegida: Reserva Particular Do Patrimônio Natural Sítio Grimpas (Reserva Particular do Patrimônio Natural, inscrita em 1995).",
    "veredito": "comprovado",
    "porque": "Segundo a base mundial de áreas protegidas (WDPA), ela cobre 13% do recorte.",
    "fontes": [
