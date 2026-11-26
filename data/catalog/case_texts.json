@@ -12,8 +12,8 @@
  },
  "CAP-MG": {
   "name_en": "Nova Lima – urban fringe",
-  "pt": "Nova Lima, na franja urbana de Belo Horizonte: a expansão urbana avançou sobre a vegetação nativa (perda de cerca de 7 pp, quase toda para área urbanizada).",
-  "en": "Nova Lima, on the urban fringe of Belo Horizonte: urban expansion encroached on native vegetation (about 7 pp lost, almost all to built-up area)."
+  "pt": "Nova Lima, na franja urbana de Belo Horizonte: condomínios em meio à mata. A perda (−7 pp no mapa de 10 m, −5 no de 30 m) aparece em contornos finos na borda das casas e da rodovia; poucas casas novas são visíveis.",
+  "en": "Nova Lima, on the urban fringe of Belo Horizonte: gated communities set in forest. The loss (−7 pp on the 10 m map, −5 on the 30 m map) shows as thin outlines along houses and the highway; few new houses are visible."
  },
  "AMZ-03": {
   "name_en": "Apuí – remnant forest vs. dry pasture",
@@ -32,8 +32,10 @@
  },
  "CAP-RR": {
   "name_en": "Boa Vista – lavrado and urban expansion",
-  "pt": "Perto do aeroporto de Boa Vista, áreas de lavrado foram abertas. O lavrado é a savana nativa de Roraima: uma formação aberta, de capim, e não floresta.",
-  "en": "Near Boa Vista airport, patches of lavrado were cleared. Lavrado is Roraima's native savanna: an open, grass-dominated formation, not forest."
+  "pt": "Aeroporto de Boa Vista. O lavrado ao norte é savana nativa e fica marrom na seca. A perda que o MapBiomas registra está sobretudo nas faixas de grama entre as pistas, que em 2025 aparecem como solo exposto (−7 pp no mapa de 10 m, −3 no de 30 m).",
+  "en": "Boa Vista airport. The lavrado to the north is native savanna and turns brown in the dry season. The loss MapBiomas records lies mostly in the grass strips between the runways, which show as bare soil in 2025 (−7 pp on the 10 m map, −3 on the 30 m map).",
+  "hint_pt": "Dica: o lavrado seco fica marrom, mas é savana nativa.",
+  "hint_en": "Hint: dry lavrado turns brown, but it is native savanna."
  },
  "CAP-RN": {
   "name_en": "Natal – Dunes Park",
@@ -48,7 +50,9 @@
  "PAN-03": {
   "name_en": "Serra do Amolar – Acurizal Private Reserve",
   "pt": "Topo da Serra do Amolar: fisionomia aberta, de campo nativo e afloramento rochoso, com mata só nas grotas. Em 2020 o recorte queimou. A cor muda com a seca e o fogo, mas a cobertura nativa é a mesma nos dois anos.",
-  "en": "Serra do Amolar ridge: an open physiognomy of native grassland and rock outcrop, with forest only in the ravines. The tile burned in 2020. Color shifts with the dry season and fire, but native cover is the same in both years."
+  "en": "Serra do Amolar ridge: an open physiognomy of native grassland and rock outcrop, with forest only in the ravines. The tile burned in 2020. Color shifts with the dry season and fire, but native cover is the same in both years.",
+  "hint_pt": "Dica: campo nativo e afloramento rochoso também são vegetação nativa. Veja a ÉPOCA 2.",
+  "hint_en": "Hint: native grassland and rock outcrop are native vegetation too. Check SEASON 2."
  },
  "CAP-RO": {
   "name_en": "Porto Velho – Karipuna Indigenous Territory",
@@ -68,7 +72,9 @@
  "CAA-03": {
   "name_en": "Seridó desertification hotspot (Carnaúba dos Dantas)",
   "pt": "Seridó: na estação seca, a caatinga perde as folhas e fica cinza-amarronzada, mas continua sendo vegetação nativa. A mudança aqui é pequena.",
-  "en": "Seridó: in the dry season the caatinga drops its leaves and turns greyish-brown, but it is still native vegetation. The change here is small."
+  "en": "Seridó: in the dry season the caatinga drops its leaves and turns greyish-brown, but it is still native vegetation. The change here is small.",
+  "hint_pt": "Dica: na seca, a caatinga fica marrom e sem folhas, mas é nativa. Veja a ÉPOCA 2.",
+  "hint_en": "Hint: dry-season caatinga is brown and leafless, but native. Check SEASON 2."
  },
  "XTR-D21": {
   "name_en": "Forest and open land",
@@ -98,7 +104,9 @@
  "CAP-DF": {
   "name_en": "Brasília – edge of Brasília National Park",
   "pt": "A borda do Parque Nacional de Brasília é quase uma régua: cerrado protegido de um lado, cidade do outro.",
-  "en": "The edge of Brasília National Park is almost ruler-straight: protected cerrado on one side, city on the other."
+  "en": "The edge of Brasília National Park is almost ruler-straight: protected cerrado on one side, city on the other.",
+  "hint_pt": "Dica: na seca, o cerrado do parque fica marrom, mas é vegetação nativa. Veja a ÉPOCA 2.",
+  "hint_en": "Hint: dry-season cerrado turns brown, but it is native. Check SEASON 2."
  },
  "XTR-D25": {
   "name_en": "Forest and open land",
@@ -114,8 +122,8 @@
  },
  "PAM-03": {
   "name_en": "Dom Pedrito – grassland converted to cropland",
-  "pt": "Dom Pedrito: parte dos campos nativos do Pampa virou lavoura (mapa de 10 m). Campo nativo também é vegetação nativa, mesmo sem árvores.",
-  "en": "Dom Pedrito: part of the native Pampa grassland became cropland (10 m map). Native grassland is native vegetation, even without trees."
+  "pt": "Dom Pedrito: parte dos campos nativos do Pampa foi convertida. No mapa de 10 m, a área perdida virou sobretudo mosaico de usos e lavoura, e um trecho aparece como água. Campo nativo também é vegetação nativa, mesmo sem árvores.",
+  "en": "Dom Pedrito: part of the native Pampa grassland was converted. On the 10 m map, the lost area became mostly land-use mosaic and cropland, and one stretch shows as water. Native grassland is native vegetation, even without trees."
  },
  "CAP-SC": {
   "name_en": "Florianópolis – Meiembipe Refuge / Rio Vermelho",
@@ -140,7 +148,9 @@
  "CAA-02": {
   "name_en": "Surroundings of Serra da Capivara National Park",
   "pt": "Entorno do Parque Nacional da Serra da Capivara: caatinga e pastos lado a lado. A caatinga muda de cor com a seca, mas a cobertura nativa ficou praticamente igual.",
-  "en": "Surroundings of Serra da Capivara National Park: caatinga and pastures side by side. The caatinga changes color with the dry season, but native cover stayed virtually the same."
+  "en": "Surroundings of Serra da Capivara National Park: caatinga and pastures side by side. The caatinga changes color with the dry season, but native cover stayed virtually the same.",
+  "hint_pt": "Dica: na seca, a caatinga fica marrom e sem folhas, mas é nativa. Veja a ÉPOCA 2.",
+  "hint_en": "Hint: dry-season caatinga is brown and leafless, but native. Check SEASON 2."
  },
  "XTR-D01": {
   "name_en": "Forest and open land",
