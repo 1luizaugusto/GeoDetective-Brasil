@@ -271,7 +271,7 @@
         {#each segs as s}<i class={segKind(s)}></i>{/each}
         <b class="base" style={`left:${base}%`}></b>
       </div>
-      <div class="ticks abs lbl"><span>0%</span><span class="bt" style={`left:${base}%`}>{y0}</span><span>100%</span></div>
+      <div class="ticks abs lbl"><span class:hide={base < 20}>0%</span><span class="bt" class:start={base < 6} class:end={base > 94} style={`left:${base}%`}>{y0}</span><span class:hide={base > 80}>100%</span></div>
       <div class="controls">
         <button class="pbtn small" onclick={() => nudge(-10)}>-10</button>
         <button class="pbtn small" onclick={() => nudge(-1)}>-1</button>
@@ -296,7 +296,7 @@
             <i class="mk you" style={`left:${at(guess)}`}></i>
             <b class="base" style={`left:${base}%`}></b>
           </div>
-          <div class="ticks abs lbl"><span>0%</span><span class="bt" style={`left:${base}%`}>{y0}</span><span>100%</span></div>
+          <div class="ticks abs lbl"><span class:hide={base < 20}>0%</span><span class="bt" class:start={base < 6} class:end={base > 94} style={`left:${base}%`}>{y0}</span><span class:hide={base > 80}>100%</span></div>
           <dl>
             <dt><i class="sw you"></i>{T.you}</dt><dd>{base}→{after}% <span class="dim">{fmtPP(guess)}</span></dd>
             <dt><i class="sw model"></i>{T.model}</dt><dd>{fmtPP(c.model_estimate_pp, 1)}</dd>
@@ -424,6 +424,7 @@
   .ticks { display: flex; justify-content: space-between; margin: 4px 0 8px; font-size: 7px; }
   .ticks.abs { position: relative; }
   .ticks .bt { position: absolute; top: 0; transform: translateX(-50%); color: var(--ink); white-space: nowrap; }
+  .ticks .bt.start { transform: none; } .ticks .bt.end { transform: translateX(-100%); } .ticks .hide { visibility: hidden; }
   .controls { display: grid; grid-template-columns: repeat(4, 1fr) 1.3fr; gap: 6px; margin-top: auto; }
   .controls .pbtn { justify-content: center; padding: 11px 4px 9px; } .controls .pbtn::before { display: none; }
   .go { font-size: 12px; }

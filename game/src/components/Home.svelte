@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Flag from "./Flag.svelte";
   import type { Dataset } from "../lib/types";
   import { progress } from "../lib/progress.svelte";
   import { sfx } from "../lib/sfx.svelte";
@@ -74,8 +75,8 @@
   <p class="sub">★ BRASIL ★</p>
   <p class="tag">{T.tagline}</p>
   <div class="langs" role="group" aria-label="Idioma / Language">
-    <button class:on={i18n.lang === "pt"} aria-pressed={i18n.lang === "pt"} onclick={() => { setLang("pt"); sfx("move"); }}>PT</button>
-    <button class:on={i18n.lang === "en"} aria-pressed={i18n.lang === "en"} onclick={() => { setLang("en"); sfx("move"); }}>EN</button>
+    <button class:on={i18n.lang === "pt"} aria-pressed={i18n.lang === "pt"} onclick={() => { setLang("pt"); sfx("move"); }}><Flag lang="pt" />PT</button>
+    <button class:on={i18n.lang === "en"} aria-pressed={i18n.lang === "en"} onclick={() => { setLang("en"); sfx("move"); }}><Flag lang="en" />EN</button>
   </div>
 
   <div class="grid">
@@ -118,7 +119,8 @@
   .sub { font-family: var(--px); font-size: 11px; color: var(--cyan); letter-spacing: 0.3em; margin: 10px 0; }
   .tag { font-size: 20px; color: var(--dim); margin: 0 auto 10px; }
   .langs { display: flex; justify-content: center; gap: 6px; margin: 0 0 16px; }
-  .langs button { font-family: var(--px); font-size: 9px; background: var(--navy); border: 2px solid var(--line-lo); color: var(--dim); padding: 6px 8px 5px; }
+  .langs button { display: inline-flex; align-items: center; gap: 6px; font-family: var(--px); font-size: 9px; background: var(--navy); border: 2px solid var(--line-lo); color: var(--dim); padding: 5px 8px 4px; }
+  .langs button:not(.on) :global(.flag) { opacity: 0.55; }
   .langs button.on { background: var(--cyan); color: var(--night); border-color: var(--ink); }
   .grid { max-width: 420px; margin: 0 auto; text-align: left; }
   .menu ul { list-style: none; margin: 8px 0 14px; padding: 0; }
